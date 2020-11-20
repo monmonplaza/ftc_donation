@@ -1,3 +1,21 @@
+.login-bar {
+  padding: 0.5rem 1rem;
+  background-color: #3f9cd1;
+  color: #fff;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin-left: 3rem;
+      a {
+        color: #fff;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .donation {
   &__wrapper {
     display: flex;
@@ -17,6 +35,10 @@
     align-items: center;
     padding: 2rem;
     color: $light;
+
+    @include media-query(1070px) {
+      display: none;
+    }
     h1 {
       font-size: 5rem;
       font-family: $font-light;
@@ -30,21 +52,67 @@
 
   .main {
     flex: 0 1 70vw;
+    @include media-query(1070px) {
+      flex: 0 1 100vw;
+    }
     .header {
       padding: 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       min-height: 3rem;
+      position: relative;
 
-      nav ul {
-        display: flex;
-        list-style: none;
-        li {
-          margin: 0 2rem;
-          a {
-            text-decoration: none;
-            color: $dark;
+      .toggle-menu {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: none;
+        cursor: pointer;
+        @include media-query(580px) {
+          display: block;
+        }
+        .bar {
+          width: 3rem;
+          height: 0.4rem;
+          background-color: #3f9cd1;
+          display: block;
+          margin-bottom: 0.4rem;
+        }
+      }
+
+      nav {
+        @include media-query(980px) {
+          position: fixed;
+          height: 100vh;
+          width: 100%;
+          background-color: $light;
+          color: $dark;
+          z-index: 999;
+          left: 120rem;
+          top: 13rem;
+          ul {
+            flex-direction: column;
+            align-items: center;
+            li {
+              padding: 2rem 45%;
+              margin-bottom: 2rem;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              a {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+        ul {
+          display: flex;
+          list-style: none;
+          li {
+            margin: 0 2rem;
+            a {
+              text-decoration: none;
+              color: $dark;
+            }
           }
         }
       }
@@ -98,12 +166,19 @@
       }
 
       &__action {
+        @include media-query(420px) {
+          text-align: right;
+        }
         a {
           display: inline-block;
           margin-left: 2rem;
           color: $orange;
+
           &:nth-of-type(1) {
             color: $gray;
+            @include media-query(420px) {
+              margin-bottom: 2rem;
+            }
           }
         }
       }
@@ -117,19 +192,35 @@
       justify-content: space-between;
       picture {
         flex-basis: 5%;
+        @include media-query(420px) {
+          flex-basis: 20%;
+          display: flex;
+          align-self: center;
+        }
+        img {
+          @include media-query(420px) {
+            width: 100%;
+          }
+        }
       }
       .details {
         flex-basis: 95%;
         padding: 0 3rem;
+        @include media-query(420px) {
+          padding: 0 1.5rem;
+        }
         .details__name {
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
           padding: 1rem 0;
-          border-bottom: 1px solid #cecece;
+          border-bottom: 1px solid #ebebeb;
           .name {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
+            // @include media-query(420px) {
+            //   font-size: 1.6rem;
+            // }
           }
           .actions ul {
             display: flex;
@@ -149,7 +240,7 @@
           display: flex;
           justify-content: space-between;
           h4 {
-            font-size: 2rem;
+            font-size: 1.6rem;
           }
           .amount {
             color: $orange;

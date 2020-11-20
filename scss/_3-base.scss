@@ -32,8 +32,17 @@
   font-display: swap;
 }
 
+@mixin media-query($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 html {
   font-size: $base-size;
+  @media screen and (max-width: 450px) {
+    font-size: 55%;
+  }
 }
 
 body {

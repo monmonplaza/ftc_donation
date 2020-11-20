@@ -9,24 +9,29 @@
   justify-content: center;
   align-items: center;
   display: none;
-  &__process {
+  &__main {
     border-radius: 5px;
     width: 34rem;
     max-width: 34rem;
-    background-color: #dadada;
-    min-height: 37rem;
+    background-color: $light;
+    min-height: 31rem;
     margin: 1rem;
     padding: 4rem 3rem;
     text-align: center;
 
     h2 {
       margin-bottom: 2rem;
+      padding: 0 0 1rem 0;
+      border-bottom: 1px solid rgba($gray, 0.9);
+      color: $blue;
+      text-transform: uppercase;
     }
 
     h3 {
       font-size: 2rem;
-      span {
+      .total__value {
         font-size: 5rem;
+        color: $orange;
       }
     }
 
@@ -41,6 +46,10 @@
       padding: 0.8rem;
       border-radius: 5px;
       outline: none;
+    }
+
+    input[type="radio"] + label {
+      display: inline-block;
     }
 
     button {
@@ -64,9 +73,106 @@
       border: 2px solid #fc3838;
       background-color: #ffc4c4;
     }
+    p {
+      margin-bottom: 2rem;
+    }
+
+    &__action {
+      a {
+        padding: 1rem 1.4rem;
+        display: block;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        background-color: $darkgray;
+        color: $light;
+        &:hover {
+          background-color: $orange;
+        }
+      }
+    }
   }
 }
 
-.show-process {
+.show {
   display: flex;
+}
+
+// THIS STYLE IS FOR MODAL SPINNER ONLY
+
+.modal {
+  .modal__main.spinner_modal {
+    width: 28rem;
+    min-height: 28rem;
+
+    h3 {
+      margin-bottom: 3.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    h4 {
+      margin-top: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+$offset: 187;
+$duration: 2s;
+
+.spinner {
+  animation: rotator $duration linear infinite;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.path {
+  stroke-dasharray: $offset;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash $duration ease-in-out infinite,
+    colors ($duration * 3) ease-in-out infinite;
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285f4;
+  }
+  25% {
+    stroke: #de3e35;
+  }
+  50% {
+    stroke: #f7c223;
+  }
+  75% {
+    stroke: #1b9a59;
+  }
+  100% {
+    stroke: #4285f4;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: $offset;
+  }
+  50% {
+    stroke-dashoffset: $offset/4;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: $offset;
+    transform: rotate(450deg);
+  }
 }
