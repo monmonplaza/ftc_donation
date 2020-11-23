@@ -52,3 +52,13 @@ body {
   font-family: $font-regular;
   position: relative;
 }
+
+.error-label,
+.error-msg {
+  color: #fc3838;
+}
+
+.error {
+  border: 2px solid #fc3838;
+  background-color: #ffc4c4;
+}
