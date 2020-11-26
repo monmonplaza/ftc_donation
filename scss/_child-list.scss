@@ -2,6 +2,7 @@
   padding: 0.5rem 1rem;
   background-color: #3f9cd1;
   color: #fff;
+
   ul {
     display: flex;
     justify-content: flex-end;
@@ -14,6 +15,12 @@
       }
     }
   }
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .donation {

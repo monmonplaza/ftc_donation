@@ -371,44 +371,42 @@
     </div>
   </div>
 
-
 <!-- Payment -->
-<div class="modal ">
+<div class="modal  ">
   <div class="modal__main">
-      <h2>Card Information</h2>
-      <h3>Total Amount <br> <span class="total__value">$30.00</span></h3>
-      <form action="">
-        <div class="form-group">
-          <label for="payment_method">Payment Method</label>
-          <select class="error">
-            <option value="">Select</option>
-            <option value="paypal">Paypal</option>
-            <option value="card">Credit Card</option>
-          </select>
-          <p class="error-msg">Required</p>
+    <h2>Card Information</h2>
+    <h3>Total Amount <br> <span class="total__value">$30.00</span></h3>
+    <form action="">
+      <div class="form-group error">
+        <label for="payment_method">Payment Method</label>
+        <select>
+          <option value="">Select</option>
+          <option value="paypal">Paypal</option>
+          <option value="card">Credit Card</option>
+        </select>
+        <p class="error-msg">Required</p>
 
-        </div>
-        <button>Sponsor</button>
-      </form>
+      </div>
+      <button>Sponsor</button>
+    </form>
   </div>
 </div>
 
 <!-- Edit Amount -->
-<div class="modal ">
+<div class="modal show">
   <div class="modal__main">
     <h2>Edit Donation </h2>
     <h3>Select new amount</h3>
     <form action="">
-      <div class="form-group">
+      <div class="form-group error">
+        <input type="radio" id="dollar-10" value="10" for="dollar-10" name="amount">
+        <label for="dollar-10" class="radio-label">$10.00</label>
 
-        <input type="radio" id="dollar-10" value="10" for="dollar-10">
-        <label for="dollar-10">$10.00</label><br>
+        <input type="radio" id="dollar-20" value="20" for="dollar-20"name="amount">
+        <label for="dollar-20" class="radio-label">$20.00</label>
 
-        <input type="radio" id="dollar-20" value="20" for="dollar-20">
-        <label for="dollar-20">$20.00</label><br>
-
-        <input type="radio" id="dollar-50" value="50" for="dollar-50">
-        <label for="dollar-50">$50.00</label><br>
+        <input type="radio" id="dollar-50" value="50" for="dollar-50"name="amount">
+        <label for="dollar-50" class="radio-label">$50.00</label>
 
         <p class="error-msg">Required</p>
 
@@ -419,13 +417,13 @@
 </div>
 
 <!-- Clear List -->
-<div class="modal ">
+<div class="modal  ">
   <div class="modal__main">
     <h2>Clear Children List </h2>
     <p>Are you sure you want to clear the list?</p>
     <div class="modal__main__action">
-        <a href="#">Yes</a>
-        <a href="#">No</a>
+      <a href="#">Yes</a>
+      <a href="#">No</a>
 
     </div>
 
@@ -434,8 +432,8 @@
 
 <!-- Error modal for sir pat -->
 
-<div class="modal ">
-  <div class="modal__main error">
+<div class="modal  ">
+  <div class="modal__main error__modal">
     <h2 class="error-msg">System Error!</h2>
     <p>Something went wrong on the system...</p>
     <p>Return error log here</p>
@@ -445,21 +443,21 @@
     </div>
   </div>
 
-  </div>
+</div>
 </div>
 
 <!-- Spinner modal for sir pat -->
-<div class="modal show ">
+<div class="modal loading ">
   <div class="modal__main spinner_modal">
-    <h3>This will not take too long</h3>
-<svg class="spinner" width="90px" height="90px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-  <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-</svg>
-    <h4><i>Processing...</i></h4>
 
-    </div>
+    <svg class="spinner" width="60px" height="60px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+
   </div>
 </div>
+</div>
+
 
 </body>
 </html>

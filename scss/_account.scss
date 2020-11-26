@@ -1,0 +1,199 @@
+// Use for the my account page
+.main-header {
+  height: 7rem;
+  padding: 1rem 0;
+  background-color: #fafafa;
+  position: relative;
+  width: 100%;
+  transition: 0.5s ease;
+  img {
+    width: 250px;
+    height: 50px;
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    nav {
+      align-self: center;
+      ul {
+        display: flex;
+        li {
+          margin-left: 2rem;
+          a {
+            color: $dark;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// end
+
+.account {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media-query(450px) {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    flex-basis: 70%;
+    padding: 3rem;
+    &__block {
+      margin-bottom: 4rem;
+      h2 {
+        text-transform: uppercase;
+        padding: 2rem 0;
+        border-bottom: 1px solid #e2e2e2;
+        font-size: 3rem;
+      }
+
+      p {
+        padding: 2rem 0;
+        font-size: 1.8rem;
+        line-height: 1.6;
+      }
+
+      ul {
+        padding: 2rem 0;
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $dark;
+        transition: 0.5s ease;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  &__sidebar {
+    flex-basis: 30%;
+    padding: 3rem;
+  }
+}
+
+.sponsor__list {
+  padding: 10rem 0;
+  background-color: #f0f0f0;
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    tr th {
+      padding-bottom: 1rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ccc;
+      border: none;
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #ccc;
+        &:nth-child(odd) {
+          background-color: rgb(214, 214, 214);
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      td {
+        max-width: calc(100% / 5);
+        text-align: center;
+        padding: 1.5rem 0;
+      }
+    }
+    a {
+      text-decoration: none;
+      padding: 0 1rem;
+      &:nth-last-of-type(1) {
+        color: $error;
+      }
+
+      &:nth-last-of-type(2) {
+        color: $blue;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  .sponsor__list {
+    table {
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tbody tr {
+        margin-bottom: 4rem;
+        border: none;
+      }
+
+      tbody td {
+        /* Behave  like a "row" */
+        max-width: 250% !important;
+        border: none;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        position: relative;
+
+        text-align: right;
+        padding: 10px 10px 10px 45%;
+      }
+
+      td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 13px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      td:nth-of-type(1):before {
+        content: "Name";
+      }
+      td:nth-of-type(2):before {
+        content: "Age";
+      }
+      td:nth-of-type(3):before {
+        content: "Frequency";
+      }
+      td:nth-of-type(4):before {
+        content: "Amount";
+      }
+      td:nth-of-type(5):before {
+        content: "Action";
+      }
+    }
+  }
+}

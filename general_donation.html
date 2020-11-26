@@ -59,7 +59,7 @@
           <div class="main__wrapper">
             <div class="donate__form">
               <form action="">
-                <div class="form-group">
+                <div class="form-group error">
                   <label for="designation" class="error-label">Designation</label>
                   <select name="designation" class="error">
                     <option value="">Select</option>
@@ -70,13 +70,13 @@
                   <p class="error-msg">Error Message here</p>
                 </div>
 
-                  <div class="form-group">
+                  <div class="form-group error">
                     <label for="note" class="error-label">Note (Optional)</label>
                     <textarea name="note" class="error"></textarea>
                     <p class="error-msg">Error Message here</p>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group error">
                     <label for="frequency" class="error-label">Designation</label>
                     <select name="frequency" class="error">
                       <option value="">Select</option>
@@ -87,14 +87,14 @@
                   </div>
 
 
-                  <div class="form-group">
+                  <div class="form-group error">
                     <label for="amount" class="error-label">Amount</label>
                     <input type="number" name="amount" placeholder="$0.00" min="0.00" max="10000.00" step="0.01" class="error">
                     <p class="error-msg">Error Message here</p>
                   </div>
 
 
-                  <div class="form-group">
+                  <div class="form-group error">
                     <label for="method" class="error-label">Payment Method</label>
                     <select name="method" class="error">
                       <option value="">Select</option>
@@ -205,14 +205,14 @@
 
 
   <!-- Payment -->
-  <div class="modal ">
+  <div class="modal  ">
     <div class="modal__main">
       <h2>Card Information</h2>
       <h3>Total Amount <br> <span class="total__value">$30.00</span></h3>
       <form action="">
-        <div class="form-group">
+        <div class="form-group error">
           <label for="payment_method">Payment Method</label>
-          <select class="error">
+          <select>
             <option value="">Select</option>
             <option value="paypal">Paypal</option>
             <option value="card">Credit Card</option>
@@ -231,8 +231,7 @@
       <h2>Edit Donation </h2>
       <h3>Select new amount</h3>
       <form action="">
-        <div class="form-group">
-
+        <div class="form-group error">
           <input type="radio" id="dollar-10" value="10" for="dollar-10">
           <label for="dollar-10">$10.00</label><br>
 
@@ -251,7 +250,7 @@
   </div>
 
   <!-- Clear List -->
-  <div class="modal ">
+  <div class="modal  ">
     <div class="modal__main">
       <h2>Clear Children List </h2>
       <p>Are you sure you want to clear the list?</p>
@@ -266,8 +265,8 @@
 
   <!-- Error modal for sir pat -->
 
-  <div class="modal ">
-    <div class="modal__main error">
+  <div class="modal  ">
+    <div class="modal__main error__modal">
       <h2 class="error-msg">System Error!</h2>
       <p>Something went wrong on the system...</p>
       <p>Return error log here</p>
@@ -281,13 +280,12 @@
   </div>
 
   <!-- Spinner modal for sir pat -->
-  <div class="modal  ">
+  <div class="modal loading ">
     <div class="modal__main spinner_modal">
-      <h3>This will not take too long</h3>
-      <svg class="spinner" width="90px" height="90px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+
+      <svg class="spinner" width="60px" height="60px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
         <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
       </svg>
-      <h4><i>Processing...</i></h4>
 
     </div>
   </div>

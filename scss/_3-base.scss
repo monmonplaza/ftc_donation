@@ -53,12 +53,18 @@ body {
   position: relative;
 }
 
-.error-label,
-.error-msg {
-  color: #fc3838;
+.sm_only {
+  display: none;
+  @include media-query(450px) {
+    display: block;
+  }
 }
 
-.error {
-  border: 2px solid #fc3838;
-  background-color: #ffc4c4;
+.form-group {
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    outline: none;
+  }
 }

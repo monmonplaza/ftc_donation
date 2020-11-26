@@ -19,6 +19,20 @@
 }
 
 //Component
+
+.form-group.error {
+  label {
+    color: $error;
+  }
+  input,
+  select,
+  textarea {
+    border: 2px solid $error;
+    background-color: #ffc4c4;
+    color: $error;
+  }
+}
+
 .form-group {
   position: relative;
   margin-bottom: 2rem;
@@ -29,7 +43,7 @@
     font-weight: bold;
   }
 
-  label.error-msg {
+  label {
     color: #fc3838;
   }
 
