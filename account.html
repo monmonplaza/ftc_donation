@@ -36,13 +36,13 @@
           <span class="bar bar-mid"></span>
           <span class="bar bar-bottom"></span>
         </div>
-        <nav>
+        <nav class="">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Contact</a></li>
-            <li class="btn bg-primary"><a href="#"> Donate</a></li>
+            <li ><a href="#" class="btn-cta "> Donate</a></li>
           </ul>
         </nav>
         </div>
@@ -215,12 +215,16 @@
     </footer>
 
 <!-- View Profile -->
-  <div class="modal ">
+  <div class="modal  ">
     <div class="modal__main">
+      <div class="modal__close">X</div>
       <h2>Profile </h2>
       <img src="./images/thumbnail.jpg"  class="child_profile" alt="">
       <h3>Monmon Pogi - <span>6yrs</span></h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ipsam atque impedit aliquam voluptate in reprehenderit laborum ipsum nisi! Nisi eum error porro iure blanditiis odit hic eos maiores numquam maxime consectetur laborum et nulla cupiditate, dolores minima, explicabo earum.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ipsam atque impedit aliquam voluptate in reprehenderit laborum ipsum nisi! Nisi eum error porro iure blanditiis odit hic eos maiores numquam maxime consectetur laborum et nulla cupiditate, dolores minima, explicabo earum.
+
+      </p>
+      <a href="#"> Edit Amount</a>
       <a href="#"> Close</a>
     </div>
   </div>
@@ -228,6 +232,7 @@
   <!-- Edit Profile -->
   <div class="modal ">
     <div class="modal__main modal_profile">
+      <div class="modal__close">X</div>
       <h2>Profile </h2>
         <form action="">
 
@@ -251,6 +256,7 @@
     <!-- Edit Contact -->
     <div class="modal ">
       <div class="modal__main modal_profile">
+        <div class="modal__close">X</div>
         <h2>Contact </h2>
         <form action="">
 
@@ -274,6 +280,7 @@
     <!-- Edit Address -->
     <div class="modal ">
       <div class="modal__main modal_profile">
+        <div class="modal__close">X</div>
         <h2>Contact </h2>
         <form action="">
 
@@ -315,6 +322,7 @@
       <!-- Clear List -->
       <div class="modal  ">
         <div class="modal__main">
+          <div class="modal__close">X</div>
           <h2>Remove Sponsorship</h2>
           <p>Are you sure you want remove this child?</p>
           <div class="modal__main__action">
@@ -326,8 +334,10 @@
 
 
     <!-- Change Password -->
-    <div class="modal show">
+    <div class="modal  ">
+
       <div class="modal__main modal_profile">
+        <div class="modal__close">X</div>
         <h2>Update Password </h2>
         <form action="">
 
@@ -350,7 +360,30 @@
 
 
 
+  <!-- Edit Amount -->
+  <div class="modal  ">
+    <div class="modal__main">
+      <div class="modal__close">X</div>
+      <h2>Edit Donation </h2>
+      <h3>Select new amount</h3>
+      <form action="">
+        <div class="form-group error">
+          <input type="radio" id="dollar-10" value="10" for="dollar-10" name="amount">
+          <label for="dollar-10">$10.00</label><br>
 
+          <input type="radio" id="dollar-20" value="20" for="dollar-20" name="amount">
+          <label for="dollar-20">$20.00</label><br>
+
+          <input type="radio" id="dollar-50" value="50" for="dollar-50" name="amount">
+          <label for="dollar-50">$50.00</label><br>
+
+          <p class="error-msg">Required</p>
+
+        </div>
+        <button>Update</button>
+      </form>
+    </div>
+  </div>
 
 
 

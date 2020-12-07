@@ -1,4 +1,5 @@
 // Use for the my account page
+
 .main-header {
   height: 7rem;
   padding: 1rem 0;
@@ -15,18 +16,64 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    .toggle-menu {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      display: none;
+      cursor: pointer;
+      @include media-query(600px) {
+        display: block;
+      }
+      .bar {
+        width: 3rem;
+        height: 0.4rem;
+        background-color: #3f9cd1;
+        display: block;
+        margin-bottom: 0.4rem;
+      }
+    }
+
     nav {
       align-self: center;
+      @include media-query(600px) {
+        position: fixed;
+        width: 100%;
+        background-color: $light;
+        color: $dark;
+        z-index: 999;
+        left: 120rem;
+        top: 13rem;
+        height: 100vh;
+      }
+
       ul {
         display: flex;
+        @include media-query(600px) {
+          flex-direction: column;
+          align-items: center;
+        }
         li {
           margin-left: 2rem;
+          align-self: center;
+          @include media-query(600px) {
+            padding: 2rem 45%;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          }
           a {
             color: $dark;
             text-decoration: none;
+            @include media-query(600px) {
+              font-size: 2rem;
+            }
           }
         }
       }
+    }
+
+    nav.isShow {
+      left: 0;
     }
   }
 }

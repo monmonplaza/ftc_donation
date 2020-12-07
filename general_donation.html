@@ -40,12 +40,13 @@
             <span class="bar bar-bottom"></span>
           </div>
 
-          <nav>
+          <nav class="">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">News</a></li>
               <li><a href="#">Contact</a></li>
+              <li><a href="#" class="btn-cta ">Donate</a></li>
             </ul>
           </nav>
         </div>
@@ -207,6 +208,7 @@
   <!-- Payment -->
   <div class="modal  ">
     <div class="modal__main">
+      <div class="modal__close">X</div>
       <h2>Card Information</h2>
       <h3>Total Amount <br> <span class="total__value">$30.00</span></h3>
       <form action="">
@@ -228,17 +230,18 @@
   <!-- Edit Amount -->
   <div class="modal ">
     <div class="modal__main">
+      <div class="modal__close">X</div>
       <h2>Edit Donation </h2>
       <h3>Select new amount</h3>
       <form action="">
         <div class="form-group error">
-          <input type="radio" id="dollar-10" value="10" for="dollar-10">
+          <input type="radio" id="dollar-10" value="10" for="dollar-10" name="amount">
           <label for="dollar-10">$10.00</label><br>
 
-          <input type="radio" id="dollar-20" value="20" for="dollar-20">
+          <input type="radio" id="dollar-20" value="20" for="dollar-20" name="amount">
           <label for="dollar-20">$20.00</label><br>
 
-          <input type="radio" id="dollar-50" value="50" for="dollar-50">
+          <input type="radio" id="dollar-50" value="50" for="dollar-50" name="amount">
           <label for="dollar-50">$50.00</label><br>
 
           <p class="error-msg">Required</p>
@@ -252,6 +255,7 @@
   <!-- Clear List -->
   <div class="modal  ">
     <div class="modal__main">
+      <div class="modal__close">X</div>
       <h2>Clear Children List </h2>
       <p>Are you sure you want to clear the list?</p>
       <div class="modal__main__action">
@@ -267,6 +271,7 @@
 
   <div class="modal  ">
     <div class="modal__main error__modal">
+      <div class="modal__close">X</div>
       <h2 class="error-msg">System Error!</h2>
       <p>Something went wrong on the system...</p>
       <p>Return error log here</p>
@@ -294,3 +299,5 @@
 </body>
 
 </html>
+
+ const x = document.querySelector('.madal__main::after').ad

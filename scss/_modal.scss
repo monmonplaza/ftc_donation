@@ -18,7 +18,23 @@
     margin: 1rem;
     padding: 4rem 3rem;
     text-align: center;
-
+    position: relative;
+    .modal__close {
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: $blue;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: $light;
+      cursor: pointer;
+    }
     h2 {
       margin-bottom: 2rem;
       padding: 0 0 1rem 0;
@@ -59,6 +75,9 @@
     input[type="radio"] + label {
       display: inline-block;
     }
+    input[type="radio"] {
+      width: auto;
+    }
 
     button,
     a {
@@ -77,6 +96,12 @@
 
     p {
       margin-bottom: 2rem;
+    }
+    .btn-error {
+      background-color: #fc3838;
+      &:hover {
+        background-color: darken(#fc3838, 20);
+      }
     }
 
     &__action {
