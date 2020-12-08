@@ -33,49 +33,73 @@
         margin-bottom: 0.4rem;
       }
     }
+  }
+}
 
-    nav {
-      align-self: center;
-      @include media-query(600px) {
-        position: fixed;
-        width: 100%;
-        background-color: $light;
-        color: $dark;
-        z-index: 999;
-        left: 120rem;
-        top: 13rem;
-        height: 100vh;
-      }
+nav {
+  align-self: center;
+  @include media-query(600px) {
+    position: fixed;
+    width: 100%;
+    background-color: $light;
+    color: $dark;
+    z-index: 999;
+    left: 120rem;
+    top: 0rem !important;
+    height: 100vh;
+    padding: 4rem 2rem;
 
-      ul {
-        display: flex;
-        @include media-query(600px) {
-          flex-direction: column;
-          align-items: center;
+    .close-menu {
+      position: absolute;
+      right: 3rem;
+      top: 5rem;
+      cursor: pointer;
+      .bar {
+        background-color: $blue;
+        height: 3px;
+        width: 3rem;
+        display: block;
+
+        &:first-child {
+          transform: rotate(45deg) translate(2px, 2px);
         }
-        li {
-          margin-left: 2rem;
-          align-self: center;
-          @include media-query(600px) {
-            padding: 2rem 45%;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          }
-          a {
-            color: $dark;
-            text-decoration: none;
-            @include media-query(600px) {
-              font-size: 2rem;
-            }
-          }
+
+        &:last-child {
+          transform: rotate(-45deg);
         }
       }
-    }
-
-    nav.isShow {
-      left: 0;
     }
   }
+
+  ul {
+    display: flex;
+
+    @include media-query(600px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    li {
+      margin-left: 2rem;
+      align-self: center;
+      @include media-query(600px) {
+        padding: 2rem 45%;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      a {
+        color: $dark;
+        text-decoration: none;
+        @include media-query(600px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+nav.isShow {
+  left: 0;
 }
 
 // end

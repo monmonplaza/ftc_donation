@@ -40,15 +40,25 @@
             <span class="bar bar-bottom"></span>
           </div>
 
-          <nav class="">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#" class="btn-cta ">Donate</a></li>
-            </ul>
-          </nav>
+        <nav class="">
+          <picture class="sm-only">
+            <source srcset="./images/logo_blue_sm.webp" media="(max-width:424px)">
+            <img src="./images/logo_blue.png" alt="FTC logo">
+          </picture>
+
+          <div class="close-menu sm-only">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="btn-cta "> Donate</a></li>
+          </ul>
+        </nav>
         </div>
 
         <div class="main__list">
@@ -111,7 +121,7 @@
             </div>
             <div class="donate__sidebar">
               <div class="donate__sidebar__wrapper">
-                <picture>
+                <picture class="lg_only">
                   <source srcset="./images/logo_blue_sm.webp">
                   <img src="./images/logo_blue_sm.png" alt="FTC logo">
                 </picture>
@@ -264,6 +274,20 @@
 
       </div>
 
+    </div>
+  </div>
+
+  <!-- Success Message -->
+  <div class="modal  ">
+    <div class="modal__main">
+      <div class="modal__close">X</div>
+      <h2 class="text-success">Success</h2>
+      <img src="./images/success.png" alt="success icon">
+      <p>You have successfull updated your information</p>
+      <div class="modal__main__action">
+        <a href="#">Close</a>
+
+      </div>
     </div>
   </div>
 

@@ -38,15 +38,25 @@
             <span class="bar bar-bottom"></span>
           </div>
 
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#" class="btn-cta">Donate</a></li>
-            </ul>
-          </nav>
+  <nav class="">
+    <picture class="sm-only">
+      <source srcset="./images/logo_blue_sm.webp" media="(max-width:424px)">
+      <img src="./images/logo_blue.png" alt="FTC logo">
+    </picture>
+
+    <div class="close-menu sm-only">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="btn-cta "> Donate</a></li>
+    </ul>
+  </nav>
 
         </div>
 
@@ -387,7 +397,6 @@
           <option value="card">Credit Card</option>
         </select>
         <p class="error-msg">Required</p>
-
       </div>
       <button>Sponsor</button>
     </form>

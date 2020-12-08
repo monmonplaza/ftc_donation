@@ -56,7 +56,14 @@ body {
 .sm_only {
   display: none;
   @include media-query(450px) {
-    display: block;
+    display: block !important;
+  }
+}
+
+.lg_only {
+  display: block;
+  @include media-query(450px) {
+    display: none !important;
   }
 }
 
