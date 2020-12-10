@@ -92,7 +92,8 @@
               <li><a href="#"> Profile</a></li>
               <li><a href="#"> Address</a></li>
               <li><a href="#"> Contact</a></li>
-              <li><a href="#">Change Password</a></li>
+              <li><a href="#"> Card</a></li>
+              <li><a href="#"> Password</a></li>
             </ul>
           </div>
         </div>
@@ -344,19 +345,49 @@
         </div>
       </div>
 
-        <!-- Success Message -->
-        <div class="modal  ">
-          <div class="modal__main">
-            <div class="modal__close">X</div>
-            <h2 class="text-success">Success</h2>
-            <img src="./images/success.png" alt="success icon">
-            <p>You have successfull updated your information</p>
-            <div class="modal__main__action">
-              <a href="#">Close</a>
+    <!-- Success Message -->
+    <div class="modal  ">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2 class="text-success">Success</h2>
+        <img src="./images/success.png" alt="success icon">
+        <p>You have successfull updated your information</p>
+        <div class="modal__main__action">
+          <a href="#">Close</a>
 
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Card Input -->
+    <div class="modal show ">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2 >Update Card Details</h2>
+          <form action="">
+            <div class="form-group error">
+              <label for="cc_number">Credit Card</label>
+              <input type="number" name="cc_number">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_expired">Card Expiration</label>
+              <input type="date" name="cc_expired">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_csv">Card CSV</label>
+              <input type="number" name="cc_csv">
+              <p class="error-msg">Required</p>
+            </div>
+
+
+            <button>Update</button>
+          </form>
+      </div>
+    </div>
 
 
     <!-- Change Password -->

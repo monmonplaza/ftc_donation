@@ -45,7 +45,7 @@
             <source srcset="./images/logo_blue_sm.webp" media="(max-width:424px)">
             <img src="./images/logo_blue.png" alt="FTC logo">
           </picture>
-
+<!--
           <div class="close-menu sm-only">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -57,7 +57,7 @@
             <li><a href="#">News</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#" class="btn-cta "> Donate</a></li>
-          </ul>
+          </ul> -->
         </nav>
         </div>
 
@@ -70,32 +70,51 @@
           <div class="main__wrapper">
             <div class="donate__form">
               <form action="">
-                <div class="form-group error">
-                  <label for="designation" class="error-label">Designation</label>
-                  <select name="designation" class="error">
-                    <option value="">Select</option>
-                    <option value="">Option 1</option>
-                    <option value="">Option 2</option>
-                    <option value="">Option 3</option>
-                  </select>
-                  <p class="error-msg">Error Message here</p>
+              <div class="form-group error">
+                <label for="designation" class="error-label">Designation</label>
+                <div class="radio_wrap">
+                  <input type="radio" name="designation" > <span>General Giving</span>
                 </div>
 
+                <div class="radio_wrap">
+                  <input type="radio" name="designation"> <span>Feeding Program </span>
+                </div>
+
+                <p class="error-msg">Error Message here</p>
+              </div>
+
+
+
+
+
+
+
+
                   <div class="form-group error">
-                    <label for="note" class="error-label">Note (Optional)</label>
-                    <textarea name="note" class="error"></textarea>
+                    <label for="frequency" class="error-label">Payment Method</label>
+                    <div class="radio_wrap">
+                      <input type="radio" name="method"> <span>Credit Card</span>
+                    </div>
+
+                    <div class="radio_wrap">
+                      <input type="radio" name="method"> <span>Paypal</span>
+                    </div>
+
                     <p class="error-msg">Error Message here</p>
                   </div>
 
-                  <div class="form-group error">
-                    <label for="frequency" class="error-label">Designation</label>
-                    <select name="frequency" class="error">
-                      <option value="">Select</option>
-                      <option value="">One Time</option>
-                      <option value="">Monthly</option>
-                    </select>
-                    <p class="error-msg">Error Message here</p>
-                  </div>
+                <div class="form-group error">
+                  <label for="frequency" class="error-label">Frequency</label>
+                    <div class="radio_wrap">
+                      <input type="radio" name="frequency"> <span>Monthly</span>
+                    </div>
+
+                    <div class="radio_wrap">
+                      <input type="radio" name="frequency"> <span>One Time</span>
+                    </div>
+
+                  <p class="error-msg">Error Message here</p>
+                </div>
 
 
                   <div class="form-group error">
@@ -105,15 +124,18 @@
                   </div>
 
 
-                  <div class="form-group error">
-                    <label for="method" class="error-label">Payment Method</label>
-                    <select name="method" class="error">
-                      <option value="">Select</option>
-                      <option value="">Credit Card</option>
-                      <option value="">Paypal</option>
-                    </select>
+                  <!-- <div class="form-group error">
+                    <label for="note" class="error-label">Note (Optional)</label>
+                    <textarea name="note" class="error"></textarea>
                     <p class="error-msg">Error Message here</p>
                   </div>
+ -->
+
+
+
+
+
+
                   <div class="form-group">
                     <button class="submit">Donate</button>
                   </div>
@@ -126,15 +148,15 @@
                   <img src="./images/logo_blue_sm.png" alt="FTC logo">
                 </picture>
                 <h4>USA Donor</h4>
-                <p>Write Check to "Philippine Frontline Ministries, Inc and send to:</p>
+                <p>Write Check to Philippine Frontline Ministries, Inc and send to:</p>
                 <p>Philippine Frontline<br> PO Box 208<br>
                   Sandwich, Illinois 60548</p>
 
                 <h4>Canada</h4>
-                <p>Write Check to "Calgary Lighthouse Chruch and send to:</p>
-                <p>0-9827 Horton Road SW<br>
-                  Calgary AB T2V 2X5<br>
-                  403-640-2099</p>
+                <p>Write Check to World Focus Inc and send to:</p>
+                <p>1399 Buffalo Place Winnipeg,<br>
+                  Manitoba Canada,<br>
+                  R3T 1L6</p>
               </div>
             </div>
           </div>
@@ -193,7 +215,7 @@
 
 
             <div class="footer-box">
-              <h3>Partners</h3>
+              <h3>Ministries</h3>
               <ul>
                 <li><a href="#">Frontline Business Solutions</a></li>
                 <li><a href="#">Frontline Worship Center</a></li>
@@ -271,7 +293,6 @@
       <div class="modal__main__action">
         <a href="#">Yes</a>
         <a href="#">No</a>
-
       </div>
 
     </div>
@@ -320,8 +341,39 @@
   </div>
   </div>
 
+
+  <!-- Card Input -->
+  <div class="modal  ">
+    <div class="modal__main">
+      <div class="modal__close">X</div>
+      <h2>Card Details</h2>
+      <form action="">
+        <div class="form-group error">
+          <label for="cc_number">Credit Card</label>
+          <input type="number" name="cc_number">
+          <p class="error-msg">Required</p>
+        </div>
+
+        <div class="form-group error">
+          <label for="cc_expired">Card Expiration</label>
+          <input type="date" name="cc_expired">
+          <p class="error-msg">Required</p>
+        </div>
+
+        <div class="form-group error">
+          <label for="cc_csv">Card CSV</label>
+          <input type="number" name="cc_csv">
+          <p class="error-msg">Required</p>
+        </div>
+
+
+        <button>Proceed</button>
+      </form>
+    </div>
+  </div>
+
+
 </body>
 
 </html>
 
- const x = document.querySelector('.madal__main::after').ad

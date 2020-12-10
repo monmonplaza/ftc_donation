@@ -1,11 +1,12 @@
 .main__wrapper {
   display: flex;
+  max-width: 90rem;
   @include media-query(580px) {
     flex-direction: column;
   }
   .donate__form {
     flex-basis: 60%;
-    padding: 0 3rem 0 0;
+    padding: 0 5rem;
 
     @include media-query(580px) {
       padding: 0 1.5rem;
@@ -21,14 +22,18 @@
 //Component
 
 .form-group.error {
-  label {
-    color: $error;
-  }
+  // label {
+  //   color: $error;
+  // }
   input,
   select,
   textarea {
     border: 2px solid $error;
     background-color: #ffc4c4;
+    color: $error;
+  }
+
+  .radio_wrap {
     color: $error;
   }
 }
@@ -43,8 +48,23 @@
     font-weight: bold;
   }
 
-  label {
-    color: #fc3838;
+  span {
+    color: $dark;
+  }
+  .radio_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  input[type="radio"] {
+    width: unset;
+  }
+
+  input[type="radio"] + span {
+    padding-left: 1rem;
+    align-self: center;
   }
 
   select,
@@ -84,8 +104,9 @@
 
 .donate__sidebar {
   &__wrapper {
-    padding: 0 1.5rem;
+    padding: 0 3rem;
     border-left: 1px solid #ececec;
+
     height: 100%;
     @include media-query(580px) {
       border: none;
