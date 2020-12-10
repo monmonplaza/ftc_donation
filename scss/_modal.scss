@@ -20,6 +20,7 @@
     padding: 4rem 3rem;
     text-align: center;
     position: relative;
+
     .modal__close {
       position: absolute;
       top: -1rem;
@@ -236,13 +237,9 @@ $duration: 2s;
 .modal .form-group.error {
   .error-msg {
     color: $error;
-    right: 50%;
-    transform: translateX(50%);
-    top: 102%;
-  }
+    right: 0%;
 
-  label {
-    color: $error;
+    top: 0px;
   }
 
   label.radio-label {
@@ -256,5 +253,65 @@ $duration: 2s;
     border: 2px solid $error;
     background-color: #ffc4c4;
     color: $error;
+  }
+}
+
+.modal .modal__main.card {
+  max-width: 80rem;
+  width: 70%;
+
+  @include media-query(800px) {
+    width: 90%;
+  }
+
+  @include media-query(420px) {
+    width: 98%;
+    padding: 4rem 1.5rem;
+  }
+  form .flex {
+    display: flex;
+    justify-content: space-between;
+    @include media-query(420px) {
+      flex-direction: column;
+      overflow-y: scroll;
+      height: 600px;
+      padding-right: 2rem;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $blue;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: darken($blue, 10);
+      }
+    }
+    .card__wrap,
+    .card__address {
+      flex-basis: 45%;
+      padding: 1rem;
+      @include media-query(800px) {
+        flex-basis: 50%;
+        padding: 1rem;
+      }
+    }
+
+    .form-group {
+      text-align: left;
+    }
+  }
+  button {
+    max-width: 30rem;
   }
 }

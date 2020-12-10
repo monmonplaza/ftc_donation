@@ -378,18 +378,26 @@
     <h2>Card Information</h2>
     <h3>Total Amount <br> <span class="total__value">$30.00</span></h3>
     <form action="">
+
       <div class="form-group error">
-        <label for="payment_method">Payment Method</label>
-        <select>
-          <option value="">Select</option>
-          <option value="paypal">Paypal</option>
-          <option value="card">Credit Card</option>
-        </select>
-        <p class="error-msg">Required</p>
+        <label for="frequency" class="error-label">Payment Method</label>
+        <div class="radio_wrap">
+          <input type="radio" name="method"><img src="./images/icon_cc.png" alt="cc icon"><span>Credit Card</span>
+        </div>
+
+        <div class="radio_wrap">
+          <input type="radio" name="method"> <img src="./images/icon_paypal.png" alt="paypal icon"> <span>Paypal</span>
+          <p class="error-msg radio">Error Message here</p>
+
+        </div>
+
       </div>
+
       <button>Sponsor</button>
-    </form>
+
   </div>
+  </form>
+</div>
 </div>
 
 <!-- Edit Amount -->
@@ -469,6 +477,99 @@
   </div>
 </div>
 </div>
+
+  <!-- Card Input -->
+  <div class="modal show  ">
+    <div class="modal__main card">
+      <div class="modal__close">X</div>
+      <h2>Card Information</h2>
+      <form action="">
+        <div class="flex">
+          <div class="card__wrap">
+            <h3>Card Details</h3>
+            <div class="form-group error">
+              <label for="cc_fname">First Name</label>
+              <input type="text" name="cc_fname">
+              <p class="error-msg">Required</p>
+            </div>
+            <div class="form-group error">
+              <label for="cc_lname">Last Name</label>
+              <input type="text" name="cc_lname">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_number">Card No.</label>
+              <input type="number" name="cc_number">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_expired_month">Expiration Month</label>
+              <input type="date" name="cc_expired_month">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_expired_month">Expiration Year</label>
+              <input type="date" name="cc_expired_month">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_csv">Security Code</label>
+              <input type="number" name="cc_csv">
+              <p class="error-msg">Required</p>
+            </div>
+          </div>
+          <div class="card__address">
+            <h3>Card Holder Address</h3>
+            <div class="form-group error">
+              <label for="cc_street">Street</label>
+              <input type="text" name="cc_street">
+              <p class="error-msg">Required</p>
+            </div>
+            <div class="form-group error">
+              <label for="cc_address">Address 1</label>
+              <input type="text" name="cc_address">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group ">
+              <label for="cc_address2">Address 2 (Optional)</label>
+              <input type="text" name="cc_address2">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_city">City</label>
+              <input type="text" name="cc_city">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_state">State</label>
+              <input type="text" name="cc_state">
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group error">
+              <label for="cc_zipcode">Zip Code</label>
+              <input type="number" name="cc_zipcode">
+              <p class="error-msg">Required</p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+        <button>Proceed</button>
+      </form>
+    </div>
+  </div>
 
 
 </body>

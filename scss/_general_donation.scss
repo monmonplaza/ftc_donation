@@ -48,6 +48,10 @@
     font-weight: bold;
   }
 
+  img {
+    padding: 0 0.5rem 0 1rem;
+  }
+
   span {
     color: $dark;
   }
@@ -56,6 +60,15 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 1rem;
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  .error-msg.radio {
+    top: 12rem !important;
+    right: 50% !important;
+    transform: translateX(50%);
   }
 
   input[type="radio"] {
