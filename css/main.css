@@ -1191,7 +1191,7 @@ nav.isShow {
 }
 
 .form-group img {
-  padding: 0 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .form-group span {
@@ -1760,4 +1760,4 @@ footer .btn {
 .modal .modal__main.card button {
   max-width: 30rem;
 }
-/*# sourceMappingURL=main.min.css.map */
+/*# sourceMappingURL=main.css.map */
