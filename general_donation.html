@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/main.min.css">
-</head>
+  <body>
+    <div class="login-bar">
+      <ul>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+    </div>
 
-<body>
-  <div class="login-bar">
-    <ul>
-      <li><a href="#">Log in</a> </li>
-      <li><a href="#">My Account</a></li>
-    </ul>
-  </div>
+    <section class="donation">
+      <div class="donation__wrapper">
+        <div class="side__banner">
+          <h1>
+            <span>Giving</span><br />change can<br />
+            make <span>huge change</span>
+          </h1>
+        </div>
 
-  <section class="donation">
-    <div class="donation__wrapper">
-      <div class="side__banner">
-        <h1><span>Giving</span><br>change can<br>
-          make <span>huge change</span></h1>
-      </div>
+        <div class="main">
+          <div class="header">
+            <div class="branding">
+              <picture>
+                <source
+                  srcset="./images/logo_blue_sm.webp"
+                  media="(max-width:424px)"
+                />
+                <source srcset="./images/logo_blue.webp" />
+                <img src="./images/logo_blue.png" alt="FTC logo" />
+              </picture>
+            </div>
 
-      <div class="main">
+            <div class="toggle-menu">
+              <span class="bar bar-top"></span>
+              <span class="bar bar-mid"></span>
+              <span class="bar bar-bottom"></span>
+            </div>
 
-        <div class="header">
-          <div class="branding">
-            <picture>
-              <source srcset="./images/logo_blue_sm.webp" media="(max-width:424px)">
-              <source srcset="./images/logo_blue.webp">
-              <img src="./images/logo_blue.png" alt="FTC logo">
-            </picture>
-          </div>
-
-          <div class="toggle-menu">
-            <span class="bar bar-top"></span>
-            <span class="bar bar-mid"></span>
-            <span class="bar bar-bottom"></span>
-          </div>
-
-        <nav class="">
-          <picture class="sm-only">
-            <source srcset="./images/logo_blue_sm.webp" media="(max-width:424px)">
-            <img src="./images/logo_blue.png" alt="FTC logo">
-          </picture>
-<!--
+            <nav class="">
+              <picture class="sm-only">
+                <source
+                  srcset="./images/logo_blue_sm.webp"
+                  media="(max-width:424px)"
+                />
+                <img src="./images/logo_blue.png" alt="FTC logo" />
+              </picture>
+              <!--
           <div class="close-menu sm-only">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -58,60 +64,71 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#" class="btn-cta "> Donate</a></li>
           </ul> -->
-        </nav>
-        </div>
-
-        <div class="main__list">
-
-          <div class="main__list__header">
-            <h3>Donate Now</h3>
+            </nav>
           </div>
 
-          <div class="main__wrapper">
-            <div class="donate__form">
-              <form action="">
-              <div class="form-group error">
-                <label for="designation" class="error-label">Designation</label>
-                <select name="designation" id="">
-                  <option value="general">General Giving</option>
-                  <option value="feeding">Feeding Program</option>
-                </select>
+          <div class="main__list">
+            <div class="main__list__header">
+              <h3>Donate Now</h3>
+            </div>
 
-                <p class="error-msg">Error Message here</p>
-              </div>
-      <div class="form-group error">
-        <label for="amount" class="error-label">Amount</label>
-        <input type="number" name="amount" placeholder="$0.00" min="0.00" max="10000.00" step="0.01" class="error">
-        <p class="error-msg">Error Message here</p>
-      </div>
+            <div class="main__wrapper">
+              <div class="donate__form">
+                <form action="">
                   <div class="form-group error">
-                    <label for="frequency" class="error-label">Payment Method</label>
+                    <label for="designation" class="error-label"
+                      >Designation</label
+                    >
+                    <select name="designation" id="">
+                      <option value="general">General Giving</option>
+                      <option value="feeding">Feeding Program</option>
+                    </select>
+
+                    <p class="error-msg">Error Message here</p>
+                  </div>
+                  <div class="form-group error">
+                    <label for="amount" class="error-label">Amount</label>
+                    <div class="dollar">
+                      <p class="sign">$</p>
+                      <input type="number" name="amount" class="error" />
+                    </div>
+
+                    <p class="error-msg">Error Message here</p>
+                  </div>
+                  <div class="form-group error">
+                    <label for="frequency" class="error-label"
+                      >Payment Method</label
+                    >
                     <div class="radio_wrap">
-                      <input type="radio" name="method"><img src="./images/icon_cc.png" alt="cc icon"><span>Credit Card</span>
+                      <input type="radio" name="method" /><img
+                        src="./images/icon_cc.png"
+                        alt="cc icon"
+                      /><span>Credit Card</span>
                     </div>
 
                     <div class="radio_wrap">
-                      <input type="radio" name="method"> <img src="./images/icon_paypal.png" alt="paypal icon"> <span>Paypal</span>
+                      <input type="radio" name="method" />
+                      <img src="./images/icon_paypal.png" alt="paypal icon" />
+                      <span>Paypal</span>
                     </div>
 
                     <p class="error-msg">Error Message here</p>
                   </div>
 
-                <div class="form-group error">
-                  <label for="frequency" class="error-label">Frequency</label>
+                  <div class="form-group error">
+                    <label for="frequency" class="error-label">Frequency</label>
                     <div class="radio_wrap">
-                      <input type="radio" name="frequency"> <span>Monthly</span>
+                      <input type="radio" name="frequency" />
+                      <span>Monthly</span>
                     </div>
 
                     <div class="radio_wrap">
-                      <input type="radio" name="frequency"> <span>One Time</span>
+                      <input type="radio" name="frequency" />
+                      <span>One Time</span>
                     </div>
 
-                  <p class="error-msg">Error Message here</p>
-                </div>
-
-
-
+                    <p class="error-msg">Error Message here</p>
+                  </div>
 
                   <!-- <div class="form-group error">
                     <label for="note" class="error-label">Note (Optional)</label>
@@ -120,99 +137,86 @@
                   </div>
  -->
 
-
-
-
-
-
                   <div class="form-group">
                     <button class="submit">Donate</button>
                   </div>
-              </form>
-            </div>
-            <div class="donate__sidebar">
-              <div class="donate__sidebar__wrapper">
-                <picture class="lg_only">
-                  <source srcset="./images/logo_blue_sm.webp">
-                  <img src="./images/logo_blue_sm.png" alt="FTC logo">
-                </picture>
-                <h4>USA Donor</h4>
-                <p>Write Check to Philippine Frontline Ministries, Inc and send to:</p>
-                <p>Philippine Frontline<br> PO Box 208<br>
-                  Sandwich, Illinois 60548</p>
+                </form>
+              </div>
+              <div class="donate__sidebar">
+                <div class="donate__sidebar__wrapper">
+                  <h4>USA Donor</h4>
+                  <p>
+                    Write Check to Philippine Frontline Ministries, Inc and send
+                    to:
+                  </p>
+                  <p>
+                    Philippine Frontline<br />
+                    PO Box 208<br />
+                    Sandwich, Illinois 60548
+                  </p>
 
-                <h4>Canada</h4>
-                <p>Write Check to World Focus Inc and send to:</p>
-                <p>1399 Buffalo Place Winnipeg,<br>
-                  Manitoba Canada,<br>
-                  R3T 1L6</p>
+                  <h4>Canada</h4>
+                  <p>Write Check to World Focus Inc and send to:</p>
+                  <p>
+                    1399 Buffalo Place Winnipeg,<br />
+                    Manitoba Canada,<br />
+                    R3T 1L6
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-
-
+    </section>
 
     <footer>
       <div class="container">
         <div class="footer__wrapper">
-
-            <div class="footer-box">
+          <div class="footer-box">
             <picture>
-              <source srcset="./images/logo_white.webp">
-              <img src="./images/logo_white.png" alt="FTC logo">
+              <source srcset="./images/logo_white.webp" />
+              <img src="./images/logo_white.png" alt="FTC logo" />
             </picture>
-              <p>
-                FTC has been privileged to help hundreds of children, has
-                established several child care facilities, and now provides
-                regular full time care, education, and opportunity for dozens of
-                former street children.
-              </p>
+            <p>
+              FTC has been privileged to help hundreds of children, has
+              established several child care facilities, and now provides
+              regular full time care, education, and opportunity for dozens of
+              former street children.
+            </p>
 
-              <a href="#" class="btn">Donate Now</a>
-            </div>
+            <a href="#" class="btn">Donate Now</a>
+          </div>
 
+          <div class="footer-box">
+            <h3>Social Media</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
 
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Sponsorship</a></li>
+              <li><a href="#">Issue</a></li>
+              <li><a href="#">Strategy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
 
-            <div class="footer-box">
-              <h3>Social Media</h3>
-              <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Youtube</a></li>
-              </ul>
-            </div>
-
-
-
-            <div class="footer-box">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Sponsorship</a></li>
-                <li><a href="#">Issue</a></li>
-                <li><a href="#">Strategy</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-
-
-
-            <div class="footer-box">
-              <h3>Ministries</h3>
-              <ul>
-                <li><a href="#">Frontline Business Solutions</a></li>
-                <li><a href="#">Frontline Worship Center</a></li>
-                <li><a href="#">Frontline Christian Academy</a></li>
-                <li><a href="#">Frontline Threadworks</a></li>
-              </ul>
-            </div>
-
+          <div class="footer-box">
+            <h3>Ministries</h3>
+            <ul>
+              <li><a href="#">Frontline Business Solutions</a></li>
+              <li><a href="#">Frontline Worship Center</a></li>
+              <li><a href="#">Frontline Christian Academy</a></li>
+              <li><a href="#">Frontline Threadworks</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
@@ -220,217 +224,232 @@
     <div class="copyright">
       <div class="container">
         <p>Face The Children - An Opportunity for Life</p>
-        <p>&copy; 2020 Philippine Frontline Ministries </p>
+        <p>&copy; 2020 Philippine Frontline Ministries</p>
       </div>
     </div>
 
+    <!-- Payment -->
+    <div class="modal">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Card Information</h2>
+        <h3>
+          Total Amount <br />
+          <span class="total__value">$30.00</span>
+        </h3>
+        <form action="">
+          <div class="form-group error">
+            <label for="frequency" class="error-label">Payment Method</label>
+            <div class="radio_wrap">
+              <input type="radio" name="method" /><span>Credit Card</span
+              ><img src="./images/icon_cc.png" alt="cc icon" />
+              <img src="./images/icon_visa.png" alt="cc visa icon" /><img
+                src="./images/icon_master.png"
+                alt="cc master icon"
+              /><img src="./images/icon_jcp.png" alt="cc jcp icon" />
+            </div>
 
-
-  <!-- Payment -->
-  <div class="modal show ">
-    <div class="modal__main">
-      <div class="modal__close">X</div>
-      <h2>Card Information</h2>
-      <h3>Total Amount <br> <span class="total__value">$30.00</span></h3>
-      <form action="">
-
-    <div class="form-group error">
-      <label for="frequency" class="error-label">Payment Method</label>
-      <div class="radio_wrap">
-        <input type="radio" name="method"><span>Credit Card</span><img src="./images/icon_cc.png" alt="cc icon"> <img src="./images/icon_visa.png" alt="cc visa icon"><img src="./images/icon_master.png" alt="cc master icon"><img src="./images/icon_jcp.png" alt="cc jcp icon">
-      </div>
-
-      <div class="radio_wrap">
-        <input type="radio" name="method">  <span>Paypal</span><img src="./images/icon_paypal.png" alt="paypal icon">
+            <div class="radio_wrap">
+              <input type="radio" name="method" /> <span>Paypal</span
+              ><img src="./images/icon_paypal.png" alt="paypal icon" />
               <p class="error-msg radio">Error Message here</p>
-
-      </div>
-
-    </div>
-
-        <button>Sponsor</button>
-</form>
-        </div>
-
-    </div>
-
-
-  <!-- Edit Amount -->
-  <div class="modal ">
-    <div class="modal__main">
-      <div class="modal__close">X</div>
-      <h2>Edit Donation </h2>
-      <h3>Select new amount</h3>
-      <form action="">
-        <div class="form-group error">
-          <input type="radio" id="dollar-10" value="10" for="dollar-10" name="amount">
-          <label for="dollar-10">$10.00</label><br>
-
-          <input type="radio" id="dollar-20" value="20" for="dollar-20" name="amount">
-          <label for="dollar-20">$20.00</label><br>
-
-          <input type="radio" id="dollar-50" value="50" for="dollar-50" name="amount">
-          <label for="dollar-50">$50.00</label><br>
-
-          <p class="error-msg">Required</p>
-
-        </div>
-        <button>Update</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Clear List -->
-  <div class="modal  ">
-    <div class="modal__main">
-      <div class="modal__close">X</div>
-      <h2>Clear Children List </h2>
-      <p>Are you sure you want to clear the list?</p>
-      <div class="modal__main__action">
-        <a href="#">Yes</a>
-        <a href="#">No</a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Success Message -->
-  <div class="modal  ">
-    <div class="modal__main">
-      <div class="modal__close">X</div>
-      <h2 class="text-success">Success</h2>
-      <img src="./images/success.png" alt="success icon">
-      <p>You have successfull updated your information</p>
-      <div class="modal__main__action">
-        <a href="#">Close</a>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Error modal for sir pat -->
-
-  <div class="modal  ">
-    <div class="modal__main error__modal">
-      <div class="modal__close">X</div>
-      <h2 class="error-msg">System Error!</h2>
-      <p>Something went wrong on the system...</p>
-      <p>Return error log here</p>
-      <div class="modal__main__action">
-        <a href="#">Close</a>
-
-      </div>
-    </div>
-
-  </div>
-  </div>
-
-  <!-- Spinner modal for sir pat -->
-  <div class="modal loading ">
-    <div class="modal__main spinner_modal">
-
-      <svg class="spinner" width="60px" height="60px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-      </svg>
-
-    </div>
-  </div>
-  </div>
-
-
-  <!-- Card Input -->
-  <div class="modal  ">
-    <div class="modal__main card">
-      <div class="modal__close">X</div>
-      <h2>Card Details</h2>
-      <form action="">
-        <div class="flex">
-          <div class="card__wrap">
-            <div class="form-group error">
-              <label for="cc_fname">First Name</label>
-              <input type="text" name="cc_fname">
-              <p class="error-msg">Required</p>
-            </div>
-            <div class="form-group error">
-              <label for="cc_lname">Last Name</label>
-              <input type="text" name="cc_lname">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_number">Card No.</label>
-              <input type="number" name="cc_number">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_expired_month">Expiration Month</label>
-              <input type="date" name="cc_expired_month">
-              <p class="error-msg">Required</p>
-            </div>
-
-                <div class="form-group error">
-                  <label for="cc_expired_month">Expiration Year</label>
-                  <input type="date" name="cc_expired_month">
-                  <p class="error-msg">Required</p>
-                </div>
-
-            <div class="form-group error">
-              <label for="cc_csv">Security Code</label>
-              <input type="number" name="cc_csv">
-              <p class="error-msg">Required</p>
             </div>
           </div>
-          <div class="card__address">
-            <div class="form-group error">
-              <label for="cc_street">Street</label>
-              <input type="text" name="cc_street">
-              <p class="error-msg">Required</p>
-            </div>
-            <div class="form-group error">
-              <label for="cc_address">Address 1</label>
-              <input type="text" name="cc_address">
-              <p class="error-msg">Required</p>
-            </div>
 
-            <div class="form-group ">
-              <label for="cc_address2">Address 2 (Optional)</label>
-              <input type="text" name="cc_address2">
-              <p class="error-msg">Required</p>
-            </div>
+          <button>Sponsor</button>
+        </form>
+      </div>
+    </div>
 
-            <div class="form-group error">
-              <label for="cc_city">City</label>
-              <input type="text" name="cc_city">
-              <p class="error-msg">Required</p>
-            </div>
+    <!-- Edit Amount -->
+    <div class="modal">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Edit Donation</h2>
+        <h3>Select new amount</h3>
+        <form action="">
+          <div class="form-group error">
+            <input
+              type="radio"
+              id="dollar-10"
+              value="10"
+              for="dollar-10"
+              name="amount"
+            />
+            <label for="dollar-10">$10.00</label><br />
 
-            <div class="form-group error">
-              <label for="cc_state">State</label>
-              <input type="text" name="cc_state">
-              <p class="error-msg">Required</p>
-            </div>
+            <input
+              type="radio"
+              id="dollar-20"
+              value="20"
+              for="dollar-20"
+              name="amount"
+            />
+            <label for="dollar-20">$20.00</label><br />
 
-            <div class="form-group error">
-              <label for="cc_zipcode">Zip Code</label>
-              <input type="number" name="cc_zipcode">
-              <p class="error-msg">Required</p>
-            </div>
+            <input
+              type="radio"
+              id="dollar-50"
+              value="50"
+              for="dollar-50"
+              name="amount"
+            />
+            <label for="dollar-50">$50.00</label><br />
 
+            <p class="error-msg">Required</p>
+          </div>
+          <button>Update</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Clear List -->
+    <div class="modal">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Clear Children List</h2>
+        <p>Are you sure you want to clear the list?</p>
+        <div class="modal__main__action">
+          <a href="#">Yes</a>
+          <a href="#">No</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Message -->
+    <div class="modal">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2 class="text-success">Success</h2>
+        <img src="./images/success.png" alt="success icon" />
+        <p>You have successfull updated your information</p>
+        <div class="modal__main__action">
+          <a href="#">Close</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error modal for sir pat -->
+
+    <div class="modal">
+      <div class="modal__main error__modal">
+        <div class="modal__close">X</div>
+        <h2 class="error-msg">System Error!</h2>
+        <p>Something went wrong on the system...</p>
+        <p>Return error log here</p>
+        <div class="modal__main__action">
+          <a href="#">Close</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spinner modal for sir pat -->
+    <div class="modal loading">
+      <div class="modal__main spinner_modal">
+        <svg
+          class="spinner"
+          width="60px"
+          height="60px"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="path"
+            fill="none"
+            stroke-width="6"
+            stroke-linecap="round"
+            cx="33"
+            cy="33"
+            r="30"
+          ></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Card Input -->
+    <div class="modal show">
+      <div class="modal__main card">
+        <div class="modal__close">X</div>
+        <h2>Card Details</h2>
+        <form action="">
+          <div class="flex">
+            <div class="card__wrap">
+              <div class="form-group error">
+                <label for="cc_fname">First Name</label>
+                <input type="text" name="cc_fname" />
+                <p class="error-msg">Required</p>
+              </div>
+              <div class="form-group error">
+                <label for="cc_lname">Last Name</label>
+                <input type="text" name="cc_lname" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="cc_number">Card No.</label>
+                <input type="number" name="cc_number" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="cc_expired_month">Expiration Month</label>
+                <input type="date" name="cc_expired_month" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="cc_expired_month">Expiration Year</label>
+                <input type="date" name="cc_expired_month" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="cc_csv">Security Code</label>
+                <input type="number" name="cc_csv" />
+                <p class="error-msg">Required</p>
+              </div>
+            </div>
+            <div class="card__address">
+              <div class="form-group error">
+                <label for="cc_street">Street</label>
+                <input type="text" name="cc_street" />
+                <p class="error-msg">Required</p>
+              </div>
+              <div class="form-group error">
+                <label for="cc_address">Address 1</label>
+                <input type="text" name="cc_address" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group">
+                <label for="cc_address2">Address 2 (Optional)</label>
+                <input type="text" name="cc_address2" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="cc_city">City</label>
+                <input type="text" name="cc_city" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="cc_state">State</label>
+                <input type="text" name="cc_state" />
+                <p class="error-msg">Required</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="cc_zipcode">Zip Code</label>
+                <input type="number" name="cc_zipcode" />
+                <p class="error-msg">Required</p>
+              </div>
+            </div>
           </div>
 
-
-        </div>
-
-
-
-        <button>Proceed</button>
-      </form>
+          <button>Proceed</button>
+        </form>
+      </div>
     </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>
-

@@ -1208,11 +1208,29 @@ nav.isShow {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 1rem;
 }
 
 .form-group .radio_wrap img {
   margin-bottom: 0;
+}
+
+.form-group .dollar {
+  position: relative;
+}
+
+.form-group .dollar .sign {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.form-group .dollar input[type="number"],
+.form-group .dollar input[type="number"]::-webkit-outer-spin-button,
+.form-group .dollar input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  padding-left: 2.5rem;
 }
 
 .form-group .error-msg.radio {
