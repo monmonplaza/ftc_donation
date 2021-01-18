@@ -136,7 +136,8 @@
     }
 
     button {
-      @include btn($blue, 100%);
+      @include btn($blue, 150px);
+      width: 150px;
     }
 
     .login__support {

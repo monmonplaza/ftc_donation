@@ -38,6 +38,26 @@
   }
 }
 
+@mixin btn($color, $width) {
+  padding: 1rem 1.4rem;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  max-width: $width;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  background-color: $color;
+  color: #fff;
+}
+
+* {
+  text-decoration: none;
+}
+
 html {
   font-size: $base-size;
   @media screen and (max-width: 450px) {
@@ -87,4 +107,8 @@ body {
   background-color: $blue;
   color: $light !important;
   justify-self: center;
+}
+
+.remove_border {
+  border-bottom: none !important;
 }

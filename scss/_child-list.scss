@@ -24,114 +24,10 @@
 }
 
 .donation {
-  &__wrapper {
-    display: flex;
-    min-height: 100vh;
-  }
-  .side__banner {
-    height: inherit;
-    flex: 0 1 40vw;
-    background: {
-      image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/side_image.jpg");
-      repeat: no-repeat;
-      size: cover;
-      position: center center;
-    }
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    color: $light;
-
-    @include media-query(1070px) {
-      display: none;
-    }
-    h1 {
-      font-size: 5rem;
-      font-family: $font-light;
-      line-height: 1.4;
-      span {
-        font-family: $font-black;
-        font-size: 6.3rem;
-      }
-    }
-  }
-
   .main {
-    flex: 0 1 70vw;
-    @include media-query(1070px) {
-      flex: 0 1 100vw;
-    }
-    .header {
-      padding: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 3rem;
-      position: relative;
-
-      .toggle-menu {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        display: none;
-        cursor: pointer;
-        @include media-query(580px) {
-          display: block;
-        }
-        .bar {
-          width: 3rem;
-          height: 0.4rem;
-          background-color: #3f9cd1;
-          display: block;
-          margin-bottom: 0.4rem;
-        }
-      }
-
-      nav.isShow {
-        left: 0;
-      }
-
-      nav {
-        @include media-query(600px) {
-          height: 100vh;
-          width: 100%;
-          background-color: $light;
-          color: $dark;
-          z-index: 999;
-          left: 120rem;
-          top: 13rem;
-          position: fixed;
-          ul {
-            flex-direction: column;
-            align-items: center;
-            li {
-              padding: 2rem 45%;
-              margin-bottom: 2rem;
-              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-              a {
-                font-size: 2rem;
-              }
-            }
-          }
-        }
-        ul {
-          display: flex;
-          list-style: none;
-
-          li {
-            margin: 0 2rem;
-            align-self: center;
-            a {
-              text-decoration: none;
-              color: $dark;
-            }
-          }
-        }
-      }
-    }
-
     &__list {
+      max-width: 98rem;
+      margin: 0 auto;
       padding: 2rem;
       &__wrapper {
         min-height: 52rem;
@@ -179,6 +75,7 @@
       }
 
       &__action {
+        padding: 1rem 0;
         @include media-query(420px) {
           text-align: right;
         }
@@ -213,6 +110,24 @@
         img {
           @include media-query(420px) {
             width: 100%;
+          }
+        }
+      }
+
+      .select__amount {
+        form {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          @include media-query(420px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .radio__group {
+            margin-right: 1rem;
+            &:first-child {
+              margin-left: 0;
+            }
           }
         }
       }

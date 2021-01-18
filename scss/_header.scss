@@ -1,0 +1,125 @@
+.header {
+  &__log {
+    background-color: $blue;
+    padding: 0.4rem 0;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      li {
+        margin: 0 1rem;
+        a {
+          color: $light;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &__main {
+    height: 7rem;
+    padding: 1rem 0;
+    background-color: $light-1;
+    position: relative;
+    width: 100%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    @include media-query(420px) {
+      padding: 0 1.5rem;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      .branding {
+        @include media-query(420px) {
+          padding-top: 1rem;
+        }
+      }
+      nav.isOpen {
+        left: 0;
+      }
+      nav {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        transition: 0.5s ease;
+        @include media-query(420px) {
+          position: fixed;
+          top: 10rem;
+          left: -100%;
+          width: 100%;
+          height: 100vh;
+          z-index: 6;
+          background-color: $light-1;
+          flex-direction: column;
+          padding: 5rem 3rem;
+          ul {
+            width: 100%;
+            flex-direction: column;
+            li {
+              width: 100%;
+              margin-left: 0;
+              text-align: center;
+              margin-bottom: 2rem;
+              a {
+                width: 100%;
+                height: 100%;
+                padding: 2rem;
+                display: block;
+                font-size: 2rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              }
+            }
+          }
+          .cta {
+            width: 100%;
+            text-align: center;
+            padding: 2rem !important;
+            font-size: 2rem !important;
+            margin: 0 !important;
+          }
+        }
+        .cta {
+          padding: 1rem 1.4rem;
+          display: inline-block;
+          border-radius: 5px;
+          border: none;
+          font-size: 1.4rem;
+          cursor: pointer;
+          background-color: $blue;
+          color: $light;
+          margin-left: 2rem;
+        }
+      }
+      ul {
+        display: flex;
+        li {
+          margin-left: 2rem;
+          a {
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.toggle-menu {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  display: none;
+  cursor: pointer;
+  @include media-query(420px) {
+    display: block;
+  }
+}
+
+.toggle-menu .bar {
+  width: 3rem;
+  height: 0.4rem;
+  background-color: $blue;
+  display: block;
+  margin-bottom: 0.4rem;
+}
