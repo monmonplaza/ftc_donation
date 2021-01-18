@@ -85,7 +85,7 @@
           color: $orange;
 
           &:nth-of-type(1) {
-            color: $gray;
+            color: #404040;
             @include media-query(420px) {
               margin-bottom: 2rem;
             }

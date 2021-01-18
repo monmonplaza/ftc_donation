@@ -607,7 +607,7 @@ nav.isShow {
 }
 
 .donation .main__list__action a:nth-of-type(1) {
-  color: #ccc;
+  color: #404040;
 }
 
 @media screen and (max-width: 420px) {
