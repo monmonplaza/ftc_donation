@@ -80,7 +80,7 @@
 .childlist__list {
   padding: 5rem 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2rem;
 
   @include media-query(980px) {
