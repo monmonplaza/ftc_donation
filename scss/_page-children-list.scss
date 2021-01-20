@@ -4,6 +4,8 @@
     margin-top: 3rem;
     margin-bottom: 6rem;
     @include media-query(890px) {
+      margin-top: 0rem;
+      margin-bottom: 0;
       border-bottom: none;
     }
     ul {
@@ -18,7 +20,7 @@
         @include media-query(890px) {
           text-align: center;
           padding: 1rem;
-          margin-bottom: 2rem;
+          margin-bottom: 0rem;
         }
         &::after {
           content: "";
@@ -29,6 +31,9 @@
           height: 4px;
           background-color: $blue;
           display: none;
+          @include media-query(890px) {
+            height: 2px;
+          }
         }
       }
 
@@ -45,6 +50,9 @@
         color: $darkgray;
         width: 33.3%;
         font-weight: bold;
+        @include media-query(890px) {
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -63,6 +71,9 @@
 
   &__main {
     padding: 2rem 0 8rem;
+    @include media-query(420px) {
+      padding: 1rem 0 8rem;
+    }
   }
 }
 
@@ -106,7 +117,7 @@
           font-size: 1.4rem;
         }
       }
-      button {
+      a.btn-sponsor {
         display: flex;
         background-color: $blue;
         align-self: center;

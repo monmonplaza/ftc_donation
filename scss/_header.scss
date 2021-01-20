@@ -36,9 +36,24 @@
           padding-top: 1rem;
         }
       }
-      nav.isOpen {
-        left: 0;
+
+      .menu-wrapper.isOpen {
+        nav {
+          left: 0;
+        }
+        .toggle-menu {
+          .bar-top {
+            transform: rotate(45deg) translate(7px, 5px);
+          }
+          .bar-mid {
+            opacity: 0;
+          }
+          .bar-bottom {
+            transform: rotate(-45deg) translate(5px, -4px);
+          }
+        }
       }
+
       nav {
         display: flex;
         height: inherit;
