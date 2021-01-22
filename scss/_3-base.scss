@@ -1,23 +1,23 @@
 @font-face {
   font-family: "lato_bold";
-  src: url("../fonts/lato-bold-webfont.woff") format("woff2"),
-    url("../fonts/lato-bold-webfont.woff") format("woff");
+  src: url("./fonts/lato-bold-webfont.woff") format("woff2"),
+    url("./fonts/lato-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "lato_regular";
-  src: url("../fonts/lato-regular-webfont.woff2") format("woff2"),
-    url("../fonts/lato-regular-webfont.woff") format("woff");
+  src: url("./fonts/lato-regular-webfont.woff2") format("woff2"),
+    url("./fonts/lato-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "lato_black";
-  src: url("../fonts/lato-black-webfont.woff2") format("woff2"),
-    url("../fonts/lato-black-webfont.woff") format("woff");
+  src: url("./fonts/lato-black-webfont.woff2") format("woff2"),
+    url("./fonts/lato-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -25,8 +25,8 @@
 
 @font-face {
   font-family: "lato_light";
-  src: url("../fonts/lato-light-webfont.woff2") format("woff2"),
-    url("../fonts/lato-light-webfont.woff") format("woff");
+  src: url("./fonts/lato-light-webfont.woff2") format("woff2"),
+    url("./fonts/lato-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -111,4 +111,25 @@ body {
 
 .remove_border {
   border-bottom: none !important;
+}
+
+.form__group {
+  label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input,
+  select {
+    border: 1px solid $dark-1;
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
+    outline: none;
+  }
+
+  input:focus,
+  select:focus {
+    border: 1px solid $blue;
+  }
 }
