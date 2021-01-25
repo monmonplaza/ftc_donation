@@ -187,6 +187,20 @@ body {
   border-bottom: none !important;
 }
 
+.form__group.error .account-error {
+  display: block;
+  color: #fc3838;
+}
+
+.form__group.error input,
+.form__group.error select {
+  border: 1px solid #fc3838;
+}
+
+.form__group {
+  position: relative;
+}
+
 .form__group label {
   display: block;
   font-size: 1.4rem;
@@ -199,6 +213,13 @@ body {
   padding: 0.8rem 1rem;
   border-radius: 0.8rem;
   outline: none;
+}
+
+.form__group .account-error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
 }
 
 .form__group input:focus,
@@ -1503,7 +1524,7 @@ nav.isShow {
 }
 
 .modal.loading {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .modal.loading .modal__main.spinner_modal {
@@ -1913,8 +1934,8 @@ nav.isShow {
 
 .callToAction {
   min-height: 50rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9))), url("../images/css-img/callToAction.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../images/css-img/callToAction.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9))), url("../images/callToAction.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../images/callToAction.jpg");
   background-position: center center;
   background-size: cover;
   display: -webkit-box;
@@ -2334,8 +2355,7 @@ nav.isShow {
 }
 
 .account__wrapper .account__step .step_one_grid .form__group:nth-child(3),
-.account__wrapper .account__step .step_one_grid .form__group:nth-child(4),
-.account__wrapper .account__step .step_one_grid .form__group:nth-child(5) {
+.account__wrapper .account__step .step_one_grid .form__group:nth-child(4) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 /3;
@@ -2410,5 +2430,36 @@ nav.isShow {
   .account__step.active .wrapper {
     padding: 2rem 1.5rem;
   }
+}
+
+.thank__you {
+  margin: 5rem auto;
+  max-width: 75rem;
+}
+
+.thank__you .wrapper {
+  padding: 4rem 6rem;
+  text-align: center;
+}
+
+.thank__you h2 {
+  margin-bottom: 3rem;
+}
+
+.thank__you a {
+  padding: 1rem 1.4rem;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  max-width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  background-color: #fc9726;
+  color: #fff;
+  margin-top: 4rem;
 }
 /*# sourceMappingURL=main.min.css.map */

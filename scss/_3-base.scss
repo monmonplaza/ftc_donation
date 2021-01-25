@@ -113,7 +113,19 @@ body {
   border-bottom: none !important;
 }
 
+.form__group.error {
+  .account-error {
+    display: block;
+    color: $error;
+  }
+  input,
+  select {
+    border: 1px solid $error;
+  }
+}
+
 .form__group {
+  position: relative;
   label {
     display: block;
     font-size: 1.4rem;
@@ -126,6 +138,13 @@ body {
     padding: 0.8rem 1rem;
     border-radius: 0.8rem;
     outline: none;
+  }
+
+  .account-error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
   }
 
   input:focus,

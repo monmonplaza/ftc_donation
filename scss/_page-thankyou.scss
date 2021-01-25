@@ -1,0 +1,17 @@
+.thank__you {
+  margin: 5rem auto;
+  max-width: 75rem;
+  .wrapper {
+    padding: 4rem 6rem;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  a {
+    @include btn($orange, 150px);
+    margin-top: 4rem;
+  }
+}

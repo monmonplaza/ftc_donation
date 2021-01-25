@@ -71,45 +71,55 @@
               <div class="form__group">
                 <label for="fname">First Name</label>
                 <input type="text" />
+                <small class="account-error">required</small>
               </div>
 
-              <div class="form__group">
+              <div class="form__group ">
                 <label for="lname">Last Name</label>
                 <input type="text" name="lname" />
+                <small class="account-error">required</small>
               </div>
 
-              <div class="form__group">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" />
-              </div>
-
+     
               <div class="form__group">
                 <label for="mobile">Mobile Phone Number</label>
                 <input type="tel" name="mobile" />
+                <small class="account-error">required</small>
+
               </div>
 
               <div class="form__group">
                 <label for="fname">Address</label>
                 <input type="tel" />
+                <small class="account-error">required</small>
+
               </div>
 
               <div class="form__group">
                 <label for="city">City</label>
                 <input type="text" name="city" />
+                <small class="account-error">required</small>
+
               </div>
 
               <div class="form__group">
                 <label for="state">State</label>
                 <input type="text" name="state" />
+                <small class="account-error">required</small>
+
               </div>
 
               <div class="form__group">
                 <label for="zipcode">Zipcode</label>
-                <input type="number" name="zipcode" />
+                <input type="text" name="zipcode" />
+                <small class="account-error">required</small>
+
               </div>
 
               <div class="form__group">
                 <label for="country">Country</label>
+                <small class="account-error">required</small>
+
 
                 <select
                   name="country"
@@ -455,48 +465,41 @@
             </div>
           </div>
 
-          <div class="payment__info account__step">
+          <div class="payment__info account__step active">
             <div class="block__header">
               <h2>Step 2 - Payment Information</h2>
             </div>
             <div class="wrapper step_two_grid">
               <div class="form__group">
                 <label for="ccnumber">Credit Card Number</label>
-                <input type="number" name="ccnumber" />
+                <input type="text" name="ccnumber" />
+                <small class="account-error">required</small>
               </div>
 
               <div class="form__group">
                 <label for="csv">CSV</label>
-                <input type="number" name="csv" />
+                <input type="text" name="csv" />
+                <small class="account-error">required</small>
               </div>
 
               <div class="form__group">
                 <label for="expired-month">Expiration - Month</label>
-                <input type="date" name="expired-month" />
+                <input type="text" name="expired-month" />
+                <small class="account-error">required</small>
               </div>
 
               <div class="form__group">
                 <label for="email">Expiration - Year</label>
-                <select name="expired-year" id="">
-                  <option value="2021">2021</option>
-                  <option value="2022">2022</option>
-                  <option value="2023">2023</option>
-                  <option value="2024">2024</option>
-                  <option value="2025">2025</option>
-                  <option value="2026">2026</option>
-                  <option value="2027">2027</option>
-                  <option value="2028">2028</option>
-                  <option value="2029">2029</option>
-                  <option value="2030">2030</option>
-                </select>
-              </div>
-              <div class="form__group btn-nxt">
-                <button>Next Step</button>
-              </div>
+                <input type="text" name="expired-month" />
+                <small class="account-error">required</small>
+              
+            </div>
+            <div class="form__group btn-nxt">
+              <button>Next Step</button>
             </div>
           </div>
 
-          <div class="login__info account__step">
+          <div class="login__info account__step active">
             <div class="block__header">
               <h2>Step 3 - Login Information</h2>
             </div>
@@ -504,23 +507,20 @@
               <div class="form__group">
                 <label for="user_email">Email Address</label>
                 <input type="email" name="user_email" />
+                <small class="account-error">required</small>
               </div>
 
               <div class="form__group">
                 <label for="password_1">Password</label>
                 <input type="password" name="password_1" />
+                <small class="account-error">required</small>
               </div>
 
               <div class="form__group">
                 <label for="password_2">Re-type Password</label>
                 <input type="password" name="password_2" />
+                <small class="account-error">required</small>
               </div>
-
-              <p class="msg msg-success">
-                We have send you a email to verify your registration. Please
-                check your summited email
-              </p>
-
               <div class="form__group btn-nxt">
                 <button>Continue</button>
               </div>
@@ -529,6 +529,7 @@
         </form>
       </div>
     </div>
+  </div>
 
     <section class="callToAction">
       <div class="wrapper">
@@ -604,5 +605,29 @@
       <p>Face The Children - An Opportunity for Life</p>
       <p>&copy; 2021 Philippine Frontline Ministries</p>
     </div>
+
+
+        <!-- Spinner modal for sir pat -->
+        <div class="modal loading ">
+          <div class="modal__main spinner_modal">
+            <svg
+              class="spinner"
+              width="60px"
+              height="60px"
+              viewBox="0 0 66 66"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                class="path"
+                fill="none"
+                stroke-width="6"
+                stroke-linecap="round"
+                cx="33"
+                cy="33"
+                r="30"
+              ></circle>
+            </svg>
+          </div>
+        </div>
   </body>
 </html>
