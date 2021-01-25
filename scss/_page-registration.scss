@@ -4,6 +4,9 @@
 .account__wrapper {
   max-width: 75rem;
   margin: 0 auto;
+  .account__form {
+    width: 100%;
+  }
 
   .account__step {
     .block__header {
