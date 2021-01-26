@@ -1,6 +1,6 @@
 .main__grid {
   display: grid;
-  grid-template-columns: 30rem auto;
+  grid-template-columns: 23rem auto;
   min-height: 100vh;
 }
 
@@ -21,9 +21,16 @@
     li {
       text-align: left;
       margin-bottom: 2rem;
+
       a {
         color: $light;
         text-transform: capitalize;
+        display: flex;
+        text-align: center;
+        span {
+          display: block;
+          width: 6rem;
+        }
       }
     }
   }
@@ -37,26 +44,49 @@
 .manage__children {
   &__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem;
+    @include media-query(950px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   padding: 3rem;
   &__menu {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid $gray;
     ul {
       display: flex;
       li {
         margin-right: 3rem;
       }
 
-      a {
+      button {
         padding: 2rem 1rem;
         display: inline-block;
         text-transform: uppercase;
         font-weight: bold;
         color: $dark-1;
+        position: relative;
+        cursor: pointer;
+        &:after {
+          content: "";
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background-color: $blue;
+          display: none;
+        }
+      }
+
+      button.active {
+        &::after {
+          display: block;
+        }
       }
     }
 
@@ -66,13 +96,15 @@
       background: transparent;
       color: $blue;
       font-weight: bold;
+      cursor: pointer;
     }
   }
 
   &__gridItem {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 6rem 0 0;
+    padding: 3rem 0 0;
     position: relative;
+    background-color: $light-1;
     .info_menu {
       &_toggle {
         position: absolute;
@@ -83,7 +115,7 @@
           display: block;
           width: 0.6rem;
           height: 0.6rem;
-          background-color: #ccc;
+          background-color: $dark-1;
           border-radius: 50%;
           margin-right: 0.3rem;
         }
@@ -94,37 +126,55 @@
         right: 2rem;
         z-index: 5;
         background-color: $gray;
-        padding: 1.5rem 3rem;
+        max-width: 25rem;
+        width: 10rem;
+        padding: 1rem;
         box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
         li {
           margin-bottom: 1rem;
-          border-bottom: 1px solid #fff;
+          text-align: center;
+          padding: 0.2rem 0;
+          border-bottom: 1px solid darken($gray, 5);
           &:last-child {
             margin-bottom: 0;
+            border: none;
           }
         }
+
         button {
           font-size: 1.4rem;
           border: none;
           background-color: transparent;
+          cursor: pointer;
+          width: 100%;
         }
       }
     }
     .info_child {
       display: flex;
       padding: 0 2rem;
-      img {
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
+      flex-direction: column;
+      justify-content: space-around;
+      .child__thumbnail {
+        text-align: center;
+        img {
+          width: 8rem;
+          height: 8rem;
+          border-radius: 50%;
+        }
       }
+
       ul {
+        margin: 1rem 0;
         li {
           display: flex;
           justify-content: space-between;
           & > * {
             margin: 0rem 2rem;
             margin-bottom: 1rem;
+          }
+          &:first-child {
+            justify-content: center;
           }
         }
       }
@@ -135,13 +185,20 @@
       h3 {
         margin-bottom: 1.5rem;
         font-size: 1.6rem;
+        text-align: center;
       }
       .breakdown {
         display: flex;
         justify-content: space-between;
+        font-weight: bold;
+
+        span:first-child {
+          align-self: center;
+        }
         span:last-child {
           font-weight: bold;
-          color: $success;
+          font-size: 3rem;
+          color: rgb(13, 151, 59);
         }
       }
     }

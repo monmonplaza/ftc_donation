@@ -128,6 +128,12 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 57%;
+  }
+}
+
 @media screen and (max-width: 450px) {
   html {
     font-size: 55%;
@@ -225,6 +231,10 @@ body {
 .form__group input:focus,
 .form__group select:focus {
   border: 1px solid #3f9cd1;
+}
+
+.hide_me {
+  display: none;
 }
 
 .main-header {
@@ -364,7 +374,19 @@ nav.isShow {
   left: 0;
 }
 
-.account__wrapper {
+.account__info {
+  padding: 3rem;
+}
+
+.account__info__block {
+  margin-bottom: 1rem;
+}
+
+.account__info__block h2 {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,35 +395,17 @@ nav.isShow {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 450px) {
-  .account__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.account__info {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  padding: 3rem;
-}
-
-.account__info__block {
-  margin-bottom: 4rem;
-}
-
-.account__info__block h2 {
-  text-transform: uppercase;
-  padding: 2rem 0;
-  border-bottom: 1px solid #e2e2e2;
-  font-size: 3rem;
+.account__info__block button {
+  border: none;
+  background-color: transparent;
+  color: #3f9cd1;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .account__info__block p {
-  padding: 2rem 0;
-  font-size: 2rem;
+  padding: 1rem 0;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -413,6 +417,23 @@ nav.isShow {
   margin-bottom: 1rem;
 }
 
+.account__info__block .info__with__label {
+  margin-bottom: 2rem;
+}
+
+.account__info__block .info__with__label small {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 1;
+}
+
+.account__info__block .info__with__label p {
+  line-height: 1.2;
+  padding: 0;
+}
+
 .account__info__block a {
   text-decoration: none;
   color: #000;
@@ -422,6 +443,24 @@ nav.isShow {
 
 .account__info__block a:hover {
   color: #3f9cd1;
+}
+
+.account__info__block .card__info__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+  .account__info__block .card__info__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .account__sidebar {
@@ -2474,8 +2513,8 @@ nav.isShow {
 .main__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30rem auto;
-      grid-template-columns: 30rem auto;
+  -ms-grid-columns: 23rem auto;
+      grid-template-columns: 23rem auto;
   min-height: 100vh;
 }
 
@@ -2504,6 +2543,15 @@ nav.isShow {
 .sidebar ul li a {
   color: #fff;
   text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.sidebar ul li a span {
+  display: block;
+  width: 6rem;
 }
 
 .sidebar a {
@@ -2518,9 +2566,16 @@ nav.isShow {
 .manage__children__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
+}
+
+@media screen and (max-width: 950px) {
+  .manage__children__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .manage__children__menu {
@@ -2531,6 +2586,8 @@ nav.isShow {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .manage__children__menu ul {
@@ -2543,12 +2600,29 @@ nav.isShow {
   margin-right: 3rem;
 }
 
-.manage__children__menu ul a {
+.manage__children__menu ul button {
   padding: 2rem 1rem;
   display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
   color: #4d4d4d;
+  position: relative;
+  cursor: pointer;
+}
+
+.manage__children__menu ul button:after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #3f9cd1;
+  display: none;
+}
+
+.manage__children__menu ul button.active::after {
+  display: block;
 }
 
 .manage__children__menu button {
@@ -2559,13 +2633,15 @@ nav.isShow {
   background: transparent;
   color: #3f9cd1;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .manage__children__gridItem {
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 6rem 0 0;
+  padding: 3rem 0 0;
   position: relative;
+  background-color: #fafafa;
 }
 
 .manage__children__gridItem .info_menu_toggle {
@@ -2581,7 +2657,7 @@ nav.isShow {
   display: block;
   width: 0.6rem;
   height: 0.6rem;
-  background-color: #ccc;
+  background-color: #4d4d4d;
   border-radius: 50%;
   margin-right: 0.3rem;
 }
@@ -2592,24 +2668,31 @@ nav.isShow {
   right: 2rem;
   z-index: 5;
   background-color: #ccc;
-  padding: 1.5rem 3rem;
+  max-width: 25rem;
+  width: 10rem;
+  padding: 1rem;
   -webkit-box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 .manage__children__gridItem .info_menu ul li {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #fff;
+  text-align: center;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #bfbfbf;
 }
 
 .manage__children__gridItem .info_menu ul li:last-child {
   margin-bottom: 0;
+  border: none;
 }
 
 .manage__children__gridItem .info_menu ul button {
   font-size: 1.4rem;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  width: 100%;
 }
 
 .manage__children__gridItem .info_child {
@@ -2617,12 +2700,26 @@ nav.isShow {
   display: -ms-flexbox;
   display: flex;
   padding: 0 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.manage__children__gridItem .info_child img {
-  width: 6rem;
-  height: 6rem;
+.manage__children__gridItem .info_child .child__thumbnail {
+  text-align: center;
+}
+
+.manage__children__gridItem .info_child .child__thumbnail img {
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
+}
+
+.manage__children__gridItem .info_child ul {
+  margin: 1rem 0;
 }
 
 .manage__children__gridItem .info_child ul li {
@@ -2639,6 +2736,12 @@ nav.isShow {
   margin-bottom: 1rem;
 }
 
+.manage__children__gridItem .info_child ul li:first-child {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .manage__children__gridItem .info_donation {
   padding: 2rem;
   background-color: #ccc;
@@ -2647,6 +2750,7 @@ nav.isShow {
 .manage__children__gridItem .info_donation h3 {
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .manage__children__gridItem .info_donation .breakdown {
@@ -2656,10 +2760,18 @@ nav.isShow {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: bold;
+}
+
+.manage__children__gridItem .info_donation .breakdown span:first-child {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .manage__children__gridItem .info_donation .breakdown span:last-child {
   font-weight: bold;
-  color: #23cc0d;
+  font-size: 3rem;
+  color: #0d973b;
 }
 /*# sourceMappingURL=main.min.css.map */

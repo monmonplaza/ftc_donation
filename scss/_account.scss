@@ -105,28 +105,30 @@ nav.isShow {
 // end
 
 .account {
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    @include media-query(450px) {
-      flex-direction: column;
-    }
-  }
   &__info {
-    flex-basis: 70%;
     padding: 3rem;
     &__block {
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       h2 {
         text-transform: uppercase;
-        padding: 2rem 0;
+        padding: 1rem 0;
         border-bottom: 1px solid #e2e2e2;
-        font-size: 3rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      button {
+        border: none;
+        background-color: transparent;
+        color: $blue;
+        font-size: 1.6rem;
+        font-weight: bold;
       }
 
       p {
-        padding: 2rem 0;
-        font-size: 2rem;
+        padding: 1rem 0;
+        font-size: 1.6rem;
         line-height: 1.6;
       }
 
@@ -134,6 +136,20 @@ nav.isShow {
         padding: 2rem 0;
         li {
           margin-bottom: 1rem;
+        }
+      }
+      .info__with__label {
+        margin-bottom: 2rem;
+        small {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: bold;
+          font-size: 1.2rem;
+          opacity: 1;
+        }
+        p {
+          line-height: 1.2;
+          padding: 0;
         }
       }
 
@@ -144,6 +160,14 @@ nav.isShow {
 
         &:hover {
           color: $blue;
+        }
+      }
+
+      .card__info__flex {
+        display: flex;
+        justify-content: space-between;
+        @include media-query(450px) {
+          flex-direction: column;
         }
       }
     }

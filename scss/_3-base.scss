@@ -60,6 +60,9 @@
 
 html {
   font-size: $base-size;
+  @media screen and (max-width: 950px) {
+    font-size: 57%;
+  }
   @media screen and (max-width: 450px) {
     font-size: 55%;
   }
@@ -151,4 +154,8 @@ body {
   select:focus {
     border: 1px solid $blue;
   }
+}
+
+.hide_me {
+  display: none;
 }
