@@ -2289,42 +2289,46 @@ nav.isShow {
   margin: 0;
 }
 
-.account {
+.account.registration {
   margin: 5rem 0;
 }
 
-.account__wrapper {
+.registration .account__wrapper {
   max-width: 75rem;
   margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.account__wrapper .account__form {
+.registration .account__wrapper form {
   width: 100%;
 }
 
-.account__wrapper .account__step .block__header {
+.registration .account__wrapper .account__step .block__header {
   padding: 1rem;
   background-color: #3f9cd1;
   color: #fff;
   margin-bottom: 0.5rem;
 }
 
-.account__wrapper .account__step .block__header h2 {
+.registration .account__wrapper .account__step .block__header h2 {
   font-size: 1.4rem;
 }
 
-.account__wrapper .account__step .wrapper {
+.registration .account__wrapper .account__step .wrapper {
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
 }
 
-.account__wrapper .account__step .wrapper input,
-.account__wrapper .account__step .wrapper select {
+.registration .account__wrapper .account__step .wrapper input,
+.registration .account__wrapper .account__step .wrapper select {
   width: 100%;
 }
 
-.account__wrapper .account__step .wrapper button {
+.registration .account__wrapper .account__step .wrapper button {
   padding: 1rem 1.4rem;
   display: block;
   border-radius: 5px;
@@ -2343,14 +2347,14 @@ nav.isShow {
 }
 
 @media screen and (max-width: 430px) {
-  .account__wrapper .account__step .wrapper .form__group {
+  .registration .account__wrapper .account__step .wrapper .form__group {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 /3;
   }
 }
 
-.account__wrapper .account__step .step_one_grid {
+.registration .account__wrapper .account__step .step_one_grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
@@ -2358,21 +2362,21 @@ nav.isShow {
       grid-template-columns: 1fr 1fr;
 }
 
-.account__wrapper .account__step .step_one_grid .form__group:nth-child(3),
-.account__wrapper .account__step .step_one_grid .form__group:nth-child(4) {
+.registration .account__wrapper .account__step .step_one_grid .form__group:nth-child(3),
+.registration .account__wrapper .account__step .step_one_grid .form__group:nth-child(4) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 /3;
 }
 
-.account__wrapper .account__step .step_one_grid .form__group:last-child {
+.registration .account__wrapper .account__step .step_one_grid .form__group:last-child {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 /3;
   margin-top: 2rem;
 }
 
-.account__wrapper .account__step .step_two_grid {
+.registration .account__wrapper .account__step .step_two_grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
@@ -2380,13 +2384,13 @@ nav.isShow {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.account__wrapper .account__step .step_two_grid .form__group:nth-child(1) {
+.registration .account__wrapper .account__step .step_two_grid .form__group:nth-child(1) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 /4;
 }
 
-.account__wrapper .account__step .step_two_grid .form__group:last-child {
+.registration .account__wrapper .account__step .step_two_grid .form__group:last-child {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 /4;
@@ -2394,14 +2398,14 @@ nav.isShow {
 }
 
 @media screen and (max-width: 430px) {
-  .account__wrapper .account__step .step_two_grid .form__group {
+  .registration .account__wrapper .account__step .step_two_grid .form__group {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 /4;
   }
 }
 
-.account__wrapper .account__step .step_three_grid {
+.registration .account__wrapper .account__step .step_three_grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
@@ -2410,7 +2414,7 @@ nav.isShow {
 }
 
 @media screen and (max-width: 430px) {
-  .account__wrapper .account__step .step_three_grid .form__group {
+  .registration .account__wrapper .account__step .step_three_grid .form__group {
     -ms-grid-column: 1;
     grid-column: 1 / 1;
   }
@@ -2465,5 +2469,197 @@ nav.isShow {
   background-color: #fc9726;
   color: #fff;
   margin-top: 4rem;
+}
+
+.main__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30rem auto;
+      grid-template-columns: 30rem auto;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #3f9cd1;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+}
+
+.sidebar__profile {
+  margin-bottom: 5rem;
+}
+
+.sidebar__profile img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.sidebar ul li {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.sidebar a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.manage__children {
+  padding: 3rem;
+}
+
+.manage__children__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.manage__children__menu {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.manage__children__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.manage__children__menu ul li {
+  margin-right: 3rem;
+}
+
+.manage__children__menu ul a {
+  padding: 2rem 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+.manage__children__menu button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  background: transparent;
+  color: #3f9cd1;
+  font-weight: bold;
+}
+
+.manage__children__gridItem {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 6rem 0 0;
+  position: relative;
+}
+
+.manage__children__gridItem .info_menu_toggle {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.manage__children__gridItem .info_menu_toggle span {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+
+.manage__children__gridItem .info_menu ul {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 5;
+  background-color: #ccc;
+  padding: 1.5rem 3rem;
+  -webkit-box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage__children__gridItem .info_menu ul li {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.manage__children__gridItem .info_menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.manage__children__gridItem .info_menu ul button {
+  font-size: 1.4rem;
+  border: none;
+  background-color: transparent;
+}
+
+.manage__children__gridItem .info_child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.manage__children__gridItem .info_child img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.manage__children__gridItem .info_child ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.manage__children__gridItem .info_child ul li > * {
+  margin: 0rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.manage__children__gridItem .info_donation {
+  padding: 2rem;
+  background-color: #ccc;
+}
+
+.manage__children__gridItem .info_donation h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.manage__children__gridItem .info_donation .breakdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.manage__children__gridItem .info_donation .breakdown span:last-child {
+  font-weight: bold;
+  color: #23cc0d;
 }
 /*# sourceMappingURL=main.min.css.map */

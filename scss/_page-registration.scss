@@ -1,10 +1,11 @@
-.account {
+.account.registration {
   margin: 5rem 0;
 }
-.account__wrapper {
+.registration .account__wrapper {
   max-width: 75rem;
   margin: 0 auto;
-  .account__form {
+  flex-direction: column;
+  form {
     width: 100%;
   }
 
