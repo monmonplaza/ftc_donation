@@ -395,12 +395,67 @@ nav.isShow {
           justify-content: space-between;
 }
 
+.account__info__block .password__update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.account__info__block .password__update button {
+  padding: 1rem 1.4rem;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  max-width: 25rem;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  background-color: #fc9726;
+  color: #fff;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.account__info__block .password__update button:hover {
+  background-color: #b96303;
+  color: #fff;
+}
+
+.account__info__block .password__update .account-error {
+  position: absolute;
+  top: -2rem;
+  color: #fc3838;
+  display: none;
+}
+
+.account__info__block .password__update .form__group.error .account-error {
+  display: block;
+}
+
+.account__info__block .password__update .form__group.error input {
+  border: 1px solid #fc3838;
+}
+
 .account__info__block button {
   border: none;
   background-color: transparent;
   color: #3f9cd1;
   font-size: 1.6rem;
   font-weight: bold;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.account__info__block button:hover {
+  cursor: pointer;
+  color: #216389;
 }
 
 .account__info__block p {
@@ -1532,6 +1587,18 @@ nav.isShow {
 
 .modal__main__action a:hover {
   background-color: #216389;
+}
+
+.modal.wide .modal__main {
+  max-width: 65rem;
+  width: 100%;
+}
+
+.modal.wide .modal__main form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .return__signin {
@@ -2666,7 +2733,7 @@ nav.isShow {
   position: absolute;
   top: 4rem;
   right: 2rem;
-  z-index: 5;
+  z-index: 0;
   background-color: #ccc;
   max-width: 25rem;
   width: 10rem;

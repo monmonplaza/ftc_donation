@@ -115,13 +115,19 @@
             </div>
 
             <div class="account__info__block">
-              <h2>
-                Update Password <span><button>Edit</button></span>
-              </h2>
+              <h2>Update Password</h2>
               <ul>
                 <li class="info__with__label">
                   <small>Registered Email</small>
-                  <p>ramon.plaza@frontlinebusiness.com.ph</p>
+                  <form action="" class="password__update">
+                    <div class="form__group">
+                      <input type="password" name="password_1" />
+                      <small class="account-error">required</small>
+                    </div>
+                    <div class="form__group">
+                      <button>Send Verification</button>
+                    </div>
+                  </form>
                 </li>
               </ul>
             </div>

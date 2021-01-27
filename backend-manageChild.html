@@ -336,5 +336,48 @@
         </div>
       </div>
     </main>
+
+    <!-- MODAL -->
+
+    <div class="modal wide show">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Edit Profile</h2>
+
+        <form action="">
+          <div class="form__group">
+            <label for="childName">Child Name</label>
+            <input type="text" name="childName" />
+            <small class="account-error">required</small>
+          </div>
+
+          <div class="form__group">
+            <label for="childBirthday">Birthday</label>
+            <input type="date" name="childBirthday" />
+            <small class="account-error">required</small>
+          </div>
+
+          <div class="form__group">
+            <label for="childAge">Age</label>
+            <input type="text" name="childAge" />
+            <small class="account-error">required</small>
+          </div>
+
+          <div class="form__group">
+            <label for="ftcyears">Years at FTC</label>
+            <input type="number" name="ftcyears" />
+            <small class="account-error">required</small>
+          </div>
+          <div class="form__group">
+            <label for="story">Years at FTC</label>
+            <textarea name="story"></textarea>
+            <small class="account-error">required</small>
+          </div>
+          <div class="form__group">
+            <button>Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

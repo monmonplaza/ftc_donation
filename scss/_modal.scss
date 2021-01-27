@@ -137,6 +137,17 @@
   }
 }
 
+.modal.wide {
+  .modal__main {
+    max-width: 65rem;
+    width: 100%;
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
 .return__signin {
   display: block;
   text-decoration: none;
