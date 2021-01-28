@@ -1725,6 +1725,7 @@ nav.isShow {
   background-color: #4d4d4d;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  margin: 0 1rem;
 }
 
 .with__cancel .btn__cancel:hover {
@@ -1735,6 +1736,7 @@ nav.isShow {
   background-color: #3f9cd1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  margin: 0 1rem;
 }
 
 .with__cancel .btn__action:hover {

@@ -210,6 +210,7 @@
   .btn__cancel {
     background-color: $dark-1;
     transition: 0.5s ease;
+    margin: 0 1rem;
     &:hover {
       background-color: darken($dark-1, 20);
     }
@@ -217,6 +218,7 @@
   .btn__action {
     background-color: $blue;
     transition: 0.5s ease;
+    margin: 0 1rem;
     &:hover {
       background-color: darken($blue, 20);
     }
