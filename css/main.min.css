@@ -193,48 +193,54 @@ body {
   border-bottom: none !important;
 }
 
-.form__group.error .account-error {
+.form-group.error .account-error {
   display: block;
   color: #fc3838;
 }
 
-.form__group.error input,
-.form__group.error select {
+.form-group.error input,
+.form-group.error select {
   border: 1px solid #fc3838;
 }
 
-.form__group {
+.form-group {
   position: relative;
 }
 
-.form__group label {
+.form-group label {
   display: block;
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
-.form__group input,
-.form__group select {
+.form-group input,
+.form-group select {
   border: 1px solid #4d4d4d;
   padding: 0.8rem 1rem;
   border-radius: 0.8rem;
   outline: none;
 }
 
-.form__group .account-error {
+.form-group .account-error {
   position: absolute;
   top: 0;
   right: 0;
   display: none;
 }
 
-.form__group input:focus,
-.form__group select:focus {
+.form-group input:focus,
+.form-group select:focus {
   border: 1px solid #3f9cd1;
 }
 
 .hide_me {
   display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .lg-only {
+    display: none !important;
+  }
 }
 
 .main-header {
@@ -405,6 +411,28 @@ nav.isShow {
   position: relative;
 }
 
+.account__info__block .password__update input {
+  width: 35rem;
+}
+
+@media screen and (max-width: 420px) {
+  .account__info__block .password__update {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .account__info__block .password__update .form-group {
+    width: 100%;
+  }
+  .account__info__block .password__update .form-group input {
+    width: 100%;
+  }
+}
+
 .account__info__block .password__update button {
   padding: 1rem 1.4rem;
   display: block;
@@ -421,6 +449,14 @@ nav.isShow {
   color: #fff;
   margin: 0;
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 420px) {
+  .account__info__block .password__update button {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .account__info__block .password__update button:hover {
@@ -565,17 +601,30 @@ nav.isShow {
   padding: 1.5rem 0;
 }
 
-.sponsor__list table a {
+.sponsor__list table button {
   text-decoration: none;
   padding: 0 1rem;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
-.sponsor__list table a:nth-last-of-type(1) {
+.sponsor__list table button:nth-last-of-type(1) {
   color: #fc3838;
 }
 
-.sponsor__list table a:nth-last-of-type(2) {
+.sponsor__list table button:nth-last-of-type(1):hover {
+  color: #cb0303;
+}
+
+.sponsor__list table button:nth-last-of-type(2) {
   color: #3f9cd1;
+}
+
+.sponsor__list table button:nth-last-of-type(2):hover {
+  color: #216389;
 }
 
 @media screen and (max-width: 450px) {
@@ -1485,13 +1534,19 @@ nav.isShow {
   font-weight: bold;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.modal__main .modal__close:hover {
+  background-color: #216389;
 }
 
 .modal__main h2 {
   margin-bottom: 2rem;
   padding: 0 0 1rem 0;
   border-bottom: 1px solid rgba(204, 204, 204, 0.9);
-  color: #3f9cd1;
+  color: #4d4d4d;
   text-transform: uppercase;
 }
 
@@ -1530,6 +1585,14 @@ nav.isShow {
   width: 100%;
   padding: 0.8rem;
   border-radius: 5px;
+  outline: none;
+}
+
+.modal__main textarea {
+  height: 8rem;
+  border: 1px solid #4d4d4d;
+  padding: 0.8rem 1rem;
+  border-radius: 0.8rem;
   outline: none;
 }
 
@@ -1572,6 +1635,11 @@ nav.isShow {
   margin-bottom: 2rem;
 }
 
+.modal__main input,
+.modal__main textarea {
+  width: 100%;
+}
+
 .modal__main__action a {
   padding: 1rem 1.4rem;
   display: block;
@@ -1589,16 +1657,50 @@ nav.isShow {
   background-color: #216389;
 }
 
-.modal.wide .modal__main {
-  max-width: 65rem;
+.modal.profileChild .modal__main {
+  max-width: 55rem;
   width: 100%;
+  margin: 0 1.5rem;
 }
 
-.modal.wide .modal__main form {
+.modal.profileChild .modal__main form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 420px) {
+  .modal.profileChild .modal__main form .form-group {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+.modal.profileChild .modal__main form .form-group:nth-of-type(5) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.modal.profileChild .modal__main form .form-group:last-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.modal.profileChild .modal__main form .form-group:last-child button {
+  width: 15rem;
+}
+
+.modal.profileChild .modal__main form label {
+  text-align: left;
+}
+
+.modal.profileChild .modal__main form input[type="date"] {
+  padding: 0.55rem 1rem;
 }
 
 .return__signin {
@@ -1617,6 +1719,36 @@ nav.isShow {
 .return__signup a {
   text-decoration: none;
   color: #3f9cd1;
+}
+
+.with__cancel .btn__cancel {
+  background-color: #4d4d4d;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.with__cancel .btn__cancel:hover {
+  background-color: #1a1a1a;
+}
+
+.with__cancel .btn__action {
+  background-color: #3f9cd1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.with__cancel .btn__action:hover {
+  background-color: #216389;
+}
+
+.with__cancel .btn--error {
+  background-color: #fc3838;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.with__cancel .btn--error:hover {
+  background-color: #cb0303;
 }
 
 .show {
@@ -1746,7 +1878,8 @@ nav.isShow {
 .modal .form-group.error .error-msg {
   color: #fc3838;
   right: 0%;
-  top: 0px;
+  margin-bottom: 0;
+  top: 10px;
 }
 
 .modal .form-group.error label.radio-label {
@@ -1781,17 +1914,16 @@ nav.isShow {
   }
 }
 
-.modal .modal__main.card form .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.modal .modal__main.card form .card__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1rem;
 }
 
 @media screen and (max-width: 420px) {
-  .modal .modal__main.card form .flex {
+  .modal .modal__main.card form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1803,45 +1935,31 @@ nav.isShow {
     /* Handle */
     /* Handle on hover */
   }
-  .modal .modal__main.card form .flex::-webkit-scrollbar {
+  .modal .modal__main.card form::-webkit-scrollbar {
     width: 10px;
   }
-  .modal .modal__main.card form .flex::-webkit-scrollbar-track {
+  .modal .modal__main.card form::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 5px grey;
             box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   }
-  .modal .modal__main.card form .flex::-webkit-scrollbar-thumb {
+  .modal .modal__main.card form::-webkit-scrollbar-thumb {
     background: #3f9cd1;
     border-radius: 10px;
   }
-  .modal .modal__main.card form .flex::-webkit-scrollbar-thumb:hover {
+  .modal .modal__main.card form::-webkit-scrollbar-thumb:hover {
     background: #2b81b2;
   }
 }
 
-.modal .modal__main.card form .flex .card__wrap,
-.modal .modal__main.card form .flex .card__address {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  padding: 1rem;
-}
-
-@media screen and (max-width: 800px) {
-  .modal .modal__main.card form .flex .card__wrap,
-  .modal .modal__main.card form .flex .card__address {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    padding: 1rem;
-  }
-}
-
-.modal .modal__main.card form .flex .form-group {
+.modal .modal__main.card form .form-group {
   text-align: left;
+  margin: 0;
 }
 
 .modal .modal__main.card button {
-  max-width: 30rem;
+  margin-top: 2rem;
+  max-width: 20rem;
 }
 
 .header__log {
@@ -2585,11 +2703,33 @@ nav.isShow {
   min-height: 100vh;
 }
 
+@media screen and (max-width: 420px) {
+  .main__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .sidebar {
   background-color: #3f9cd1;
   color: #fff;
   padding: 3rem;
   text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .sidebar {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+    -webkit-box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .sidebar__profile {
@@ -2602,9 +2742,25 @@ nav.isShow {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 420px) {
+  .sidebar ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .sidebar ul li {
   text-align: left;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 420px) {
+  .sidebar ul li {
+    margin-bottom: 0;
+    border-left: 2px solid #8fd0f5;
+  }
 }
 
 .sidebar ul li a {
@@ -2616,9 +2772,26 @@ nav.isShow {
   text-align: center;
 }
 
+@media screen and (max-width: 420px) {
+  .sidebar ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.8rem 3.2rem;
+  }
+}
+
 .sidebar ul li a span {
   display: block;
   width: 6rem;
+  font-size: 1rem;
 }
 
 .sidebar a {
@@ -2645,6 +2818,13 @@ nav.isShow {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .manage__children__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .manage__children__menu {
   margin-top: 3rem;
   display: -webkit-box;
@@ -2657,10 +2837,28 @@ nav.isShow {
   border-bottom: 1px solid #ccc;
 }
 
+@media screen and (max-width: 420px) {
+  .manage__children__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .manage__children__menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .manage__children__menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .manage__children__menu ul li {
@@ -2760,6 +2958,10 @@ nav.isShow {
   background-color: transparent;
   cursor: pointer;
   width: 100%;
+}
+
+.manage__children__gridItem .info_menu ul button:hover {
+  color: #fc9726;
 }
 
 .manage__children__gridItem .info_child {

@@ -120,11 +120,15 @@
                 <li class="info__with__label">
                   <small>Registered Email</small>
                   <form action="" class="password__update">
-                    <div class="form__group">
-                      <input type="password" name="password_1" />
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        name="password_1"
+                        class="input-wide"
+                      />
                       <small class="account-error">required</small>
                     </div>
-                    <div class="form__group">
+                    <div class="form-group">
                       <button>Send Verification</button>
                     </div>
                   </form>
@@ -157,8 +161,8 @@
                 <td>Monthly</td>
                 <td>2000</td>
                 <td>
-                  <a href="#" class="action">View</a>
-                  <a href="#" class="action">Remove</a>
+                  <button class="action">View</button>
+                  <button class="action">Remove</button>
                 </td>
               </tr>
 
@@ -168,8 +172,8 @@
                 <td>Monthly</td>
                 <td>1600</td>
                 <td>
-                  <a href="#" class="action">View</a>
-                  <a href="#" class="action">Remove</a>
+                  <button class="action">View</button>
+                  <button class="action">Remove</button>
                 </td>
               </tr>
 
@@ -179,8 +183,8 @@
                 <td>Monthly</td>
                 <td>1600</td>
                 <td>
-                  <a href="#" class="action">View</a>
-                  <a href="#" class="action">Remove</a>
+                  <button class="action">View</button>
+                  <button class="action">Remove</button>
                 </td>
               </tr>
 
@@ -190,8 +194,8 @@
                 <td>Monthly</td>
                 <td>1600</td>
                 <td>
-                  <a href="#" class="action">View</a>
-                  <a href="#" class="action">Remove</a>
+                  <button class="action">View</button>
+                  <button class="action">Remove</button>
                 </td>
               </tr>
             </tbody>
@@ -397,83 +401,47 @@
         <div class="modal__close">X</div>
         <h2>Card Details</h2>
         <form action="">
-          <div class="flex">
-            <div class="card__wrap">
-              <div class="form-group error">
-                <label for="cc_fname">First Name</label>
-                <input type="number" name="cc_fname" />
-                <p class="error-msg">Required</p>
-              </div>
-
-              <div class="form-group error">
-                <label for="cc_lname">Last Name</label>
-                <input type="number" name="cc_lname" />
-                <p class="error-msg">Required</p>
-              </div>
-
-              <div class="form-group error">
-                <label for="cc_number">Card Number</label>
-                <input type="number" name="cc_number" />
-                <p class="error-msg">Required</p>
-              </div>
-
-              <div class="form-group error">
-                <label for="cc_expired_month">Month Expiration</label>
-                <input type="date" name="cc_expired" />
-                <p class="error-msg">Required</p>
-              </div>
-              <div class="form-group error">
-                <label for="cc_expired_year">Year Expiration</label>
-                <input type="date" name="cc_expired" />
-                <p class="error-msg">Required</p>
-              </div>
-
-              <div class="form-group error">
-                <label for="cc_csv">Security Code</label>
-                <input type="number" name="cc_csv" />
-                <p class="error-msg">Required</p>
-              </div>
+          <div class="card__wrap">
+            <div class="form-group error">
+              <label for="cc_fname">First Name</label>
+              <input type="text" name="cc_fname" />
+              <p class="error-msg">Required</p>
             </div>
 
-            <div class="card__address">
-              <div class="form-group error">
-                <label for="street">Street No.</label>
-                <input type="number" name="street" />
-                <p class="error-msg">Required</p>
-              </div>
+            <div class="form-group error">
+              <label for="cc_lname">Last Name</label>
+              <input type="text" name="cc_lname" />
+              <p class="error-msg">Required</p>
+            </div>
 
-              <div class="form-group error">
-                <label for="cc_address">Address</label>
-                <input type="number" name="cc_address" />
-                <p class="error-msg">Required</p>
-              </div>
+            <div class="form-group error">
+              <label for="cc_number">Card Number</label>
+              <input type="text" name="cc_number" />
+              <p class="error-msg">Required</p>
+            </div>
 
-              <div class="form-group">
-                <label for="cc_address2">Address (optional)</label>
-                <input type="number" name="cc_address2" />
-              </div>
+            <div class="form-group error">
+              <label for="cc_expired_month">Month Expiration</label>
+              <input type="text" name="cc_expired" />
+              <p class="error-msg">Required</p>
+            </div>
+            <div class="form-group error">
+              <label for="cc_expired_year">Year Expiration</label>
+              <input type="text" name="cc_expired" />
+              <p class="error-msg">Required</p>
+            </div>
 
-              <div class="form-group error">
-                <label for="cc_city">City</label>
-                <input type="text" name="cc_city" />
-                <p class="error-msg">Required</p>
-              </div>
-
-              <div class="form-group error">
-                <label for="cc_state">State</label>
-                <input type="text" name="cc_state" />
-                <p class="error-msg">Required</p>
-              </div>
-
-              <div class="form-group error">
-                <label for="cc_zip">Zip Code</label>
-                <input type="text" name="cc_zip" />
-                <p class="error-msg">Required</p>
-              </div>
+            <div class="form-group error">
+              <label for="cc_csv">Security Code</label>
+              <input type="text" name="cc_csv" />
+              <p class="error-msg">Required</p>
             </div>
           </div>
 
-          <button>Update</button>
+          <div class="form__group with__cancel">
+            <button class="btn__action">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
         </form>
       </div>
     </div>

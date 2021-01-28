@@ -116,7 +116,7 @@ body {
   border-bottom: none !important;
 }
 
-.form__group.error {
+.form-group.error {
   .account-error {
     display: block;
     color: $error;
@@ -127,8 +127,9 @@ body {
   }
 }
 
-.form__group {
+.form-group {
   position: relative;
+
   label {
     display: block;
     font-size: 1.4rem;
@@ -158,4 +159,10 @@ body {
 
 .hide_me {
   display: none;
+}
+
+.lg-only {
+  @include media-query(420px) {
+    display: none !important;
+  }
 }
