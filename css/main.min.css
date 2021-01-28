@@ -1499,6 +1499,7 @@ nav.isShow {
   display: none;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  z-index: 9999;
 }
 
 .modal__main {

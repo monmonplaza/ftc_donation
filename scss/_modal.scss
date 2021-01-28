@@ -10,6 +10,7 @@
   align-items: center;
   display: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  z-index: 9999;
   &__main {
     border-radius: 5px;
     width: 34rem;
