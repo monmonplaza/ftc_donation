@@ -9,37 +9,49 @@
   <body>
     <header class="header">
       <div class="header__log">
-        <div class="container">
-          <ul>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">My Account</a></li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">My Account</a></li>
+        </ul>
       </div>
       <div class="header__main">
-        <div class="container">
-          <div class="wrapper">
-            <div class="branding">
-              <a href="#">
-                <picture>
-                  <source
-                    srcset="../images/logo_blue_sm.webp"
-                    media="(max-width:420px)"
-                  />
-                  <source
-                    srcset="../images/logo_blue.webp"
-                    media="(min-width:420px)"
-                  />
-                  <img src="../images/logo_blue.png" alt="main logo" />
-                </picture>
-              </a>
+        <div class="wrapper">
+          <div class="branding">
+            <a href="#">
+              <picture>
+                <source
+                  srcset="../images/logo_blue_sm.webp"
+                  media="(max-width:420px)"
+                />
+                <source
+                  srcset="../images/logo_blue.webp"
+                  media="(min-width:420px)"
+                />
+                <img src="../images/logo_blue.png" alt="main logo" />
+              </picture>
+            </a>
+          </div>
+
+          <div class="menu-wrapper">
+            <div class="toggle-menu" id="toggleMenu">
+              <span class="bar bar-top"></span>
+              <span class="bar bar-mid"></span>
+              <span class="bar bar-bottom"></span>
             </div>
-            <div class="menu-wrapper">
-              <div class="toggle-menu" id="toggleMenu">
-                <span class="bar bar-top"></span>
-                <span class="bar bar-mid"></span>
-                <span class="bar bar-bottom"></span>
-              </div>
+
+            <form action="" class="form__search lg-only">
+              <input type="text" />
+              <button>Search</button>
+            </form>
+
+            <div class="nav__wrapper sm-only">
+              <nav class="nav__mobile">
+                <ul>
+                  <li><a href="#">User</a></li>
+                  <li><a href="#">Children</a></li>
+                  <li><a href="#">Donor</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -56,7 +68,7 @@
             <h2>Ramon Plaza</h2>
             <a href="#">Profile</a>
           </div>
-          <ul>
+          <ul class="lg-only">
             <li>
               <a href="#"
                 ><span
@@ -80,6 +92,44 @@
                 /></span>
                 <span class="menu__label">Donor</span></a
               >
+            </li>
+          </ul>
+
+          <ul class="mobile__wrapper">
+            <li><a href="#">Profile</a></li>
+            <li class="mobile__search">
+              <a href="#">Search</a>
+              <div class="popup popup-search">
+                <form action="">
+                  <input type="text" placeholder="Child name..." />
+                  <button>Search</button>
+                </form>
+              </div>
+            </li>
+            <li class="mobile__menu">
+              <a href="#">Menu</a>
+              <ul class="popup popup-menu menuShow">
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-users.png" alt="icon user" />
+                    User</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-children.png" alt="icon user" />
+                    Children</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/icon-donor.png"
+                      alt="icon user"
+                    />Donor</a
+                  >
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -339,7 +389,7 @@
 
     <!-- MODAL -->
 
-    <div class="modal profileChild ">
+    <div class="modal profileChild">
       <div class="modal__main">
         <div class="modal__close">X</div>
         <h2>Edit Profile</h2>

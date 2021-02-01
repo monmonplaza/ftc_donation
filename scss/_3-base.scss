@@ -166,3 +166,10 @@ body {
     display: none !important;
   }
 }
+
+.sm-only {
+  display: none;
+  @include media-query(420px) {
+    display: block;
+  }
+}
