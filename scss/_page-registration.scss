@@ -86,6 +86,10 @@
           grid-column: 1 / 1;
         }
       }
+      .password-mismatch {
+        text-align: center;
+        color: $error;
+      }
     }
   }
 }

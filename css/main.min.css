@@ -223,7 +223,7 @@ body {
 
 .form-group .account-error {
   position: absolute;
-  top: 0;
+  top: 1rem;
   right: 0;
   display: none;
 }
@@ -1770,8 +1770,39 @@ nav.isShow {
   display: flex;
 }
 
+.modal .error__modal {
+  padding: 3rem 0;
+}
+
 .modal .error__modal a {
   background-color: #fc3838;
+}
+
+.modal .error__modal img {
+  margin-bottom: 0;
+}
+
+.modal .error__modal .error-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.modal .error__modal .error-msg span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 1rem;
+  color: #fc3838;
+}
+
+.modal .error__modal p {
+  padding: 0 2rem;
+  margin-bottom: 0;
 }
 
 .modal.loading {
@@ -2661,6 +2692,11 @@ nav.isShow {
   }
 }
 
+.registration .account__wrapper .account__step .step_three_grid .password-mismatch {
+  text-align: center;
+  color: #fc3838;
+}
+
 .account__step .wrapper {
   overflow: hidden;
   max-height: 0;
@@ -2763,8 +2799,8 @@ nav.isShow {
   .sidebar ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -3063,6 +3099,15 @@ nav.isShow {
 
 .mobile__wrapper {
   position: relative;
+  padding: 1rem;
+}
+
+.mobile__wrapper li:first-child {
+  border: none;
+}
+
+.mobile__wrapper li > a img {
+  width: 2rem;
 }
 
 .popup {
@@ -3111,5 +3156,29 @@ nav.isShow {
   border: none;
   margin-bottom: 1rem;
   border-bottom: 1px solid #54a7d6;
+}
+
+.popup-menu.menuShow li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.popup-menu.menuShow li a img {
+  width: 2rem;
+  margin-right: 2rem;
+}
+
+.popup-menu.menuShow li a span {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=main.min.css.map */

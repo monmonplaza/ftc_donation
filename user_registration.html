@@ -525,6 +525,8 @@
                 <input type="password" name="password_2" />
                 <small class="account-error">required</small>
               </div>
+
+              <p class="password-mismatch">Your password is didn't match. Try again! </p>
               <div class="form-group btn-nxt">
                 <button>Continue</button>
               </div>
@@ -631,6 +633,15 @@
                 r="30"
               ></circle>
             </svg>
+          </div>
+        </div>
+
+        <div class="modal show">
+          <div class="modal__main error__modal">
+            <div class="modal__close">X</div>
+            <h2 class="error-msg"><img src="./images/icon-error.png" alt="icon error"> <span>System Error!</span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, sapiente voluptas! Rem veritatis quam, molestiae saepe sit aliquam veniam nostrum?</p>
+            
           </div>
         </div>
   </body>

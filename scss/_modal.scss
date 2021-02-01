@@ -241,8 +241,29 @@
 // THIS STYLE IS FOR MODAL ERROR ONLY
 
 .modal .error__modal {
+  padding: 3rem 0;
   a {
     background-color: #fc3838;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+
+  .error-msg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    span {
+      align-self: center;
+      padding: 0 1rem;
+      color: $error;
+    }
+  }
+
+  p {
+    padding: 0 2rem;
+    margin-bottom: 0;
   }
 }
 

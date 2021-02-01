@@ -32,7 +32,7 @@
   ul {
     @include media-query(420px) {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     li {
       text-align: left;
@@ -245,6 +245,15 @@
 
 .mobile__wrapper {
   position: relative;
+  padding: 1rem;
+  li:first-child {
+    border: none;
+  }
+  li > a {
+    img {
+      width: 2rem;
+    }
+  }
 }
 
 .popup {
@@ -286,6 +295,21 @@
       border: none;
       margin-bottom: 1rem;
       border-bottom: 1px solid lighten($blue, 5);
+      a {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
+        img {
+          width: 2rem;
+          margin-right: 2rem;
+        }
+        span {
+          text-align: left;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      }
     }
   }
 }
