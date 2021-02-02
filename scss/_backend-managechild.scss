@@ -39,7 +39,7 @@
       margin-bottom: 2rem;
       @include media-query(420px) {
         margin-bottom: 0;
-        border-left: 2px solid #8fd0f5;
+        border-left: 1px solid #6fafd4;
       }
       a {
         color: $light;
@@ -54,8 +54,10 @@
         }
 
         img {
-          height: 1.6rem;
-          width: 1.6rem;
+          @include media-query(420px) {
+            width: 2rem;
+            height: 2.2rem;
+          }
         }
         span {
           display: block;
@@ -254,7 +256,10 @@
   li:first-child {
     border: none;
   }
+
   li > a {
+    font-size: 1rem;
+
     img {
       width: 2rem;
     }

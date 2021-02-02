@@ -139,3 +139,26 @@
   display: block;
   margin-bottom: 0.4rem;
 }
+
+.menu-wrapper {
+  align-self: center;
+  .form__search {
+    input {
+      padding: 0.5rem 1.6rem;
+
+      border: 1px solid $darkgray;
+    }
+    button {
+      padding: 0.5rem 1.6rem;
+      font-size: 1.6rem;
+      background-color: $orange;
+      border: none;
+      border: 1px solid $orange;
+      color: $light;
+    }
+  }
+}
+
+.header__main.dashboard .wrapper {
+  padding: 0 2rem;
+}

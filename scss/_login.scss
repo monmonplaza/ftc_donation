@@ -116,7 +116,7 @@
         font-size: 4rem;
         color: $blue;
         margin-bottom: 2rem;
-        font-family: "lato_black";
+        font-family: $font-black;
         line-height: 1;
         @include media-query(780px) {
           font-size: 3rem;

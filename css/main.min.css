@@ -1170,7 +1170,7 @@ nav.isShow {
   font-size: 4rem;
   color: #3f9cd1;
   margin-bottom: 2rem;
-  font-family: "lato_black";
+  font-family: "lato_black", sans-serif;
   line-height: 1;
 }
 
@@ -2186,6 +2186,30 @@ nav.isShow {
   margin-bottom: 0.4rem;
 }
 
+.menu-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu-wrapper .form__search input {
+  padding: 0.5rem 1.6rem;
+  border: 1px solid #929292;
+}
+
+.menu-wrapper .form__search button {
+  padding: 0.5rem 1.6rem;
+  font-size: 1.6rem;
+  background-color: #fc9726;
+  border: none;
+  border: 1px solid #fc9726;
+  color: #fff;
+}
+
+.header__main.dashboard .wrapper {
+  padding: 0 2rem;
+}
+
 .banner {
   padding: 0.5rem 0;
   background-color: #3f9cd1;
@@ -2824,7 +2848,7 @@ nav.isShow {
 @media screen and (max-width: 420px) {
   .sidebar ul li {
     margin-bottom: 0;
-    border-left: 2px solid #8fd0f5;
+    border-left: 1px solid #6fafd4;
   }
 }
 
@@ -2853,9 +2877,11 @@ nav.isShow {
   }
 }
 
-.sidebar ul li a img {
-  height: 1.6rem;
-  width: 1.6rem;
+@media screen and (max-width: 420px) {
+  .sidebar ul li a img {
+    width: 2rem;
+    height: 2.2rem;
+  }
 }
 
 .sidebar ul li a span {
@@ -3120,6 +3146,10 @@ nav.isShow {
 
 .mobile__wrapper li:first-child {
   border: none;
+}
+
+.mobile__wrapper li > a {
+  font-size: 1rem;
 }
 
 .mobile__wrapper li > a img {
