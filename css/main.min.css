@@ -1572,7 +1572,7 @@ nav.isShow {
 }
 
 .modal__main .text-success {
-  color: #23cc0d;
+  color: #50a41e;
 }
 
 .modal__main .text-error {
@@ -2725,10 +2725,16 @@ nav.isShow {
 .thank__you .wrapper {
   padding: 4rem 6rem;
   text-align: center;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .thank__you h2 {
   margin-bottom: 3rem;
+}
+
+.thank__you img {
+  margin-bottom: 2rem;
 }
 
 .thank__you a {
@@ -2743,9 +2749,15 @@ nav.isShow {
   text-align: center;
   text-decoration: none;
   margin-top: 1rem;
-  background-color: #fc9726;
+  background-color: #50a41e;
   color: #fff;
   margin-top: 4rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.thank__you a:hover {
+  background-color: #264e0e;
 }
 
 .main__grid {
@@ -2837,8 +2849,13 @@ nav.isShow {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.8rem 3.2rem;
+    padding: 1rem 0;
   }
+}
+
+.sidebar ul li a img {
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 .sidebar ul li a span {
@@ -3099,7 +3116,6 @@ nav.isShow {
 
 .mobile__wrapper {
   position: relative;
-  padding: 1rem;
 }
 
 .mobile__wrapper li:first-child {

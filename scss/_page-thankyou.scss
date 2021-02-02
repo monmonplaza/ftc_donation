@@ -4,14 +4,22 @@
   .wrapper {
     padding: 4rem 6rem;
     text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   h2 {
     margin-bottom: 3rem;
   }
+  img {
+    margin-bottom: 2rem;
+  }
 
   a {
-    @include btn($orange, 150px);
+    @include btn($success, 150px);
     margin-top: 4rem;
+    transition: 0.5s ease;
+    &:hover {
+      background-color: darken($success, 20);
+    }
   }
 }
