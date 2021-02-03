@@ -1236,6 +1236,24 @@ nav.isShow {
   }
 }
 
+button:disabled {
+  background-color: #7dbce0;
+  cursor: not-allowed !important;
+}
+
+button:disabled:hover {
+  background-color: #7dbce0;
+}
+
+.error-box {
+  padding: 1rem;
+  background-color: #feb6b6;
+  color: #fc3838;
+  font-size: 1.4rem;
+  border: 1px solid #fc3838;
+  margin-top: 2rem;
+}
+
 .main__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1384,7 +1402,7 @@ nav.isShow {
 .form-group .error-msg {
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 3px;
   font-size: 1.4rem;
   color: #fc3838;
 }

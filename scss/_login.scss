@@ -160,3 +160,21 @@
     display: block;
   }
 }
+
+button:disabled {
+  background-color: lighten($blue, 15);
+  cursor: not-allowed !important;
+}
+
+button:disabled:hover {
+  background-color: lighten($blue, 15);
+}
+
+.error-box {
+  padding: 1rem;
+  background-color: lighten($error, 25);
+  color: $error;
+  font-size: 1.4rem;
+  border: 1px solid $error;
+  margin-top: 2rem;
+}
