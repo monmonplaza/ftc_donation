@@ -20,21 +20,18 @@
 }
 
 //Component
-
-.form-group.error {
-  // label {
-  //   color: $error;
-  // }
-  input,
-  select,
-  textarea {
+.form-group {
+  .error-input {
     border: 2px solid $error;
     background-color: #ffc4c4;
-    color: $error;
   }
 
-  .radio_wrap {
-    color: $error;
+  .error-msg {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 1.4rem;
+    color: #fc3838;
   }
 }
 
@@ -43,7 +40,7 @@
   margin-bottom: 2rem;
   label {
     display: block;
-    margin-top: 1rem;
+
     margin-bottom: 1rem;
     font-weight: bold;
   }
@@ -120,14 +117,6 @@
     margin-top: 1rem;
     background-color: #3f9cd1;
     color: #fff;
-  }
-
-  .error-msg {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    font-size: 1.4rem;
-    color: #fc3838;
   }
 }
 

@@ -193,16 +193,6 @@ body {
   border-bottom: none !important;
 }
 
-.form-group.error .account-error {
-  display: block;
-  color: #fc3838;
-}
-
-.form-group.error input,
-.form-group.error select {
-  border: 1px solid #fc3838;
-}
-
 .form-group {
   position: relative;
 }
@@ -1288,15 +1278,16 @@ button:disabled:hover {
       flex-basis: 30%;
 }
 
-.form-group.error input,
-.form-group.error select,
-.form-group.error textarea {
+.form-group .error-input {
   border: 2px solid #fc3838;
   background-color: #ffc4c4;
-  color: #fc3838;
 }
 
-.form-group.error .radio_wrap {
+.form-group .error-msg {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 1.4rem;
   color: #fc3838;
 }
 
@@ -1307,7 +1298,6 @@ button:disabled:hover {
 
 .form-group label {
   display: block;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
@@ -1397,14 +1387,6 @@ button:disabled:hover {
   margin-top: 1rem;
   background-color: #3f9cd1;
   color: #fff;
-}
-
-.form-group .error-msg {
-  position: absolute;
-  right: 0;
-  top: 10px;
-  font-size: 1.4rem;
-  color: #fc3838;
 }
 
 .donate__sidebar__wrapper {
