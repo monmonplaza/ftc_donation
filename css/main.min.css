@@ -1291,6 +1291,11 @@ button:disabled:hover {
   color: #fc3838;
 }
 
+.fa-spin {
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
 .form-group {
   position: relative;
   margin-bottom: 2rem;
