@@ -2038,9 +2038,11 @@ button:disabled:hover {
   margin: 0 1rem;
 }
 
-.header__log ul li a {
-  color: #fff;
+.header__log ul li button {
   font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
 }
 
 .header__main {
