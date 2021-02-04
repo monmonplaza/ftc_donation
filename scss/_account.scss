@@ -359,3 +359,27 @@ nav.isShow {
     }
   }
 }
+
+// Mon 2-4
+
+.donor__dashboard .grid {
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  grid-gap: 2rem;
+  aside {
+    border-right: 1px solid $gray;
+    padding: 2rem 0;
+    margin: 5rem 0;
+    ul li {
+      padding: 1rem 0.5rem;
+      transition: 0.5s ease;
+      &:hover {
+        background-color: $gray;
+        cursor: pointer;
+      }
+      a {
+        color: $dark;
+      }
+    }
+  }
+}

@@ -689,6 +689,35 @@ nav.isShow {
   }
 }
 
+.donor__dashboard .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25rem 1fr;
+      grid-template-columns: 25rem 1fr;
+  grid-gap: 2rem;
+}
+
+.donor__dashboard .grid aside {
+  border-right: 1px solid #ccc;
+  padding: 2rem 0;
+  margin: 5rem 0;
+}
+
+.donor__dashboard .grid aside ul li {
+  padding: 1rem 0.5rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.donor__dashboard .grid aside ul li:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.donor__dashboard .grid aside ul li a {
+  color: #000;
+}
+
 .login-bar {
   padding: 0.5rem 1rem;
   background-color: #3f9cd1;
@@ -1745,13 +1774,6 @@ button:disabled:hover {
 .return__signup a {
   text-decoration: none;
   color: #3f9cd1;
-}
-
-.header_with_icon img {
-  margin-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .with__cancel .btn__cancel {
