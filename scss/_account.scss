@@ -240,6 +240,9 @@ nav.isShow {
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
+    @include media-query(1200px) {
+      padding: 0 1.5rem;
+    }
   }
 
   table {

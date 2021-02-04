@@ -571,6 +571,12 @@ nav.isShow {
   margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .sponsor__list h2 {
+    padding: 0 1.5rem;
+  }
+}
+
 .sponsor__list table {
   width: 100%;
   border-collapse: collapse;
@@ -2039,7 +2045,7 @@ button:disabled:hover {
 
 .header__main {
   height: 7rem;
-  padding: 1rem 0;
+  padding: 1rem 1.5rem;
   background-color: #fafafa;
   position: relative;
   width: 100%;
@@ -2217,9 +2223,9 @@ button:disabled:hover {
 
 .banner {
   padding: 0.5rem 0;
-  background-color: #3f9cd1;
+  background-color: #e4e4e4;
   text-align: center;
-  color: #fff;
+  color: #3f9cd1;
 }
 
 .banner h1 {
