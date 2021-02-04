@@ -211,6 +211,13 @@
   }
 }
 
+.header_with_icon {
+  img {
+    margin-bottom: 0;
+    display: flex;
+  }
+}
+
 .with__cancel {
   .btn__cancel {
     background-color: $dark-1;
