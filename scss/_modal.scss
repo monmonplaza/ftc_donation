@@ -62,6 +62,10 @@
       color: $success;
     }
 
+    .text-blue {
+      color: $blue;
+    }
+
     .text-error {
       color: $error;
     }
@@ -211,7 +215,8 @@
   .btn__cancel {
     background-color: $dark-1;
     transition: 0.5s ease;
-    margin: 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
     &:hover {
       background-color: darken($dark-1, 20);
     }
@@ -219,7 +224,8 @@
   .btn__action {
     background-color: $blue;
     transition: 0.5s ease;
-    margin: 0 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
     &:hover {
       background-color: darken($blue, 20);
     }

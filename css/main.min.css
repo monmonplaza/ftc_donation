@@ -1586,6 +1586,10 @@ button:disabled:hover {
   color: #50a41e;
 }
 
+.modal__main .text-blue {
+  color: #3f9cd1;
+}
+
 .modal__main .text-error {
   color: #fc3838;
 }
@@ -1747,7 +1751,8 @@ button:disabled:hover {
   background-color: #4d4d4d;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  margin: 0 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 .with__cancel .btn__cancel:hover {
@@ -1758,7 +1763,8 @@ button:disabled:hover {
   background-color: #3f9cd1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  margin: 0 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .with__cancel .btn__action:hover {
@@ -2043,6 +2049,11 @@ button:disabled:hover {
   border: none;
   background-color: transparent;
   color: #fff;
+}
+
+.header__log ul li button:hover {
+  cursor: pointer;
+  color: #fc9726;
 }
 
 .header__main {
