@@ -4,32 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__log">
         <div class="container">
-          <ul>
-            <li><button>My Account</button></li>
-            <li><button>Logout</button></li>
-          </ul>
+          <div class="header__donor__dashboard">
+            <img src="../images/logo_white_sm.png" alt="" />
+            <ul>
+              <li><button>Logout</button></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="banner">
+    <!-- <section class="banner">
       <h1>User Profile</h1>
-    </section>
+    </section> -->
     <section class="donor__dashboard">
       <div class="container">
         <div class="grid">
           <aside>
             <ul>
               <li>
-                <a class="active" href="#"
+                <a href="#"
                   ><img
-                    src="./images/icon-profile-dark.png"
+                    src="../images/icon-profile-dark.png"
                     alt="profile icon"
                   />
                   <span>Overview</span></a
@@ -39,16 +41,16 @@
               <li>
                 <a href="#"
                   ><img
-                    src="./images/icon-profile-edit-dark.png"
+                    src="../images/icon-profile-edit-dark.png"
                     alt="profile icon"
                   />
                   <span>Profile</span></a
                 >
               </li>
               <li>
-                <a href="#"
+                <a class="active" href="#"
                   ><img
-                    src="./images/icon-children-dark.png"
+                    src="../images/icon-children-dark.png"
                     alt="profile icon"
                   /><span>Sponsored Child</span></a
                 >
@@ -58,6 +60,7 @@
           <section class="sponsor__list">
             <div class="container">
               <div class="sponsor__list__wrapper">
+                <h1 class="donor__dashboard__header">Children List</h1>
                 <table>
                   <thead>
                     <tr>
@@ -126,7 +129,7 @@
       <div class="modal__main">
         <div class="modal__close">X</div>
         <h2>Profile</h2>
-        <img src="./images/thumbnail.jpg" class="child_profile" alt="" />
+        <img src="../images/thumbnail.jpg" class="child_profile" alt="" />
         <h3>Monmon Pogi - <span>6yrs</span></h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ipsam

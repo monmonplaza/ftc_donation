@@ -1,6 +1,10 @@
 .thank__you {
   margin: 5rem auto;
   max-width: 75rem;
+  min-height: calc(100vh - 25.4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .wrapper {
     padding: 4rem 6rem;
     text-align: center;

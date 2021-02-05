@@ -4,32 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__log">
         <div class="container">
-          <ul>
-            <li><button>My Account</button></li>
-            <li><button>Logout</button></li>
-          </ul>
+          <div class="header__donor__dashboard">
+            <img src="../images/logo_white_sm.png" alt="" />
+            <ul>
+              <li><button>Logout</button></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="banner">
+    <!-- <section class="banner">
       <h1>User Profile</h1>
-    </section>
+    </section> -->
     <section class="donor__dashboard">
       <div class="container">
         <div class="grid">
           <aside>
             <ul>
               <li>
-                <a class="active" href="#"
+                <a href="#"
                   ><img
-                    src="./images/icon-profile-dark.png"
+                    src="../images/icon-profile-dark.png"
                     alt="profile icon"
                   />
                   <span>Overview</span></a
@@ -37,9 +39,9 @@
               </li>
 
               <li>
-                <a href="#"
+                <a class="active" href="#"
                   ><img
-                    src="./images/icon-profile-edit-dark.png"
+                    src="../images/icon-profile-edit-dark.png"
                     alt="profile icon"
                   />
                   <span>Profile</span></a
@@ -48,7 +50,7 @@
               <li>
                 <a href="#"
                   ><img
-                    src="./images/icon-children-dark.png"
+                    src="../images/icon-children-dark.png"
                     alt="profile icon"
                   /><span>Sponsored Child</span></a
                 >
@@ -58,6 +60,7 @@
           <section class="account">
             <div class="account__wrapper">
               <div class="account__info">
+                <h1 class="donor__dashboard__header">User Profile</h1>
                 <div class="account__info__block">
                   <h2>
                     Name <span><button>Edit</button></span>

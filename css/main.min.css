@@ -381,7 +381,7 @@ nav.isShow {
 }
 
 .account__info {
-  padding: 3rem;
+  padding: 0 3rem;
 }
 
 .account__info__block {
@@ -392,7 +392,7 @@ nav.isShow {
   text-transform: uppercase;
   padding: 1rem 0;
   border-bottom: 1px solid #e2e2e2;
-  font-size: 2rem;
+  font-size: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,10 +560,6 @@ nav.isShow {
   padding: 3rem;
 }
 
-.sponsor__list {
-  padding: 1rem 0;
-}
-
 .sponsor__list h2 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -694,7 +690,7 @@ nav.isShow {
   -ms-grid-columns: 20rem 1fr;
       grid-template-columns: 20rem 1fr;
   grid-gap: 2rem;
-  margin: 5rem 0;
+  margin: 2rem 0;
   padding: 0 1.5rem;
   min-height: calc(100vh - 190px);
 }
@@ -708,11 +704,11 @@ nav.isShow {
 
 .donor__dashboard .grid aside {
   border-right: 1px solid #ccc;
-  padding: 2rem 0;
 }
 
 @media screen and (max-width: 420px) {
   .donor__dashboard .grid aside {
+    z-index: 9999;
     padding: 0.8rem 0;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -848,6 +844,12 @@ nav.isShow {
 
 .home__menu__card button:hover {
   color: #216389;
+}
+
+.donor__dashboard__header {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
 .login-bar {
@@ -2395,6 +2397,15 @@ button:disabled:hover {
   padding: 0 2rem;
 }
 
+.header__donor__dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .banner {
   padding: 0.5rem 0;
   background-color: #e4e4e4;
@@ -2407,6 +2418,18 @@ button:disabled:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1;
+}
+
+.banner__thank__you {
+  background-color: #3f9cd1;
+}
+
+.banner__children__info {
+  background-color: transparent;
+}
+
+.banner__children__info h1 {
+  margin-top: 4rem;
 }
 
 .callToAction {
@@ -2556,7 +2579,7 @@ button:disabled:hover {
 .childlist__nav {
   border-bottom: 2px solid #929292;
   margin-top: 3rem;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 890px) {
@@ -2624,7 +2647,7 @@ button:disabled:hover {
 }
 
 .childlist__nav ul a {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #929292;
   width: 33.3%;
   font-weight: bold;
@@ -2929,6 +2952,16 @@ button:disabled:hover {
 .thank__you {
   margin: 5rem auto;
   max-width: 75rem;
+  min-height: calc(100vh - 25.4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .thank__you .wrapper {

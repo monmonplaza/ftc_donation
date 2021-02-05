@@ -106,14 +106,15 @@ nav.isShow {
 
 .account {
   &__info {
-    padding: 3rem;
+    padding: 0 3rem;
+
     &__block {
       margin-bottom: 1rem;
       h2 {
         text-transform: uppercase;
         padding: 1rem 0;
         border-bottom: 1px solid #e2e2e2;
-        font-size: 2rem;
+        font-size: 1.6rem;
         display: flex;
         justify-content: space-between;
       }
@@ -234,8 +235,6 @@ nav.isShow {
 }
 
 .sponsor__list {
-  padding: 1rem 0;
-
   h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -366,7 +365,7 @@ nav.isShow {
   display: grid;
   grid-template-columns: 20rem 1fr;
   grid-gap: 2rem;
-  margin: 5rem 0;
+  margin: 2rem 0;
   padding: 0 1.5rem;
   min-height: calc(100vh - 190px);
   @include media-query(420px) {
@@ -374,8 +373,9 @@ nav.isShow {
   }
   aside {
     border-right: 1px solid $gray;
-    padding: 2rem 0;
+    // padding: 2rem 0;
     @include media-query(420px) {
+      z-index: 9999;
       padding: 0.8rem 0;
       order: 2;
       position: fixed;
@@ -483,4 +483,10 @@ nav.isShow {
       }
     }
   }
+}
+
+.donor__dashboard__header {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
