@@ -16,7 +16,7 @@
           color: #fff;
           &:hover {
             cursor: pointer;
-            color: $orange;
+            color: darken($blue, 30);
           }
         }
       }
