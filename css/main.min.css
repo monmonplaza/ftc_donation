@@ -561,8 +561,7 @@ nav.isShow {
 }
 
 .sponsor__list {
-  padding: 10rem 0;
-  background-color: #f0f0f0;
+  padding: 1rem 0;
 }
 
 .sponsor__list h2 {
@@ -695,12 +694,26 @@ nav.isShow {
   -ms-grid-columns: 25rem 1fr;
       grid-template-columns: 25rem 1fr;
   grid-gap: 2rem;
+  margin: 5rem 0;
+  padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 420px) {
+  .donor__dashboard .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .donor__dashboard .grid aside {
   border-right: 1px solid #ccc;
   padding: 2rem 0;
-  margin: 5rem 0;
+}
+
+@media screen and (max-width: 420px) {
+  .donor__dashboard .grid aside {
+    display: none;
+  }
 }
 
 .donor__dashboard .grid aside ul li {
@@ -716,6 +729,61 @@ nav.isShow {
 
 .donor__dashboard .grid aside ul li a {
   color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.donor__dashboard .grid aside ul li a span {
+  display: block;
+  margin-left: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__menu__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.home__menu__card {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ccc;
+}
+
+.home__menu__card:hover {
+  border: 1px solid #216389;
+}
+
+.home__menu__card img {
+  margin-bottom: 1rem;
+}
+
+.home__menu__card h3 {
+  margin-bottom: 2rem;
+}
+
+.home__menu__card p {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.home__menu__card button {
+  display: block;
+  float: right;
+  border: none;
+  background-color: transparent;
+  color: #3f9cd1;
+  cursor: pointer;
+}
+
+.home__menu__card button:hover {
+  color: #fc9726;
 }
 
 .login-bar {
@@ -2267,7 +2335,7 @@ button:disabled:hover {
   padding: 0.5rem 0;
   background-color: #e4e4e4;
   text-align: center;
-  color: #3f9cd1;
+  color: #000;
 }
 
 .banner h1 {
