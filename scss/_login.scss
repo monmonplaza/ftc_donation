@@ -162,7 +162,7 @@
 }
 
 button:disabled {
-  background-color: lighten($blue, 15);
+  background-color: lighten($blue, 15) !important;
   cursor: not-allowed !important;
 }
 

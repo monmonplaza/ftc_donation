@@ -1425,7 +1425,7 @@ nav.isShow {
 }
 
 button:disabled {
-  background-color: #7dbce0;
+  background-color: #7dbce0 !important;
   cursor: not-allowed !important;
 }
 
