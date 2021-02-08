@@ -178,3 +178,9 @@ button:disabled:hover {
   border: 1px solid $error;
   margin-top: 2rem;
 }
+
+.password-mismatch {
+  text-align: center;
+  color: $error;
+  display: block;
+}

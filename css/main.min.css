@@ -1442,6 +1442,12 @@ button:disabled:hover {
   margin-top: 2rem;
 }
 
+.password-mismatch {
+  text-align: center;
+  color: #fc3838;
+  display: block;
+}
+
 .main__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
