@@ -83,12 +83,21 @@
           display: inline-block;
           margin-left: 2rem;
           color: $orange;
+          transition: 0.5s ease;
+          &:hover {
+            color: darken($orange, 20);
+          }
         }
         button {
           border: none;
           color: #404040;
           font-weight: bold;
           background-color: transparent;
+          transition: 0.5s ease;
+          cursor: pointer;
+          &:hover {
+            color: darken($dark, 20);
+          }
         }
       }
     }
@@ -162,6 +171,12 @@
                 border: none;
                 background: transparent;
                 color: $dark;
+                cursor: pointer;
+                color: $error;
+                transition: 0.5s ease;
+                &:hover {
+                  color: darken($error, 20);
+                }
               }
             }
           }
@@ -206,6 +221,12 @@
           text-decoration: none;
           background-color: $blue;
           color: $light;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.5s ease;
+          &:hover {
+            background-color: darken($blue, 20);
+          }
         }
       }
     }

@@ -9,11 +9,13 @@
 
       li {
         margin: 0 1rem;
-        button {
+        button,
+        a {
           font-size: 1.2rem;
           border: none;
           background-color: transparent;
           color: #fff;
+          transition: 0.2s ease;
           &:hover {
             cursor: pointer;
             color: darken($blue, 30);
@@ -112,6 +114,10 @@
           background-color: $blue;
           color: $light;
           margin-left: 2rem;
+          transition: 0.5s ease;
+          &:hover {
+            background-color: darken($blue, 20);
+          }
         }
       }
       ul {

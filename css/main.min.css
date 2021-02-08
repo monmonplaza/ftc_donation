@@ -956,6 +956,12 @@ nav.isShow {
   display: inline-block;
   margin-left: 2rem;
   color: #fc9726;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.donation .main__list__action a:hover {
+  color: #b96303;
 }
 
 .donation .main__list__action button {
@@ -963,6 +969,13 @@ nav.isShow {
   color: #404040;
   font-weight: bold;
   background-color: transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.donation .main__list__action button:hover {
+  color: black;
 }
 
 .donation .main__list__item {
@@ -1094,6 +1107,14 @@ nav.isShow {
   border: none;
   background: transparent;
   color: #000;
+  cursor: pointer;
+  color: #fc3838;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.donation .main__list__item .wrapper .details .details__name .actions ul li button:hover {
+  color: #cb0303;
 }
 
 .donation .main__list__item .wrapper .details .details__amount {
@@ -1147,6 +1168,14 @@ nav.isShow {
   text-decoration: none;
   background-color: #3f9cd1;
   color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.donation .main .list__total__btns button:hover {
+  background-color: #216389;
 }
 
 .main__login {
@@ -2221,14 +2250,18 @@ button:disabled:hover {
   margin: 0 1rem;
 }
 
-.header__log ul li button {
+.header__log ul li button,
+.header__log ul li a {
   font-size: 1.2rem;
   border: none;
   background-color: transparent;
   color: #fff;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
-.header__log ul li button:hover {
+.header__log ul li button:hover,
+.header__log ul li a:hover {
   cursor: pointer;
   color: #174660;
 }
@@ -2349,6 +2382,12 @@ button:disabled:hover {
   background-color: #3f9cd1;
   color: #fff;
   margin-left: 2rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header__main .wrapper nav .cta:hover {
+  background-color: #216389;
 }
 
 .header__main .wrapper ul {
@@ -2571,9 +2610,11 @@ button:disabled:hover {
   color: green;
 }
 
-.child__single__gridItem button.btn {
+.child__single__gridItem a.btn {
   background-color: #fc9726;
   color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   padding: 1rem 1.4rem;
   display: block;
   border-radius: 5px;
@@ -2588,6 +2629,10 @@ button:disabled:hover {
   background-color: #fc9726;
   color: #fff;
   margin: 2rem 0;
+}
+
+.child__single__gridItem a.btn:hover {
+  background-color: #b96303;
 }
 
 .childlist__nav {

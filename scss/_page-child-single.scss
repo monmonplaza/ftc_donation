@@ -50,10 +50,13 @@
       color: green;
     }
 
-    button.btn {
+    a.btn {
       background-color: $orange;
       color: $light;
-
+      transition: 0.5s ease;
+      &:hover {
+        background-color: darken($orange, 20);
+      }
       @include btn($orange, 150px);
       margin: 2rem 0;
     }
