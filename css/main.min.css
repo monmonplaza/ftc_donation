@@ -1910,6 +1910,11 @@ button:disabled:hover {
   color: #3f9cd1;
 }
 
+.with__cancel button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .with__cancel .btn__cancel {
   background-color: #4d4d4d;
   -webkit-transition: 0.5s ease;
@@ -2184,6 +2189,15 @@ button:disabled:hover {
 .modal .modal__main.card button {
   margin-top: 2rem;
   max-width: 20rem;
+}
+
+.modal .modal_profile label {
+  display: block;
+  text-align: left;
+}
+
+.modal .modal_profile .error-msg {
+  top: 0 !important;
 }
 
 .header__log {

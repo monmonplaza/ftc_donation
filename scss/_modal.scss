@@ -212,11 +212,16 @@
 }
 
 .with__cancel {
+  button {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
   .btn__cancel {
     background-color: $dark-1;
     transition: 0.5s ease;
     margin-bottom: 1rem;
     margin-top: 0;
+
     &:hover {
       background-color: darken($dark-1, 20);
     }
@@ -418,5 +423,15 @@ $duration: 2s;
   button {
     margin-top: 2rem;
     max-width: 20rem;
+  }
+}
+
+.modal .modal_profile {
+  label {
+    display: block;
+    text-align: left;
+  }
+  .error-msg {
+    top: 0 !important;
   }
 }
