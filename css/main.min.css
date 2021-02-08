@@ -830,7 +830,7 @@ nav.isShow {
   font-size: 1.4rem;
 }
 
-.home__menu__card button {
+.home__menu__card a {
   display: block;
   float: right;
   border: none;
@@ -842,7 +842,7 @@ nav.isShow {
   font-weight: bold;
 }
 
-.home__menu__card button:hover {
+.home__menu__card a:hover {
   color: #216389;
 }
 
