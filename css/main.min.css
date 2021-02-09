@@ -345,6 +345,23 @@ form .form__group.with__cancel {
   }
 }
 
+.form-group .error-input {
+  border: 1px solid #fc3838;
+  background-color: #ffc4c4;
+}
+
+.form-group .error-msg {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 1.4rem;
+  color: #fc3838;
+}
+
+.card .form-group .error-msg {
+  top: 10px;
+}
+
 .main-header {
   height: 7rem;
   padding: 1rem 0;
@@ -1584,19 +1601,6 @@ button:disabled:hover {
       flex-basis: 30%;
 }
 
-.form-group .error-input {
-  border: 1px solid #fc3838;
-  background-color: #ffc4c4;
-}
-
-.form-group .error-msg {
-  position: absolute;
-  right: 0;
-  top: 0px;
-  font-size: 1.4rem;
-  color: #fc3838;
-}
-
 .fa-spin {
   display: inline-block;
   margin-left: 0.6rem;
@@ -2174,27 +2178,6 @@ button:disabled:hover {
     -webkit-transform: rotate(450deg);
             transform: rotate(450deg);
   }
-}
-
-.modal .form-group.error .error-msg {
-  color: #fc3838;
-  right: 0%;
-  margin-bottom: 0;
-  top: 10px;
-}
-
-.modal .form-group.error label.radio-label {
-  color: #000;
-}
-
-.modal .form-group.error select,
-.modal .form-group.error input[type="text"],
-.modal .form-group.error input[type="email"],
-.modal .form-group.error input[type="number"],
-.modal .form-group.error textarea {
-  border: 1px solid #fc3838;
-  background-color: #ffc4c4;
-  color: #fc3838;
 }
 
 .modal .modal__main.card {

@@ -19,22 +19,6 @@
   }
 }
 
-//Component
-.form-group {
-  .error-input {
-    border: 1px solid $error;
-    background-color: #ffc4c4;
-  }
-
-  .error-msg {
-    position: absolute;
-    right: 0;
-    top: 0px;
-    font-size: 1.4rem;
-    color: #fc3838;
-  }
-}
-
 .fa-spin {
   display: inline-block;
   margin-left: 0.6rem;

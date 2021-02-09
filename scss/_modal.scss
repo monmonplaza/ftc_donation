@@ -377,27 +377,6 @@ $duration: 2s;
 }
 
 //ERROR STYLE ON MODAL
-.modal .form-group.error {
-  .error-msg {
-    color: $error;
-    right: 0%;
-    margin-bottom: 0;
-    top: 10px;
-  }
-
-  label.radio-label {
-    color: $dark;
-  }
-  select,
-  input[type="text"],
-  input[type="email"],
-  input[type="number"],
-  textarea {
-    border: 1px solid $error;
-    background-color: #ffc4c4;
-    color: $error;
-  }
-}
 
 .modal .modal__main.card {
   max-width: 80rem;
