@@ -168,12 +168,114 @@ body {
   }
 }
 
+form .form__group.with__cancel {
+  margin-top: 2rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.form-group img {
+  padding: 0 0.5rem;
+}
+
+.form-group span {
+  color: #000;
+}
+
+.form-group .radio_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form-group .radio_wrap img {
+  margin-bottom: 0;
+}
+
+.form-group .dollar {
+  position: relative;
+}
+
+.form-group .dollar .sign {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.form-group .dollar input[type="number"],
+.form-group .dollar input[type="number"]::-webkit-outer-spin-button,
+.form-group .dollar input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  padding-left: 2.5rem;
+}
+
+.form-group .error-msg.radio {
+  top: 12rem !important;
+  right: 50% !important;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.form-group input[type="radio"] {
+  width: unset;
+}
+
+.form-group input[type="radio"] + span {
+  padding-left: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form-group select,
+.form-group input[type="number"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 15rem;
+}
+
+.form-group button.submit {
+  padding: 1rem 1.4rem;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #3f9cd1;
+  color: #fff;
+}
+
 .form-group input {
   width: 100%;
   padding: 0.8rem;
   border-radius: 5px;
   outline: none;
-  height: 4rem;
+  height: 3.5rem;
 }
 
 .btn-cta {
@@ -206,7 +308,7 @@ body {
 .form-group input,
 .form-group select {
   border: 1px solid #4d4d4d;
-  padding: 0.8rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 0.8rem;
   outline: none;
 }
@@ -1500,104 +1602,6 @@ button:disabled:hover {
   margin-left: 0.6rem;
 }
 
-.form-group {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.form-group img {
-  padding: 0 0.5rem;
-}
-
-.form-group span {
-  color: #000;
-}
-
-.form-group .radio_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.form-group .radio_wrap img {
-  margin-bottom: 0;
-}
-
-.form-group .dollar {
-  position: relative;
-}
-
-.form-group .dollar .sign {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.form-group .dollar input[type="number"],
-.form-group .dollar input[type="number"]::-webkit-outer-spin-button,
-.form-group .dollar input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  padding-left: 2.5rem;
-}
-
-.form-group .error-msg.radio {
-  top: 12rem !important;
-  right: 50% !important;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-}
-
-.form-group input[type="radio"] {
-  width: unset;
-}
-
-.form-group input[type="radio"] + span {
-  padding-left: 1rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.form-group select,
-.form-group input[type="number"],
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border-radius: 5px;
-  outline: none;
-}
-
-.form-group textarea {
-  min-height: 15rem;
-}
-
-.form-group button.submit {
-  padding: 1rem 1.4rem;
-  display: inline-block;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 1rem;
-  background-color: #3f9cd1;
-  color: #fff;
-}
-
 .donate__sidebar__wrapper {
   padding: 0 3rem;
   border-left: 1px solid #ececec;
@@ -1728,7 +1732,7 @@ button:disabled:hover {
   background-color: #fff;
   min-height: 21rem;
   margin: 1rem;
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   text-align: center;
   position: relative;
 }
@@ -1763,11 +1767,34 @@ button:disabled:hover {
 }
 
 .modal__main h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 0 0 1rem 0;
   border-bottom: 1px solid rgba(204, 204, 204, 0.9);
   color: #4d4d4d;
   text-transform: uppercase;
+}
+
+.modal__main p.child__story {
+  font-size: 1.4rem;
+  height: 13rem;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+.modal__main p.child__story::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.modal__main p.child__story::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal__main p.child__story::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.modal__main p.child__story::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .modal__main h3 {
@@ -1945,9 +1972,17 @@ button:disabled:hover {
   color: #3f9cd1;
 }
 
-.with__cancel button {
+.card .with__cancel button {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.with__cancel button:first-child {
+  margin-bottom: 1rem;
+}
+
+.with__cancel button:first-child:hover {
+  background-color: #216389;
 }
 
 .with__cancel .btn__cancel {
@@ -1974,14 +2009,16 @@ button:disabled:hover {
   background-color: #216389;
 }
 
-.with__cancel .btn--error {
+.with__cancel .btn--error,
+.with__cancel .btn__error {
   background-color: #fc3838;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.with__cancel .btn--error:hover {
-  background-color: #cb0303;
+.with__cancel .btn--error:hover,
+.with__cancel .btn__error:hover {
+  background-color: #cb0303 !important;
 }
 
 .show {
@@ -2155,7 +2192,7 @@ button:disabled:hover {
 .modal .form-group.error input[type="email"],
 .modal .form-group.error input[type="number"],
 .modal .form-group.error textarea {
-  border: 2px solid #fc3838;
+  border: 1px solid #fc3838;
   background-color: #ffc4c4;
   color: #fc3838;
 }
@@ -2233,6 +2270,17 @@ button:disabled:hover {
 
 .modal .modal_profile .error-msg {
   top: 0 !important;
+}
+
+.modal__errormsg {
+  font-size: 1.4rem;
+  color: #fc3838;
+  padding: 0.2rem;
+  display: none;
+}
+
+.modal__errormsg.show {
+  display: block;
 }
 
 .header__log {

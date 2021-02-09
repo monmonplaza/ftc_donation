@@ -18,7 +18,7 @@
     background-color: $light;
     min-height: 21rem;
     margin: 1rem;
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
     text-align: center;
     position: relative;
 
@@ -43,11 +43,34 @@
       }
     }
     h2 {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       padding: 0 0 1rem 0;
       border-bottom: 1px solid rgba($gray, 0.9);
       color: $dark-1;
       text-transform: uppercase;
+    }
+
+    p.child__story {
+      font-size: 1.4rem;
+      height: 13rem;
+      overflow-y: scroll;
+      text-align: left;
+
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
     }
 
     h3 {
@@ -211,17 +234,24 @@
   }
 }
 
+.card .with__cancel button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .with__cancel {
-  button {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  button:first-child {
+    margin-bottom: 1rem;
+    &:hover {
+      background-color: darken($blue, 20);
+    }
   }
+
   .btn__cancel {
     background-color: $dark-1;
     transition: 0.5s ease;
     margin-bottom: 1rem;
     margin-top: 0;
-
     &:hover {
       background-color: darken($dark-1, 20);
     }
@@ -236,11 +266,12 @@
     }
   }
 
-  .btn--error {
+  .btn--error,
+  .btn__error {
     background-color: $error;
     transition: 0.5s ease;
     &:hover {
-      background-color: darken($error, 20);
+      background-color: darken($error, 20) !important;
     }
   }
 }
@@ -362,7 +393,7 @@ $duration: 2s;
   input[type="email"],
   input[type="number"],
   textarea {
-    border: 2px solid $error;
+    border: 1px solid $error;
     background-color: #ffc4c4;
     color: $error;
   }
@@ -434,4 +465,16 @@ $duration: 2s;
   .error-msg {
     top: 0 !important;
   }
+}
+
+//MODAL ERROR ADDED ON 2-9
+.modal__errormsg {
+  font-size: 1.4rem;
+  color: $error;
+  padding: 0.2rem;
+  display: none;
+}
+
+.modal__errormsg.show {
+  display: block;
 }

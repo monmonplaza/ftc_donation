@@ -140,9 +140,8 @@
     </section>
 
     <!-- View Profile -->
-    <div class="modal">
+    <!-- <div class="modal">
       <div class="modal__main">
-        <div class="modal__close">X</div>
         <h2>Profile</h2>
         <img src="./images/thumbnail.jpg" class="child_profile" alt="" />
         <h3>Monmon Pogi - <span>6yrs</span></h3>
@@ -156,13 +155,16 @@
         <a href="#"> Edit Amount</a>
         <a href="#"> Close</a>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Edit Profile -->
+    <!-- Edit Profile Name -->
     <div class="modal show">
       <div class="modal__main modal_profile">
-        <div class="modal__close">X</div>
         <h2>Profile</h2>
+        <div class="modal__errormsg show">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          dignissimos.
+        </div>
         <form action="">
           <div class="form-group error">
             <label for="profile_firstname">First Name</label>
@@ -175,7 +177,12 @@
             <input type="text" name="profile_lastname" />
             <p class="error-msg">Required</p>
           </div>
-          <button disabled="disabled">Update</button>
+          <!-- <button disabled="disabled">Update</button> -->
+
+          <div class="form__group with__cancel">
+            <button class="btn__action" disabled="disabled">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
         </form>
       </div>
     </div>
@@ -183,8 +190,11 @@
     <!-- Edit Contact -->
     <div class="modal">
       <div class="modal__main modal_profile">
-        <div class="modal__close">X</div>
         <h2>Contact</h2>
+        <div class="modal__errormsg show">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          dignissimos.
+        </div>
         <form action="">
           <div class="form-group error">
             <label for="profile_email">Email</label>
@@ -197,7 +207,10 @@
             <input type="text" name="profile_contact" />
             <p class="error-msg">Required</p>
           </div>
-          <button>Update</button>
+          <div class="form__group with__cancel">
+            <button class="btn__action" disabled="disabled">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
         </form>
       </div>
     </div>
@@ -205,8 +218,11 @@
     <!-- Edit Address -->
     <div class="modal">
       <div class="modal__main modal_profile">
-        <div class="modal__close">X</div>
-        <h2>Contact</h2>
+        <h2>Address</h2>
+        <div class="modal__errormsg show">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          dignissimos.
+        </div>
         <form action="">
           <div class="form-group error">
             <label for="profile_street">Street</label>
@@ -237,7 +253,10 @@
             <input type="text" name="profile_zip" />
             <p class="error-msg">Required</p>
           </div>
-          <button>Update</button>
+          <div class="form__group with__cancel">
+            <button class="btn__action" disabled="disabled">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
         </form>
       </div>
     </div>
@@ -245,12 +264,11 @@
     <!-- Clear List -->
     <div class="modal">
       <div class="modal__main">
-        <div class="modal__close">X</div>
         <h2>Remove Sponsorship</h2>
         <p>Are you sure you want remove this child?</p>
-        <div class="modal__main__action">
-          <a href="#">Yes</a>
-          <a href="#">No</a>
+        <div class="form__group with__cancel">
+          <button class="btn__error">Yes</button>
+          <button class="btn__cancel">No</button>
         </div>
       </div>
     </div>
@@ -258,12 +276,13 @@
     <!-- Success Message -->
     <div class="modal">
       <div class="modal__main">
-        <div class="modal__close">X</div>
         <h2 class="text-success">Success</h2>
         <img src="./images/success.png" alt="success icon" />
         <p>You have successfull updated your information</p>
         <div class="modal__main__action">
-          <a href="#">Close</a>
+          <div class="form__group with__cancel">
+            <button class="btn__action">OK</button>
+          </div>
         </div>
       </div>
     </div>
@@ -271,7 +290,6 @@
     <!-- Success Message -->
     <div class="modal">
       <div class="modal__main">
-        <div class="modal__close">X</div>
         <img src="./images/icon-info.png" alt="info icon" />
 
         <p>Are you sure you want to logout?</p>
@@ -285,8 +303,11 @@
     <!-- Card Input -->
     <div class="modal">
       <div class="modal__main card">
-        <div class="modal__close">X</div>
         <h2>Card Details</h2>
+        <div class="modal__errormsg show">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          dignissimos.
+        </div>
         <form action="">
           <div class="card__wrap">
             <div class="form-group error">
@@ -334,10 +355,13 @@
     </div>
 
     <!-- Change Password -->
-    <div class="modal">
+    <!-- <div class="modal show">
       <div class="modal__main modal_profile">
-        <div class="modal__close">X</div>
         <h2>Update Password</h2>
+        <div class="modal__errormsg">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          dignissimos.
+        </div>
         <form action="">
           <div class="form-group error">
             <label for="profile_password1">Password</label>
@@ -350,15 +374,17 @@
             <input type="text" name="profile_password2" />
             <p class="error-msg">Required</p>
           </div>
-          <button>Update</button>
+          <div class="form__group with__cancel">
+            <button class="btn__action">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- Edit Amount -->
     <div class="modal">
       <div class="modal__main">
-        <div class="modal__close">X</div>
         <h2>Edit Donation</h2>
         <h3>Select new amount</h3>
         <form action="">
