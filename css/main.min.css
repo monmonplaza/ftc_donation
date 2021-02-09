@@ -585,17 +585,9 @@ nav.isShow {
 
 .account__info__block .password__update .account-error {
   position: absolute;
-  top: -2rem;
+  top: -1rem;
   color: #fc3838;
-  display: none;
-}
-
-.account__info__block .password__update .form__group.error .account-error {
   display: block;
-}
-
-.account__info__block .password__update .form__group.error input {
-  border: 1px solid #fc3838;
 }
 
 .account__info__block button {

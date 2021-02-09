@@ -152,18 +152,9 @@ nav.isShow {
         }
         .account-error {
           position: absolute;
-          top: -2rem;
+          top: -1rem;
           color: $error;
-          display: none;
-        }
-      }
-
-      .password__update .form__group.error {
-        .account-error {
           display: block;
-        }
-        input {
-          border: 1px solid $error;
         }
       }
 
