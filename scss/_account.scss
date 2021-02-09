@@ -121,7 +121,7 @@ nav.isShow {
 
       .password__update {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         position: relative;
         input {
           width: 35rem;
@@ -137,7 +137,7 @@ nav.isShow {
           }
         }
         button {
-          @include btn($orange, 25rem);
+          @include btn($blue, 25rem);
           margin: 0;
           margin-left: 1rem;
           @include media-query(420px) {
@@ -203,6 +203,7 @@ nav.isShow {
           opacity: 1;
         }
         p {
+          margin-top: 1rem;
           line-height: 1.2;
           padding: 0;
         }

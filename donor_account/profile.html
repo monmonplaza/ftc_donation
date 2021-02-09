@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -115,20 +119,28 @@
                   <h2>Update Password</h2>
                   <ul>
                     <li class="info__with__label">
-                      <small>Registered Email</small>
                       <form action="" class="password__update">
                         <div class="form-group">
+                          <label for="">Register Email</label>
                           <input
                             type="password"
                             name="password_1"
                             class="input-wide"
                           />
-                          <small class="account-error">required</small>
+                          <p class="account-error">required</small>
                         </div>
                         <div class="form-group">
-                          <button>Send Verification</button>
+                          <button disabled="disabled">Send Verification <i class="fas fa-spinner fa-spin fa-1x"></i></button>
                         </div>
+                    
                       </form>
+                      <div class="error-box login-error">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                          facere.
+                        </p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit nulla animi facilis aspernatur molestias.</p>
                     </li>
                   </ul>
                 </div>
