@@ -1545,7 +1545,7 @@ button:disabled:hover {
   background-color: #7dbce0;
 }
 
-.error-box {
+.error-box, .success-box {
   padding: 1rem;
   background-color: #feb6b6;
   color: #fc3838;
@@ -1555,11 +1555,17 @@ button:disabled:hover {
   display: none;
 }
 
-.error-box p {
+.success-box {
+  background-color: #bdeea0;
+  border: 1px solid #50a41e;
+  color: #50a41e;
+}
+
+.error-box p, .success-box p {
   margin-top: 0 !important;
 }
 
-.error-box.show {
+.error-box.show, .show.success-box {
   display: block;
 }
 

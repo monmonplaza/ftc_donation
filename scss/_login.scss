@@ -180,6 +180,13 @@ button:disabled:hover {
   display: none;
 }
 
+.success-box {
+  @extend .error-box;
+  background-color: lighten($success, 40);
+  border: 1px solid $success;
+  color: $success;
+}
+
 .error-box p {
   margin-top: 0 !important;
 }
