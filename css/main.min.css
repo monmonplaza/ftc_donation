@@ -1585,7 +1585,7 @@ button:disabled:hover {
 }
 
 .form-group .error-input {
-  border: 2px solid #fc3838;
+  border: 1px solid #fc3838;
   background-color: #ffc4c4;
 }
 
