@@ -2,7 +2,7 @@
 .form-group {
   .error-input {
     border: 1px solid $error;
-    background-color: #ffc4c4;
+    background-color: lighten($error, 35);
   }
 
   .error-msg {

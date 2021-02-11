@@ -347,7 +347,7 @@ form .form__group.with__cancel {
 
 .form-group .error-input {
   border: 1px solid #fc3838;
-  background-color: #ffc4c4;
+  background-color: #ffe8e8;
 }
 
 .form-group .error-msg {
@@ -1002,34 +1002,6 @@ nav.isShow {
   padding: 2rem;
 }
 
-.donation .main__list__wrapper {
-  min-height: 52rem;
-  height: 52rem;
-  overflow-y: scroll;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-
-.donation .main__list__wrapper::-webkit-scrollbar {
-  width: 10px;
-}
-
-.donation .main__list__wrapper::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px grey;
-          box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-.donation .main__list__wrapper::-webkit-scrollbar-thumb {
-  background: #3f9cd1;
-  border-radius: 10px;
-}
-
-.donation .main__list__wrapper::-webkit-scrollbar-thumb:hover {
-  background: #2b81b2;
-}
-
 .donation .main__list__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1133,6 +1105,12 @@ nav.isShow {
   }
 }
 
+.donation .main__list__item .wrapper .select__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .donation .main__list__item .wrapper .select__amount form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1146,7 +1124,7 @@ nav.isShow {
 }
 
 @media screen and (max-width: 420px) {
-  .donation .main__list__item .wrapper .select__amount form {
+  .donation .main__list__item .wrapper .select__amount {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1157,11 +1135,12 @@ nav.isShow {
   }
 }
 
-.donation .main__list__item .wrapper .select__amount form .radio__group {
+.donation .main__list__item .wrapper .select__amount .radio__group {
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.donation .main__list__item .wrapper .select__amount form .radio__group:first-child {
+.donation .main__list__item .wrapper .select__amount .radio__group:first-child {
   margin-left: 0;
 }
 
@@ -1187,7 +1166,7 @@ nav.isShow {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -1548,7 +1527,7 @@ button:disabled:hover {
 
 .error-box, .success-box {
   padding: 1rem;
-  background-color: #feb6b6;
+  background-color: #ffe8e8;
   color: #fc3838;
   font-size: 1.4rem;
   border: 1px solid #fc3838;
@@ -1557,7 +1536,7 @@ button:disabled:hover {
 }
 
 .success-box {
-  background-color: #bdeea0;
+  background-color: #dbf6cb;
   border: 1px solid #50a41e;
   color: #50a41e;
 }
@@ -2512,7 +2491,7 @@ button:disabled:hover {
 
 .banner {
   padding: 0.5rem 0;
-  background-color: #e4e4e4;
+  background-color: transparent;
   text-align: center;
   color: #000;
 }
@@ -3110,6 +3089,91 @@ button:disabled:hover {
 
 .thank__you a:hover {
   background-color: #264e0e;
+}
+
+.guest__login {
+  padding: 5rem 0;
+}
+
+.guest__login__wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.guest__login .guest__login__opt {
+  margin: 0 1.5rem 3rem 1.5rem;
+  padding: 2rem;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.guest__login .guest__login__opt h2 {
+  margin-bottom: 2rem;
+}
+
+.guest__login .guest__login__opt p {
+  margin-bottom: 2rem;
+}
+
+.guest__login .guest__login__opt button.btn {
+  padding: 1rem 1.4rem;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  max-width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  background-color: #3f9cd1;
+  color: #fff;
+  margin-left: 0;
+  margin-right: auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.guest__login .guest__login__opt button.btn:hover {
+  background-color: #216389;
+}
+
+.guest__login .opt__2 form {
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.guest__login .radio__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guest__login .radio__group input {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.guest__login .radio__group .input__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+}
+
+.guest__login .radio__group ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main__grid {

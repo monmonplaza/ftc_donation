@@ -29,32 +29,6 @@
       max-width: 98rem;
       margin: 0 auto;
       padding: 2rem;
-      &__wrapper {
-        min-height: 52rem;
-        height: 52rem;
-        overflow-y: scroll;
-
-        &::-webkit-scrollbar {
-          width: 10px;
-        }
-
-        /* Track */
-        &::-webkit-scrollbar-track {
-          box-shadow: inset 0 0 5px grey;
-          border-radius: 10px;
-        }
-
-        /* Handle */
-        &::-webkit-scrollbar-thumb {
-          background: $blue;
-          border-radius: 10px;
-        }
-
-        /* Handle on hover */
-        &::-webkit-scrollbar-thumb:hover {
-          background: darken($blue, 10);
-        }
-      }
 
       &__header {
         display: flex;
@@ -126,19 +100,21 @@
       }
 
       .select__amount {
+        display: flex;
         form {
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          @include media-query(420px) {
-            flex-direction: column;
-            align-items: flex-start;
-          }
-          .radio__group {
-            margin-right: 1rem;
-            &:first-child {
-              margin-left: 0;
-            }
+        }
+        @include media-query(420px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .radio__group {
+          margin-right: 1rem;
+          margin-bottom: 0.5rem;
+          &:first-child {
+            margin-left: 0;
           }
         }
       }
@@ -152,7 +128,7 @@
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
-          padding: 1rem 0;
+          padding: 0 0 1rem 0;
           border-bottom: 1px solid #ebebeb;
           @include media-query(420px) {
             padding: 0rem;

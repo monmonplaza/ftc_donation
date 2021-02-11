@@ -172,7 +172,7 @@ button:disabled:hover {
 
 .error-box {
   padding: 1rem;
-  background-color: lighten($error, 25);
+  background-color: lighten($error, 35);
   color: $error;
   font-size: 1.4rem;
   border: 1px solid $error;
@@ -182,7 +182,7 @@ button:disabled:hover {
 
 .success-box {
   @extend .error-box;
-  background-color: lighten($success, 40);
+  background-color: lighten($success, 50);
   border: 1px solid $success;
   color: $success;
 }
