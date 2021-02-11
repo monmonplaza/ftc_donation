@@ -627,7 +627,7 @@ nav.isShow {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   opacity: 1;
 }
 
@@ -635,6 +635,7 @@ nav.isShow {
   margin-top: 1rem;
   line-height: 1.2;
   padding: 0;
+  font-size: 1.4rem;
 }
 
 .account__info__block a {
@@ -2079,9 +2080,14 @@ button:disabled:hover {
 }
 
 .modal.loading .modal__main.spinner_modal {
-  width: 15rem;
+  width: 30rem;
   min-height: 5rem;
   background-color: transparent;
+}
+
+.modal.loading .modal__main.spinner_modal p {
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
 .spinner {
