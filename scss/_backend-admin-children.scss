@@ -8,17 +8,18 @@
 }
 
 .sidebar {
-  background-color: $blue;
-  color: $light;
+  color: $dark;
   padding: 3rem;
   text-align: center;
+  border-right: 1px solid $gray;
+  margin-top: 2rem;
   @include media-query(420px) {
     order: 2;
     padding: 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-    z-index: 5;
+    z-index: 999999;
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
   }
   &__profile {
@@ -32,20 +33,25 @@
   ul {
     @include media-query(420px) {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+      z-index: 9999;
+      background-color: $darkgray;
     }
     li {
       text-align: left;
       margin-bottom: 2rem;
+      padding: 0.8rem;
+
       @include media-query(420px) {
         margin-bottom: 0;
-        border-left: 1px solid #6fafd4;
+        border-left: 1px solid lighten($darkgray, 6);
       }
       a {
-        color: $light;
+        color: $dark;
         text-transform: capitalize;
         display: flex;
         text-align: center;
+        align-items: center;
         @include media-query(420px) {
           display: flex;
           flex-direction: column;
@@ -65,16 +71,25 @@
           font-size: 1.6rem;
         }
       }
+      &:hover {
+        background-color: $gray;
+      }
     }
   }
 
   a {
-    color: $light;
-    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: $dark;
+    font-weight: bold;
   }
 }
 
-.manage__children {
+.main__block {
+  padding: 3rem;
+  overflow: hidden;
+  @include media-query(420px) {
+    padding: 1.6rem;
+  }
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -86,7 +101,13 @@
       grid-template-columns: 1fr;
     }
   }
-  padding: 3rem;
+
+  h2 {
+    @include media-query(420px) {
+      text-align: center;
+    }
+  }
+
   &__menu {
     margin-top: 3rem;
     display: flex;
@@ -94,12 +115,15 @@
     margin-bottom: 3rem;
     border-bottom: 1px solid $gray;
     @include media-query(420px) {
+      margin-top: 0;
       flex-direction: column;
+      padding: 1rem 0 2rem 0;
     }
     ul {
       display: flex;
       @include media-query(420px) {
-        flex-direction: column;
+        flex-direction: row;
+        overflow-x: auto;
       }
       li {
         margin-right: 3rem;
@@ -112,6 +136,7 @@
         font-weight: bold;
         color: $dark-1;
         position: relative;
+        outline: none;
         cursor: pointer;
         &:after {
           content: "";
@@ -122,6 +147,10 @@
           width: 100%;
           background-color: $blue;
           display: none;
+        }
+
+        @include media-query(420px) {
+          margin: 2rem 0;
         }
       }
 
@@ -148,10 +177,21 @@
     position: relative;
     background-color: $light-1;
     .info_menu {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      cursor: pointer;
+      transition: 0.2s ease;
+      &:hover {
+        background: lighten($gray, 0.4);
+      }
       &_toggle {
         position: absolute;
-        top: 2rem;
-        right: 1rem;
+        top: 1.6rem;
+        left: 0.8rem;
         display: flex;
         span {
           display: block;

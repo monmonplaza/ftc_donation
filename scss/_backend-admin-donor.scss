@@ -1,0 +1,88 @@
+.main__block {
+  .table__wrapper {
+    overflow-x: auto;
+  }
+  &__donor__table {
+    border-collapse: collapse;
+    margin-bottom: 10rem;
+    width: 100%;
+    @include media-query(420px) {
+      width: 70rem;
+    }
+
+    thead {
+      border-bottom: 1px solid $gray;
+    }
+    tr {
+      th,
+      td {
+        text-align: left;
+        padding: 1.5rem;
+      }
+    }
+
+    tbody {
+      tr:nth-child(even) {
+        background-color: $light-2;
+      }
+
+      .donor__option {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background: lighten($gray, 0.4);
+        }
+        &__icon {
+          cursor: pointer;
+          margin-top: -0.5rem;
+          span {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $darkgray;
+            display: inline-block;
+          }
+        }
+        &__menu {
+          display: none;
+          position: absolute;
+          left: -11rem;
+          top: 2rem;
+          background-color: $gray;
+          padding: 1rem;
+          z-index: 5;
+          max-width: 25rem;
+          width: 10rem;
+
+          ul {
+            li {
+              margin-bottom: 1rem;
+              text-align: center;
+              padding: 0.2rem 0;
+              border-bottom: 1px solid darken($gray, 5);
+              button {
+                font-size: 1.4rem;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                width: 100%;
+                &:hover {
+                  color: $orange;
+                }
+              }
+            }
+          }
+        }
+        &__menu.show {
+          display: block;
+        }
+      }
+    }
+  }
+}

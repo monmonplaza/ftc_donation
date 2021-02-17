@@ -1,7 +1,10 @@
 .header {
   &__log {
     background-color: $blue;
-    padding: 0.4rem 0;
+    padding: 1rem;
+    // @include media-query(420px) {
+    //   padding: 1.6rem;
+    // }
     ul {
       display: flex;
       justify-content: flex-end;

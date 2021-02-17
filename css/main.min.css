@@ -712,7 +712,16 @@ nav.isShow {
 .sponsor__list table tbody td {
   max-width: calc(100% / 5);
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
+}
+
+.sponsor__list table tbody td img {
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 .sponsor__list table button {
@@ -742,24 +751,24 @@ nav.isShow {
 }
 
 @media screen and (max-width: 450px) {
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
+  .sponsor__list table,
+  .sponsor__list thead,
+  .sponsor__list tbody,
+  .sponsor__list th,
+  .sponsor__list td,
+  .sponsor__list tr {
     display: block;
   }
-  .sponsor__list table thead tr {
+  .sponsor__list .sponsor__list table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .sponsor__list table tbody tr {
+  .sponsor__list .sponsor__list table tbody tr {
     margin-bottom: 4rem;
     border: none;
   }
-  .sponsor__list table tbody td {
+  .sponsor__list .sponsor__list table tbody td {
     /* Behave  like a "row" */
     max-width: 250% !important;
     border: none;
@@ -768,7 +777,7 @@ nav.isShow {
     text-align: right;
     padding: 10px 10px 10px 45%;
   }
-  .sponsor__list table td:before {
+  .sponsor__list .sponsor__list table td:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
@@ -780,19 +789,19 @@ nav.isShow {
     text-align: left;
     font-weight: bold;
   }
-  .sponsor__list table td:nth-of-type(1):before {
+  .sponsor__list .sponsor__list table td:nth-of-type(1):before {
     content: "Name";
   }
-  .sponsor__list table td:nth-of-type(2):before {
+  .sponsor__list .sponsor__list table td:nth-of-type(2):before {
     content: "Age";
   }
-  .sponsor__list table td:nth-of-type(3):before {
+  .sponsor__list .sponsor__list table td:nth-of-type(3):before {
     content: "Frequency";
   }
-  .sponsor__list table td:nth-of-type(4):before {
+  .sponsor__list .sponsor__list table td:nth-of-type(4):before {
     content: "Amount";
   }
-  .sponsor__list table td:nth-of-type(5):before {
+  .sponsor__list .sponsor__list table td:nth-of-type(5):before {
     content: "Action";
   }
 }
@@ -1099,6 +1108,13 @@ nav.isShow {
   }
 }
 
+.donation .main__list__item .wrapper picture img {
+  width: 15rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (max-width: 420px) {
   .donation .main__list__item .wrapper picture img {
     width: 100%;
@@ -1109,6 +1125,10 @@ nav.isShow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .donation .main__list__item .wrapper .select__amount form {
@@ -1137,7 +1157,6 @@ nav.isShow {
 
 .donation .main__list__item .wrapper .select__amount .radio__group {
   margin-right: 1rem;
-  margin-bottom: 0.5rem;
 }
 
 .donation .main__list__item .wrapper .select__amount .radio__group:first-child {
@@ -1178,7 +1197,7 @@ nav.isShow {
 }
 
 .donation .main__list__item .wrapper .details .details__name .name {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -1220,7 +1239,7 @@ nav.isShow {
 }
 
 .donation .main__list__item .wrapper .details .details__amount h4 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .donation .main__list__item .wrapper .details .details__amount .amount {
@@ -2261,7 +2280,7 @@ button:disabled:hover {
 
 .header__log {
   background-color: #3f9cd1;
-  padding: 0.4rem 0;
+  padding: 1rem;
 }
 
 .header__log ul {
@@ -3116,6 +3135,7 @@ button:disabled:hover {
   margin-bottom: 2rem;
 }
 
+.guest__login .guest__login__opt a.btn,
 .guest__login .guest__login__opt button.btn {
   padding: 1rem 1.4rem;
   display: block;
@@ -3136,44 +3156,48 @@ button:disabled:hover {
   transition: 0.5s ease;
 }
 
+.guest__login .guest__login__opt a.btn:hover,
 .guest__login .guest__login__opt button.btn:hover {
   background-color: #216389;
 }
 
 .guest__login .opt__2 form {
   max-width: 45rem;
-  margin: 0 auto;
 }
 
-.guest__login .radio__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.guest__login .button__group {
+  margin-right: 2rem;
+  position: relative;
+  border-radius: 1rem;
+  border: none;
 }
 
-.guest__login .radio__group input {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.guest__login .button__group button {
+  width: 16rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.guest__login .radio__group .input__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 1rem;
+.guest__login .button__group button.btn-paypal {
+  border: 1px solid #fc9726;
+  background-color: #fc9726;
 }
 
-.guest__login .radio__group ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.guest__login .button__group button.btn-paypal:hover {
+  background-color: #ec7e03;
+}
+
+.guest__login .button__group button.btn-creditCard {
+  border: 1px solid #3f9cd1;
+  background-color: #3f9cd1;
+}
+
+.guest__login .button__group button.btn-creditCard:hover {
+  background-color: #216389;
 }
 
 .main__grid {
@@ -3192,10 +3216,11 @@ button:disabled:hover {
 }
 
 .sidebar {
-  background-color: #3f9cd1;
-  color: #fff;
+  color: #000;
   padding: 3rem;
   text-align: center;
+  border-right: 1px solid #ccc;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 420px) {
@@ -3207,7 +3232,7 @@ button:disabled:hover {
     position: fixed;
     width: 100%;
     bottom: 0;
-    z-index: 5;
+    z-index: 999999;
     -webkit-box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
             box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
   }
@@ -3227,30 +3252,36 @@ button:disabled:hover {
   .sidebar ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: (minmax(2rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    z-index: 9999;
+    background-color: #929292;
   }
 }
 
 .sidebar ul li {
   text-align: left;
   margin-bottom: 2rem;
+  padding: 0.8rem;
 }
 
 @media screen and (max-width: 420px) {
   .sidebar ul li {
     margin-bottom: 0;
-    border-left: 1px solid #6fafd4;
+    border-left: 1px solid #a1a1a1;
   }
 }
 
 .sidebar ul li a {
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 420px) {
@@ -3282,16 +3313,28 @@ button:disabled:hover {
   font-size: 1.6rem;
 }
 
+.sidebar ul li:hover {
+  background-color: #ccc;
+}
+
 .sidebar a {
-  color: #fff;
-  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: bold;
 }
 
-.manage__children {
+.main__block {
   padding: 3rem;
+  overflow: hidden;
 }
 
-.manage__children__grid {
+@media screen and (max-width: 420px) {
+  .main__block {
+    padding: 1.6rem;
+  }
+}
+
+.main__block__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
@@ -3300,20 +3343,26 @@ button:disabled:hover {
 }
 
 @media screen and (max-width: 950px) {
-  .manage__children__grid {
+  .main__block__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 420px) {
-  .manage__children__grid {
+  .main__block__grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-.manage__children__menu {
+@media screen and (max-width: 420px) {
+  .main__block h2 {
+    text-align: center;
+  }
+}
+
+.main__block__menu {
   margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3326,44 +3375,48 @@ button:disabled:hover {
 }
 
 @media screen and (max-width: 420px) {
-  .manage__children__menu {
+  .main__block__menu {
+    margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 1rem 0 2rem 0;
   }
 }
 
-.manage__children__menu ul {
+.main__block__menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 420px) {
-  .manage__children__menu ul {
-    -webkit-box-orient: vertical;
+  .main__block__menu ul {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: auto;
   }
 }
 
-.manage__children__menu ul li {
+.main__block__menu ul li {
   margin-right: 3rem;
 }
 
-.manage__children__menu ul button {
+.main__block__menu ul button {
   padding: 2rem 1rem;
   display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
   color: #4d4d4d;
   position: relative;
+  outline: none;
   cursor: pointer;
 }
 
-.manage__children__menu ul button:after {
+.main__block__menu ul button:after {
   content: "";
   bottom: 0;
   left: 0;
@@ -3374,11 +3427,17 @@ button:disabled:hover {
   display: none;
 }
 
-.manage__children__menu ul button.active::after {
+@media screen and (max-width: 420px) {
+  .main__block__menu ul button {
+    margin: 2rem 0;
+  }
+}
+
+.main__block__menu ul button.active::after {
   display: block;
 }
 
-.manage__children__menu button {
+.main__block__menu button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -3389,7 +3448,7 @@ button:disabled:hover {
   cursor: pointer;
 }
 
-.manage__children__gridItem {
+.main__block__gridItem {
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   padding: 3rem 0 0;
@@ -3397,16 +3456,32 @@ button:disabled:hover {
   background-color: #fafafa;
 }
 
-.manage__children__gridItem .info_menu_toggle {
+.main__block__gridItem .info_menu {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
   position: absolute;
-  top: 2rem;
-  right: 1rem;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.main__block__gridItem .info_menu:hover {
+  background: #cdcdcd;
+}
+
+.main__block__gridItem .info_menu_toggle {
+  position: absolute;
+  top: 1.6rem;
+  left: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.manage__children__gridItem .info_menu_toggle span {
+.main__block__gridItem .info_menu_toggle span {
   display: block;
   width: 0.6rem;
   height: 0.6rem;
@@ -3415,7 +3490,7 @@ button:disabled:hover {
   margin-right: 0.3rem;
 }
 
-.manage__children__gridItem .info_menu ul {
+.main__block__gridItem .info_menu ul {
   position: absolute;
   top: 4rem;
   right: 2rem;
@@ -3428,19 +3503,19 @@ button:disabled:hover {
           box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
 }
 
-.manage__children__gridItem .info_menu ul li {
+.main__block__gridItem .info_menu ul li {
   margin-bottom: 1rem;
   text-align: center;
   padding: 0.2rem 0;
   border-bottom: 1px solid #bfbfbf;
 }
 
-.manage__children__gridItem .info_menu ul li:last-child {
+.main__block__gridItem .info_menu ul li:last-child {
   margin-bottom: 0;
   border: none;
 }
 
-.manage__children__gridItem .info_menu ul button {
+.main__block__gridItem .info_menu ul button {
   font-size: 1.4rem;
   border: none;
   background-color: transparent;
@@ -3448,11 +3523,11 @@ button:disabled:hover {
   width: 100%;
 }
 
-.manage__children__gridItem .info_menu ul button:hover {
+.main__block__gridItem .info_menu ul button:hover {
   color: #fc9726;
 }
 
-.manage__children__gridItem .info_child {
+.main__block__gridItem .info_child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3465,21 +3540,21 @@ button:disabled:hover {
       justify-content: space-around;
 }
 
-.manage__children__gridItem .info_child .child__thumbnail {
+.main__block__gridItem .info_child .child__thumbnail {
   text-align: center;
 }
 
-.manage__children__gridItem .info_child .child__thumbnail img {
+.main__block__gridItem .info_child .child__thumbnail img {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
 }
 
-.manage__children__gridItem .info_child ul {
+.main__block__gridItem .info_child ul {
   margin: 1rem 0;
 }
 
-.manage__children__gridItem .info_child ul li {
+.main__block__gridItem .info_child ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3488,29 +3563,29 @@ button:disabled:hover {
           justify-content: space-between;
 }
 
-.manage__children__gridItem .info_child ul li > * {
+.main__block__gridItem .info_child ul li > * {
   margin: 0rem 2rem;
   margin-bottom: 1rem;
 }
 
-.manage__children__gridItem .info_child ul li:first-child {
+.main__block__gridItem .info_child ul li:first-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.manage__children__gridItem .info_donation {
+.main__block__gridItem .info_donation {
   padding: 2rem;
   background-color: #ccc;
 }
 
-.manage__children__gridItem .info_donation h3 {
+.main__block__gridItem .info_donation h3 {
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
   text-align: center;
 }
 
-.manage__children__gridItem .info_donation .breakdown {
+.main__block__gridItem .info_donation .breakdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3520,13 +3595,13 @@ button:disabled:hover {
   font-weight: bold;
 }
 
-.manage__children__gridItem .info_donation .breakdown span:first-child {
+.main__block__gridItem .info_donation .breakdown span:first-child {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.manage__children__gridItem .info_donation .breakdown span:last-child {
+.main__block__gridItem .info_donation .breakdown span:last-child {
   font-weight: bold;
   font-size: 3rem;
   color: #0d973b;
@@ -3620,6 +3695,132 @@ button:disabled:hover {
   letter-spacing: 1px;
 }
 
+.main__block .table__wrapper {
+  overflow-x: auto;
+}
+
+.main__block__donor__table {
+  border-collapse: collapse;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 420px) {
+  .main__block__donor__table {
+    width: 70rem;
+  }
+}
+
+.main__block__donor__table thead {
+  border-bottom: 1px solid #ccc;
+}
+
+.main__block__donor__table tr th,
+.main__block__donor__table tr td {
+  text-align: left;
+  padding: 1.5rem;
+}
+
+.main__block__donor__table tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.main__block__donor__table tbody .donor__option {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__block__donor__table tbody .donor__option:hover {
+  background: #cdcdcd;
+}
+
+.main__block__donor__table tbody .donor__option__icon {
+  cursor: pointer;
+  margin-top: -0.5rem;
+}
+
+.main__block__donor__table tbody .donor__option__icon span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #929292;
+  display: inline-block;
+}
+
+.main__block__donor__table tbody .donor__option__menu {
+  display: none;
+  position: absolute;
+  left: -11rem;
+  top: 2rem;
+  background-color: #ccc;
+  padding: 1rem;
+  z-index: 5;
+  max-width: 25rem;
+  width: 10rem;
+}
+
+.main__block__donor__table tbody .donor__option__menu ul li {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.main__block__donor__table tbody .donor__option__menu ul li button {
+  font-size: 1.4rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+.main__block__donor__table tbody .donor__option__menu ul li button:hover {
+  color: #fc9726;
+}
+
+.main__block__donor__table tbody .donor__option__menu.show {
+  display: block;
+}
+
+.main__block.main__dashboard .main__block__grid {
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+}
+
+.main__block.main__dashboard .main__block__gridItem {
+  padding: 2rem;
+  text-align: center;
+}
+
+.main__block.main__dashboard .main__block__gridItem i {
+  font-size: 5rem;
+}
+
+.main__block.main__dashboard .main__block__gridItem h3 {
+  margin-bottom: 1rem;
+}
+
+.main__block.main__dashboard .main__block__gridItem p {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.main__block.main__dashboard .main__block__gridItem a {
+  display: block;
+  text-align: right;
+}
+
 .admin__login {
   width: 100%;
   height: 100vh;
@@ -3688,14 +3889,15 @@ button:disabled:hover {
   border: none;
   font-size: 1.4rem;
   cursor: pointer;
-  max-width: 25rem;
+  max-width: 20rem;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
   margin-top: 1rem;
   background-color: #fc9726;
   color: #fff;
-  width: 25rem;
+  width: 20rem;
+  margin-top: 2rem;
 }
 
 .admin__login__wrapper p {

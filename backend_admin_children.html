@@ -7,75 +7,13 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="header__log">
-        <ul>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">My Account</a></li>
-        </ul>
-      </div>
-      <div class="header__main dashboard">
-        <div class="wrapper">
-          <div class="branding">
-            <a href="#">
-              <picture>
-                <source
-                  srcset="../images/logo_blue_sm.webp"
-                  media="(max-width:420px)"
-                />
-                <source
-                  srcset="../images/logo_blue.webp"
-                  media="(min-width:420px)"
-                />
-                <img src="../images/logo_blue.png" alt="main logo" />
-              </picture>
-            </a>
-          </div>
-
-          <div class="menu-wrapper">
-            <div class="toggle-menu" id="toggleMenu">
-              <span class="bar bar-top"></span>
-              <span class="bar bar-mid"></span>
-              <span class="bar bar-bottom"></span>
-            </div>
-
-            <form action="" class="form__search lg-only">
-              <input type="text" />
-              <button>Search</button>
-            </form>
-
-            <div class="nav__wrapper sm-only">
-              <nav class="nav__mobile">
-                <ul>
-                  <li>
-                    <a href="#"> Home</a>
-                  </li>
-                  <li>
-                    <a href="#">User</a>
-                  </li>
-                  <li>
-                    <a href="#">Children</a>
-                  </li>
-                  <li>
-                    <a href="#">Donor</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header> -->
-
     <header class="header">
       <div class="header__log">
-        <div class="container">
-          <div class="header__donor__dashboard">
-            <img src="./images/logo_white_sm.png" alt="" />
-            <ul>
-              <li><button>Logout</button></li>
-            </ul>
-          </div>
+        <div class="header__donor__dashboard">
+          <img src="./images/logo_white_sm.png" alt="" />
+          <ul>
+            <li><button>Logout</button></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -89,21 +27,23 @@
               alt=""
             />
             <h2>Ramon Plaza</h2>
-            <a href="#">Profile</a>
+            <a href="#">Edit Profile</a>
           </div>
           <ul class="lg-only">
             <li>
               <a href="#"
                 ><span
-                  ><img src="./images/icon-users.png" alt="icon user"
+                  ><img src="./images/icon-users-dark.png" alt="icon user"
                 /></span>
-                <span class="menu__label">User</span></a
+                <span class="menu__label">Users</span></a
               >
             </li>
             <li>
               <a href="#"
                 ><span
-                  ><img src="./images/icon-children.png" alt="icon children"
+                  ><img
+                    src="./images/icon-children-dark.png"
+                    alt="icon children"
                 /></span>
                 <span class="menu__label">Children</span></a
               >
@@ -111,9 +51,9 @@
             <li>
               <a href="#">
                 <span
-                  ><img src="./images/icon-donor.png" alt="icon donor"
+                  ><img src="./images/icon-donor-dark.png" alt="icon donor"
                 /></span>
-                <span class="menu__label">Donor</span></a
+                <span class="menu__label">Donors</span></a
               >
             </li>
           </ul>
@@ -167,9 +107,9 @@
           </ul>
         </div>
 
-        <div class="manage__children">
+        <div class="main__block">
           <h2>Manage Children</h2>
-          <div class="manage__children__menu">
+          <div class="main__block__menu">
             <ul>
               <li><button href="#" class="active">Resident</button></li>
               <li><button href="#">Non-Resident</button></li>
@@ -179,8 +119,8 @@
             <button class="add_child">+Add New Child</button>
           </div>
 
-          <div class="manage__children__grid">
-            <div class="manage__children__gridItem">
+          <div class="main__block__grid">
+            <div class="main__block__gridItem">
               <div class="info_menu">
                 <div class="info_menu_toggle">
                   <span></span>
@@ -191,7 +131,7 @@
                   <li><button>View</button></li>
                   <li><button>Edit</button></li>
                   <li><button>Delete</button></li>
-                  <li><button>View</button></li>
+                  <li><button>Cheque</button></li>
                 </ul>
               </div>
 
@@ -227,7 +167,7 @@
                 </div>
               </div>
             </div>
-            <div class="manage__children__gridItem">
+            <div class="main__block__gridItem">
               <div class="info_menu">
                 <div class="info_menu_toggle">
                   <span></span>
@@ -238,7 +178,7 @@
                   <li><button>View</button></li>
                   <li><button>Edit</button></li>
                   <li><button>Delete</button></li>
-                  <li><button>View</button></li>
+                  <li><button>Cheque</button></li>
                 </ul>
               </div>
 
@@ -274,7 +214,7 @@
                 </div>
               </div>
             </div>
-            <div class="manage__children__gridItem">
+            <div class="main__block__gridItem">
               <div class="info_menu">
                 <div class="info_menu_toggle">
                   <span></span>
@@ -285,7 +225,7 @@
                   <li><button>View</button></li>
                   <li><button>Edit</button></li>
                   <li><button>Delete</button></li>
-                  <li><button>View</button></li>
+                  <li><button>Cheque</button></li>
                 </ul>
               </div>
 
@@ -321,7 +261,7 @@
                 </div>
               </div>
             </div>
-            <div class="manage__children__gridItem">
+            <div class="main__block__gridItem">
               <div class="info_menu">
                 <div class="info_menu_toggle">
                   <span></span>
@@ -332,7 +272,7 @@
                   <li><button>View</button></li>
                   <li><button>Edit</button></li>
                   <li><button>Delete</button></li>
-                  <li><button>View</button></li>
+                  <li><button>Cheque</button></li>
                 </ul>
               </div>
 
@@ -368,7 +308,7 @@
                 </div>
               </div>
             </div>
-            <div class="manage__children__gridItem">
+            <div class="main__block__gridItem">
               <div class="info_menu">
                 <div class="info_menu_toggle">
                   <span></span>

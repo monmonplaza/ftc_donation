@@ -40,9 +40,9 @@
         margin-bottom: 3rem;
       }
       button {
-        @include btn($orange, 25rem);
-
-        width: 25rem;
+        @include btn($orange, 20rem);
+        width: 20rem;
+        margin-top: 2rem;
       }
     }
 

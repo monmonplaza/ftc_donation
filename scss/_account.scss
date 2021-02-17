@@ -260,7 +260,13 @@ nav.isShow {
       td {
         max-width: calc(100% / 5);
         text-align: center;
-        padding: 1.5rem 0;
+        padding: 0.5rem 0;
+        img {
+          width: 6rem;
+          height: 6rem;
+          object-fit: cover;
+          object-position: top center;
+        }
       }
     }
     button {
@@ -288,70 +294,71 @@ nav.isShow {
 }
 
 @media screen and (max-width: 450px) {
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-  }
   .sponsor__list {
-    table {
-      thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-      }
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+    .sponsor__list {
+      table {
+        thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
 
-      tbody tr {
-        margin-bottom: 4rem;
-        border: none;
-      }
+        tbody tr {
+          margin-bottom: 4rem;
+          border: none;
+        }
 
-      tbody td {
-        /* Behave  like a "row" */
-        max-width: 250% !important;
-        border: none;
-        border-bottom: 1px solid rgb(190, 190, 190);
-        position: relative;
+        tbody td {
+          /* Behave  like a "row" */
+          max-width: 250% !important;
+          border: none;
+          border-bottom: 1px solid rgb(190, 190, 190);
+          position: relative;
 
-        text-align: right;
-        padding: 10px 10px 10px 45%;
-      }
+          text-align: right;
+          padding: 10px 10px 10px 45%;
+        }
 
-      td:before {
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 13px;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        text-align: left;
-        font-weight: bold;
-      }
+        td:before {
+          /* Now like a table header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          top: 13px;
+          left: 10px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap;
+          text-align: left;
+          font-weight: bold;
+        }
 
-      td:nth-of-type(1):before {
-        content: "Name";
-      }
-      td:nth-of-type(2):before {
-        content: "Age";
-      }
-      td:nth-of-type(3):before {
-        content: "Frequency";
-      }
-      td:nth-of-type(4):before {
-        content: "Amount";
-      }
-      td:nth-of-type(5):before {
-        content: "Action";
+        td:nth-of-type(1):before {
+          content: "Name";
+        }
+        td:nth-of-type(2):before {
+          content: "Age";
+        }
+        td:nth-of-type(3):before {
+          content: "Frequency";
+        }
+        td:nth-of-type(4):before {
+          content: "Amount";
+        }
+        td:nth-of-type(5):before {
+          content: "Action";
+        }
       }
     }
   }
 }
-
 // Mon 2-4
 
 .donor__dashboard .grid {

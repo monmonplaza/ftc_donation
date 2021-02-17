@@ -25,7 +25,7 @@
           <div class="guest__login__opt opt__1">
               <h2>Register a new account</h2>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatum consectetur suscipit molestiae aspernatur facilis saepe esse labore cum pariatur!</p>
-              <button class="btn">New Account </button>
+              <a class="btn">New Account </a>
           </div>
 
           <div class="guest__login__opt opt__2">
@@ -35,7 +35,7 @@
           
                 <div class="form-group ">
                     <label for="guest-email">Email</label>
-                    <input type="email" name="guest-email" class="error-input>
+                    <input type="email" name="guest-email" class="error-input">
                     <p class="error-msg">Required</p>
                   </div>
 
@@ -55,41 +55,18 @@
 
 
                   <div class="form-group ">
-                    <label for="guest-lname">Payment Method</label>
-                        <div class="radio__group">
-                            <input type="radio" name="payment">
-                            <div class="input__icon">
-                                <span>Paypal</span>
-                                <ul>
-                                    <li><img src="../images/icon_paypal.png" alt=""></li>
-                                </ul>
-                               
-                            </div>
-                          
-                        </div>
-                        
-                        <div class="radio__group">
-                            <input type="radio" name="payment">
-                            <div class="input__icon">
-                                <span>Card</span>
-                                <ul>
-                                    <li><img src="../images/icon_cc.png" alt=""></li>
-                                    <li><img src="../images/icon_visa.png" alt=""></li>
-                                    <li><img src="../images/icon_jcp.png" alt=""></li>
-                                    <li><img src="../images/icon_master.png" alt=""></li>
-                                </ul>
-                              
-                            </div>
-                      
-                        </div>
+                    <label for="guest-card">Payment Method</label>
+         
+                    <div class="button__group">
+                        <button class="input__icon btn-paypal">
+                            <img src="../images/logo_paypal.png" alt="" />
+                        </button>
+
+                        <button class="input__icon btn-creditCard">
+                            <img src="../images/logo_card.png" alt="" />
+                        </button>
+                      </div>
                   </div>
-
-                  <div class="form-group">
-                    <button disabled="disabled" class="btn">Continue </button>
-                  </div>
-
-                  
-
             </form>
           </div>
         </div>

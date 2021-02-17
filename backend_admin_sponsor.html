@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__log">
+ 
+          <div class="header__donor__dashboard">
+            <img src="./images/logo_white_sm.png" alt="" />
+            <ul>
+              <li><button>Logout</button></li>
+            </ul>
+          </div>
+        </div>
+   
+    </header>
+
+    <main>
+      <div class="main__grid">
+        <div class="sidebar">
+          <div class="sidebar__profile lg-only">
+            <img
+              src="https://yt3.ggpht.com/a-/AAuE7mBxnY0DQIVxJtzcbOj0x6W378t00k0fdB-7Ow=s240-mo-c-c0xffffffff-rj-k-no"
+              alt=""
+            />
+            <h2>Ramon Plaza</h2>
+            <a href="#">Edit Profile</a>
+          </div>
+          <ul class="lg-only">
+            <li>
+              <a href="#"
+                ><span
+                  ><img src="./images/icon-users-dark.png" alt="icon user"
+                /></span>
+                <span class="menu__label">Users</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span
+                  ><img
+                    src="./images/icon-children-dark.png"
+                    alt="icon children"
+                /></span>
+                <span class="menu__label">Children</span></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  ><img src="./images/icon-donor-dark.png" alt="icon donor"
+                /></span>
+                <span class="menu__label">Donors</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile__wrapper sm-only">
+            <li>
+              <a href="#"><img src="./images/icon-home.png" /> Home</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-profile.png" /> Profile</a>
+            </li>
+            <li class="mobile__search">
+              <a href="#"><img src="./images/icon-search.png" />Search </a>
+              <div class="popup popup-search">
+                <form action="">
+                  <input type="text" placeholder="Ex: Child name..." />
+                  <button>Search</button>
+                </form>
+              </div>
+            </li>
+            <li class="mobile__menu">
+              <a href="#"><img src="./images/icon-bars.png" /> Menu </a>
+              <ul class="popup popup-menu">
+                <li>
+                  <a href="#">
+                    <span>User</span
+                    ><img src="./images/icon-users.png" alt="icon user" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Childen</span
+                    ><img src="./images/icon-children.png" alt="icon user" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Donor</span
+                    ><img src="./images/icon-donor.png" alt="icon user"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <span>Logout</span
+                    ><img src="./images/icon-logout.png" alt="icon user"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__block">
+          <h2>Subscriptions</h2>
+          <div class="main__block__menu">
+            <ul>
+              <li><button href="#" class="active">Current</button></li>
+              <li><button href="#">Cancelled</button></li>
+        
+            </ul>
+
+            <button class="add_person">+Add Subscription</button>
+          </div>
+            <div class="table__wrapper">
+              <table class="main__block__donor__table">
+                <thead class="table__header">
+                  <th>Sponsor</th>
+                  <th>Status</th>
+                  <th>Donation for</th>
+                  <th>Action</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>ramon.plaza@gmail.com</td>
+                    <td>Active</td>
+                    <td>Donation for</td>
+                    <td>
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="donor__option__menu show">
+                          <ul>
+                            <li><button>Edit</button></li>
+                            <li><button>Inactive</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ramon.plaza@gmail.comaaa</td>
+                    <td>Active</td>
+                    <td>Donation for</td>
+                    <td>
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="donor__option__menu">
+                          <ul>
+                            <li><button>Edit</button></li>
+                            <li><button>Inactive</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ramon.plaza@gmail.com</td>
+                    <td>Active</td>
+                    <td>Donation for</td>
+                    <td>
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="donor__option__menu">
+                          <ul>
+                            <li><button>Edit</button></li>
+                            <li><button>Inactive</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ramon.plaza@gmail.com</td>
+                    <td>Active</td>
+                    <td>Donation for</td>
+                    <td>
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="donor__option__menu">
+                          <ul>
+                            <li><button>Edit</button></li>
+                            <li><button>Inactive</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ramon.plaza@gmail.com</td>
+                    <td>Active</td>
+                    <td>Donation for</td>
+                    <td>
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="donor__option__menu">
+                          <ul>
+                            <li><button>Edit</button></li>
+                            <li><button>Inactive</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ramon.plaza@gmail.com</td>
+                    <td>Active</td>
+                    <td>Donation for</td>
+                    <td>
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="donor__option__menu">
+                          <ul>
+                            <li><button>Edit</button></li>
+                            <li><button>Inactive</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ramon.plaza@gmail.com</td>
+                    <td>Active</td>
+                    <td>Donation for</td>
+                    <td>
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="donor__option__menu">
+                          <ul>
+                            <li><button>Edit</button></li>
+                            <li><button>Inactive</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL -->
+
+    <div class="modal profileChild">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Edit Profile</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="childName">Child Name</label>
+            <input type="text" name="childName" />
+            <small class="error-msg">required</small>
+          </div>
+
+          <div class="form-group">
+            <label for="childBirthday">Birthday</label>
+            <input type="date" name="childBirthday" />
+            <small class="error-msg">required</small>
+          </div>
+
+          <div class="form-group">
+            <label for="childAge">Age</label>
+            <input type="text" name="childAge" />
+            <small class="error-msg">required</small>
+          </div>
+
+          <div class="form-group">
+            <label for="ftcyears">Years at FTC</label>
+            <input type="number" name="ftcyears" />
+            <small class="error-msg">required</small>
+          </div>
+          <div class="form-group">
+            <label for="story">Story</label>
+            <textarea name="story"></textarea>
+            <small class="error-msg">required</small>
+          </div>
+          <div class="form-group with__cancel">
+            <button class="btn__action">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal profileChild">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Add New Child</h2>
+
+        <form action="">
+          <div class="form__group">
+            <label for="childName">Child Name</label>
+            <input type="text" name="childName" />
+            <small class="error-msg">required</small>
+          </div>
+
+          <div class="form__group">
+            <label for="childBirthday">Birthday</label>
+            <input type="date" name="childBirthday" />
+            <small class="error-msg">required</small>
+          </div>
+
+          <div class="form__group">
+            <label for="childAge">Age</label>
+            <input type="text" name="childAge" />
+            <small class="error-msg">required</small>
+          </div>
+
+          <div class="form__group">
+            <label for="ftcyears">Years at FTC</label>
+            <input type="number" name="ftcyears" />
+            <small class="error-msg">required</small>
+          </div>
+          <div class="form__group">
+            <label for="story">Story</label>
+            <textarea name="story"></textarea>
+            <small class="error-msg">required</small>
+          </div>
+          <div class="form__group with__cancel">
+            <button class="btn__action">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--  -->
+    <div class="modal">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Delete Child?</h2>
+        <p>
+          Once you delete a child, all data about the child will be remove and
+          there is no going back. Please be certain
+        </p>
+        <form action="">
+          <div class="form__group with__cancel">
+            <button class="btn__action btn--error">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ADD donation -->
+    <div class="modal">
+      <div class="modal__main">
+        <div class="modal__close">X</div>
+        <h2>Manual Donation</h2>
+
+        <form action="">
+          <div class="form__group">
+            <label for="childName">Amount</label>
+            <input type="text" name="childName" />
+            <small class="error-msg">required</small>
+          </div>
+
+          <div class="form__group">
+            <label for="ftcyears">Expiry Date</label>
+            <input type="number" name="ftcyears" />
+            <small class="error-msg">required</small>
+          </div>
+          <div class="form__group">
+            <label for="story">Remark</label>
+            <textarea name="story"></textarea>
+            <small class="error-msg">required</small>
+          </div>
+          <div class="form__group with__cancel">
+            <button class="btn__action">Update</button>
+            <button class="btn__cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal loading">
+      <div class="modal__main spinner_modal">
+        <svg
+          class="spinner"
+          width="60px"
+          height="60px"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="path"
+            fill="none"
+            stroke-width="6"
+            stroke-linecap="round"
+            cx="33"
+            cy="33"
+            r="30"
+          ></circle>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

@@ -87,12 +87,16 @@
       justify-content: space-between;
       picture {
         flex-basis: 5%;
+
         @include media-query(420px) {
           flex-basis: 20%;
           display: flex;
           align-self: flex-start;
         }
         img {
+          width: 15rem;
+          height: 100%;
+          object-fit: cover;
           @include media-query(420px) {
             width: 100%;
           }
@@ -101,6 +105,7 @@
 
       .select__amount {
         display: flex;
+        flex-direction: column;
         form {
           display: flex;
           align-items: center;
@@ -112,7 +117,7 @@
         }
         .radio__group {
           margin-right: 1rem;
-          margin-bottom: 0.5rem;
+          // margin-bottom: 0.5rem;
           &:first-child {
             margin-left: 0;
           }
@@ -135,7 +140,7 @@
             line-height: 1;
           }
           .name {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: bold;
           }
           .actions ul {
@@ -163,7 +168,7 @@
           display: flex;
           justify-content: space-between;
           h4 {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
           }
           .amount {
             color: $orange;
