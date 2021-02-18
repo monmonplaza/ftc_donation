@@ -97,6 +97,7 @@
       display: block;
       margin-top: 1rem;
       margin-bottom: 1rem;
+      text-align: left;
     }
 
     .child_profile {
@@ -109,7 +110,7 @@
     select {
       width: 100%;
       padding: 0.8rem;
-      border-radius: 5px;
+      border-radius: 8px;
       outline: none;
     }
 
@@ -190,7 +191,12 @@
     form {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
       .form-group {
+        margin-bottom: 0;
+        .error-msg {
+          top: 10px;
+        }
         @include media-query(420px) {
           grid-column: 1 / 3;
         }
@@ -240,6 +246,7 @@
 }
 
 .with__cancel {
+  margin-top: 1.6rem;
   button:first-child {
     margin-bottom: 1rem;
     &:hover {

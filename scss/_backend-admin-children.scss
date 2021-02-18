@@ -25,8 +25,8 @@
   &__profile {
     margin-bottom: 5rem;
     img {
-      width: 10rem;
-      height: 10rem;
+      width: 8rem;
+      height: 8rem;
       border-radius: 50%;
     }
   }
@@ -35,16 +35,18 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
       z-index: 9999;
-      background-color: $darkgray;
+      background-color: $blue;
     }
     li {
       text-align: left;
       margin-bottom: 2rem;
-      padding: 0.8rem;
 
       @include media-query(420px) {
         margin-bottom: 0;
-        border-left: 1px solid lighten($darkgray, 6);
+        border-left: 1px solid lighten($blue, 6);
+        &:hover {
+          background-color: darken($blue, 20) !important;
+        }
       }
       a {
         color: $dark;
@@ -52,23 +54,25 @@
         display: flex;
         text-align: center;
         align-items: center;
+        padding: 0.6rem;
         @include media-query(420px) {
+          color: $light;
           display: flex;
           flex-direction: column;
           align-items: center;
           padding: 1rem 0;
+          padding: 0.6rem;
         }
 
-        img {
-          @include media-query(420px) {
-            width: 2rem;
-            height: 2.2rem;
-          }
+        i {
+          font-size: 1.6rem;
+          width: 4rem;
         }
         span {
+          text-align: left;
           display: block;
           width: 6rem;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
         }
       }
       &:hover {
@@ -80,7 +84,6 @@
   a {
     font-size: 1.4rem;
     color: $dark;
-    font-weight: bold;
   }
 }
 
@@ -172,10 +175,12 @@
   }
 
   &__gridItem {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     padding: 3rem 0 0;
     position: relative;
     background-color: $light-1;
+    &:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
     .info_menu {
       width: 4rem;
       height: 4rem;

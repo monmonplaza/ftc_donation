@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__log">
-        <div class="header__donor__dashboard">
-          <img src="./images/logo_white_sm.png" alt="" />
-          <ul>
-            <li><button>Logout</button></li>
-          </ul>
+    
+          <div class="header__donor__dashboard">
+            <img src="./images/logo_white_sm.png" alt="" />
+            <ul>
+              <li><button>Logout</button></li>
+            </ul>
+          </div>
         </div>
-      </div>
+
     </header>
 
     <main>
@@ -32,20 +34,28 @@
           </div>
           <ul class="lg-only">
             <li>
-              <a href="backend_admin_users.html">
-                <i class="fal fa-users"></i>
+              <a href="#"
+                ><span
+                  ><img src="./images/icon-users-dark.png" alt="icon user"
+                /></span>
                 <span class="menu__label">Users</span></a
               >
             </li>
             <li>
-              <a href="backend_admin_children.html"
-                ><i class="fal fa-child"></i>
+              <a href="#"
+                ><span
+                  ><img
+                    src="./images/icon-children-dark.png"
+                    alt="icon children"
+                /></span>
                 <span class="menu__label">Children</span></a
               >
             </li>
             <li>
-              <a href="backend_admin_donor_dashboard.html">
-                <i class="fal fa-donate"></i>
+              <a href="#">
+                <span
+                  ><img src="./images/icon-donor-dark.png" alt="icon donor"
+                /></span>
                 <span class="menu__label">Donors</span></a
               >
             </li>
@@ -100,51 +110,140 @@
           </ul>
         </div>
 
-        <div class="main__block main__dashboard">
-          <h2>Dashboard</h2>
+        <div class="main__block">
+          <h2> Donors</h2>
+          <div class="main__block__menu">
+            <ul>
+              <li><button class="active">Details</button></li>
+              <li><button >Subscription</button></li>
+            </ul>
+          </div>
 
-          <div class="main__block__grid">
-            <div class="main__block__gridItem">
-              <div class="card__wrapper">
-                <div class="inner__content">
-                  <i class="fal fa-users"></i>
-                  <h3>Users</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nesciunt tempore ipsum repellat a.
-                  </p>
+          <div class="main__block__form hide_me">
+            <form action="" class="donor__form">
+                
+              <div class="donor__form__grid ">
+                <div class="form-group donor--name">
+                  <label for="donorName">Name</label>
+                  <input type="text" name="donorName">
+                  <p class="error-msg">Required</p>
                 </div>
-                <a href="#">Manage Users</a>
-              </div>
-            </div>
 
-            <div class="main__block__gridItem">
-              <div class="card__wrapper">
-                <div class="inner__content">
-                  <i class="fal fa-child"></i>
-                  <h3>Children</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quod aliquam nam possimus! Officiis, eaque fugiat!
-                  </p>
+                <div class="form-group donor--street">
+                  <label for="donorAddressStreet">Street</label>
+                  <input type="text" name="donorAddressStreet">
+                  <p class="error-msg">Required</p>
                 </div>
-                <a href="#">View Children List</a>
-              </div>
-            </div>
 
-            <div class="main__block__gridItem">
-              <div class="card__wrapper">
-                <div class="inner__content">
-                  <i class="fal fa-donate"></i>
-                  <h3>Donor</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Aut, ab. Eveniet reiciendis illum perspiciatis?
-                  </p>
+                <div class="form-group donor--state">
+                  <label for="donorAddressState">State</label>
+                  <input type="text" name="donorAddressState">
+                  <p class="error-msg">Required</p>
                 </div>
-                <a href="#">Manage Users</a>
+
+                <div class="form-group donor--country">
+                  <label for="donorAddressCountry">Country</label>
+                  <input type="text" name="donorAddressCountry">
+                  <p class="error-msg">Required</p>
+                </div>
+
+                <div class="form-group donor--zip">
+                  <label for="donorAddressZip">Zip</label>
+                  <input type="text" name="donorAddressZip">
+                  <p class="error-msg">Required</p>
+                </div>
+
+                <div class="form-group donor--email">
+                  <label for="donorEmail">Email</label>
+                  <input type="text" name="donorEmail">
+                  <p class="error-msg">Required</p>
+                </div>
+
+                <div class="form-group donor--contact">
+                  <label for="donorContact">Contact</label>
+                  <input type="text" name="donorContact">
+                  <p class="error-msg">Required</p>
+                </div>
               </div>
-            </div>
+
+              <div class="error-box login-error show">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                  facere.
+                </p>
+              </div>
+              <div class="form-group with__cancel">
+                <button class="btn btn__action">Update</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="main__block__table">
+              <div class="responsive__table__wrapper">
+                <table class="main__block__donor__table">
+                  <thead class="table__header">
+                    <th>Child Name</th>
+                    <th>Age</th>
+                    <th>Frequency</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                  </thead>
+  
+                  <tbody>
+                    <tr>
+                      <td>Ramon Plaza</td>
+                      <td>89</td>
+                      <td>Monthly</td>
+                      <th>1200</th>
+                      <td>
+                        <div class="donor__option">
+                          <div class="donor__option__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="donor__option__menu show">
+                            <ul>
+                              <li><button>Edit</button></li>
+                              <li><button>Inactive</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Ramon Plaza</td>
+                      <td>89</td>
+                      <td>Monthly</td>
+                      <th>1200</th>
+                      <td>
+                        <div class="donor__option">
+                          <div class="donor__option__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="donor__option__menu ">
+                            <ul>
+                              <li><button>Edit</button></li>
+                              <li><button>Inactive</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    
+                
+                  </tbody>
+                </table>
+              </div>
+          </div>
+
+
+
+
           </div>
         </div>
       </div>
@@ -156,7 +255,6 @@
       <div class="modal__main">
         <div class="modal__close">X</div>
         <h2>Edit Profile</h2>
-
         <form action="">
           <div class="form-group">
             <label for="childName">Child Name</label>
