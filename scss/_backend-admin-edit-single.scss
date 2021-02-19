@@ -1,55 +1,70 @@
 .main__block__form {
-  max-width: 65rem;
+  max-width: 40rem;
+  display: none;
+  margin-bottom: 5rem;
   .btn {
     @include btn($blue, 48rem);
     display: inline-block;
   }
-}
-
-.donor__form__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  .donor--name {
-    grid-column: 1 / 6;
-  }
-  .donor--street {
-    grid-column: 1 /6;
-  }
-  .donor--state {
-    grid-column: 1 /3;
-    @include media-query(420px) {
-      grid-column: 1 / 6;
-    }
-  }
-  .donor--country {
-    grid-column: 3 /5;
-    @include media-query(420px) {
-      grid-column: 1 / 6;
-    }
-  }
-  .donor--zip {
-    grid-column: 5 / 6;
-    @include media-query(420px) {
-      grid-column: 1 / 6;
-    }
-  }
-  .donor--email {
-    grid-column: 1 / 4;
-    @include media-query(420px) {
-      grid-column: 1 / 6;
-    }
-  }
-  .donor--contact {
-    grid-column: 4 / 6;
-    @include media-query(420px) {
-      grid-column: 1 / 6;
+  &__section {
+    margin: 3rem 0;
+    h3 {
+      text-transform: uppercase;
+      color: lighten($dark, 50);
+      border-bottom: 1px solid $gray;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }
 
-.responsive__table__wrapper {
-  overflow: auto;
+.main__block__form.show {
+  display: block;
+}
 
-  max-height: 30rem;
+.main__block__table {
+  display: none;
+  .responsive__table__wrapper {
+    overflow: auto;
+    max-height: 40rem;
+  }
+
+  .cell__action {
+    button {
+      font-weight: bold;
+      &:focus {
+        outline: 0;
+      }
+    }
+    button:first-child {
+      margin-right: 1rem;
+      color: $blue;
+    }
+    button:last-child {
+      color: $dark-1;
+    }
+  }
+
+  .cell__status {
+    span {
+      background-color: $success;
+      color: $light;
+      padding: 0.4rem 1rem;
+      border-radius: 0.4rem;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    color: $error;
+    cursor: pointer;
+    &:hover {
+      color: darken($error, 20);
+    }
+  }
+}
+
+.main__block__table.show {
+  display: block;
 }

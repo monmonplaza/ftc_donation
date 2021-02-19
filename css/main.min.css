@@ -270,7 +270,8 @@ form .form__group.with__cancel {
   color: #fff;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 0.8rem;
   border-radius: 5px;
@@ -2236,6 +2237,116 @@ button:disabled:hover {
   display: block;
 }
 
+.modal__box.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.modal__box__main {
+  margin: 14rem 0;
+  background-color: #fff;
+  max-width: 40rem;
+  width: 100%;
+  min-height: 20vh;
+}
+
+.modal__box__head {
+  padding: 2rem;
+}
+
+.modal__box__head h3 {
+  text-align: center;
+}
+
+.modal__box__body {
+  padding: 2rem;
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal__box__body .info__block {
+  margin-bottom: 1rem;
+}
+
+.modal__box__footer {
+  padding: 2rem;
+}
+
+.modal__box__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal__box__btns button {
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 1rem 1.4rem;
+  background-color: #3f9cd1;
+  color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin-left: 0.5rem;
+}
+
+.modal__box__btns button:hover {
+  background-color: #216389;
+}
+
+.modal__box__btns .btn--cancel {
+  background-color: #4d4d4d;
+}
+
+.modal__box__btns .btn--cancel:hover {
+  background-color: #1a1a1a;
+}
+
+.modal__box__btns .btn--error {
+  background-color: #fc3838;
+}
+
+.modal__box__btns .btn--error:hover {
+  background-color: #cb0303;
+}
+
+.modal__box__inner__block {
+  margin: 4rem 0;
+}
+
+.modal__box__inner__block h3 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: gray;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 1rem;
@@ -3343,6 +3454,8 @@ button:disabled:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1rem 0 2rem 0;
+    border: none;
+    margin-bottom: 0;
   }
 }
 
@@ -3390,7 +3503,8 @@ button:disabled:hover {
 
 @media screen and (max-width: 420px) {
   .main__block__menu ul button {
-    margin: 2rem 0;
+    margin: 1rem 0;
+    padding: 1rem;
   }
 }
 
@@ -3688,7 +3802,7 @@ button:disabled:hover {
 }
 
 .main__block__donor__table tr td {
-  padding: 0 1.5rem;
+  padding: 0.6rem 1.5rem;
 }
 
 .main__block__donor__table tbody tr:nth-child(even) {
@@ -3904,7 +4018,9 @@ button:disabled:hover {
 }
 
 .main__block__form {
-  max-width: 65rem;
+  max-width: 40rem;
+  display: none;
+  margin-bottom: 5rem;
 }
 
 .main__block__form .btn {
@@ -3924,99 +4040,68 @@ button:disabled:hover {
   display: inline-block;
 }
 
-.donor__form__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1rem;
+.main__block__form__section {
+  margin: 3rem 0;
 }
 
-.donor__form__grid .donor--name {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1 / 6;
+.main__block__form__section h3 {
+  text-transform: uppercase;
+  color: gray;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
-.donor__form__grid .donor--street {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1 /6;
+.main__block__form.show {
+  display: block;
 }
 
-.donor__form__grid .donor--state {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 /3;
+.main__block__table {
+  display: none;
 }
 
-@media screen and (max-width: 420px) {
-  .donor__form__grid .donor--state {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1 / 6;
-  }
-}
-
-.donor__form__grid .donor--country {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3 /5;
-}
-
-@media screen and (max-width: 420px) {
-  .donor__form__grid .donor--country {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1 / 6;
-  }
-}
-
-.donor__form__grid .donor--zip {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-column: 5 / 6;
-}
-
-@media screen and (max-width: 420px) {
-  .donor__form__grid .donor--zip {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1 / 6;
-  }
-}
-
-.donor__form__grid .donor--email {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
-}
-
-@media screen and (max-width: 420px) {
-  .donor__form__grid .donor--email {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1 / 6;
-  }
-}
-
-.donor__form__grid .donor--contact {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-column: 4 / 6;
-}
-
-@media screen and (max-width: 420px) {
-  .donor__form__grid .donor--contact {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1 / 6;
-  }
-}
-
-.responsive__table__wrapper {
+.main__block__table .responsive__table__wrapper {
   overflow: auto;
-  max-height: 30rem;
+  max-height: 40rem;
+}
+
+.main__block__table .cell__action button {
+  font-weight: bold;
+}
+
+.main__block__table .cell__action button:focus {
+  outline: 0;
+}
+
+.main__block__table .cell__action button:first-child {
+  margin-right: 1rem;
+  color: #3f9cd1;
+}
+
+.main__block__table .cell__action button:last-child {
+  color: #4d4d4d;
+}
+
+.main__block__table .cell__status span {
+  background-color: #50a41e;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.main__block__table button {
+  border: none;
+  background-color: transparent;
+  color: #fc3838;
+  cursor: pointer;
+}
+
+.main__block__table button:hover {
+  color: #cb0303;
+}
+
+.main__block__table.show {
+  display: block;
 }
 
 .admin__login {
