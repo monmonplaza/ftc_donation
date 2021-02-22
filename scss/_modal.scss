@@ -515,8 +515,16 @@ $duration: 2s;
         background-color: darken($blue, 20);
       }
     }
+    .btn--action {
+      background-color: $blue;
+      color: $light;
+      &:hover {
+        background-color: darken($blue, 20);
+      }
+    }
     .btn--cancel {
       background-color: $dark-1;
+      color: $light;
       &:hover {
         background-color: darken($dark-1, 20);
       }

@@ -2307,8 +2307,18 @@ button:disabled:hover {
   background-color: #216389;
 }
 
+.modal__box__btns .btn--action {
+  background-color: #3f9cd1;
+  color: #fff;
+}
+
+.modal__box__btns .btn--action:hover {
+  background-color: #216389;
+}
+
 .modal__box__btns .btn--cancel {
   background-color: #4d4d4d;
+  color: #fff;
 }
 
 .modal__box__btns .btn--cancel:hover {
@@ -3750,78 +3760,6 @@ button:disabled:hover {
 
 .mobile__wrapper li > a img {
   width: 2rem;
-}
-
-.popup {
-  width: 100%;
-  position: absolute;
-  background-color: #3f9cd1;
-  padding: 1.5rem;
-}
-
-.popup-search, .popup-menu {
-  display: none;
-}
-
-.popup-search.menuShow {
-  display: block;
-  left: 0;
-  bottom: 100%;
-  border-bottom: 2px solid #fff;
-}
-
-.popup-search.menuShow input {
-  padding: 1rem;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.popup-search.menuShow button {
-  width: 100%;
-  text-align: center;
-  padding: 1.2rem 0;
-  font-size: 1.6rem;
-  background-color: #fc9726;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.popup-menu.menuShow {
-  display: block;
-  left: 0;
-  bottom: 100%;
-  border-bottom: 2px solid #fff;
-}
-
-.popup-menu.menuShow li {
-  border: none;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #54a7d6;
-}
-
-.popup-menu.menuShow li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.popup-menu.menuShow li a img {
-  width: 2rem;
-  margin-right: 2rem;
-}
-
-.popup-menu.menuShow li a span {
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .sidebar__active {

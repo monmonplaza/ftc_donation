@@ -314,64 +314,6 @@
   }
 }
 
-.popup {
-  width: 100%;
-  position: absolute;
-  background-color: $blue;
-  padding: 1.5rem;
-  &-search,
-  &-menu {
-    display: none;
-  }
-  &-search.menuShow {
-    display: block;
-    left: 0;
-    bottom: 100%;
-    border-bottom: 2px solid $light;
-    input {
-      padding: 1rem;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-    button {
-      width: 100%;
-      text-align: center;
-      padding: 1.2rem 0;
-      font-size: 1.6rem;
-      background-color: $orange;
-      border: none;
-      color: $light;
-      font-weight: bold;
-    }
-  }
-  &-menu.menuShow {
-    display: block;
-    left: 0;
-    bottom: 100%;
-    border-bottom: 2px solid $light;
-    li {
-      border: none;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid lighten($blue, 5);
-      a {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-
-        img {
-          width: 2rem;
-          margin-right: 2rem;
-        }
-        span {
-          text-align: left;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-        }
-      }
-    }
-  }
-}
-
 .sidebar__active {
   position: relative;
   &:after {
