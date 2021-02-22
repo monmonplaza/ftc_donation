@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__log">
     
           <div class="header__donor__dashboard">
-            <img src="./images/logo_white_sm.png" alt="" />
+            <img src="../images/logo_white_sm.png" alt="" />
             <ul>
               <li><button>Logout</button></li>
             </ul>
@@ -24,38 +24,31 @@
     <main>
       <div class="main__grid">
         <div class="sidebar">
-          <div class="sidebar__profile lg-only">
-            <img
-              src="https://yt3.ggpht.com/a-/AAuE7mBxnY0DQIVxJtzcbOj0x6W378t00k0fdB-7Ow=s240-mo-c-c0xffffffff-rj-k-no"
-              alt=""
-            />
-            <h2>Ramon Plaza</h2>
-            <a href="#">Edit Profile</a>
-          </div>
+        
           <ul class="lg-only">
             <li>
-              <a href="#"
-                ><span
-                  ><img src="./images/icon-users-dark.png" alt="icon user"
-                /></span>
+              <a href="backend_admin_dashboard.html">
+                <i class="fal fa-home"></i>
+                <span class="menu__label">Overview</span></a
+              >
+            </li>
+  
+
+            <li>
+              <a href="backend_admin_users.html">
+                <i class="fal fa-users"></i>
                 <span class="menu__label">Users</span></a
               >
             </li>
             <li>
-              <a href="#"
-                ><span
-                  ><img
-                    src="./images/icon-children-dark.png"
-                    alt="icon children"
-                /></span>
+              <a href="backend_admin_children.html"
+                ><i class="fal fa-child"></i>
                 <span class="menu__label">Children</span></a
               >
             </li>
             <li>
-              <a href="#">
-                <span
-                  ><img src="./images/icon-donor-dark.png" alt="icon donor"
-                /></span>
+              <a href="backend_admin_donor_dashboard.html">
+                <i class="fal fa-donate"></i>
                 <span class="menu__label">Donors</span></a
               >
             </li>
@@ -119,9 +112,10 @@
               <li><button class="">Expiring Subscription</button></li>
               <li><button class="">Cancelled Subscription</button></li>
             </ul>
+            <button class="add_person">+Add Subscription</button>
           </div>
 
-          <div class="main__block__form ">
+          <div class="main__block__form  tab__details">
             <form action="" class="donor__form">
                 
               <div class="main__block__form__wrapper ">
@@ -129,6 +123,18 @@
                 <div class="form-group">
                   <label for="donorFullname">Fullname</label>
                   <input type="text" name="donorFullname">
+                  <p class="error-msg">Required</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="donorEmail">Email</label>
+                  <input type="text" name="donorEmail">
+                  <p class="error-msg">Required</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="donorContact">Contact Number</label>
+                  <input type="text" name="donorContact">
                   <p class="error-msg">Required</p>
                 </div>
 
@@ -189,7 +195,14 @@
 
               </div>
 
-              <div class="error-box login-error show">
+              <div class="error-box  show">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                  facere.
+                </p>
+              </div>
+
+              <div class="success-box show">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
                   facere.
@@ -201,7 +214,7 @@
             </form>
           </div>
 
-          <div class="main__block__table tab__subscription ">
+          <div class="main__block__table tab__subscription show">
               <div class="responsive__table__wrapper">
                 <table class="main__block__donor__table">
                   <thead class="table__header">
@@ -287,8 +300,7 @@
               </div>
           </div>
 
-
-          <div class="main__block__table tab__expiring show">
+          <div class="main__block__table tab__expiring ">
             <div class="responsive__table__wrapper">
               <table class="main__block__donor__table">
                 <thead class="table__header">
@@ -296,7 +308,10 @@
                   <th>Age</th>
                   <th>Frequency</th>
                   <th>Amount</th>
-                  <th>Action</th>
+
+                  <th>Status</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
                 </thead>
 
                 <tbody>
@@ -304,18 +319,19 @@
                     <td>Ramon Plaza</td>
                     <td>89</td>
                     <td>Monthly</td>
-                    <th>1200</th>
-                    <td>
-                      <button>View</button>
-                      <button>Cancel</button>
-                    </td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
                   </tr>
 
-                
+
+          
                 </tbody>
               </table>
             </div>
         </div>
+
 
         <div class="main__block__table tab__cancelled ">
           <div class="responsive__table__wrapper">
@@ -325,7 +341,9 @@
                 <th>Age</th>
                 <th>Frequency</th>
                 <th>Amount</th>
-                <th>Action</th>
+                <th>Status</th>
+                <th>Created</th>
+               
               </thead>
 
               <tbody>
@@ -333,13 +351,13 @@
                   <td>Ramon Plaza</td>
                   <td>89</td>
                   <td>Monthly</td>
-                  <th>1200</th>
-                  <td>
-                    <button>View</button>
-                    <button>Cancel</button>
-                  </td>
+                  <td>1200</td>
+                  <td class="cell__status inactive"><span>Cancelled</span></td>
+                  <td>Oct 3 2002</td>
                 </tr>
 
+
+         
               
               </tbody>
             </table>
@@ -351,8 +369,8 @@
       </div>
     </main>
 
-
-    <div class="modal__box ">
+<!-- ADD Subscription -->
+    <div class="modal__box  ">
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Add Subscription</h3></div>
@@ -400,8 +418,8 @@
       </div>
     </div>
 
-
-    <div class="modal__box ">
+<!-- View Child Details -->
+    <div class="modal__box show">
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Child Details</h3></div>
@@ -444,8 +462,29 @@
       </div>
     </div>
 
+    <!-- MODAL Cancel Subscription -->
+    <div class="modal__box ">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Cancel Subscription?</h3></div>
+            <div class="modal__box__body">
+ 
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi expedita voluptate libero velit officiis, error possimus quasi commodi veritatis aliquid!</p>
+            </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel </button>
+              <button class="btn btn--action btn--error">Confirm </button> 
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
 
-    <div class="modal loading">
+
+
+<!-- View Child Details -->
+    <div class="modal loading ">
       <div class="modal__main spinner_modal">
         <svg
           class="spinner"

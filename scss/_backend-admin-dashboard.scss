@@ -4,6 +4,8 @@
   }
   .main__block__gridItem {
     @include dashboard__card();
+    margin: 0;
+    margin-top: 2rem;
   }
 }
 

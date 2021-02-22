@@ -2087,15 +2087,6 @@ button:disabled:hover {
   0% {
     stroke: #4285f4;
   }
-  25% {
-    stroke: #de3e35;
-  }
-  50% {
-    stroke: #f7c223;
-  }
-  75% {
-    stroke: #1b9a59;
-  }
   100% {
     stroke: #4285f4;
   }
@@ -2104,15 +2095,6 @@ button:disabled:hover {
 @keyframes colors {
   0% {
     stroke: #4285f4;
-  }
-  25% {
-    stroke: #de3e35;
-  }
-  50% {
-    stroke: #f7c223;
-  }
-  75% {
-    stroke: #1b9a59;
   }
   100% {
     stroke: #4285f4;
@@ -3286,7 +3268,7 @@ button:disabled:hover {
 
 .sidebar {
   color: #000;
-  padding: 3rem;
+  padding: 3rem 0 3rem 3rem;
   text-align: center;
   border-right: 1px solid #ccc;
   margin-top: 2rem;
@@ -3773,6 +3755,20 @@ button:disabled:hover {
   letter-spacing: 1px;
 }
 
+.sidebar__active {
+  position: relative;
+}
+
+.sidebar__active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.4rem;
+  height: 100%;
+  background-color: #3f9cd1;
+}
+
 .main__block .table__wrapper {
   overflow-x: auto;
 }
@@ -3845,8 +3841,8 @@ button:disabled:hover {
 .main__block__donor__table tbody .donor__option__menu {
   display: none;
   position: absolute;
-  left: -11rem;
-  top: 2rem;
+  left: -10rem;
+  top: 1rem;
   background-color: #ccc;
   padding: 1rem;
   z-index: 5;
@@ -3873,6 +3869,15 @@ button:disabled:hover {
   color: #fc9726;
 }
 
+.main__block__donor__table tbody .donor__option__menu ul li a {
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+.main__block__donor__table tbody .donor__option__menu ul li a:hover {
+  color: #fc9726;
+}
+
 .main__block__donor__table tbody .donor__option__menu.show {
   display: block;
 }
@@ -3887,6 +3892,8 @@ button:disabled:hover {
   padding: 2rem 1.8rem;
   border: 1px solid #ccc;
   margin: 1rem;
+  margin: 0;
+  margin-top: 2rem;
 }
 
 .main__block.main__dashboard .main__block__gridItem:hover {
@@ -4084,6 +4091,20 @@ button:disabled:hover {
 
 .main__block__table .cell__status span {
   background-color: #50a41e;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.main__block__table .cell__status.inactive span {
+  background-color: #ccc;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.main__block__table .cell__status.expiring span {
+  background-color: #cfbb00;
   color: #fff;
   padding: 0.4rem 1rem;
   border-radius: 0.4rem;

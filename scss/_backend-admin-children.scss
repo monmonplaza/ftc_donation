@@ -9,7 +9,7 @@
 
 .sidebar {
   color: $dark;
-  padding: 3rem;
+  padding: 3rem 0 3rem 3rem;
   text-align: center;
   border-right: 1px solid $gray;
   margin-top: 2rem;
@@ -369,5 +369,18 @@
         }
       }
     }
+  }
+}
+
+.sidebar__active {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.4rem;
+    height: 100%;
+    background-color: $blue;
   }
 }

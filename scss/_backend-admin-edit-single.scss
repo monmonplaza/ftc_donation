@@ -54,6 +54,24 @@
     }
   }
 
+  .cell__status.inactive {
+    span {
+      background-color: $gray;
+      color: $light;
+      padding: 0.4rem 1rem;
+      border-radius: 0.4rem;
+    }
+  }
+
+  .cell__status.expiring {
+    span {
+      background-color: $warning;
+      color: $light;
+      padding: 0.4rem 1rem;
+      border-radius: 0.4rem;
+    }
+  }
+
   button {
     border: none;
     background-color: transparent;
