@@ -3863,12 +3863,12 @@ button:disabled:hover {
 }
 
 .main__block__donor__table tr th {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0;
   text-align: left;
 }
 
 .main__block__donor__table tr td {
-  padding: 0.6rem 1.5rem;
+  padding: 0.6rem 0rem;
 }
 
 .main__block__donor__table tbody tr:nth-child(even) {
