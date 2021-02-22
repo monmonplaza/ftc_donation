@@ -346,6 +346,10 @@ form .form__group.with__cancel {
   }
 }
 
+th {
+  text-align: left;
+}
+
 .form-group .error-input {
   border: 1px solid #fc3838;
   background-color: #ffe8e8;
