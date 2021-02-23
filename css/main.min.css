@@ -2262,6 +2262,7 @@ button:disabled:hover {
 
 .modal__box__head h3 {
   text-align: center;
+  color: #000;
 }
 
 .modal__box__body {
@@ -2363,6 +2364,7 @@ button:disabled:hover {
   color: #fff;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  color: #fff;
 }
 
 .modal__payment__option li a:hover {

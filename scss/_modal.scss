@@ -487,8 +487,10 @@ $duration: 2s;
   }
   &__head {
     padding: 2rem;
+
     h3 {
       text-align: center;
+      color: $dark;
     }
   }
   &__body {
@@ -557,6 +559,7 @@ $duration: 2s;
     a {
       @include btn($blue, 100%);
       transition: 0.5s ease;
+      color: $light;
       &:hover {
         background-color: darken($blue, 20);
       }
