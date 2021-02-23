@@ -2364,7 +2364,7 @@ button:disabled:hover {
   color: #fff;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  color: #fff;
+  color: #fff !important;
 }
 
 .modal__payment__option li a:hover {

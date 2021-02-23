@@ -559,7 +559,7 @@ $duration: 2s;
     a {
       @include btn($blue, 100%);
       transition: 0.5s ease;
-      color: $light;
+      color: $light !important;
       &:hover {
         background-color: darken($blue, 20);
       }
