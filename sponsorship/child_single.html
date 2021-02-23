@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -64,7 +64,7 @@
         <div class="child__single__grid">
           <div class="child__single__gridItem">
             <div class="profile__img">
-              <img src="./images/child_profile.jpg" alt="" />
+              <img src="../images/child_profile.jpg" alt="" />
             </div>
           </div>
           <div class="child__single__gridItem">
@@ -91,7 +91,7 @@
                   Soluta nobis voluptas, ea fuga maiores voluptatum!
                 </p>
 
-                <a class="btn">Sponsor Mutya</a>
+                <button class="btn">Sponsor Mutya</button>
               </div>
             </div>
           </div>
@@ -179,6 +179,89 @@
     <div class="copyright">
       <p>Face The Children - An Opportunity for Life</p>
       <p>&copy; 2021 Philippine Frontline Ministries</p>
+    </div>
+
+    <!-- MODAL LIST -->
+
+    <!-- MODAL PAYMENT OPTION -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Sponsor Mutya?</h3></div>
+          <div class="modal__box__body">
+            <!-- <div class="child__modal__wrapper">
+              <h4>Select the amount you want to give</h4>
+              <input type="radio" name="sponsor-amount" /> $20 <br />
+              <input type="radio" name="sponsor-amount" /> $40 <br />
+              <input type="radio" name="sponsor-amount" /> $100 <br />
+              <input type="radio" name="sponsor-amount" /> $200 <br />
+
+              <ul>
+                <li>Total</li>
+                <li>$200</li>
+              </ul>
+            </div> -->
+
+            <ul class="modal__payment__option">
+              <li><a href="#">Login or Create Account</a></li>
+              <li><a href="#">Continue as Guest</a></li>
+            </ul>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <!-- <button class="btn btn--action">
+                Process <i class="fal fa-spinner fa-spin"></i>
+              </button> -->
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL PAYMENT AMOUNT -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Sponsor Mutya?</h3></div>
+          <div class="modal__box__body">
+            <div class="child__modal__wrapper">
+              <div class="form-group">
+                <label>Select the amount you want to give</label>
+                <div class="radio__wrap">
+                  <input type="radio" name="guest-donationAmount" />
+                  <span>$20</span>
+                </div>
+                <div class="radio__wrap">
+                  <input type="radio" name="guest-donationAmount" />
+                  <span>$40</span>
+                </div>
+                <div class="radio__wrap">
+                  <input type="radio" name="guest-donationAmount" />
+                  <span>$100</span>
+                </div>
+                <div class="radio__wrap">
+                  <input type="radio" name="guest-donationAmount" />
+                  <span>$200</span>
+                </div>
+                <p class="error-msg">Required</p>
+              </div>
+              <ul class="modal__total__amount">
+                <li>Total</li>
+                <li>$200</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <button class="btn btn--action" disabled="disabled">
+                Process <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

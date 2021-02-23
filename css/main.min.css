@@ -2343,6 +2343,58 @@ button:disabled:hover {
   color: gray;
 }
 
+.modal__payment__option li {
+  margin-bottom: 2rem;
+}
+
+.modal__payment__option li a {
+  padding: 1rem 1.4rem;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  background-color: #3f9cd1;
+  color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.modal__payment__option li a:hover {
+  background-color: #216389;
+}
+
+.child__modal__wrapper h4 {
+  margin-bottom: 1rem;
+}
+
+.child__modal__wrapper .radio__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.child__modal__wrapper .modal__total__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ccc;
+  padding: 0.5rem;
+}
+
+.child__modal__wrapper .modal__total__amount li {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 1rem;
@@ -2849,7 +2901,7 @@ button:disabled:hover {
   color: green;
 }
 
-.child__single__gridItem a.btn {
+.child__single__gridItem button.btn {
   background-color: #fc9726;
   color: #fff;
   -webkit-transition: 0.5s ease;
@@ -2870,7 +2922,7 @@ button:disabled:hover {
   margin: 2rem 0;
 }
 
-.child__single__gridItem a.btn:hover {
+.child__single__gridItem button.btn:hover {
   background-color: #b96303;
 }
 
@@ -3407,6 +3459,12 @@ button:disabled:hover {
   margin-bottom: 1rem;
   opacity: 0.6;
   text-transform: uppercase;
+}
+
+.guest__login .opt__2 form .donation__amount .radio__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main__grid {

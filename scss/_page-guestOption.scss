@@ -73,6 +73,12 @@
         }
         margin-bottom: 2rem;
       }
+
+      .donation__amount {
+        .radio__wrap {
+          display: flex;
+        }
+      }
     }
   }
 }

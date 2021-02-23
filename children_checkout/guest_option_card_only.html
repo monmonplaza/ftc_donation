@@ -22,11 +22,11 @@
   <section class="guest__login">
       <div class="container">
           <div class="guest__login__wrapper">
-          <div class="guest__login__opt opt__1">
+          <!-- <div class="guest__login__opt opt__1">
               <h2>Register a new account</h2>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatum consectetur suscipit molestiae aspernatur facilis saepe esse labore cum pariatur!</p>
               <a class="btn">New Account </a>
-          </div>
+          </div> -->
 
           <div class="guest__login__opt opt__2">
               <div class="opt__2__header">
@@ -35,6 +35,18 @@
                 <img src="../images/cards.png" alt="card accept" />
               </div>
             <form action="">
+          
+            
+              <div class="form-group donation__amount">
+                <label for="guest-donationAmount">Donation Amount</label>
+                <div class="radio__wrap"><input type="radio" name="guest-donationAmount" > <span>$20</span></div>
+                <div class="radio__wrap"><input type="radio" name="guest-donationAmount" > <span>$40</span></div>
+                <div class="radio__wrap"><input type="radio" name="guest-donationAmount" > <span>$100</span></div>
+                <div class="radio__wrap"><input type="radio" name="guest-donationAmount" > <span>$200</span></div>
+                <p class="error-msg">Required</p>
+              </div>
+              
+
                   <div class="form-group ">
                     <label for="guest-email">Email</label>
                     <input type="email" name="guest-email" class="error-input">

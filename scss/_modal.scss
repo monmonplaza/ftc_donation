@@ -547,3 +547,39 @@ $duration: 2s;
     }
   }
 }
+
+//Modal Checkout
+
+.modal__payment__option {
+  li {
+    margin-bottom: 2rem;
+
+    a {
+      @include btn($blue, 100%);
+      transition: 0.5s ease;
+      &:hover {
+        background-color: darken($blue, 20);
+      }
+    }
+  }
+}
+
+.child__modal__wrapper {
+  h4 {
+    margin-bottom: 1rem;
+  }
+  .radio__wrap {
+    display: flex;
+  }
+
+  .modal__total__amount {
+    display: flex;
+    justify-content: space-between;
+    background-color: $gray;
+    padding: 0.5rem;
+    li {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}
