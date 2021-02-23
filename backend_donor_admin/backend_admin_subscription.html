@@ -54,16 +54,26 @@
 
           <ul class="mobile__wrapper sm-only">
             <li>
-              <a href="#"> <i class="fal fa-home"></i> Home</a>
+              <a href="backend_admin_dashboard.html">
+                <i class="fal fa-home"></i> Home</a
+              >
             </li>
             <li>
-              <a href="#"> <i class="fal fa-users"></i> Users</a>
+              <a href="backend_admin_users.html">
+                <i class="fal fa-users"></i> Users</a
+              >
             </li>
             <li>
-              <a href="#"> <i class="fal fa-child"></i>Children </a>
+              <a href="backend_admin_children.html">
+                <i class="fal fa-child"></i>Children
+              </a>
             </li>
             <li>
-              <a href="#"> <i class="fal fa-donate"></i>Donor </a>
+              <a
+                href="backend_admin_donor_list.html"
+              >
+                <i class="fal fa-donate"></i>Donor
+              </a>
             </li>
           </ul>
         </div>
@@ -195,7 +205,7 @@
 </div>
 
      <!-- MODAL Cancel Subscription -->
-<div class="modal__box  ">
+<div class="modal__box show ">
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Cancel Subscription?</h3></div>
@@ -206,7 +216,7 @@
           <div class="modal__box__footer">
             <div class="modal__box__btns">
               <button class="btn btn--cancel">Cancel </button>
-              <button class="btn btn--action btn--error">Confirm </button> 
+              <button class="btn btn--action btn--error">Confirm <i class="fal fa-spinner fa-spin"></i></button> 
             </div>
           </div>
       </form>
@@ -214,7 +224,7 @@
     </div>
     <!--  -->
     
-    <div class="modal loading show">
+    <div class="modal loading ">
       <div class="modal__main spinner_modal">
         <svg
           class="spinner"

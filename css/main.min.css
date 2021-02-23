@@ -3341,7 +3341,6 @@ button:disabled:hover {
   background-color: #3f9cd1;
   color: #fff;
   margin-left: 0;
-  margin-right: auto;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -3351,43 +3350,63 @@ button:disabled:hover {
   background-color: #216389;
 }
 
+.guest__login .opt__2__header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.guest__login .opt__2__header p {
+  margin-bottom: 0.5rem;
+}
+
 .guest__login .opt__2 form {
   max-width: 45rem;
+  margin: 0 auto;
 }
 
-.guest__login .button__group {
-  margin-right: 2rem;
-  position: relative;
-  border-radius: 1rem;
-  border: none;
+.guest__login .opt__2 form .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 
-.guest__login .button__group button {
-  width: 16rem;
-  padding: 0.8rem 1.6rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  outline: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+@media screen and (max-width: 420px) {
+  .guest__login .opt__2 form .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
-.guest__login .button__group button.btn-paypal {
-  border: 1px solid #fc9726;
-  background-color: #fc9726;
+.guest__login .opt__2 form .guest__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.guest__login .button__group button.btn-paypal:hover {
-  background-color: #ec7e03;
+.guest__login .opt__2 form .guest__btns .btn {
+  margin-right: 1rem;
 }
 
-.guest__login .button__group button.btn-creditCard {
-  border: 1px solid #3f9cd1;
-  background-color: #3f9cd1;
+.guest__login .opt__2 form .guest__btns .btn__cancel {
+  background-color: #4d4d4d;
 }
 
-.guest__login .button__group button.btn-creditCard:hover {
-  background-color: #216389;
+.guest__login .opt__2 form .guest__btns .btn__cancel:hover {
+  background-color: #1a1a1a;
+}
+
+.guest__login .opt__2 form .guest__separator {
+  margin-bottom: 2rem;
+}
+
+.guest__login .opt__2 form .guest__separator h3 {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
 .main__grid {
@@ -3530,8 +3549,8 @@ button:disabled:hover {
 .main__block__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-gap: 2rem;
 }
 

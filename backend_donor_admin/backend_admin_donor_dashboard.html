@@ -24,26 +24,26 @@
         <div class="sidebar">
           <ul class="lg-only">
             <li>
-              <a href="backend_admin_dashboard.html">
+              <a href="../backend_admin_dashboard.html">
                 <i class="fal fa-home"></i>
                 <span class="menu__label">Overview</span></a
               >
             </li>
             <li>
-              <a href="backend_admin_users.html">
+              <a href="../backend_admin_users.html">
                 <i class="fal fa-users"></i>
                 <span class="menu__label">Users</span></a
               >
             </li>
             <li>
-              <a href="backend_admin_children.html"
+              <a href="../backend_admin_children.html"
                 ><i class="fal fa-child"></i>
                 <span class="menu__label">Children</span></a
               >
             </li>
             <li>
               <a
-                href="backend_admin_donor_dashboard.html"
+                href="../backend_admin_donor_dashboard.html"
                 class="sidebar__active"
               >
                 <i class="fal fa-donate"></i>
@@ -53,16 +53,24 @@
           </ul>
           <ul class="mobile__wrapper sm-only">
             <li>
-              <a href="#"> <i class="fal fa-home"></i> Home</a>
+              <a href="../backend_admin_dashboard.html">
+                <i class="fal fa-home"></i> Home</a
+              >
             </li>
             <li>
-              <a href="#"> <i class="fal fa-users"></i> Users</a>
+              <a href="../backend_admin_users.html">
+                <i class="fal fa-users"></i> Users</a
+              >
             </li>
             <li>
-              <a href="#"> <i class="fal fa-child"></i>Children </a>
+              <a href="../backend_admin_children.html">
+                <i class="fal fa-child"></i>Children
+              </a>
             </li>
             <li>
-              <a href="#"> <i class="fal fa-donate"></i>Donor </a>
+              <a href="../backend_admin_donor_dashboard.html">
+                <i class="fal fa-donate"></i>Donor
+              </a>
             </li>
           </ul>
         </div>
@@ -81,7 +89,7 @@
                     Fuga, molestias id veritatis dolor modi natus.
                   </p>
                 </div>
-                <a href="backend_admin_donor.html">Manage Donor</a>
+                <a href="backend_admin_donor_list.html">Manage Donor</a>
               </div>
             </div>
 
@@ -102,140 +110,6 @@
         </div>
       </div>
     </main>
-
-    <!-- MODAL -->
-
-    <div class="modal profileChild">
-      <div class="modal__main">
-        <div class="modal__close">X</div>
-        <h2>Edit Profile</h2>
-
-        <form action="">
-          <div class="form-group">
-            <label for="childName">Child Name</label>
-            <input type="text" name="childName" />
-            <small class="error-msg">required</small>
-          </div>
-
-          <div class="form-group">
-            <label for="childBirthday">Birthday</label>
-            <input type="date" name="childBirthday" />
-            <small class="error-msg">required</small>
-          </div>
-
-          <div class="form-group">
-            <label for="childAge">Age</label>
-            <input type="text" name="childAge" />
-            <small class="error-msg">required</small>
-          </div>
-
-          <div class="form-group">
-            <label for="ftcyears">Years at FTC</label>
-            <input type="number" name="ftcyears" />
-            <small class="error-msg">required</small>
-          </div>
-          <div class="form-group">
-            <label for="story">Story</label>
-            <textarea name="story"></textarea>
-            <small class="error-msg">required</small>
-          </div>
-          <div class="form-group with__cancel">
-            <button class="btn__action">Update</button>
-            <button class="btn__cancel">Cancel</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="modal profileChild">
-      <div class="modal__main">
-        <div class="modal__close">X</div>
-        <h2>Add New Child</h2>
-
-        <form action="">
-          <div class="form__group">
-            <label for="childName">Child Name</label>
-            <input type="text" name="childName" />
-            <small class="error-msg">required</small>
-          </div>
-
-          <div class="form__group">
-            <label for="childBirthday">Birthday</label>
-            <input type="date" name="childBirthday" />
-            <small class="error-msg">required</small>
-          </div>
-
-          <div class="form__group">
-            <label for="childAge">Age</label>
-            <input type="text" name="childAge" />
-            <small class="error-msg">required</small>
-          </div>
-
-          <div class="form__group">
-            <label for="ftcyears">Years at FTC</label>
-            <input type="number" name="ftcyears" />
-            <small class="error-msg">required</small>
-          </div>
-          <div class="form__group">
-            <label for="story">Story</label>
-            <textarea name="story"></textarea>
-            <small class="error-msg">required</small>
-          </div>
-          <div class="form__group with__cancel">
-            <button class="btn__action">Update</button>
-            <button class="btn__cancel">Cancel</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!--  -->
-    <div class="modal">
-      <div class="modal__main">
-        <div class="modal__close">X</div>
-        <h2>Delete Child?</h2>
-        <p>
-          Once you delete a child, all data about the child will be remove and
-          there is no going back. Please be certain
-        </p>
-        <form action="">
-          <div class="form__group with__cancel">
-            <button class="btn__action btn--error">Update</button>
-            <button class="btn__cancel">Cancel</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- ADD donation -->
-    <div class="modal">
-      <div class="modal__main">
-        <div class="modal__close">X</div>
-        <h2>Manual Donation</h2>
-
-        <form action="">
-          <div class="form__group">
-            <label for="childName">Amount</label>
-            <input type="text" name="childName" />
-            <small class="error-msg">required</small>
-          </div>
-
-          <div class="form__group">
-            <label for="ftcyears">Expiry Date</label>
-            <input type="number" name="ftcyears" />
-            <small class="error-msg">required</small>
-          </div>
-          <div class="form__group">
-            <label for="story">Remark</label>
-            <textarea name="story"></textarea>
-            <small class="error-msg">required</small>
-          </div>
-          <div class="form__group with__cancel">
-            <button class="btn__action">Update</button>
-            <button class="btn__cancel">Cancel</button>
-          </div>
-        </form>
-      </div>
-    </div>
 
     <div class="modal loading">
       <div class="modal__main spinner_modal">

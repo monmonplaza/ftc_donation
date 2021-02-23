@@ -29,44 +29,102 @@
           </div>
 
           <div class="guest__login__opt opt__2">
-            <h2>Guest Details</h2>
-            
+              <div class="opt__2__header">
+                <h2>Guest Details</h2>
+                <p>We Accept the following cards</p>
+                <img src="../images/cards.png" alt="card accept" />
+              </div>
             <form action="">
           
-                <div class="form-group ">
+            
+
+              
+
+                  <div class="form-group ">
                     <label for="guest-email">Email</label>
                     <input type="email" name="guest-email" class="error-input">
                     <p class="error-msg">Required</p>
                   </div>
 
-                <div class="form-group ">
-                    <label for="guest-fname">First Name</label>
-                    <input type="text" name="guest-fname " class="error-input">
-                    <p class="error-msg">Required</p>
+                  <div class="guest__separator guest__card__info">
+                    <h3>Card Information</h3>
+                    <div class="form-group ">
+                      <label for="guest-cardName">Name on card</label>
+                      <input type="text" name="guest-cardName " class="error-input">
+                      <p class="error-msg">Required</p>
+                    </div>
+  
+                    <div class="form-group ">
+                      <label for="guest-cardNo">Card Number</label>
+                      <input type="text" name="guest-cardNo">
+                      <p class="error-msg">Required</p>
+                    </div>
+  
+                    <div class="form-group ">
+                      <label for="guest-cardcvc">Security Code</label>
+                      <input type="text" name="guest-cardcvc">
+                      <p class="error-msg">Required</p>
+                    </div>
+  
+                    <div class="grid">
+                      <div class="form-group ">
+                        <label for="guest-expMonth">Expiration Month</label>
+                        <input type="text" name="guest-cardNo">
+                        <p class="error-msg">Required</p>
+                      </div>
+    
+                      <div class="form-group ">
+                        <label for="guest-expYear">Expiration Year</label>
+                        <input type="text" name="guest-expYear">
+                        <p class="error-msg">Required</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="form-group ">
-                    <label for="guest-lname">Last Name</label>
-                    <input type="text" name="guest-lname">
-                    <p class="error-msg">Required</p>
+                
+                  
+                  <div class="guest__separator guest__address">
+                    <h3>Billing Information</h3>
+                    <div class="form-group ">
+                      <label for="guest-add_1">Address Line 1</label>
+                      <input type="text" name="guest-add_1">
+                      <p class="error-msg">Required</p>
+                    </div>
+  
+                    <div class="form-group ">
+                      <label for="guest-add_2">Address Line 2 (Optional)</label>
+                      <input type="text" name="guest-add_2">
+                      <p class="error-msg">Required</p>
+                    </div>
+  
+                    <div class="form-group ">
+                      <label for="guest-city">City</label>
+                      <input type="text" name="guest-city">
+                      <p class="error-msg">Required</p>
+                    </div>
+                    <div class="grid">
+                      <div class="form-group ">
+                        <label for="guest-state">State</label>
+                        <input type="text" name="guest-state">
+                        <p class="error-msg">Required</p>
+                      </div>
+    
+                      <div class="form-group ">
+                        <label for="guest-zip">Zip</label>
+                        <input type="text" name="guest-zip">
+                        <p class="error-msg">Required</p>
+                      </div>
+                    </div>
+             
                   </div>
+                  
 
               
-
-
-                  <div class="form-group ">
-                    <label for="guest-card">Payment Method</label>
-         
-                    <div class="button__group">
-                        <button class="input__icon btn-paypal">
-                            <img src="../images/logo_paypal.png" alt="" />
-                        </button>
-
-                        <button class="input__icon btn-creditCard">
-                            <img src="../images/logo_card.png" alt="" />
-                        </button>
-                      </div>
-                  </div>
+                  <div class="form-group guest__btns">
+                
+                  <button class="btn btn__cancel">Cancel </button>
+                  <button class="btn btn__action">Confirm <i class="fal fa-spinner fa-spin"></i></button> 
+                </div>
             </form>
           </div>
         </div>
@@ -77,102 +135,6 @@
 
 
 
-<!-- Payment -->
-<div class="modal  ">
-  <div class="modal__main">
-    <div class="modal__close">X</div>
-    <h2>Card Information</h2>
-    <h3>Total Amount <br> <span class="total__value">$30.00</span></h3>
-    <form action="">
-
-      <div class="form-group error">
-        <label for="frequency" class="error-label">Payment Method</label>
-        <div class="radio_wrap">
-          <input type="radio" name="method"><span>Credit Card</span><img src="./images/icon_cc.png" alt="cc icon"> <img
-            src="./images/icon_visa.png" alt="cc visa icon"><img src="./images/icon_master.png"
-            alt="cc master icon"><img src="./images/icon_jcp.png" alt="cc jcp icon">
-        </div>
-
-        <div class="radio_wrap">
-          <input type="radio" name="method"> <span>Paypal</span><img src="./images/icon_paypal.png" alt="paypal icon">
-          <p class="error-msg radio">Error Message here</p>
-
-        </div>
-
-      </div>
-
-      <button>Sponsor</button>
-    </form>
-  </div>
-
-</div>
-
-
-<!-- Edit Amount -->
-<div class="modal ">
-  <div class="modal__main">
-    <div class="modal__close">X</div>
-    <h2>Edit Donation </h2>
-    <h3>Select new amount</h3>
-    <form action="">
-      <div class="form-group error">
-        <input type="radio" id="dollar-10" value="10" for="dollar-10" name="amount">
-        <label for="dollar-10" class="radio-label">$10.00</label> <br>
-
-        <input type="radio" id="dollar-20" value="20" for="dollar-20"name="amount">
-        <label for="dollar-20" class="radio-label">$20.00</label><br>
-
-        <input type="radio" id="dollar-50" value="50" for="dollar-50"name="amount">
-        <label for="dollar-50" class="radio-label">$50.00</label><br>
-
-        <p class="error-msg">Required</p>
-
-      </div>
-      <button>Update</button>
-    </form>
-  </div>
-</div>
-
-<!-- Clear List -->
-<div class="modal  ">
-  <div class="modal__main">
-    <div class="modal__close">X</div>
-    <h2>Clear Children List </h2>
-    <p>Are you sure you want to clear the list?</p>
-    <div class="modal__main__action">
-      <a href="#" class="btn-error">Yes</a>
-      <a href="#">No</a>
-    </div>
-  </div>
-</div>
-
-<!-- Clear List -->
-<div class="modal  ">
-  <div class="modal__main">
-    <div class="modal__close">X</div>
-    <h2>Remove Child </h2>
-    <p>Are you sure you want to remove this child on the list?</p>
-    <div class="modal__main__action">
-      <a href="#" class="btn-error">Yes</a>
-      <a href="#">No</a>
-    </div>
-  </div>
-</div>
-
-<!-- Error modal for sir pat -->
-
-<div class="modal  ">
-  <div class="modal__main error__modal">
-    <div class="modal__close">X</div>
-    <h2 class="error-msg">System Error!</h2>
-    <p>Something went wrong on the system...</p>
-    <p>Return error log here</p>
-    <div class="modal__main__action">
-      <a href="#">Close</a>
-    </div>
-  </div>
-</div>
-</div>
 
 <!-- Spinner modal for sir pat -->
 <div class="modal loading ">
@@ -198,111 +160,6 @@
 </div>
 
 
-<!-- Clear List -->
-<div class="modal  ">
-  <div class="modal__main">
-    <h2 class="text-blue">Thank You </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
-    <div class="form__group with__cancel">
-
-      <button class="btn__action">Close</button>
-    </div>
-  </div>
-</div>
-
-
-  <!-- Card Input -->
-  <div class="modal   ">
-    <div class="modal__main card">
-      <div class="modal__close">X</div>
-      <h2>Card Information</h2>
-      <form action="">
-        <div class="flex">
-          <div class="card__wrap">
-            <h3>Card Details</h3>
-            <div class="form-group error">
-              <label for="cc_fname">First Name</label>
-              <input type="text" name="cc_fname">
-              <p class="error-msg">Required</p>
-            </div>
-            <div class="form-group error">
-              <label for="cc_lname">Last Name</label>
-              <input type="text" name="cc_lname">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_number">Card No.</label>
-              <input type="number" name="cc_number">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_expired_month">Expiration Month</label>
-              <input type="date" name="cc_expired_month">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_expired_month">Expiration Year</label>
-              <input type="date" name="cc_expired_month">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_csv">Security Code</label>
-              <input type="number" name="cc_csv">
-              <p class="error-msg">Required</p>
-            </div>
-          </div>
-          <div class="card__address">
-            <h3>Card Holder Address</h3>
-            <div class="form-group error">
-              <label for="cc_street">Street</label>
-              <input type="text" name="cc_street">
-              <p class="error-msg">Required</p>
-            </div>
-            <div class="form-group error">
-              <label for="cc_address">Address 1</label>
-              <input type="text" name="cc_address">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group ">
-              <label for="cc_address2">Address 2 (Optional)</label>
-              <input type="text" name="cc_address2">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_city">City</label>
-              <input type="text" name="cc_city">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_state">State</label>
-              <input type="text" name="cc_state">
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group error">
-              <label for="cc_zipcode">Zip Code</label>
-              <input type="number" name="cc_zipcode">
-              <p class="error-msg">Required</p>
-            </div>
-
-          </div>
-
-
-        </div>
-
-
-
-        <button>Proceed</button>
-      </form>
-    </div>
-  </div>
 
 
 </body>
