@@ -3094,7 +3094,7 @@ button:disabled:hover {
   font-size: 1.4rem;
 }
 
-.childlist__list__boxInfo .wrapper a.btn-sponsor {
+.childlist__list__boxInfo .wrapper button.btn-sponsor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3105,18 +3105,31 @@ button:disabled:hover {
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.childlist__list__boxInfo .wrapper a.btn-sponsor img {
+.childlist__list__boxInfo .wrapper button.btn-sponsor:hover {
+  background-color: #216389;
+}
+
+.childlist__list__boxInfo .wrapper button.btn-sponsor img {
   width: unset;
   padding-left: 1rem;
 }
 
 .childlist__list__boxInfo .wrapper a {
   color: #fc9726;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.childlist__list__boxInfo .wrapper a:hover {
+  color: #b96303;
 }
 
 .childlist__list__boxInfo .sponsor__bar {
