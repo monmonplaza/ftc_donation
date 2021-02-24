@@ -269,3 +269,16 @@ form {
 th {
   text-align: left;
 }
+
+.no__data {
+  text-align: center;
+  opacity: 0.5;
+  margin: 5rem 0;
+  i {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+}

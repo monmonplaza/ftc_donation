@@ -103,6 +103,10 @@
   content: "\f110";
 }
 
+.fa-inbox::before {
+  content: "\f01c";
+}
+
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);

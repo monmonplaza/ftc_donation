@@ -350,6 +350,21 @@ th {
   text-align: left;
 }
 
+.no__data {
+  text-align: center;
+  opacity: 0.5;
+  margin: 5rem 0;
+}
+
+.no__data i {
+  font-size: 8rem;
+}
+
+.no__data h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
 .form-group .error-input {
   border: 1px solid #fc3838;
   background-color: #ffe8e8;
@@ -2754,6 +2769,10 @@ button:disabled:hover {
 
 .fa-spinner::before {
   content: "\f110";
+}
+
+.fa-inbox::before {
+  content: "\f01c";
 }
 
 @-webkit-keyframes fa-spin {
