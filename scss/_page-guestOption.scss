@@ -63,6 +63,12 @@
         }
       }
 
+      .guest__address {
+        p {
+          margin-top: 0.5rem;
+        }
+      }
+
       .guest__separator {
         h3 {
           border-bottom: 1px solid #ccc;
@@ -77,6 +83,9 @@
       .donation__amount {
         .radio__wrap {
           display: flex;
+          input {
+            height: 2.5rem;
+          }
         }
       }
     }

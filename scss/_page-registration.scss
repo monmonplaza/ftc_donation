@@ -62,7 +62,12 @@
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: 1fr 1fr 1fr;
-      .form-group:nth-child(1) {
+
+      .img__cardInfo {
+        grid-column: 1 /4;
+        justify-self: center;
+      }
+      .form-group.card__number {
         grid-column: 1 /4;
       }
 

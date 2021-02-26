@@ -1,8 +1,8 @@
 .childlist {
   &__nav {
     border-bottom: 2px solid $darkgray;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+
+    margin: 1rem 0;
     @include media-query(890px) {
       margin-top: 0rem;
       margin-bottom: 0;
@@ -15,7 +15,7 @@
         flex-direction: column;
       }
       li {
-        padding: 2rem 7rem;
+        padding: 1rem;
         position: relative;
         @include media-query(890px) {
           text-align: center;
@@ -58,7 +58,7 @@
   }
 
   &__description {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     p {
       max-width: 75rem;
       text-align: center;
@@ -70,7 +70,7 @@
   }
 
   &__main {
-    padding: 2rem 0 8rem;
+    padding: 1rem 0 8rem;
     @include media-query(420px) {
       padding: 1rem 0 8rem;
     }
@@ -78,7 +78,7 @@
 }
 
 .childlist__list {
-  padding: 5rem 0;
+  padding: 3rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2rem;
@@ -146,20 +146,24 @@
       }
     }
     .sponsor__bar {
-      background-color: #ffc67b;
+      background-color: #ffba5f;
       position: relative;
+      min-height: 3.5rem;
       &__percent {
         position: absolute;
         height: 100%;
-        width: 90%;
-        background-color: $orange;
+        width: 20%;
+        background-color: #e98400;
       }
       p {
         position: relative;
         z-index: 2;
-        font-size: 1.3rem;
-        padding: 0.3rem;
+        font-weight: bold;
+
+        padding: 1rem;
         margin: 0;
+        font-size: 1.6rem;
+        color: $light;
       }
     }
   }

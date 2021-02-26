@@ -2664,10 +2664,6 @@ button:disabled:hover {
   background-color: transparent;
 }
 
-.banner__children__info h1 {
-  margin-top: 4rem;
-}
-
 .fa {
   font-family: "Font Awesome 6 Pro";
   font-family: var(--fa-style-family, "Font Awesome 6 Pro");
@@ -2949,8 +2945,7 @@ button:disabled:hover {
 
 .childlist__nav {
   border-bottom: 2px solid #929292;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 890px) {
@@ -2980,7 +2975,7 @@ button:disabled:hover {
 }
 
 .childlist__nav ul li {
-  padding: 2rem 7rem;
+  padding: 1rem;
   position: relative;
 }
 
@@ -3031,7 +3026,7 @@ button:disabled:hover {
 }
 
 .childlist__description {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .childlist__description p {
@@ -3047,7 +3042,7 @@ button:disabled:hover {
 }
 
 .childlist__main {
-  padding: 2rem 0 8rem;
+  padding: 1rem 0 8rem;
 }
 
 @media screen and (max-width: 420px) {
@@ -3057,7 +3052,7 @@ button:disabled:hover {
 }
 
 .childlist__list {
-  padding: 5rem 0;
+  padding: 3rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -3154,23 +3149,26 @@ button:disabled:hover {
 }
 
 .childlist__list__boxInfo .sponsor__bar {
-  background-color: #ffc67b;
+  background-color: #ffba5f;
   position: relative;
+  min-height: 3.5rem;
 }
 
 .childlist__list__boxInfo .sponsor__bar__percent {
   position: absolute;
   height: 100%;
-  width: 90%;
-  background-color: #fc9726;
+  width: 20%;
+  background-color: #e98400;
 }
 
 .childlist__list__boxInfo .sponsor__bar p {
   position: relative;
   z-index: 2;
-  font-size: 1.3rem;
-  padding: 0.3rem;
+  font-weight: bold;
+  padding: 1rem;
   margin: 0;
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 .account.registration {
@@ -3272,7 +3270,15 @@ button:disabled:hover {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.registration .account__wrapper .account__step .step_two_grid .form-group:nth-child(1) {
+.registration .account__wrapper .account__step .step_two_grid .img__cardInfo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 /4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.registration .account__wrapper .account__step .step_two_grid .form-group.card__number {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 /4;
@@ -3483,6 +3489,10 @@ button:disabled:hover {
   background-color: #1a1a1a;
 }
 
+.guest__login .opt__2 form .guest__address p {
+  margin-top: 0.5rem;
+}
+
 .guest__login .opt__2 form .guest__separator {
   margin-bottom: 2rem;
 }
@@ -3499,6 +3509,10 @@ button:disabled:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.guest__login .opt__2 form .donation__amount .radio__wrap input {
+  height: 2.5rem;
 }
 
 .main__grid {
