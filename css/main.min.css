@@ -3938,6 +3938,7 @@ button:disabled:hover {
   border-collapse: collapse;
   margin-bottom: 10rem;
   width: 100%;
+  table-layout: fixed;
 }
 
 @media screen and (max-width: 420px) {

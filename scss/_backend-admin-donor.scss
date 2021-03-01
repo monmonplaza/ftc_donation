@@ -6,6 +6,7 @@
     border-collapse: collapse;
     margin-bottom: 10rem;
     width: 100%;
+    table-layout: fixed;
     @include media-query(420px) {
       width: 70rem;
     }
