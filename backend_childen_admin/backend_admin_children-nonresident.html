@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__log">
+        <div class="header__donor__dashboard">
+          <img src="../images/logo_white_sm.png" alt="" />
+          <ul>
+            <li><button>Logout</button></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__grid">
+        <div class="sidebar">
+          <ul class="lg-only">
+            <li>
+              <a href="backend_admin_dashboard.html">
+                <i class="fal fa-home"></i>
+                <span class="menu__label">Overview</span></a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_users.html">
+                <i class="fal fa-users"></i>
+                <span class="menu__label">Users</span></a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_children.html"
+                ><i class="fal fa-child"></i>
+                <span class="menu__label">Children</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../backend_donor_admin/backend_admin_donor_dashboard.html"
+              >
+                <i class="fal fa-donate"></i>
+                <span class="menu__label">Donors</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile__wrapper sm-only">
+            <li>
+              <a href="backend_admin_dashboard.html">
+                <i class="fal fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_users.html">
+                <i class="fal fa-users"></i> Users</a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_children.html">
+                <i class="fal fa-child"></i>Children
+              </a>
+            </li>
+            <li>
+              <a
+                href="../backend_donor_admin/backend_admin_donor_dashboard.html"
+              >
+                <i class="fal fa-donate"></i>Donor
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__block">
+          <h2>Manage Children</h2>
+          <div class="main__block__menu">
+            <ul>
+              <li><button href="#">Resident</button></li>
+              <li><button href="#" class="active">Non-Resident</button></li>
+              <li><button href="#">Fully Sponsored</button></li>
+              <li><button href="#">All</button></li>
+            </ul>
+
+            <button class="add_child">+Add New Child</button>
+          </div>
+
+          <div class="main__block__table nonresident show">
+            <div class="responsive__table__wrapper">
+              <table class="main__block__donor__table">
+                <thead class="table__header">
+                  <tr>
+                    <th>Name</th>
+
+                    <th>Birthday</th>
+                    <th>Classification</th>
+                    <th>Created</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Ramon Plaza</td>
+
+                    <td>May 21 2006</td>
+
+                    <td>Resident</td>
+                    <td>1-20-2021</td>
+                    <td class="cell__action">
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <!-- ACTION Modal -->
+                        <div class="donor__option__menu show">
+                          <ul>
+                            <li><button>View</button></li>
+                            <li><button>Edit</button></li>
+                            <li><button>Delete</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL VIEW-->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Child Details</h3></div>
+          <div class="modal__box__body">
+            <div class="info__block thumbnail__block">
+              <img src="./images/thumbnail.jpg" alt="" />
+            </div>
+
+            <div class="info__block">
+              <h4>Full Name:</h4>
+              <p>Ramon Plaza</p>
+            </div>
+
+            <div class="info__block">
+              <h4>Birthday:</h4>
+              <p>May 21, 1992</p>
+            </div>
+
+            <div class="info__block">
+              <h4>Age:</h4>
+              <p>32</p>
+            </div>
+
+            <div class="info__block">
+              <h4>Years at FTC:</h4>
+              <p>3 yrs</p>
+            </div>
+
+            <div class="info__block">
+              <h4>Classification:</h4>
+              <p>Resident</p>
+            </div>
+
+            <div class="info__block">
+              <h4>Created:</h4>
+              <p>3-2-2021</p>
+            </div>
+
+            <div class="info__block story">
+              <h4>Story:</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                quisquam adipisci quidem quod eveniet assumenda neque ea
+                necessitatibus modi similique!
+              </p>
+            </div>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--action">Close</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- MODAL EDIT ADD-->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Child Details</h3></div>
+          <div class="modal__box__body">
+            <!-- <div class="form-group">
+              <label for="modalBoxChildName">Upload Photo</label>
+              <input type="file" />
+
+              <p class="error-msg">Required</p>
+            </div> -->
+
+            <div class="form-group">
+              <label for="modalBoxChildName">Name</label>
+              <input type="text" name="modalBoxChildName" />
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group">
+              <label for="modalBoxChildAge">Age</label>
+              <input type="text" name="modalBoxChildAge" />
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group">
+              <label for="modalBoxChildBday">Birthday</label>
+              <input type="text" name="modalBoxChildBday" />
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group">
+              <label for="modalBoxClassification">Classification</label>
+              <select name="modalBoxClassification">
+                <option value="resident">Resident</option>
+                <option value="nonresident">Non-Resident</option>
+                <option value="fullsponsored">Full Sponsored</option>
+              </select>
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group">
+              <label for="modalBoxStory">Story</label>
+              <textarea name="modalBoxStory" rows="25"></textarea>
+              <p class="error-msg">Required</p>
+            </div>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Close</button>
+              <button class="btn btn--action">
+                Update <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL DELETE CHILD -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Remove Child?</h3></div>
+          <div class="modal__box__body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+              expedita voluptate libero velit officiis, error possimus quasi
+              commodi veritatis aliquid!
+            </p>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <button class="btn btn--action btn--error">
+                Confirm <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal loading">
+      <div class="modal__main spinner_modal">
+        <svg
+          class="spinner"
+          width="60px"
+          height="60px"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="path"
+            fill="none"
+            stroke-width="6"
+            stroke-linecap="round"
+            cx="33"
+            cy="33"
+            r="30"
+          ></circle>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
