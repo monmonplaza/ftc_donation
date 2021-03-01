@@ -500,8 +500,28 @@ $duration: 2s;
     border-bottom: 1px solid $gray;
     max-height: 60vh;
     overflow-y: auto;
+
+    .thumbnail__block {
+      text-align: center;
+      img {
+        width: 8rem;
+        height: 8rem;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+    }
+
     .info__block {
       margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        padding-right: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .info__block.story {
+      display: block;
     }
   }
   &__footer {

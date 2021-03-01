@@ -26,7 +26,7 @@
   display: none;
   .responsive__table__wrapper {
     overflow: auto;
-    max-height: 40rem;
+    // max-height: 40rem;
   }
 
   .cell__action {
@@ -65,8 +65,8 @@
 
   .cell__status.expiring {
     span {
-      background-color: $warning;
-      color: $light;
+      background-color: #ffe700;
+      color: $dark;
       padding: 0.4rem 1rem;
       border-radius: 0.4rem;
     }

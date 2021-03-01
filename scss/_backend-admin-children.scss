@@ -256,44 +256,6 @@
           border-radius: 50%;
         }
       }
-
-      ul {
-        margin: 1rem 0;
-        li {
-          display: flex;
-          justify-content: space-between;
-          & > * {
-            margin: 0rem 2rem;
-            margin-bottom: 1rem;
-          }
-          &:first-child {
-            justify-content: center;
-          }
-        }
-      }
-    }
-    .info_donation {
-      padding: 2rem;
-      background-color: $gray;
-      h3 {
-        margin-bottom: 1.5rem;
-        font-size: 1.6rem;
-        text-align: center;
-      }
-      .breakdown {
-        display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-
-        span:first-child {
-          align-self: center;
-        }
-        span:last-child {
-          font-weight: bold;
-          font-size: 3rem;
-          color: rgb(13, 151, 59);
-        }
-      }
     }
   }
 }

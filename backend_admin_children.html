@@ -84,105 +84,59 @@
               <li><button href="#" class="active">Resident</button></li>
               <li><button href="#">Non-Resident</button></li>
               <li><button href="#">Fully Sponsored</button></li>
+              <li><button href="#">All</button></li>
             </ul>
 
             <button class="add_child">+Add New Child</button>
           </div>
 
-          <div class="main__block__grid">
-            <div class="main__block__gridItem">
-              <div class="info_menu">
-                <div class="info_menu_toggle">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <ul class="hide_me">
-                  <li><button>View</button></li>
-                  <li><button>Edit</button></li>
-                  <li><button>Delete</button></li>
-                  <li><button>Cheque</button></li>
-                </ul>
-              </div>
+          <div class="main__block__table resident show">
+            <div class="responsive__table__wrapper">
+              <table class="main__block__donor__table">
+                <thead class="table__header">
+                  <tr>
+                    <th>Name</th>
 
-              <div class="info_child">
-                <div class="child__thumbnail">
-                  <img
-                    src="https://yt3.ggpht.com/a-/AAuE7mBxnY0DQIVxJtzcbOj0x6W378t00k0fdB-7Ow=s240-mo-c-c0xffffffff-rj-k-no"
-                    alt=""
-                  />
-                </div>
-                <ul>
-                  <li><h3>Ramon Plaza</h3></li>
-                  <li>
-                    <p>Birthday</p>
-                    <p>1/1/2121</p>
-                  </li>
-                  <li>
-                    <p>Age</p>
-                    <p>3yrs</p>
-                  </li>
-                  <li>
-                    <p>Yrs at FTC</p>
-                    <p>3yrs</p>
-                  </li>
-                </ul>
-              </div>
+                    <th>Birthday</th>
+                    <th>Classification</th>
+                    <th>Created</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
 
-              <div class="info_donation">
-                <h3>Target Monthly Donation</h3>
-                <div class="breakdown">
-                  <span>$150 / $200</span>
-                  <span>75%</span>
-                </div>
-              </div>
+                <tbody>
+                  <tr>
+                    <td>Ramon Plaza</td>
+
+                    <td>May 21 2006</td>
+
+                    <td>Resident</td>
+                    <td>1-20-2021</td>
+                    <td class="cell__action">
+                      <div class="donor__option">
+                        <div class="donor__option__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <!-- ACTION Modal -->
+                        <div class="donor__option__menu show">
+                          <ul>
+                            <li><button>View</button></li>
+                            <li><button>Edit</button></li>
+                            <li><button>Delete</button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
     </main>
-
-    <!-- MODAL EDIT-->
-    <div class="modal__box">
-      <div class="modal__box__main">
-        <form action="">
-          <div class="modal__box__head"><h3>Child Details</h3></div>
-          <div class="modal__box__body">
-            <div class="form-group">
-              <label for="modalBoxChildName">Name</label>
-              <input type="text" name="modalBoxChildName" />
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group">
-              <label for="modalBoxChildAge">Age</label>
-              <input type="text" name="modalBoxChildAge" />
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group">
-              <label for="modalBoxChildBday">Birthday</label>
-              <input type="text" name="modalBoxChildBday" />
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group">
-              <label for="modalBoxChildYrsFTC">Yrs at FTC</label>
-              <input type="text" name="modalBoxChildYrsFTC" />
-              <p class="error-msg">Required</p>
-            </div>
-          </div>
-          <div class="modal__box__footer">
-            <div class="modal__box__btns">
-              <button class="btn btn--cancel">Close</button>
-              <button class="btn btn--action">
-                Save <i class="fal fa-spinner fa-spin"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
 
     <!-- MODAL VIEW-->
     <div class="modal__box">
@@ -190,28 +144,42 @@
         <form action="">
           <div class="modal__box__head"><h3>Child Details</h3></div>
           <div class="modal__box__body">
+            <div class="info__block thumbnail__block">
+              <img src="./images/thumbnail.jpg" alt="" />
+            </div>
+
             <div class="info__block">
-              <h4>Full Name</h4>
+              <h4>Full Name:</h4>
               <p>Ramon Plaza</p>
             </div>
 
             <div class="info__block">
-              <h4>Birthday</h4>
+              <h4>Birthday:</h4>
               <p>May 21, 1992</p>
             </div>
 
             <div class="info__block">
-              <h4>Age</h4>
+              <h4>Age:</h4>
               <p>32</p>
             </div>
 
             <div class="info__block">
-              <h4>Years at FTC</h4>
+              <h4>Years at FTC:</h4>
               <p>3 yrs</p>
             </div>
 
             <div class="info__block">
-              <h4>Story</h4>
+              <h4>Classification:</h4>
+              <p>Resident</p>
+            </div>
+
+            <div class="info__block">
+              <h4>Created:</h4>
+              <p>3-2-2021</p>
+            </div>
+
+            <div class="info__block story">
+              <h4>Story:</h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
                 quisquam adipisci quidem quod eveniet assumenda neque ea
@@ -227,12 +195,19 @@
         </form>
       </div>
     </div>
-    <!-- MODAL EDIT-->
+    <!-- MODAL EDIT ADD-->
     <div class="modal__box">
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Child Details</h3></div>
           <div class="modal__box__body">
+            <!-- <div class="form-group">
+              <label for="modalBoxChildName">Upload Photo</label>
+              <input type="file" />
+
+              <p class="error-msg">Required</p>
+            </div> -->
+
             <div class="form-group">
               <label for="modalBoxChildName">Name</label>
               <input type="text" name="modalBoxChildName" />
@@ -252,8 +227,18 @@
             </div>
 
             <div class="form-group">
-              <label for="modalBoxChildYrsFTC">Yrs at FTC</label>
-              <input type="text" name="modalBoxChildYrsFTC" />
+              <label for="modalBoxClassification">Classification</label>
+              <select name="modalBoxClassification">
+                <option value="resident">Resident</option>
+                <option value="nonresident">Non-Resident</option>
+                <option value="fullsponsored">Full Sponsored</option>
+              </select>
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group">
+              <label for="modalBoxStory">Story</label>
+              <textarea name="modalBoxStory" rows="25"></textarea>
               <p class="error-msg">Required</p>
             </div>
           </div>
@@ -270,30 +255,6 @@
     </div>
 
     <!-- MODAL DELETE CHILD -->
-    <div class="modal__box">
-      <div class="modal__box__main">
-        <form action="">
-          <div class="modal__box__head"><h3>Remove Child?</h3></div>
-          <div class="modal__box__body">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-              expedita voluptate libero velit officiis, error possimus quasi
-              commodi veritatis aliquid!
-            </p>
-          </div>
-          <div class="modal__box__footer">
-            <div class="modal__box__btns">
-              <button class="btn btn--cancel">Cancel</button>
-              <button class="btn btn--action btn--error">
-                Confirm <i class="fal fa-spinner fa-spin"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- MODAL CHEQUE -->
     <div class="modal__box">
       <div class="modal__box__main">
         <form action="">

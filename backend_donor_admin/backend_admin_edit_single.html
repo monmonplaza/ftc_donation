@@ -81,7 +81,7 @@
             <button class="add_person">+Add Subscription</button>
           </div>
 
-          <div class="main__block__form  tab__details">
+          <div class="main__block__form  tab__details ">
             <form action="" class="donor__form">
                 
               <div class="main__block__form__wrapper ">
@@ -180,7 +180,7 @@
             </form>
           </div>
 
-          <div class="main__block__table tab__subscription show">
+          <div class="main__block__table tab__subscription ">
               <div class="responsive__table__wrapper">
                 <table class="main__block__donor__table">
                   <thead class="table__header">
@@ -205,11 +205,76 @@
                       <td class="cell__status"><span>Active</span></td>
                       <td>Oct 3 2002</td>
                       <td class="cell__action">
-                        <button>View</button>
-                        <button>Cancel</button>
+                        <div class="donor__option">
+                          <div class="donor__option__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <!-- ACTION Modal -->
+                          <div class="donor__option__menu ">
+                            <ul>
+                              <li><button>View</button></li>
+                              <li><button>Edit</button></li>
+                              <li><button>Delete</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Ramon Plaza</td>
+                      <td>89</td>
+                      <td>Monthly</td>
+                      <td>1200</td>
+                      <td class="cell__status"><span>Active</span></td>
+                      <td>Oct 3 2002</td>
+                      <td class="cell__action">
+                        <div class="donor__option">
+                          <div class="donor__option__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <!-- ACTION Modal -->
+                          <div class="donor__option__menu ">
+                            <ul>
+                              <li><button>View</button></li>
+                              <li><button>Edit</button></li>
+                              <li><button>Delete</button></li>
+                            </ul>
+                          </div>
+                        </div>
                       </td>
                     </tr>
 
+
+       
+                    <tr>
+                      <td>Ramon Plaza</td>
+                      <td>89</td>
+                      <td>Monthly</td>
+                      <td>1200</td>
+                      <td class="cell__status"><span>Active</span></td>
+                      <td>Oct 3 2002</td>
+                      <td class="cell__action">
+                        <div class="donor__option">
+                          <div class="donor__option__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <!-- ACTION Modal -->
+                          <div class="donor__option__menu ">
+                            <ul>
+                              <li><button>View</button></li>
+                              <li><button>Edit</button></li>
+                              <li><button>Delete</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
 
                     <tr>
                       <td>Ramon Plaza</td>
@@ -219,56 +284,31 @@
                       <td class="cell__status"><span>Active</span></td>
                       <td>Oct 3 2002</td>
                       <td class="cell__action">
-                        <button>View</button>
-                        <button>Cancel</button>
+                        <div class="donor__option">
+                          <div class="donor__option__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <!-- ACTION Modal -->
+                          <div class="donor__option__menu show">
+                            <ul>
+                              <li><button>View</button></li>
+                              <li><button>Manual Donation</button></li>
+                              <li><button>Delete</button></li>
+                            </ul>
+                          </div>
+                        </div>
                       </td>
                     </tr>
 
-                    <tr>
-                      <td>Ramon Plaza</td>
-                      <td>89</td>
-                      <td>Monthly</td>
-                      <td>1200</td>
-                      <td class="cell__status"><span>Active</span></td>
-                      <td>Oct 3 2002</td>
-                      <td class="cell__action">
-                        <button>View</button>
-                        <button>Cancel</button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>Ramon Plaza</td>
-                      <td>89</td>
-                      <td>Monthly</td>
-                      <td>1200</td>
-                      <td class="cell__status"><span>Active</span></td>
-                      <td>Oct 3 2002</td>
-                      <td class="cell__action">
-                        <button>View</button>
-                        <button>Cancel</button>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>Ramon Plaza</td>
-                      <td>89</td>
-                      <td>Monthly</td>
-                      <td>1200</td>
-                      <td class="cell__status"><span>Active</span></td>
-                      <td>Oct 3 2002</td>
-                      <td class="cell__action">
-                        <button>View</button>
-                        <button>Cancel</button>
-                      </td>
-                    </tr>
                   
                   </tbody>
                 </table>
               </div>
           </div>
 
-          <div class="main__block__table tab__expiring ">
+          <div class="main__block__table tab__expiring show">
             <div class="responsive__table__wrapper">
               <table class="main__block__donor__table">
                 <thead class="table__header">
@@ -346,6 +386,56 @@
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Add Subscription</h3></div>
+            <div class="modal__box__body">
+              <div class="form-group">
+                <label for="">Select Child</label>
+                <select>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                </select>
+                <p class="error-msg">Required</p>
+              </div>          
+              
+              <div class="form-group">
+                <label for="modalBoxAmount">Amount</label>
+                <input type="text" name="modalBoxAmount"/>
+                <p class="error-msg">Required</p>
+              </div> 
+              
+              <div class="form-group">
+                <label for="modalBoxStartDate">End Date</label>
+                <input type="date" name="modalBoxStartDate"/>
+                <p class="error-msg">Required</p>
+              </div> 
+
+                 
+              <div class="form-group">
+                <label for="modalBoxEndDate">Start Date</label>
+                <input type="date" name="modalBoxEndDate"/>
+                <p class="error-msg">Required</p>
+              </div> 
+
+            </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel </button>
+              <button class="btn btn--action">Process Sponsorship <i class="fal fa-spinner fa-spin"></i></button> 
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+
+
+    <!--Add Manual Donation  -->
+    <div class="modal__box  ">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Manual Donation</h3></div>
             <div class="modal__box__body">
               <div class="form-group">
                 <label for="">Select Child</label>
