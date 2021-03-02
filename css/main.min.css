@@ -711,9 +711,14 @@ nav.isShow {
   }
 }
 
+.sponsor__list .responsive__table {
+  overflow: auto;
+}
+
 .sponsor__list table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .sponsor__list table tr th {
@@ -721,6 +726,7 @@ nav.isShow {
   text-transform: uppercase;
   border-bottom: 1px solid #ccc;
   border: none;
+  width: 5rem;
 }
 
 .sponsor__list table tbody tr {
@@ -728,7 +734,7 @@ nav.isShow {
 }
 
 .sponsor__list table tbody tr:nth-child(odd) {
-  background-color: #d6d6d6;
+  background-color: #f3f3f3;
 }
 
 .sponsor__list table tbody tr:last-child {
@@ -736,8 +742,6 @@ nav.isShow {
 }
 
 .sponsor__list table tbody td {
-  max-width: calc(100% / 5);
-  text-align: center;
   padding: 0.2rem 0;
 }
 
@@ -777,62 +781,6 @@ nav.isShow {
 
 .sponsor__list table button:nth-last-of-type(2):hover {
   color: #216389;
-}
-
-@media screen and (max-width: 450px) {
-  .sponsor__list table,
-  .sponsor__list thead,
-  .sponsor__list tbody,
-  .sponsor__list th,
-  .sponsor__list td,
-  .sponsor__list tr {
-    display: block;
-  }
-  .sponsor__list .sponsor__list table thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  .sponsor__list .sponsor__list table tbody tr {
-    margin-bottom: 4rem;
-    border: none;
-  }
-  .sponsor__list .sponsor__list table tbody td {
-    /* Behave  like a "row" */
-    max-width: 250% !important;
-    border: none;
-    border-bottom: 1px solid #bebebe;
-    position: relative;
-    text-align: right;
-    padding: 10px 10px 10px 45%;
-  }
-  .sponsor__list .sponsor__list table td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 13px;
-    left: 10px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    text-align: left;
-    font-weight: bold;
-  }
-  .sponsor__list .sponsor__list table td:nth-of-type(1):before {
-    content: "Name";
-  }
-  .sponsor__list .sponsor__list table td:nth-of-type(2):before {
-    content: "Age";
-  }
-  .sponsor__list .sponsor__list table td:nth-of-type(3):before {
-    content: "Frequency";
-  }
-  .sponsor__list .sponsor__list table td:nth-of-type(4):before {
-    content: "Amount";
-  }
-  .sponsor__list .sponsor__list table td:nth-of-type(5):before {
-    content: "Action";
-  }
 }
 
 .donor__dashboard .grid {
