@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__log">
+    
+          <div class="header__donor__dashboard">
+            <img src="../images/logo_white_sm.png" alt="" />
+            <ul>
+              <li><button>Logout</button></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <div class="main__grid">
+        <div class="sidebar">
+        
+          <ul class="lg-only">
+            <li>
+              <a href="../backend_admin_dashboard.html">
+                <i class="fal fa-home"></i>
+                <span class="menu__label">Overview</span></a
+              >
+            </li>
+  
+
+            <li>
+              <a href="../backend_admin_users.html">
+                <i class="fal fa-users"></i>
+                <span class="menu__label">Users</span></a
+              >
+            </li>
+            <li>
+              <a href="../backend_admin_children.html"
+                ><i class="fal fa-child"></i>
+                <span class="menu__label">Children</span></a
+              >
+            </li>
+            <li>
+              <a href="../backend_admin_donor_dashboard.html">
+                <i class="fal fa-donate"></i>
+                <span class="menu__label">Donors</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile__wrapper sm-only">
+            <li>
+              <a href="../backend_admin_dashboard.html"> <i class="fal fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="../backend_admin_users.html"> <i class="fal fa-users"></i> Users</a>
+            </li>
+            <li>
+              <a href="../backend_admin_children.html"> <i class="fal fa-child"></i>Children </a>
+            </li>
+            <li>
+              <a href="../backend_admin_donor_dashboard.html"> <i class="fal fa-donate"></i>Donor </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__block">
+          <h2> Donors</h2>
+          <div class="main__block__menu">
+            <ul>
+              <li><button >Details</button></li>
+              <li><button class="active">Subscription</button></li>
+              <li><button class="">Expiring Subscription</button></li>
+              <li><button class="">Cancelled Subscription</button></li>
+            </ul>
+            <button class="add_person">+Add Subscription</button>
+          </div>
+
+         
+
+
+          <div class="main__block__table tab__expiring ">
+            <div class="responsive__table__wrapper">
+              <table class="main__block__donor__table">
+                <thead class="table__header">
+                 <tr>
+                  <th>Child Name</th>
+                  <th>Age</th>
+                  <th>Frequency</th>
+                  <th>Amount</th>
+
+                  <th>Status</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                 </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramon Plaza</td>
+                    <td>89</td>
+                    <td>Monthly</td>
+                    <td>1200</td>
+                    <td class="cell__status "><span>Active</span></td>
+                    <td>Oct 3 2002</td>
+                    <td class="cell__status expiring"> <span>Oct 3 2021</span></td>
+                  </tr> 
+                </tbody>
+              </table>
+            </div>
+        </div>
+
+
+    
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+<!-- ADD Subscription -->
+    <div class="modal__box  ">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Add Subscription</h3></div>
+            <div class="modal__box__body">
+              <div class="form-group">
+                <label for="">Select Child</label>
+                <select>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                </select>
+                <p class="error-msg">Required</p>
+              </div>          
+              
+              <div class="form-group">
+                <label for="modalBoxAmount">Amount</label>
+                <input type="text" name="modalBoxAmount"/>
+                <p class="error-msg">Required</p>
+              </div> 
+              
+              <div class="form-group">
+                <label for="modalBoxStartDate">End Date</label>
+                <input type="date" name="modalBoxStartDate"/>
+                <p class="error-msg">Required</p>
+              </div> 
+
+                 
+              <div class="form-group">
+                <label for="modalBoxEndDate">Start Date</label>
+                <input type="date" name="modalBoxEndDate"/>
+                <p class="error-msg">Required</p>
+              </div> 
+
+            </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel </button>
+              <button class="btn btn--action">Process Sponsorship <i class="fal fa-spinner fa-spin"></i></button> 
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+
+
+    <!--Add Manual Donation  -->
+    <div class="modal__box  ">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Manual Donation</h3></div>
+            <div class="modal__box__body">
+              <div class="form-group">
+                <label for="">Select Child</label>
+                <select>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                  <option value="#">child 1</option>
+                </select>
+                <p class="error-msg">Required</p>
+              </div>          
+              
+              <div class="form-group">
+                <label for="modalBoxAmount">Amount</label>
+                <input type="text" name="modalBoxAmount"/>
+                <p class="error-msg">Required</p>
+              </div> 
+              
+              <div class="form-group">
+                <label for="modalBoxStartDate">End Date</label>
+                <input type="date" name="modalBoxStartDate"/>
+                <p class="error-msg">Required</p>
+              </div> 
+
+                 
+              <div class="form-group">
+                <label for="modalBoxEndDate">Start Date</label>
+                <input type="date" name="modalBoxEndDate"/>
+                <p class="error-msg">Required</p>
+              </div> 
+
+            </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel </button>
+              <button class="btn btn--action">Process Sponsorship <i class="fal fa-spinner fa-spin"></i></button> 
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+
+<!-- View Child Details -->
+    <div class="modal__box ">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Child Details</h3></div>
+            <div class="modal__box__body">
+              <div class="info__block">
+                <h4>Full Name </h4>
+                <p>Ramon Plaza</p>
+              </div>
+              
+              <div class="info__block">
+              <h4>Birthday</h4>
+              <p>May 21, 1992</p>
+              </div>
+
+              <div class="info__block">
+                <h4>Age</h4>
+                <p>32</p>
+              </div>
+          
+
+              <div class="info__block">
+                <h4>Years at FTC</h4>
+                <p>3 yrs</p>
+              </div>
+           
+              <div class="info__block">
+                <h4>Story</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quisquam adipisci quidem quod eveniet assumenda neque ea necessitatibus modi similique!</p>
+              </div>
+
+              
+
+            </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--action">Close </button>
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+
+    <!-- MODAL Cancel Subscription -->
+    <div class="modal__box ">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Cancel Subscription?</h3></div>
+            <div class="modal__box__body">
+ 
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi expedita voluptate libero velit officiis, error possimus quasi commodi veritatis aliquid!</p>
+            </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel </button>
+              <button class="btn btn--action btn--error">Confirm <i class="fal fa-spinner fa-spin"></i></button> 
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+
+
+
+<!-- View Child Details -->
+    <div class="modal loading ">
+      <div class="modal__main spinner_modal">
+        <svg
+          class="spinner"
+          width="60px"
+          height="60px"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="path"
+            fill="none"
+            stroke-width="6"
+            stroke-linecap="round"
+            cx="33"
+            cy="33"
+            r="30"
+          ></circle>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

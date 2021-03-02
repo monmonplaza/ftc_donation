@@ -282,3 +282,9 @@ th {
     margin: 0;
   }
 }
+
+.col__wide {
+  @include media-query(420px) {
+    width: 20rem;
+  }
+}

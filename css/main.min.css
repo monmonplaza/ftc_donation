@@ -365,6 +365,12 @@ th {
   margin: 0;
 }
 
+@media screen and (max-width: 420px) {
+  .col__wide {
+    width: 20rem;
+  }
+}
+
 .form-group .error-input {
   border: 1px solid #fc3838;
   background-color: #ffe8e8;
@@ -3971,8 +3977,8 @@ button:disabled:hover {
 .main__block__donor__table tbody .donor__option {
   position: relative;
   width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
+  height: 3rem;
+  border-radius: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3985,12 +3991,14 @@ button:disabled:hover {
 }
 
 .main__block__donor__table tbody .donor__option:hover {
-  background: #cdcdcd;
+  background: #fff;
+  border: 1px solid #ccc;
 }
 
 .main__block__donor__table tbody .donor__option__icon {
   cursor: pointer;
   margin-top: -0.5rem;
+  padding: 0.9rem;
 }
 
 .main__block__donor__table tbody .donor__option__icon span {
@@ -4004,20 +4012,26 @@ button:disabled:hover {
 .main__block__donor__table tbody .donor__option__menu {
   display: none;
   position: absolute;
-  left: -10rem;
-  top: 1rem;
-  background-color: #ccc;
+  right: 0rem;
+  top: 110%;
+  background-color: #fff;
   padding: 1rem;
   z-index: 5;
   max-width: 25rem;
   width: 10rem;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main__block__donor__table tbody .donor__option__menu ul li:last-child {
+  margin-bottom: 0;
 }
 
 .main__block__donor__table tbody .donor__option__menu ul li {
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 0.5rem;
+  text-align: left;
   padding: 0.2rem 0;
-  border-bottom: 1px solid #bfbfbf;
 }
 
 .main__block__donor__table tbody .donor__option__menu ul li button {
@@ -4026,6 +4040,8 @@ button:disabled:hover {
   background-color: transparent;
   cursor: pointer;
   width: 100%;
+  color: #3f9cd1;
+  text-align: left;
 }
 
 .main__block__donor__table tbody .donor__option__menu ul li button:hover {
@@ -4033,7 +4049,7 @@ button:disabled:hover {
 }
 
 .main__block__donor__table tbody .donor__option__menu ul li a {
-  color: #4d4d4d;
+  color: #3f9cd1;
   font-weight: bold;
 }
 
@@ -4245,10 +4261,6 @@ button:disabled:hover {
 .main__block__table .cell__action button:first-child {
   margin-right: 1rem;
   color: #3f9cd1;
-}
-
-.main__block__table .cell__action button:last-child {
-  color: #4d4d4d;
 }
 
 .main__block__table .cell__status span {

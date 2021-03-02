@@ -33,18 +33,20 @@
       .donor__option {
         position: relative;
         width: 4rem;
-        height: 4rem;
+        height: 3rem;
 
-        border-radius: 50%;
+        border-radius: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         &:hover {
-          background: lighten($gray, 0.4);
+          background: $light;
+          border: 1px solid #ccc;
         }
         &__icon {
           cursor: pointer;
           margin-top: -0.5rem;
+          padding: 0.9rem;
           span {
             width: 4px;
             height: 4px;
@@ -56,33 +58,40 @@
         &__menu {
           display: none;
           position: absolute;
-          left: -10rem;
-          top: 1rem;
-          background-color: $gray;
+          right: 0rem;
+          top: 110%;
+          background-color: $light;
           padding: 1rem;
           z-index: 5;
           max-width: 25rem;
           width: 10rem;
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
           ul {
+            li:last-child {
+              margin-bottom: 0;
+            }
             li {
-              margin-bottom: 1rem;
-              text-align: center;
+              margin-bottom: 0.5rem;
+              text-align: left;
               padding: 0.2rem 0;
-              border-bottom: 1px solid darken($gray, 5);
+
               button {
                 font-size: 1.4rem;
                 border: none;
                 background-color: transparent;
                 cursor: pointer;
                 width: 100%;
+                color: $blue;
+                text-align: left;
                 &:hover {
                   color: $orange;
                 }
               }
 
               a {
-                color: #4d4d4d;
+                color: $blue;
                 font-weight: bold;
                 &:hover {
                   color: $orange;

@@ -89,7 +89,7 @@
             <table class="main__block__donor__table">
               <thead class="table__header">
                 <th>User</th>
-                <th>Email</th>
+                <th class="col__wide">Email</th>
                 <th>Phone</th>
                 <th>Status</th>
 
@@ -110,7 +110,7 @@
                         <span></span>
                         <span></span>
                       </div>
-                      <div class="donor__option__menu show">
+                      <div class="donor__option__menu">
                         <ul>
                           <li><button>Edit</button></li>
                           <li><button>Inactive</button></li>
@@ -119,6 +119,7 @@
                     </div>
                   </td>
                 </tr>
+
                 <tr>
                   <td>Ramon Plaza</td>
                   <td>ramon.plaza@gmail.com</td>
@@ -301,5 +302,15 @@
         </svg>
       </div>
     </div>
+
+    <script>
+      const options = document.querySelectorAll(".donor__option");
+
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          option.children[1].classList.add("show");
+        });
+      });
+    </script>
   </body>
 </html>
