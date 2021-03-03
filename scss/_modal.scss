@@ -464,6 +464,7 @@ $duration: 2s;
 //NEW MODAL 2-19
 .modal__box.show {
   display: flex;
+  z-index: 99999;
 }
 
 .modal__box {
