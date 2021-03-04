@@ -10,6 +10,7 @@
   }
 
   .account__step {
+    margin-bottom: 2rem;
     .block__header {
       padding: 1rem;
       background-color: $blue;
@@ -52,10 +53,6 @@
       .form-group:nth-child(4) {
         grid-column: 1 /3;
       }
-      .form-group:last-child {
-        grid-column: 1 /3;
-        margin-top: 2rem;
-      }
     }
 
     .step_two_grid {
@@ -71,10 +68,6 @@
         grid-column: 1 /4;
       }
 
-      .form-group:last-child {
-        grid-column: 1 /4;
-        margin-top: 2rem;
-      }
       @include media-query(430px) {
         .form-group {
           grid-column: 1 /4;
