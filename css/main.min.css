@@ -2197,14 +2197,6 @@ button:disabled:hover {
   display: -ms-flexbox;
   display: flex;
   z-index: 99999;
-  -webkit-transition: 2.3s ease;
-  transition: 2.3s ease;
-  -webkit-animation-name: ModalShow;
-          animation-name: ModalShow;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 
 .modal__box {
@@ -2232,6 +2224,14 @@ button:disabled:hover {
   max-width: 40rem;
   width: 100%;
   min-height: 20vh;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+  -webkit-animation-name: ModalShow;
+          animation-name: ModalShow;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .modal__box__head {

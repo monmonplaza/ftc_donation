@@ -465,10 +465,6 @@ $duration: 2s;
 .modal__box.show {
   display: flex;
   z-index: 99999;
-  transition: 2.3s ease;
-  animation-name: ModalShow;
-  animation-duration: 3.5s;
-  animation-timing-function: linear;
 }
 
 .modal__box {
@@ -489,6 +485,10 @@ $duration: 2s;
     max-width: 40rem;
     width: 100%;
     min-height: 20vh;
+    transition: 1.5s ease;
+    animation-name: ModalShow;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
   }
   &__head {
     padding: 2rem;
