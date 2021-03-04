@@ -95,15 +95,5 @@
 .account__step .wrapper {
   overflow: hidden;
   max-height: 0;
-  height: auto;
-  transition: max-height 0.3s ease-out;
   padding: 0;
-}
-
-.account__step.active .wrapper {
-  max-height: 87rem;
-  padding: 4rem 6rem;
-  @include media-query(430px) {
-    padding: 2rem 1.5rem;
-  }
 }
