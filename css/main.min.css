@@ -2375,6 +2375,10 @@ button:disabled:hover {
   background-color: #216389;
 }
 
+.child__modal__wrapper {
+  color: #000;
+}
+
 .child__modal__wrapper h4 {
   margin-bottom: 1rem;
 }
@@ -3327,21 +3331,7 @@ button:disabled:hover {
 .account__step .wrapper {
   overflow: hidden;
   max-height: 0;
-  height: auto;
-  -webkit-transition: max-height 0.3s ease-out;
-  transition: max-height 0.3s ease-out;
   padding: 0;
-}
-
-.account__step.active .wrapper {
-  max-height: 87rem;
-  padding: 4rem 6rem;
-}
-
-@media screen and (max-width: 430px) {
-  .account__step.active .wrapper {
-    padding: 2rem 1.5rem;
-  }
 }
 
 .thank__you {
@@ -3395,6 +3385,10 @@ button:disabled:hover {
 
 .thank__you a:hover {
   background-color: #264e0e;
+}
+
+.thank__you .btn--blue {
+  background-color: #3f9cd1;
 }
 
 .guest__login {
