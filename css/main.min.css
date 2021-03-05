@@ -3387,8 +3387,31 @@ button:disabled:hover {
   background-color: #264e0e;
 }
 
+.thank__you h2.success {
+  color: #50a41e;
+}
+
 .thank__you .btn--blue {
+  padding: 1rem 1.4rem;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  max-width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
   background-color: #3f9cd1;
+  color: #fff;
+  margin-top: 2rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.thank__you .btn--blue:hover {
+  background-color: #216389;
 }
 
 .guest__login {

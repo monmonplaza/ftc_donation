@@ -27,7 +27,16 @@
     }
   }
 
+  h2.success {
+    color: $success;
+  }
+
   .btn--blue {
-    background-color: $blue;
+    @include btn($blue, 150px);
+    margin-top: 2rem;
+    transition: 0.5s ease;
+    &:hover {
+      background-color: darken($blue, 20);
+    }
   }
 }
