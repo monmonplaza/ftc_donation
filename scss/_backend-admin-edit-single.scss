@@ -54,13 +54,11 @@
           color: darken($blue, 20);
         }
       }
-      ul {
-        display: flex;
-        justify-content: flex-end;
-        li {
-          font-size: 3rem;
-          padding: 0 0.5rem;
-          color: #3f3f3f;
+      .card__list__icon {
+        display: block;
+        text-align: right;
+        img {
+          width: 150px;
         }
       }
     }
@@ -96,13 +94,8 @@
           font-size: 2rem;
           font-weight: bold;
         }
-        ul {
-          display: flex;
-          li {
-            font-size: 3rem;
-            padding: 0 0.5rem;
-            color: #3f3f3f;
-          }
+        img {
+          width: 150px;
         }
       }
     }

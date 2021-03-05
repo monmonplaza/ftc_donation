@@ -4303,19 +4303,13 @@ button:disabled:hover {
   color: #216389;
 }
 
-.main__block__form .info__block .no__card ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.main__block__form .info__block .no__card .card__list__icon {
+  display: block;
+  text-align: right;
 }
 
-.main__block__form .info__block .no__card ul li {
-  font-size: 3rem;
-  padding: 0 0.5rem;
-  color: #3f3f3f;
+.main__block__form .info__block .no__card .card__list__icon img {
+  width: 150px;
 }
 
 .main__block__form .info__block .cc_card__box {
@@ -4361,16 +4355,8 @@ button:disabled:hover {
   font-weight: bold;
 }
 
-.main__block__form .info__block .cc_card__box .card__expiration ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main__block__form .info__block .cc_card__box .card__expiration ul li {
-  font-size: 3rem;
-  padding: 0 0.5rem;
-  color: #3f3f3f;
+.main__block__form .info__block .cc_card__box .card__expiration img {
+  width: 150px;
 }
 
 .main__block__form.show {
