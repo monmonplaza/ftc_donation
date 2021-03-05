@@ -82,103 +82,86 @@
           </div>
 
           <div class="main__block__form  tab__details show">
+            <form action="" class="donor__form">
                 
               <div class="main__block__form__wrapper ">
-                <div class="main__block__form__section">
-                  <div class="main__block__form__section__header">
-                    <h3> Profile Info</h3>
-                    <button>Edit</button>
-                  </div>
+              
+                <div class="form-group">
+                  <label for="donorFullname">Fullname</label>
+                  <input type="text" name="donorFullname">
+                  <p class="error-msg">Required</p>
+                </div>
 
-                  <div class="info__block">
-                    <h4>Name</h4>
-                    <p>Ramon Plaza</p>
-                  </div>
+                <div class="form-group">
+                  <label for="donorEmail">Email</label>
+                  <input type="text" name="donorEmail">
+                  <p class="error-msg">Required</p>
+                </div>
 
-                  <div class="info__block">
-                    <h4>Email</h4>
-                    <p>ramon.plaza@gmail.com</p>
-                  </div>
-
-                  <div class="info__block">
-                    <h4>Contact</h4>
-                    <p>0913 123 1234</p>
-                  </div>
-                  
-               
-              </div>
+                <div class="form-group">
+                  <label for="donorContact">Contact Number</label>
+                  <input type="text" name="donorContact">
+                  <p class="error-msg">Required</p>
+                </div>
 
                 <div class="main__block__form__section">
-                  <div class="main__block__form__section__header">
-                    <h3> Address Info</h3>
-                    <button>Edit</button>
-                  </div>
-                
-                  <div class="info__block">
-                    <h4>Stree</h4>
-                    <p>40 Rizal Ave Street</p>
+                  <h3> Address Info</h3>
+                  <div class="form-group">
+                    <label for="donorFullname">Street</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
                   </div>
   
-                
-                  <div class="info__block">
-                    <h4>State</h4>
-                    <p>California</p>
+                  <div class="form-group">
+                    <label for="donorFullname">State</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
                   </div>
   
-              
-                  <div class="info__block">
-                    <h4>Zip Code</h4>
-                    <p>4000</p>
+                  <div class="form-group">
+                    <label for="donorFullname">Zip Code</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
                   </div>
   
-              
-                  <div class="info__block">
-                    <h4>Country</h4>
-                    <p>Philippine</p>
+                  <div class="form-group">
+                    <label for="donorFullname">Country</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
                   </div>
 
                 </div>
                 <div class="main__block__form__section">
-                  <div class="main__block__form__section__header">
-                    <h3> Card Info</h3>
-                    <button>Edit/Add</button>
-                  
+                  <h3> Card Info</h3>
+                  <div class="form-group">
+                    <label for="donorFullname">Card Number</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
                   </div>
-                  <div class="info__block">
 
-                    <div class="cc_card__box no__card">
-                      <i class="card__icon fal fa-credit-card"></i>
-                      <button>+Add Card</button>
-                      <ul>
-                        <li><i class="fab fa-cc-visa"></i></li>
-                        <li><i class="fab fa-cc-amex"></i></li>
-                        <li><i class="fab fa-cc-mastercard"></i></li>
-                      </ul>
-                    </div>
-                    
-                   <div class="cc_card__box">
-                      <i class="card__icon fal fa-credit-card"></i>
-                      <p class="card__name">Ramon B. Plaza</p>
-                      <p class="card__number">XXXX XXXX XXXX 1234</p>
-                      <div class="card__expiration">
-                        <div>
-                          <small>Valid Thru</small>
-                          <p><span>1</span>/<span>2021</span></p>
-                        </div>
-                        <ul>
-                          <li><i class="fab fa-cc-visa"></i></li>
-                          <li><i class="fab fa-cc-amex"></i></li>
-                          <li><i class="fab fa-cc-mastercard"></i></li>
-                        </ul>
-                      </div>
-                    </div>
+                  <div class="form-group">
+                    <label for="donorFullname">Expiry Month</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="donorFullname">Expiry Year</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="donorFullname">CVC</label>
+                    <input type="text" name="donorFullname">
+                    <p class="error-msg">Required</p>
                   </div>
                 </div>
 
 
               </div>
 
-              <!-- <div class="error-box  show">
+              <div class="error-box  show">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
                   facere.
@@ -193,8 +176,8 @@
               </div>
               <div class="form-group with__cancel">
                 <button class="btn btn__action">Update</button>
-              </div> -->
-        
+              </div>
+            </form>
           </div>
 
         
@@ -203,123 +186,6 @@
         </div>
       </div>
     </main>
-
-
-    <!-- Edit Profile  -->
-    <div class="modal__box  ">
-      <div class="modal__box__main">
-        <form action="">
-          <div class="modal__box__head"><h3>Edit Profile Info</h3></div>
-            <div class="modal__box__body">
-              <div class="form-group">
-                <label for="donorName">Name</label>
-                <input type="text" name="donorName"/>
-                <p class="error-msg">Required</p>
-              </div>          
-              
-              <div class="form-group">
-                <label for="donorEmail">Email</label>
-                <input type="text" name="donorEmail"/>
-                <p class="error-msg">Required</p>
-              </div> 
-              
-              <div class="form-group">
-                <label for="donorContact">Contact</label>
-                <input type="tel" name="donorContact"/>
-                <p class="error-msg">Required</p>
-              </div> 
-            </div>
-          <div class="modal__box__footer">
-            <div class="modal__box__btns">
-              <button class="btn btn--cancel">Cancel </button>
-              <button class="btn btn--action">Update <i class="fal fa-spinner fa-spin"></i></button> 
-            </div>
-          </div>
-      </form>
-      </div>
-    </div>
-
-
-
-      <!-- Edit Address info  -->
-      <div class="modal__box  ">
-        <div class="modal__box__main">
-          <form action="">
-            <div class="modal__box__head"><h3>Edit Address Info</h3></div>
-              <div class="modal__box__body">
-                <div class="form-group">
-                  <label for="donorAddressStreet">Street</label>
-                  <input type="text" name="donorAddressStreet"/>
-                  <p class="error-msg">Required</p>
-                </div>          
-                
-                <div class="form-group">
-                  <label for="donorAddressState">State</label>
-                  <input type="text" name="donorAddressState"/>
-                  <p class="error-msg">Required</p>
-                </div> 
-                
-                <div class="form-group">
-                  <label for="donorAddressZip">Zip Code</label>
-                  <input type="number" name="donorAddressZip"/>
-                  <p class="error-msg">Required</p>
-                </div> 
-
-                <div class="form-group">
-                  <label for="donorAddressCountry">Country</label>
-                  <input type="number" name="donorAddressCountry"/>
-                  <p class="error-msg">Required</p>
-                </div> 
-              </div>
-            <div class="modal__box__footer">
-              <div class="modal__box__btns">
-                <button class="btn btn--cancel">Cancel </button>
-                <button class="btn btn--action">Update <i class="fal fa-spinner fa-spin"></i></button> 
-              </div>
-            </div>
-        </form>
-        </div>
-      </div>
-
-           <!-- Edit Address info  -->
-           <div class="modal__box  ">
-            <div class="modal__box__main">
-              <form action="">
-                <div class="modal__box__head"><h3>Edit Card Info</h3></div>
-                  <div class="modal__box__body">
-                    <div class="form-group">
-                      <label for="donorCardNumber">Card</label>
-                      <input type="number" name="donorCardNumber"/>
-                      <p class="error-msg">Required</p>
-                    </div>          
-                    
-                    <div class="form-group">
-                      <label for="donorCardExpMonth">Expiring Month</label>
-                      <input type="number" name="donorCardExpMonth"/>
-                      <p class="error-msg">Required</p>
-                    </div> 
-                    
-                    <div class="form-group">
-                      <label for="donorCardExpYear">Expiring Year</label>
-                      <input type="number" name="donorCardExpYear"/>
-                      <p class="error-msg">Required</p>
-                    </div> 
-    
-                    <div class="form-group">
-                      <label for="donorCardSecurityCode">Security Code</label>
-                      <input type="number" name="donorCardSecurityCode"/>
-                      <p class="error-msg">Required</p>
-                    </div> 
-                  </div>
-                <div class="modal__box__footer">
-                  <div class="modal__box__btns">
-                    <button class="btn btn--cancel">Cancel </button>
-                    <button class="btn btn--action">Update <i class="fal fa-spinner fa-spin"></i></button> 
-                  </div>
-                </div>
-            </form>
-            </div>
-          </div>
 
 <!-- ADD Subscription -->
     <div class="modal__box  ">

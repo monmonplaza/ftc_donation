@@ -52,10 +52,26 @@
     url("../fonts/fa-light-300.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("../fonts/fa-brands-400.woff2") format("woff2"),
+    url("../fonts/fa-brands-400.woff") format("woff"),
+    url("../fonts/fa-brands-400.ttf") format("truetype");
+}
+
 .fal,
 .fa-light {
   font-family: "Font Awesome 6 Pro";
   font-weight: 300;
+}
+
+.fab,
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
 }
 
 .fa-spin {
@@ -105,6 +121,22 @@
 
 .fa-inbox::before {
   content: "\f01c";
+}
+
+.fa-cc-mastercard:before {
+  content: "\f1f1";
+}
+
+.fa-cc-visa:before {
+  content: "\f1f0";
+}
+
+.fa-cc-amex:before {
+  content: "\f1f3";
+}
+
+.fa-credit-card::before {
+  content: "\f09d";
 }
 
 @keyframes fa-spin {

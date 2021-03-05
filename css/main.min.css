@@ -2735,10 +2735,24 @@ button:disabled:hover {
   src: url("../fonts/fa-light-300.woff2") format("woff2"), url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype");
+}
+
 .fal,
 .fa-light {
   font-family: "Font Awesome 6 Pro";
   font-weight: 300;
+}
+
+.fab,
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
 }
 
 .fa-spin {
@@ -2788,6 +2802,22 @@ button:disabled:hover {
 
 .fa-inbox::before {
   content: "\f01c";
+}
+
+.fa-cc-mastercard:before {
+  content: "\f1f1";
+}
+
+.fa-cc-visa:before {
+  content: "\f1f0";
+}
+
+.fa-cc-amex:before {
+  content: "\f1f3";
+}
+
+.fa-credit-card::before {
+  content: "\f09d";
 }
 
 @-webkit-keyframes fa-spin {
@@ -4226,6 +4256,121 @@ button:disabled:hover {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+}
+
+.main__block__form__section__header {
+  position: relative;
+}
+
+.main__block__form__section__header button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #3f9cd1;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.main__block__form__section__header button:hover {
+  color: #216389;
+}
+
+.main__block__form .info__block {
+  margin-bottom: 2rem;
+}
+
+.main__block__form .info__block h4 {
+  font-size: 2rem;
+}
+
+.main__block__form .info__block .no__card button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #3f9cd1;
+  font-weight: bold;
+  font-size: 1.8rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.main__block__form .info__block .no__card button:hover {
+  color: #216389;
+}
+
+.main__block__form .info__block .no__card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main__block__form .info__block .no__card ul li {
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  color: #3f3f3f;
+}
+
+.main__block__form .info__block .cc_card__box {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.main__block__form .info__block .cc_card__box .card__name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.main__block__form .info__block .cc_card__box .card__number {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.main__block__form .info__block .cc_card__box .card__icon {
+  font-size: 3rem;
+  text-align: right;
+  display: block;
+  opacity: 0.3;
+}
+
+.main__block__form .info__block .cc_card__box .card__expiration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__block__form .info__block .cc_card__box .card__expiration p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main__block__form .info__block .cc_card__box .card__expiration ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__block__form .info__block .cc_card__box .card__expiration ul li {
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  color: #3f3f3f;
 }
 
 .main__block__form.show {
