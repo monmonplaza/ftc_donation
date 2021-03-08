@@ -4324,6 +4324,35 @@ button:disabled:hover {
   max-width: 45rem;
 }
 
+.cc_card__box.card__sm button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #3f9cd1;
+  font-weight: bold;
+  font-size: 1.8rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.cc_card__box.card__sm img {
+  width: 150px;
+}
+
+.cc_card__box.card__sm .fa-credit-card {
+  padding-bottom: 0.5rem;
+}
+
+.cc_card__box.card__sm p {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.cc_card__box.card__sm .card__expiration {
+  margin-top: 1rem;
+}
+
 .cc_card__box {
   padding: 2rem;
   border: 1px solid #ccc;
