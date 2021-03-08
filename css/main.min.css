@@ -552,6 +552,13 @@ nav.isShow {
   background-color: transparent;
   font-size: 1.6rem;
   font-weight: bold;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.account__info .donor__dashboard__header button:hover {
+  color: #216389;
 }
 
 .account__info__block {

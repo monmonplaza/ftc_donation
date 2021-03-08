@@ -124,6 +124,11 @@ nav.isShow {
         background-color: transparent;
         font-size: 1.6rem;
         font-weight: bold;
+        transition: 0.5s ease;
+        cursor: pointer;
+        &:hover {
+          color: darken($blue, 20);
+        }
       }
     }
     &__block {
