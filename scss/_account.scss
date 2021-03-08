@@ -107,17 +107,27 @@ nav.isShow {
 .account {
   &__info {
     padding: 0 3rem;
+    .donor__dashboard__header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid $gray;
 
+      h3 {
+        font-size: 2rem;
+        color: gray;
+        text-transform: uppercase;
+      }
+      button {
+        color: $blue;
+        border: none;
+        background-color: transparent;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+    }
     &__block {
       margin-bottom: 1rem;
-      h2 {
-        text-transform: uppercase;
-        padding: 1rem 0;
-        border-bottom: 1px solid #e2e2e2;
-        font-size: 1.6rem;
-        display: flex;
-        justify-content: space-between;
-      }
 
       .password__update {
         display: flex;
@@ -179,7 +189,6 @@ nav.isShow {
       }
 
       ul {
-        padding: 2rem 0;
         li {
           margin-bottom: 1rem;
         }

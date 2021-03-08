@@ -529,21 +529,33 @@ nav.isShow {
   padding: 0 3rem;
 }
 
-.account__info__block {
-  margin-bottom: 1rem;
-}
-
-.account__info__block h2 {
-  text-transform: uppercase;
-  padding: 1rem 0;
-  border-bottom: 1px solid #e2e2e2;
-  font-size: 1.6rem;
+.account__info .donor__dashboard__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.account__info .donor__dashboard__header h3 {
+  font-size: 2rem;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.account__info .donor__dashboard__header button {
+  color: #3f9cd1;
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.account__info__block {
+  margin-bottom: 1rem;
 }
 
 .account__info__block .password__update {
@@ -635,10 +647,6 @@ nav.isShow {
   padding: 1rem 0;
   font-size: 1.6rem;
   line-height: 1.6;
-}
-
-.account__info__block ul {
-  padding: 2rem 0;
 }
 
 .account__info__block ul li {
@@ -4312,33 +4320,37 @@ button:disabled:hover {
   width: 150px;
 }
 
-.main__block__form .info__block .cc_card__box {
+.cc_card__box.card__sm {
+  max-width: 45rem;
+}
+
+.cc_card__box {
   padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
-.main__block__form .info__block .cc_card__box .card__name {
+.cc_card__box .card__name {
   font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
-.main__block__form .info__block .cc_card__box .card__number {
+.cc_card__box .card__number {
   font-weight: bold;
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
 
-.main__block__form .info__block .cc_card__box .card__icon {
+.cc_card__box .card__icon {
   font-size: 3rem;
   text-align: right;
   display: block;
-  opacity: 0.3;
 }
 
-.main__block__form .info__block .cc_card__box .card__expiration {
+.cc_card__box .card__expiration {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4350,12 +4362,12 @@ button:disabled:hover {
           align-items: center;
 }
 
-.main__block__form .info__block .cc_card__box .card__expiration p {
+.cc_card__box .card__expiration p {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.main__block__form .info__block .cc_card__box .card__expiration img {
+.cc_card__box .card__expiration img {
   width: 150px;
 }
 
