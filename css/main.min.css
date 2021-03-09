@@ -3374,9 +3374,7 @@ button:disabled:hover {
 }
 
 .account__step .wrapper {
-  overflow: hidden;
-  max-height: 0;
-  padding: 0;
+  padding: 4rem 2rem;
 }
 
 .thank__you {
