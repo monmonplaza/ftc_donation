@@ -34,7 +34,6 @@
         font-size: 1.4rem;
         font-style: italic;
         color: $blue;
-
         text-align: right;
         display: block;
         margin-bottom: 3rem;
@@ -42,6 +41,7 @@
       button {
         @include btn($orange, 20rem);
         width: 20rem;
+        margin-bottom: 2rem;
         margin-top: 2rem;
       }
     }

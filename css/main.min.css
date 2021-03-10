@@ -4542,6 +4542,7 @@ button:disabled:hover {
   background-color: #fc9726;
   color: #fff;
   width: 20rem;
+  margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
