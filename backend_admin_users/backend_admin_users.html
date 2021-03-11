@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__log">
+        <div class="header__donor__dashboard">
+          <img src="./images/logo_white_sm.png" alt="" />
+          <ul>
+            <li><button>Logout</button></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__grid">
+        <div class="sidebar">
+          <ul class="lg-only">
+            <li>
+              <a href="backend_admin_dashboard.html">
+                <i class="fal fa-home"></i>
+                <span class="menu__label">Overview</span></a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_users.html">
+                <i class="fal fa-users"></i>
+                <span class="menu__label">Users</span></a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_children.html"
+                ><i class="fal fa-child"></i>
+                <span class="menu__label">Children</span></a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_donor_dashboard.html">
+                <i class="fal fa-donate"></i>
+                <span class="menu__label">Donors</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile__wrapper sm-only">
+            <li>
+              <a href="backend_admin_dashboard.html">
+                <i class="fal fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_users.html">
+                <i class="fal fa-users"></i> Users</a
+              >
+            </li>
+            <li>
+              <a href="backend_admin_children.html">
+                <i class="fal fa-child"></i>Children
+              </a>
+            </li>
+            <li>
+              <a
+                href="./backend_donor_admin/backend_admin_donor_dashboard.html"
+              >
+                <i class="fal fa-donate"></i>Donor
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__block">
+          <h2>Users</h2>
+          <div class="main__block__menu">
+            <ul>
+              <li><button href="#" class="active">Active</button></li>
+              <li><button href="#">Suspend</button></li>
+            </ul>
+
+            <button class="add_person">+Add User</button>
+          </div>
+          <div class="table__wrapper">
+            <table class="main__block__donor__table">
+              <thead class="table__header">
+                <th class="col__wide">Email</th>
+                <th>Fullname</th>
+                <th>Status</th>
+                <th>Action</th>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>ramon.plaza@gmail.com</td>
+                  <td>Ramon Plaza</td>
+                  <td>Active</td>
+
+                  <td>
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="donor__option__menu">
+                        <ul>
+                          <li><button>Suspend</button></li>
+                          <li><button>Delete</button></li>
+                          <li><button>Reset Password</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Ramon Plaza</td>
+                  <td>ramon.plaza@gmail.com</td>
+                  <td>Active</td>
+
+                  <td>
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="donor__option__menu">
+                        <ul>
+                          <li><button>Suspend</button></li>
+                          <li><button>Delete</button></li>
+                          <li><button>Reset Password</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL USER DONOR -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Add New User</h3></div>
+          <div class="modal__box__body">
+            <div class="form-group">
+              <label for="modalUserName">Name</label>
+              <input type="text" name="modalUserName" class="error-input" />
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group">
+              <label for="modalUserEmail">Email</label>
+              <input type="email" name="modalUserEmail" class="error-input" />
+              <p class="error-msg">Required</p>
+            </div>
+
+            <div class="form-group generate--password">
+              <div class="wrapper">
+                <label for="modalUserPassword">Password</label>
+                <input
+                  type="password"
+                  name="modalUserPassword"
+                  class="error-input"
+                />
+              </div>
+
+              <button class="btn--generate">Generate</button>
+              <p class="error-msg">Required</p>
+            </div>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <button class="btn btn--action" disabled="disabled">
+                Add User <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL Suspend User -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Suspend User?</h3></div>
+          <div class="modal__box__body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+              expedita voluptate libero velit officiis, error possimus quasi
+              commodi veritatis aliquid!
+            </p>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <button class="btn btn--action btn--error" disabled="disabled">
+                Confirm <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL Delete User -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Delete User?</h3></div>
+          <div class="modal__box__body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+              expedita voluptate libero velit officiis, error possimus quasi
+              commodi veritatis aliquid!
+            </p>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <button class="btn btn--action btn--error" disabled="disabled">
+                Confirm <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL Reset Password -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Add New User</h3></div>
+          <div class="modal__box__body">
+            <div class="form-group generate--password">
+              <div class="wrapper">
+                <label for="modalUserPassword">Password</label>
+                <input
+                  type="password"
+                  name="modalUserPassword"
+                  class="error-input"
+                />
+              </div>
+
+              <button class="btn--generate">Generate</button>
+              <p class="error-msg">Required</p>
+            </div>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <button class="btn btn--action" disabled="disabled">
+                Add User <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal loading">
+      <div class="modal__main spinner_modal">
+        <svg
+          class="spinner"
+          width="60px"
+          height="60px"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="path"
+            fill="none"
+            stroke-width="6"
+            stroke-linecap="round"
+            cx="33"
+            cy="33"
+            r="30"
+          ></circle>
+        </svg>
+      </div>
+    </div>
+
+    <script>
+      const options = document.querySelectorAll(".donor__option");
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          option.children[1].classList.add("show");
+        });
+      });
+
+      const main = document.querySelector(".main__block");
+      main.addEventListener("click", (e) => {
+        const target = e.target;
+        if (!target.classList.contains("donor__option__icon")) {
+          options.forEach((option) => {
+            option.children[1].classList.remove("show");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

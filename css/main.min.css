@@ -388,6 +388,36 @@ th {
   top: 10px;
 }
 
+.form-group.generate--password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-group.generate--password .wrapper {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  margin-right: 1rem;
+}
+
+.form-group.generate--password .btn--generate {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  background-color: #fc9726;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.form-group.generate--password .btn--generate:hover {
+  background-color: #b96303;
+}
+
 .main-header {
   height: 7rem;
   padding: 1rem 0;
@@ -4050,8 +4080,8 @@ button:disabled:hover {
   background-color: #fff;
   padding: 1rem;
   z-index: 5;
-  max-width: 25rem;
-  width: 10rem;
+  min-width: 14rem;
+  width: 100%;
   border: 1px solid #ccc;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -4544,6 +4574,11 @@ button:disabled:hover {
   width: 20rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.admin__login__wrapper .form-group button:disabled {
+  background-color: #fdc78b !important;
+  cursor: not-allowed !important;
 }
 
 .admin__login__wrapper p {
