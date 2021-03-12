@@ -1596,6 +1596,10 @@ button:disabled:hover {
   margin: 2rem;
 }
 
+.general__donation .cheque__donation {
+  margin-top: 2rem;
+}
+
 .general__donation .cheque__donation p {
   margin-bottom: 2rem;
 }
