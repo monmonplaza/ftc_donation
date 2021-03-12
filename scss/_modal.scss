@@ -635,6 +635,7 @@ $duration: 2s;
     margin-bottom: 0.5rem;
   }
   ul {
+    flex-direction: column;
     li {
       margin-bottom: 0.5rem;
     }
