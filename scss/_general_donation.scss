@@ -1,48 +1,48 @@
-.main__wrapper {
+.general__donation {
+  flex-basis: 30%;
   display: flex;
-  max-width: 90rem;
-  @include media-query(580px) {
-    flex-direction: column;
-  }
-  .donate__form {
-    flex-basis: 60%;
-    padding: 0 5rem;
+  align-items: center;
+  justify-content: center;
 
-    @include media-query(580px) {
-      padding: 0 1.5rem;
-      margin-bottom: 4rem;
-    }
-  }
-
-  .donate__sidebar {
-    flex-basis: 30%;
-  }
-}
-
-.fa-spin {
-  display: inline-block;
-  margin-left: 0.6rem;
-}
-
-.donate__sidebar {
   &__wrapper {
-    padding: 0 3rem;
-    border-left: 1px solid #ececec;
+    margin: 5rem 0;
+    width: 47rem;
+    padding: 5rem 2rem;
+    border: 1px solid #ccc;
+  }
 
-    height: 100%;
-    @include media-query(580px) {
-      border: none;
-    }
-    picture {
-      margin-bottom: 2rem;
-      display: block;
-    }
+  &__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 
-    h4 {
-      margin: 2rem 0;
-    }
+  form .btn {
+    @include btn($blue, 100%);
+    width: 100%;
+  }
+
+  .cards__icon img {
+    width: 150px;
+  }
+
+  .paypal__icon img {
+    width: 60px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    color: $blue;
+    margin: 2rem;
+  }
+
+  .cheque__donation {
     p {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
+  }
+
+  .donation__support p {
+    font-size: 1.2rem;
   }
 }

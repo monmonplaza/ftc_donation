@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main__login">
+      <div class="main__login__wrapper">
+        <div class="main__login__banner lg-only">
+          <div class="branding">
+            <picture>
+              <source srcset="./images/logo_white.webp" />
+              <img srcset="./images/logo_white.png" alt="" />
+            </picture>
+          </div>
+
+          <div class="quote">
+            <h2>
+              "When
+              <span>God bless you financially</span>, don't raise your standard
+              of living. Raise you <span>standard of Giving</span>"
+            </h2>
+            <p class="quote-author">Mark Balterson</p>
+          </div>
+        </div>
+        <div class="general__donation">
+          <div class="general__donation__wrapper">
+            <div class="general__donation__header">
+              <picture>
+                <source srcset="../images/icon_only_blue.png" />
+                <img srcset="../images/icon_only_blue.png" alt="" />
+              </picture>
+
+              <h3>General Donation</h3>
+            </div>
+
+            <form action="">
+              <div class="form-group error">
+                <label for="designation" class="error-label">Designation</label>
+                <select name="designation" id="">
+                  <option value="general">General Giving</option>
+                  <option value="feeding">Feeding Program</option>
+                </select>
+                <p class="error-msg">Error Message here</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="amount" class="error-label">Amount</label>
+                <div class="dollar">
+                  <p class="sign">$</p>
+                  <input type="number" name="amount" class="error" />
+                </div>
+                <p class="error-msg">Error Message here</p>
+              </div>
+
+              <div class="form-group error">
+                <label for="frequency" class="error-label"
+                  >Payment Method</label
+                >
+                <div class="radio_wrap cards__icon">
+                  <input type="radio" name="method" /><img
+                    src="./images/cards.png"
+                    alt="cc icon"
+                  />
+                </div>
+
+                <div class="radio_wrap paypal__icon">
+                  <input type="radio" name="method" />
+                  <img src="./images/paypal.png" alt="paypal icon" />
+                </div>
+
+                <p class="error-msg">Error Message here</p>
+              </div>
+              <div class="form-group">
+                <button class="btn">
+                  Donate <i class="fal fa-spinner fa-spin"></i>
+                </button>
+              </div>
+
+              <div class="error-box login-error">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, facere.
+                </p>
+              </div>
+
+              <a href="#" class="go_back"> Go back to homepage</a>
+            </form>
+
+            <div class="cheque__donation">
+              <h3>Cheque Donation</h3>
+              <p>
+                Write Check to Philippine Frontline Ministries, Inc and send to:
+              </p>
+              <p>
+                <strong> US donor </strong><br />
+                <i class="fal fa-map-marker-alt"> </i> Philippine Frontline PO
+                Box 208 Sanwich, Illinois 60548
+              </p>
+              <p>
+                <strong> Canada donor </strong><br />
+                <i class="fal fa-map-marker-alt"> </i> 1399 Buffalo Place
+                Winnipeg, Manitoba Canada, R3T 1L6
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

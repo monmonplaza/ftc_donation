@@ -55,108 +55,94 @@
         </div>
       </div>
     </header>
-  
-    <section class="banner">
-      <h1>General Donation</h1>
-    </section>
+
 
     <section class="donation">
       <div class="donation__wrapper">
           <div class="main__list">
-            <div class="main__list__header remove_border">
-              <h3></h3>
-            </div>
+            
 
             <div class="main__wrapper">
-              <div class="donate__form">
-                <form action="">
-                  <div class="form-group error">
-                    <label for="designation" class="error-label"
-                      >Designation</label
-                    >
-                    <select name="designation" id="">
-                      <option value="general">General Giving</option>
-                      <option value="feeding">Feeding Program</option>
-                    </select>
-
-                    <p class="error-msg">Error Message here</p>
+              <div class="general__donation">
+                <div class="general__donation__wrapper">
+                  <div class="general__donation__header">
+                    <picture>
+                      <source srcset="../images/icon_only_blue.png" />
+                      <img srcset="../images/icon_only_blue.png" alt="" />
+                    </picture>
+      
+                    <h3>General Donation</h3>
                   </div>
-                  <div class="form-group error">
-                    <label for="amount" class="error-label">Amount</label>
-                    <div class="dollar">
-                      <p class="sign">$</p>
-                      <input type="number" name="amount" class="error" />
+      
+                  <form action="">
+                    <div class="form-group error">
+                      <label for="designation" class="error-label">Designation</label>
+                      <select name="designation" id="">
+                        <option value="general">General Giving</option>
+                        <option value="feeding">Feeding Program</option>
+                      </select>
+                      <p class="error-msg">Error Message here</p>
                     </div>
-
-                    <p class="error-msg">Error Message here</p>
-                  </div>
-                  <div class="form-group error">
-                    <label for="frequency" class="error-label"
-                      >Payment Method</label
-                    >
-                    <div class="radio_wrap">
-                      <input type="radio" name="method" /><img
-                        src="./images/icon_cc.png"
-                        alt="cc icon"
-                      /><span>Credit Card</span>
+      
+                    <div class="form-group error">
+                      <label for="amount" class="error-label">Amount</label>
+                      <div class="dollar">
+                        <p class="sign">$</p>
+                        <input type="number" name="amount" class="error" />
+                      </div>
+                      <p class="error-msg">Error Message here</p>
                     </div>
-
-                    <div class="radio_wrap">
-                      <input type="radio" name="method" />
-                      <img src="./images/icon_paypal.png" alt="paypal icon" />
-                      <span>Paypal</span>
+      
+                    <div class="form-group error">
+                      <label for="frequency" class="error-label"
+                        >Payment Method</label
+                      >
+                      <div class="radio_wrap cards__icon">
+                        <input type="radio" name="method" /><img
+                          src="./images/cards.png"
+                          alt="cc icon"
+                        />
+                      </div>
+      
+                      <div class="radio_wrap paypal__icon">
+                        <input type="radio" name="method" />
+                        <img src="./images/paypal.png" alt="paypal icon" />
+                      </div>
+      
+                      <p class="error-msg">Error Message here</p>
                     </div>
-
-                    <p class="error-msg">Error Message here</p>
-                  </div>
-
-                  <div class="form-group error">
-                    <label for="frequency" class="error-label">Frequency</label>
-                    <div class="radio_wrap">
-                      <input type="radio" name="frequency" />
-                      <span>Monthly</span>
+                    <div class="form-group">
+                      <button class="btn">
+                        Donate <i class="fal fa-spinner fa-spin"></i>
+                      </button>
                     </div>
-
-                    <div class="radio_wrap">
-                      <input type="radio" name="frequency" />
-                      <span>One Time</span>
+      
+                    <div class="error-box login-error">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Earum, facere.
+                      </p>
                     </div>
-
-                    <p class="error-msg">Error Message here</p>
+      
+                    <a href="#" class="go_back"> Go back to homepage</a>
+                  </form>
+      
+                  <div class="cheque__donation">
+                    <h3>Cheque Donation</h3>
+                    <p>
+                      Write Check to Philippine Frontline Ministries, Inc and send to:
+                    </p>
+                    <p>
+                      <strong> US donor </strong><br />
+                      <i class="fal fa-map-marker-alt"> </i> Philippine Frontline PO
+                      Box 208 Sanwich, Illinois 60548
+                    </p>
+                    <p>
+                      <strong> Canada donor </strong><br />
+                      <i class="fal fa-map-marker-alt"> </i> 1399 Buffalo Place
+                      Winnipeg, Manitoba Canada, R3T 1L6
+                    </p>
                   </div>
-
-                  <!-- <div class="form-group error">
-                    <label for="note" class="error-label">Note (Optional)</label>
-                    <textarea name="note" class="error"></textarea>
-                    <p class="error-msg">Error Message here</p>
-                  </div>
- -->
-
-                  <div class="form-group">
-                    <button class="submit">Donate</button>
-                  </div>
-                </form>
-              </div>
-              <div class="donate__sidebar">
-                <div class="donate__sidebar__wrapper">
-                  <h4>USA Donor</h4>
-                  <p>
-                    Write Check to Philippine Frontline Ministries, Inc and send
-                    to:
-                  </p>
-                  <p>
-                    Philippine Frontline<br />
-                    PO Box 208<br />
-                    Sandwich, Illinois 60548
-                  </p>
-
-                  <h4>Canada</h4>
-                  <p>Write Check to World Focus Inc and send to:</p>
-                  <p>
-                    1399 Buffalo Place Winnipeg,<br />
-                    Manitoba Canada,<br />
-                    R3T 1L6
-                  </p>
                 </div>
               </div>
             </div>
@@ -165,18 +151,7 @@
       </div>
     </section>
 
-    <section class="callToAction">
-      <div class="wrapper">
-        <h2>Need Assistance?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
-          maiores nostrum dolore alias aperiam ipsam vitae odio provident
-          placeat officia modi tempore, rerum dicta officiis nesciunt expedita
-          error amet possimus?
-        </p>
-        <a href="#" class="btn">Contact Us</a>
-      </div>
-    </section>
+
 
 
     <footer class="footer">
