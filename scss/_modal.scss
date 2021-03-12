@@ -624,3 +624,19 @@ $duration: 2s;
     opacity: 1;
   }
 }
+
+.custom__error__msg {
+  padding: 1rem;
+  color: $error;
+  background-color: lighten($error, 35);
+  margin: 1rem 0;
+  border: 1px solid $error;
+  p {
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

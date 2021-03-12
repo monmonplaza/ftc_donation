@@ -2476,6 +2476,22 @@ button:disabled:hover {
   }
 }
 
+.custom__error__msg {
+  padding: 1rem;
+  color: #fc3838;
+  background-color: #ffe8e8;
+  margin: 1rem 0;
+  border: 1px solid #fc3838;
+}
+
+.custom__error__msg p {
+  margin-bottom: 0.5rem;
+}
+
+.custom__error__msg ul li {
+  margin-bottom: 0.5rem;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 1rem;
