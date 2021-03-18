@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__log">
+        <div class="container">
+          <div class="header__donor__dashboard">
+            <img src="../images/logo_white_sm.png" alt="" />
+            <ul>
+              <li><button>Logout</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <section class="banner">
+      <h1>User Profile</h1>
+    </section> -->
+    <section class="donor__dashboard">
+      <div class="container">
+        <div class="grid">
+          <aside>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../images/icon-profile-dark.png"
+                    alt="profile icon"
+                  />
+                  <span>Overview</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img
+                    src="../images/icon-profile-edit-dark.png"
+                    alt="profile icon"
+                  />
+                  <span>Profile</span></a
+                >
+              </li>
+              <li>
+                <a class="active" href="#"
+                  ><img
+                    src="../images/icon-children-dark.png"
+                    alt="profile icon"
+                  /><span>Sponsored Child</span></a
+                >
+              </li>
+            </ul>
+          </aside>
+          <section class="sponsor__list">
+            <div class="container">
+              <div class="sponsor__list__wrapper">
+                <h1 class="donor__dashboard__header">Children List</h1>
+                <div class="main__block__menu">
+                  <ul>
+                    <li><button>Active</button></li>
+                    <li><button class="active">Cancelled</button></li>
+                  </ul>
+                </div>
+                <div class="responsive__table">
+                  <table class="main__block__donor__table">
+                    <thead class="table__header">
+                      <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Frequency</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Ramon</td>
+                        <td>17</td>
+                        <td>Monthly</td>
+                        <td>2000</td>
+                        <td class="cell__action">
+                          <div class="donor__option">
+                            <div class="donor__option__icon">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <!-- ACTION Modal -->
+                            <div class="donor__option__menu show">
+                              <ul>
+                                <li><button>View</button></li>
+                                <li><button>Sponsor</button></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL CHILD INFO -->
+    <div class="modal__box">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Child Information</h3></div>
+          <div class="modal__box__body">
+            <div class="modal__box__grid">
+              <div class="child__image">
+                <img src="../images/children-1.jpg" alt="" />
+              </div>
+              <div class="child__profile">
+                <ul>
+                  <li>Name</li>
+                  <li>Loverboy</li>
+                </ul>
+
+                <ul>
+                  <li>Age</li>
+                  <li>16</li>
+                </ul>
+
+                <ul>
+                  <li>Status</li>
+                  <li>Active</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal__box__story">
+              <h3>Story</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem, reprehenderit autem eaque dolorem optio cum sint
+                itaque aliquid expedita odio.
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Close</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL DELETE DONOR -->
+    <div class="modal__box show">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Add Subscription?</h3></div>
+          <div class="modal__box__body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+              expedita voluptate libero velit officiis, error possimus quasi
+              commodi veritatis aliquid!
+            </p>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Cancel</button>
+              <button class="btn btn--process">
+                Confirm <i class="fal fa-spinner fa-spin"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

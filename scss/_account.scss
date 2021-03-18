@@ -270,9 +270,7 @@ nav.isShow {
     tbody {
       tr {
         border-bottom: 1px solid #ccc;
-        &:nth-child(odd) {
-          background-color: #f3f3f3;
-        }
+
         &:last-child {
           border-bottom: none;
         }
