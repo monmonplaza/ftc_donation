@@ -2882,6 +2882,10 @@ button:disabled:hover {
   content: "\f3c5";
 }
 
+.fa-box-usd::before {
+  content: "\f4a0";
+}
+
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
