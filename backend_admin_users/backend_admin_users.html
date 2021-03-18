@@ -148,7 +148,7 @@
     </main>
 
     <!-- MODAL USER DONOR -->
-    <div class="modal__box">
+    <div class="modal__box show">
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Add New User</h3></div>
@@ -163,6 +163,9 @@
               <label for="modalUserEmail">Email</label>
               <input type="email" name="modalUserEmail" class="error-input" />
               <p class="error-msg">Required</p>
+              <div class="error-box login-error show">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
             </div>
 
             <div class="form-group generate--password">
@@ -175,7 +178,7 @@
                 />
               </div>
 
-              <button class="btn--generate">Generate</button>
+              <div class="btn--generate">Generate</div>
               <p class="error-msg">Required</p>
             </div>
           </div>

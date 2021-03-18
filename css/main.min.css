@@ -403,7 +403,7 @@ th {
 .form-group.generate--password .btn--generate {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 1rem;
+  padding: 0.85rem;
   border-radius: 0.8rem;
   outline: none;
   border: none;
@@ -4538,7 +4538,7 @@ button:disabled:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 50rem;
+  min-height: 35rem;
   max-width: 40rem;
   width: 40rem;
   margin: 1.5rem auto;
