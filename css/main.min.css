@@ -774,10 +774,6 @@ nav.isShow {
   width: 5rem;
 }
 
-.sponsor__list table tbody tr {
-  border-bottom: 1px solid #ccc;
-}
-
 .sponsor__list table tbody tr:last-child {
   border-bottom: none;
 }
@@ -800,12 +796,13 @@ nav.isShow {
 
 .sponsor__list table button {
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: transparent;
   border: none;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .sponsor__list table button:nth-last-of-type(1) {
