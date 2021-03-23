@@ -288,3 +288,13 @@ th {
     width: 20rem;
   }
 }
+
+.text {
+  &--error {
+    color: $error!important;
+  }
+
+  &--blue {
+    color: $blue!important;
+  }
+}

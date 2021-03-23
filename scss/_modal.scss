@@ -183,45 +183,7 @@
   }
 }
 
-// .modal.profileChild {
-//   .modal__main {
-//     max-width: 55rem;
-//     width: 100%;
-//     margin: 0 1.5rem;
-//     form {
-//       display: grid;
-//       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-//       .form-group {
-//         margin-bottom: 0;
-//         .error-msg {
-//           top: 10px;
-//         }
-//         @include media-query(420px) {
-//           grid-column: 1 / 3;
-//         }
-//       }
-//       grid-gap: 1rem;
-//       .form-group:nth-of-type(5) {
-//         grid-column: 1 / 3;
-//       }
-
-//       .form-group:last-child {
-//         grid-column: 1 / 3;
-//         button {
-//           width: 15rem;
-//         }
-//       }
-
-//       label {
-//         text-align: left;
-//       }
-//       input[type="date"] {
-//         padding: 0.55rem 1rem;
-//       }
-//     }
-//   }
-// }
 
 .return__signin {
   display: block;
@@ -465,6 +427,7 @@ $duration: 2s;
 .modal__box.show {
   display: flex;
   z-index: 99999;
+
 }
 
 .modal__box {
@@ -480,7 +443,7 @@ $duration: 2s;
   display: none;
 
   &__main {
-    margin: 14rem 0;
+    margin: 14rem 1rem;
     background-color: $light;
     max-width: 40rem;
     width: 100%;
@@ -671,5 +634,14 @@ $duration: 2s;
     li {
       margin-bottom: 0.5rem;
     }
+  }
+}
+
+
+.error__wrapper {
+  display: flex;
+  img {
+    align-self: center;
+    padding-right: 2rem;
   }
 }
