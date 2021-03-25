@@ -34,7 +34,6 @@
     background-color: $light-1;
     position: relative;
     width: 100%;
-    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     @include media-query(420px) {
       padding: 0 1.5rem;
@@ -43,6 +42,9 @@
       display: flex;
       justify-content: space-between;
       .branding {
+        img {
+          width: 30rem;
+        }
         @include media-query(420px) {
           padding-top: 1rem;
         }
