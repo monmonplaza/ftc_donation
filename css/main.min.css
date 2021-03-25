@@ -375,6 +375,10 @@ th {
   padding-top: 1rem;
 }
 
+.form-group {
+  position: relative;
+}
+
 .form-group .error-input {
   border: 1px solid #fc3838;
   background-color: #ffe8e8;
@@ -388,20 +392,20 @@ th {
   color: #fc3838;
 }
 
-.form-group .sign {
+.form-group.dollarOnlyInput {
+  display: block;
+  position: relative;
+}
+
+.form-group.dollarOnlyInput::before {
+  content: '$';
   position: absolute;
-  left: 10px;
-  top: 32px;
+  left: 1rem;
+  top: 3.2rem;
 }
 
-@media screen and (max-width: 940px) {
-  .form-group .sign {
-    top: 28px;
-  }
-}
-
-.form-group .sign + input {
-  padding-left: 3rem;
+.form-group.dollarOnlyInput input {
+  padding-left: 2rem !important;
 }
 
 .card .form-group .error-msg {
