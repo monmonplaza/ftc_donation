@@ -211,14 +211,6 @@ form .form__group.with__cancel {
   position: relative;
 }
 
-.form-group .dollar .sign {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .form-group .dollar input[type="number"],
 .form-group .dollar input[type="number"]::-webkit-outer-spin-button,
 .form-group .dollar input[type="number"]::-webkit-inner-spin-button {
@@ -394,6 +386,18 @@ th {
   top: 0px;
   font-size: 1.4rem;
   color: #fc3838;
+}
+
+.form-group .sign {
+  position: absolute;
+  left: 10px;
+  top: 32px;
+}
+
+@media screen and (max-width: 940px) {
+  .form-group .sign {
+    top: 28px;
+  }
 }
 
 .card .form-group .error-msg {
