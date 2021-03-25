@@ -20,6 +20,9 @@
     @include media-query(940px) {
       top: 28px;
     }
+    & + input {
+      padding-left: 3rem;
+    }
   }
 }
 

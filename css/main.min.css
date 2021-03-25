@@ -400,6 +400,10 @@ th {
   }
 }
 
+.form-group .sign + input {
+  padding-left: 3rem;
+}
+
 .card .form-group .error-msg {
   top: 10px;
 }
