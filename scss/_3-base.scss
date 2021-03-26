@@ -76,6 +76,11 @@ body {
   position: relative;
 }
 
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
 .sm_only {
   display: none;
   @include media-query(450px) {
@@ -125,7 +130,7 @@ form {
 
   .dollar {
     position: relative;
-   
+
     input[type="number"],
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
@@ -286,11 +291,11 @@ th {
 
 .text {
   &--error {
-    color: $error!important;
+    color: $error !important;
   }
 
   &--blue {
-    color: $blue!important;
+    color: $blue !important;
   }
 }
 
