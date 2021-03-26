@@ -1,0 +1,45 @@
+.page__404 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    font-size: 35rem;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #f0f0f0;
+    z-index: -1;
+  }
+
+  h2 {
+    font-size: 6rem;
+    color: $blue;
+  }
+
+  p {
+    font-size: 2rem;
+    max-width: 50rem;
+    margin: 0 auto 3rem;
+    color: $dark;
+  }
+
+  a {
+    padding: 1rem 1.4rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: $orange;
+    color: #fff;
+    margin-left: 2rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+}

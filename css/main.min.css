@@ -3493,6 +3493,60 @@ button:disabled:hover {
   background-color: #216389;
 }
 
+.page__404 {
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.page__404 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -120%);
+          transform: translate(-50%, -120%);
+  font-size: 35rem;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #f0f0f0;
+  z-index: -1;
+}
+
+.page__404 h2 {
+  font-size: 6rem;
+  color: #3f9cd1;
+}
+
+.page__404 p {
+  font-size: 2rem;
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+  color: #000;
+}
+
+.page__404 a {
+  padding: 1rem 1.4rem;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: #fc9726;
+  color: #fff;
+  margin-left: 2rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .guest__login {
   padding: 5rem 0;
 }
