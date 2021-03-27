@@ -10,16 +10,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -120%);
-    font-size: 35rem;
+    font-size: clamp(10rem, 55vw, 35rem);
     line-height: 1;
     margin-bottom: 0;
     color: #f0f0f0;
     z-index: -1;
+  
   }
 
   h2 {
     font-size: 6rem;
     color: $blue;
+    @include media-query(420px) {
+      font-size: 4rem;
+    }
   }
 
   p {

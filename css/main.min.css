@@ -2619,7 +2619,6 @@ button:disabled:hover {
     border: none;
   }
   .header__main .wrapper nav ul li a {
-    height: 100%;
     text-transform: uppercase;
     display: block;
     font-size: 2rem;
@@ -2652,12 +2651,6 @@ button:disabled:hover {
   background-color: #216389;
 }
 
-.header__main .wrapper ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header__main .wrapper ul li {
   margin-left: 2rem;
   position: relative;
@@ -2672,33 +2665,49 @@ button:disabled:hover {
   color: #3f9cd1;
 }
 
-.header__main .wrapper nav ul li {
+.header__main .wrapper nav ul li.dropdown {
   position: relative;
 }
 
-.header__main .wrapper nav ul li ul {
-  visibility: hidden;
-  opacity: 0;
+@media screen and (max-width: 420px) {
+  .header__main .wrapper nav ul li.dropdown {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.header__main .wrapper nav ul li.dropdown ul {
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  top: 2rem;
-  left: 0;
   display: none;
-  width: 13rem;
-  background-color: red;
+  z-index: 999;
+  background-color: #fafafa;
+  padding: 1.5rem;
 }
 
-.header__main .wrapper nav ul li:hover > ul,
-.header__main .wrapper nav ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
+@media screen and (max-width: 420px) {
+  .header__main .wrapper nav ul li.dropdown ul {
+    position: unset;
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+}
+
+.header__main .wrapper nav ul li.dropdown ul li {
+  white-space: nowrap;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .header__main .wrapper nav ul li.dropdown ul li:last-child {
+    margin-bottom: 2rem;
+  }
+}
+
+.header__main .wrapper nav ul li.dropdown:hover ul {
   display: block;
-}
-
-.header__main .wrapper nav ul li ul li {
-  width: 100%;
 }
 
 .toggle-menu {
@@ -3561,7 +3570,7 @@ button:disabled:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -120%);
           transform: translate(-50%, -120%);
-  font-size: 35rem;
+  font-size: clamp(10rem, 55vw, 35rem);
   line-height: 1;
   margin-bottom: 0;
   color: #f0f0f0;
@@ -3571,6 +3580,12 @@ button:disabled:hover {
 .page__404 h2 {
   font-size: 6rem;
   color: #3f9cd1;
+}
+
+@media screen and (max-width: 420px) {
+  .page__404 h2 {
+    font-size: 4rem;
+  }
 }
 
 .page__404 p {
