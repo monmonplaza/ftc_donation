@@ -1404,6 +1404,11 @@ nav.isShow {
   position: relative;
 }
 
+.main__login__form img {
+  width: 9rem;
+  margin: 1rem auto;
+}
+
 @media screen and (max-width: 1200px) {
   .main__login__form {
     -ms-flex-preferred-size: 40%;
@@ -2698,6 +2703,10 @@ button:disabled:hover {
   margin-left: 0;
   margin-bottom: 2rem;
   padding: 0;
+}
+
+.header__main .wrapper nav ul li.dropdown ul li:last-child {
+  margin-bottom: 0rem;
 }
 
 @media screen and (max-width: 420px) {
