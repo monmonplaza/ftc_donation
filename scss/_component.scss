@@ -1,24 +1,12 @@
-
 .table__spinner {
-    position: relative;
-    display: none;
-    
-    .loading {
-        position: absolute;
-        height: 100vh;
+    &__wrapper {
         display: flex;
-        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        transform: translateY(6rem);
     }
 }
-
-.table__spinner.show {
-    display: block;
-}
-
-.table__spinner.show + .responsive__table__wrapper {
-    height: 80vh;
-}
-
 
 .pagination {
     padding: 1rem 0;
@@ -27,10 +15,10 @@
     justify-content: space-between;
     &__result {
       font-size: 1.6rem;
-      color: $darkgray;
+      color: $dark;
       span {
         font-weight: bold;
-        color: $darkgray;
+        color: $dark;
       }
     }
   
