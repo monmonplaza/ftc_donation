@@ -2947,6 +2947,74 @@ button:disabled:hover {
   }
 }
 
+.table__spinner {
+  position: relative;
+  display: none;
+}
+
+.table__spinner .loading {
+  position: absolute;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.table__spinner.show {
+  display: block;
+}
+
+.table__spinner.show + .responsive__table__wrapper {
+  height: 80vh;
+}
+
+.pagination {
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pagination__result {
+  font-size: 1.6rem;
+  color: #929292;
+}
+
+.pagination__result span {
+  font-weight: bold;
+  color: #929292;
+}
+
+.pagination__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination__nav ul li {
+  margin-left: 1rem;
+}
+
+.pagination__nav ul li button {
+  padding: .6rem 1rem;
+  background-color: #f1f1f1;
+  border: #ccc 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.pagination__nav ul li button:hover {
+  background-color: #fff;
+}
+
 .callToAction {
   min-height: 50rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9))), url("../images/callToAction.jpg");
