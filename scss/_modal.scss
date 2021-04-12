@@ -469,10 +469,14 @@ $duration: 2s;
         height: 10rem;
         object-fit: cover;
         display: block;
-        margin: 0 auto 6rem
+        margin: 0 auto 
         
       }
-  
+      .error-msg {
+        top: 88%;
+        right: 50%;
+        transform: translateX(50%);
+      }
     }
    
 
@@ -486,7 +490,7 @@ $duration: 2s;
       font-size: 1.5rem;
       cursor:pointer;
       position: absolute;
-      bottom: 1rem;
+      bottom: 3rem;
       right: 50%;
       transform: translateX(50%);
            

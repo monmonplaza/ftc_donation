@@ -2259,7 +2259,14 @@ button:disabled:hover {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  margin: 0 auto 6rem;
+  margin: 0 auto;
+}
+
+.modal__box__body .add__Photo .error-msg {
+  top: 88%;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .modal__box__body .uploadBtn {
@@ -2272,7 +2279,7 @@ button:disabled:hover {
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
-  bottom: 1rem;
+  bottom: 3rem;
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
