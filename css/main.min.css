@@ -2250,15 +2250,16 @@ button:disabled:hover {
 
 .modal__box__body .add__Photo {
   position: relative;
+  min-height: 18rem;
 }
 
-.modal__box__body .uploadImg {
+.modal__box__body .add__Photo .uploadImg {
   width: 13rem;
   height: 10rem;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 1rem;
   display: block;
+  margin: 0 auto 6rem;
 }
 
 .modal__box__body .uploadBtn {
@@ -2271,8 +2272,10 @@ button:disabled:hover {
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
-  bottom: 10%;
-  right: 32%;
+  bottom: 1rem;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .modal__box__body .hide_file {
