@@ -425,8 +425,8 @@
       </div>
       <div class="pagination__nav">
         <ul>
-          <li><button class="btn btn-white">Prev</button></li>
-          <li><button class="btn btn-white">Next</button></li>
+          <li><button class="btn btn-white" >Prev</button></li>
+          <li><button class="btn btn-white" disabled="disabled">Next</button></li>
         </ul>
       </div>
     </div>
@@ -444,6 +444,17 @@
         <form action="">
           <div class="modal__box__head"><h3>Add Donor</h3></div>
             <div class="modal__box__body">
+
+              <div class="form-group add__Photo">
+                <label for="modalBoxFullName">Upload Photo</label>
+                <img src="../images/icon-addImg.svg"  class="uploadImg" alt="">
+                  <div class="uploadBtn">Add Photo
+                    <input type="file" class="hide_file">
+                  </div>
+               <!-- <input type="file" id="myFile" name="filename" class="uploadBtn"> -->
+                <p class="error-msg">Required</p>
+              </div> 
+
               <div class="form-group">
                 <label for="modalBoxFullName">Full Name</label>
                 <input type="text" name="modalBoxFullName" class="error-input"/>

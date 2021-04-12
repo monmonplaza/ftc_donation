@@ -131,6 +131,14 @@
   content: "\f4a0";
 }
 
+.fa-people-carry::before {
+  content: "\f4ce";
+}
+
+.fa-money-check-edit-alt::before {
+  content: "\f873";
+}
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);

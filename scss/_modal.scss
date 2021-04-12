@@ -22,26 +22,7 @@
     text-align: center;
     position: relative;
 
-    // .modal__close {
-    //   position: absolute;
-    //   top: -1rem;
-    //   right: -1rem;
-    //   width: 2.5rem;
-    //   height: 2.5rem;
-    //   border-radius: 50%;
-    //   background-color: $blue;
-    //   font-size: 1.2rem;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   font-weight: bold;
-    //   color: $light;
-    //   cursor: pointer;
-    //   transition: 0.2s ease;
-    //   &:hover {
-    //     background-color: darken($blue, 20);
-    //   }
-    // }
+
     h2 {
       margin-bottom: 1rem;
       padding: 0 0 1rem 0;
@@ -154,7 +135,8 @@
       }
     }
 
-    img {
+  
+    img {  
       margin-bottom: 2rem;
     }
 
@@ -478,6 +460,50 @@ $duration: 2s;
         border-radius: 50%;
       }
     }
+
+    .add__Photo {
+      position: relative;
+    }
+    .uploadImg {
+      width: 13rem;
+      height: 10rem;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      display: block;
+     
+    }
+
+
+    .uploadBtn{
+      padding:5px 10px;
+      background:$blue;
+      border:1px solid $blue;
+      color:#fff;
+      border-radius:5px;
+      text-align:center;
+      font-size: 1.5rem;
+      cursor:pointer;
+      position: absolute;
+      bottom: 10%;
+      right: 32%;
+           
+    }
+
+
+    .hide_file {
+        position: absolute;
+        z-index: 1000;
+        opacity: 0; 
+        right: 0;
+        top: 0;
+        height: 100%;
+        font-size: 24px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    
+
 
     .info__block {
       margin-bottom: 1rem;
