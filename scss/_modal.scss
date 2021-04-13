@@ -463,19 +463,23 @@ $duration: 2s;
 
     .add__Photo {
       position: relative;
-      min-height: 18rem;
+      min-height: 30rem;
+      margin-bottom: 0;
       .uploadImg {
-        width: 13rem;
-        height: 10rem;
+        width: 15rem;
+        height: 20rem;
         object-fit: cover;
         display: block;
-        margin: 0 auto 
+        margin: 0 auto ;
         
       }
       .error-msg {
-        top: 88%;
+        top: 85%;
         right: 50%;
+        width: 70%;
+        text-align: center;
         transform: translateX(50%);
+      
       }
     }
    
@@ -490,7 +494,7 @@ $duration: 2s;
       font-size: 1.5rem;
       cursor:pointer;
       position: absolute;
-      bottom: 3rem;
+      bottom: 5rem;
       right: 50%;
       transform: translateX(50%);
            
