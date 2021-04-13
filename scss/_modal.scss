@@ -682,3 +682,10 @@ $duration: 2s;
     padding-right: 2rem;
   }
 }
+
+.child__photo__spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

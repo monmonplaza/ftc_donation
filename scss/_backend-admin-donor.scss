@@ -108,3 +108,15 @@
   }
 }
 
+
+
+.cell__status span {
+  background-color: #50a41e;
+  color: $light;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.cell__status.inactive  span {
+  background-color: #ccc;
+}

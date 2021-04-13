@@ -2536,6 +2536,19 @@ button:disabled:hover {
   padding-right: 2rem;
 }
 
+.child__photo__spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 0.5rem;
@@ -4381,6 +4394,17 @@ button:disabled:hover {
 
 .main__block__donor__table tbody .donor__option__menu.show {
   display: block;
+}
+
+.cell__status span {
+  background-color: #50a41e;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.cell__status.inactive span {
+  background-color: #ccc;
 }
 
 .main__block.main__dashboard .main__block__grid {

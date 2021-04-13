@@ -71,20 +71,22 @@
                   <table class="main__block__donor__table">
                     <thead class="table__header">
                       <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Frequency</th>
-                        <th>Amount</th>
-                        <th>Action</th>
+                        <tr>
+                          <th>Name</th>
+                          <th>Amount</th>
+                          <th>Status</th>
+                          <th>Created</th>
+                          <th>Action</th>
+                        </tr>
                       </tr>
                     </thead>
 
                     <tbody>
                       <tr>
                         <td>Ramon</td>
-                        <td>17</td>
-                        <td>Monthly</td>
                         <td>2000</td>
+                        <td class="cell__status inactive"><span>Monthly</span></td>
+                        <td>1-20-2020</td>
                         <td class="cell__action">
                           <div class="donor__option">
                             <div class="donor__option__icon">
@@ -112,14 +114,36 @@
     </section>
 
     <!-- MODAL CHILD INFO -->
-    <div class="modal__box show">
+    <div class="modal__box ">
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Child Information</h3></div>
           <div class="modal__box__body">
             <div class="modal__box__grid">
-              <div class="child__image">
+              <!-- <div class="child__image">
                 <img src="../images/children-1.jpg" alt="" />
+              </div> -->
+              <div class="child__image">
+
+                <div class="child__photo__spinner">
+                  <svg
+                    class="spinner"
+                    width="60px"
+                    height="60px"
+                    viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="path"
+                      fill="none"
+                      stroke-width="6"
+                      stroke-linecap="round"
+                      cx="33"
+                      cy="33"
+                      r="30"
+                    ></circle>
+                  </svg>
+                </div>
               </div>
               <div class="child__profile">
                 <ul>
