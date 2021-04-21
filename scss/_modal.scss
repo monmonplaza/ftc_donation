@@ -412,13 +412,18 @@ $duration: 2s;
 
 }
 
+
+.modal__box.bg--lighter {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .modal__box {
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
