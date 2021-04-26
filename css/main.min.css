@@ -3249,6 +3249,12 @@ button:disabled:hover {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .childlist__nav {
+    padding: 0 1rem;
+  }
+}
+
 .childlist__nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3285,6 +3291,12 @@ button:disabled:hover {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .childlist__nav ul li {
+    border-radius: 0.5rem;
+  }
+}
+
 .childlist__nav ul li::after {
   content: "";
   left: 0;
@@ -3299,6 +3311,12 @@ button:disabled:hover {
 @media screen and (max-width: 890px) {
   .childlist__nav ul li::after {
     height: 2px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .childlist__nav ul li::after {
+    background-color: transparent;
   }
 }
 
@@ -3389,6 +3407,7 @@ button:disabled:hover {
 
 .childlist__list__box {
   position: relative;
+  overflow: hidden;
 }
 
 .childlist__list__boxInfo {

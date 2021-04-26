@@ -7,6 +7,9 @@
       margin-bottom: 0;
       border-bottom: none;
     }
+    @include media-query(420px) {
+      padding: 0 1rem;
+    }
     ul {
       display: flex;
 
@@ -29,6 +32,11 @@
           margin-bottom: 1rem;
           margin-right: 0;
         }
+
+        @include media-query(420px) {
+         
+          border-radius: 0.5rem;
+        }
         &::after {
           content: "";
           left: 0;
@@ -40,6 +48,9 @@
           display: none;
           @include media-query(890px) {
             height: 2px;
+          }
+          @include media-query(420px) {
+            background-color: transparent;
           }
         }
       }
@@ -112,6 +123,7 @@
 
   &__box {
     position: relative;
+    overflow: hidden;
   }
   &__boxInfo {
     position: absolute;
