@@ -1,10 +1,75 @@
+
+.banner-sm {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $light;
+  padding: 2rem;
+  
+  background: {
+    position: right center;
+    repeat: no-repeat;
+    size: cover;
+    image: linear-gradient(45deg, rgba(22,53,70,.9) 30%, rgba(43,106,139,0.6)),
+    url("../images/banner-childrenList.jpg")!important;
+  }
+
+  @include media-query(420px) {
+    min-height: 23rem;
+    align-items: flex-end;
+    background: {
+      image: linear-gradient(rgba(22,53,70,.9), rgba(43,106,139,0.9)),
+         url("../images/banner-sm.jpg")!important;
+      position: right center;
+    }
+  }
+  
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      padding-top: 15rem;
+      padding-bottom: 2rem;
+      
+      @include media-query(420px) {
+        justify-content: center;
+        min-height: inherit;
+        padding-top: 0rem;
+      }
+    }
+  
+
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    @include media-query(520px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+.banner-sm.lg-only {
+  @include media-query(420px) {
+    display: none;
+  }
+}
+
+
+
 .childlist {
+  padding: 5rem 0;
   &__nav {
     border-bottom: 2px solid $darkgray;
     margin: 1rem 0;
     @include media-query(890px) {
       margin-top: 0rem;
-      margin-bottom: 0;
+      margin-bottom: 3rem;
       border-bottom: none;
     }
     @include media-query(420px) {
@@ -34,7 +99,6 @@
         }
 
         @include media-query(420px) {
-         
           border-radius: 0.5rem;
         }
         &::after {
@@ -57,7 +121,6 @@
 
       li.active {
         background-color: $blue;
-
         border-left: 1px solid $blue;
         border-right: 1px solid $blue;
         border-top: 1px solid $blue;
@@ -75,6 +138,8 @@
 
         @include media-query(890px) {
           font-size: 2rem;
+          width: 100%;
+          padding: 1rem 10rem;
         }
       }
     }
@@ -123,7 +188,13 @@
 
   &__box {
     position: relative;
-    overflow: hidden;
+    @include media-query(420px) {
+      height: 430px;
+      margin: 0 5rem;
+      overflow: hidden;  
+    }
+    
+
   }
   &__boxInfo {
     position: absolute;

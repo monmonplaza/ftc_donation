@@ -2553,6 +2553,12 @@ button:disabled:hover {
   height: 100%;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 0.5rem;
@@ -2737,55 +2743,6 @@ button:disabled:hover {
 
 .header__main .wrapper ul li a:hover {
   color: #3f9cd1;
-}
-
-.header__main .wrapper nav ul li.dropdown {
-  position: relative;
-}
-
-@media screen and (max-width: 420px) {
-  .header__main .wrapper nav ul li.dropdown {
-    margin-bottom: 0;
-    padding: 0;
-  }
-}
-
-.header__main .wrapper nav ul li.dropdown ul {
-  position: absolute;
-  display: none;
-  z-index: 999;
-  background-color: #fafafa;
-  padding: 1.5rem;
-}
-
-@media screen and (max-width: 420px) {
-  .header__main .wrapper nav ul li.dropdown ul {
-    position: unset;
-    display: block;
-    margin-top: 1.5rem;
-    padding: 0;
-  }
-}
-
-.header__main .wrapper nav ul li.dropdown ul li {
-  white-space: nowrap;
-  margin-left: 0;
-  margin-bottom: 2rem;
-  padding: 0;
-}
-
-.header__main .wrapper nav ul li.dropdown ul li:last-child {
-  margin-bottom: 0rem;
-}
-
-@media screen and (max-width: 420px) {
-  .header__main .wrapper nav ul li.dropdown ul li:last-child {
-    margin-bottom: 2rem;
-  }
-}
-
-.header__main .wrapper nav ul li.dropdown:hover ul {
-  display: block;
 }
 
 .toggle-menu {
@@ -3087,9 +3044,9 @@ button:disabled:hover {
 }
 
 .callToAction {
-  min-height: 50rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9))), url("../images/callToAction.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../images/callToAction.jpg");
+  min-height: 30rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/callToAction.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/callToAction.jpg");
   background-position: center center;
   background-size: cover;
   display: -webkit-box;
@@ -3236,6 +3193,85 @@ button:disabled:hover {
   background-color: #b96303;
 }
 
+.banner-sm {
+  width: 100%;
+  min-height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 2rem;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(45deg, rgba(22, 53, 70, 0.9) 30%, rgba(43, 106, 139, 0.6)), url("../images/banner-childrenList.jpg") !important;
+}
+
+@media screen and (max-width: 420px) {
+  .banner-sm {
+    min-height: 23rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 53, 70, 0.9)), to(rgba(43, 106, 139, 0.9))), url("../images/banner-sm.jpg") !important;
+    background-image: linear-gradient(rgba(22, 53, 70, 0.9), rgba(43, 106, 139, 0.9)), url("../images/banner-sm.jpg") !important;
+    background-position: right center;
+  }
+}
+
+.banner-sm-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 420px) {
+  .banner-sm-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: inherit;
+    padding-top: 0rem;
+  }
+}
+
+.banner-sm h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 520px) {
+  .banner-sm h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.banner-sm h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 420px) {
+  .banner-sm.lg-only {
+    display: none;
+  }
+}
+
+.childlist {
+  padding: 5rem 0;
+}
+
 .childlist__nav {
   border-bottom: 2px solid #929292;
   margin: 1rem 0;
@@ -3244,7 +3280,7 @@ button:disabled:hover {
 @media screen and (max-width: 890px) {
   .childlist__nav {
     margin-top: 0rem;
-    margin-bottom: 0;
+    margin-bottom: 3rem;
     border-bottom: none;
   }
 }
@@ -3344,6 +3380,8 @@ button:disabled:hover {
 @media screen and (max-width: 890px) {
   .childlist__nav ul a {
     font-size: 2rem;
+    width: 100%;
+    padding: 1rem 10rem;
   }
 }
 
@@ -3407,7 +3445,14 @@ button:disabled:hover {
 
 .childlist__list__box {
   position: relative;
-  overflow: hidden;
+}
+
+@media screen and (max-width: 420px) {
+  .childlist__list__box {
+    height: 430px;
+    margin: 0 5rem;
+    overflow: hidden;
+  }
 }
 
 .childlist__list__boxInfo {
