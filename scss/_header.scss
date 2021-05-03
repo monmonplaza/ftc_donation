@@ -1,7 +1,5 @@
 .header {
-  position: fixed;
-  width: 100%;
-  z-index: 999999;
+ 
   &__log {
     background-color: $blue;
     padding: 0.5rem;
@@ -238,6 +236,17 @@
   }
 }
 
+.header.header__backend {
+  position: static;
+ 
+}
+
+.header.header__frontend {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+}
+
 .header__main.dashboard .wrapper {
   padding: 0 2rem;
 }
@@ -245,4 +254,7 @@
 .header__donor__dashboard {
   display: flex;
   justify-content: space-between;
+  img {
+    width: 30rem;
+  }
 }

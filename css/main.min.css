@@ -2553,12 +2553,6 @@ button:disabled:hover {
   height: 100%;
 }
 
-.header {
-  position: fixed;
-  width: 100%;
-  z-index: 999999;
-}
-
 .header__log {
   background-color: #3f9cd1;
   padding: 0.5rem;
@@ -2787,6 +2781,16 @@ button:disabled:hover {
   color: #fff;
 }
 
+.header.header__backend {
+  position: static;
+}
+
+.header.header__frontend {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+}
+
 .header__main.dashboard .wrapper {
   padding: 0 2rem;
 }
@@ -2798,6 +2802,10 @@ button:disabled:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__donor__dashboard img {
+  width: 30rem;
 }
 
 .banner {
@@ -3207,7 +3215,7 @@ button:disabled:hover {
           align-items: center;
   color: #fff;
   padding: 2rem;
-  background-position: right center;
+  background-position: right 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(45deg, rgba(22, 53, 70, 0.9) 30%, rgba(43, 106, 139, 0.6)), url("../images/banner-childrenList.jpg") !important;
