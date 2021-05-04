@@ -501,7 +501,7 @@ nav {
       align-self: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
   nav {
     position: fixed;
     width: 100%;
@@ -2600,7 +2600,7 @@ button:disabled:hover {
   transition: 0.5s ease;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 670px) {
   .header__main {
     padding: 0 1.5rem;
   }
@@ -2619,13 +2619,19 @@ button:disabled:hover {
   width: 30rem;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 670px) {
+  .header__main .wrapper .branding img {
+    width: 27rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
   .header__main .wrapper .branding {
     padding-top: 1rem;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 670px) {
   .header__main .wrapper .menu-wrapper.isOpen nav {
     left: 0;
     position: fixed;
@@ -2662,7 +2668,7 @@ button:disabled:hover {
   transition: 0.5s ease;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 670px) {
   .header__main .wrapper nav {
     background-color: #fafafa;
     -webkit-box-orient: vertical;
@@ -2747,7 +2753,7 @@ button:disabled:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 670px) {
   .toggle-menu {
     display: block;
   }
@@ -3293,7 +3299,7 @@ button:disabled:hover {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 670px) {
   .childlist__nav {
     padding: 0 1rem;
   }
@@ -3389,7 +3395,7 @@ button:disabled:hover {
   .childlist__nav ul a {
     font-size: 2rem;
     width: 100%;
-    padding: 1rem 10rem;
+    padding: 1rem 9rem;
   }
 }
 
@@ -3460,6 +3466,13 @@ button:disabled:hover {
     height: 430px;
     margin: 0 5rem;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .childlist__list__box {
+    margin: 0 3rem;
+    height: 360px;
   }
 }
 

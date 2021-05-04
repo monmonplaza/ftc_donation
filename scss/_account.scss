@@ -38,7 +38,7 @@
 
 nav {
   align-self: center;
-  @include media-query(600px) {
+  @include media-query(670px) {
     position: fixed;
     width: 100%;
     background-color: $light;

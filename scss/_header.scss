@@ -34,7 +34,7 @@
     position: relative;
     width: 100%;
     transition: 0.5s ease;
-    @include media-query(420px) {
+    @include media-query(670px) {
       padding: 0 1.5rem;
     }
     .wrapper {
@@ -43,14 +43,19 @@
       .branding {
         img {
           width: 30rem;
+          @include media-query(670px) {
+            width:27rem;
+         
+          }
         }
-        @include media-query(420px) {
+        @include media-query(670px) {
           padding-top: 1rem;
+       
         }
       }
 
       .menu-wrapper.isOpen {
-        @include media-query(420px) {
+        @include media-query(670px) {
           nav {
             left: 0;
             position: fixed;
@@ -79,7 +84,7 @@
         height: inherit;
         align-items: center;
         transition: 0.5s ease;
-        @include media-query(420px) {
+        @include media-query(670px) {
           background-color: $light-1;
           flex-direction: column;
           padding: 5rem;
@@ -204,7 +209,7 @@
   top: 2rem;
   display: none;
   cursor: pointer;
-  @include media-query(420px) {
+  @include media-query(670px) {
     display: block;
   }
 }
