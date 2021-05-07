@@ -4496,6 +4496,88 @@ button:disabled:hover {
   background-color: #ccc;
 }
 
+.donor__search__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .donor__search__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .donor__search__block form {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+.donor__search__block input {
+  border: 1px solid #8a8a8a;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+@media screen and (max-width: 420px) {
+  .donor__search__block input {
+    width: 75%;
+  }
+}
+
+.donor__search__block input::-webkit-input-placeholder {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.donor__search__block input:-ms-input-placeholder {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.donor__search__block input::-ms-input-placeholder {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.donor__search__block input::placeholder {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.donor__search__block button {
+  padding: 0.7rem 0.9rem;
+  background-color: #3f9cd1;
+  border: 1px solid #3f9cd1;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.donor__search__block button:hover {
+  background-color: #2b81b2;
+}
+
+@media screen and (max-width: 420px) {
+  .donor__search__block button {
+    width: 23%;
+  }
+}
+
 .main__block.main__dashboard .main__block__grid {
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
