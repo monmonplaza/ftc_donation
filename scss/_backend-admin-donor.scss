@@ -119,14 +119,6 @@
   background-color: #ccc;
 }
 
-.main__block__menu.justify-end {
-  justify-content: flex-end;
-}
-.results__status {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
 .donor__search__block {
   display: flex;
   justify-content: space-between;
@@ -178,5 +170,13 @@
   color: $dark;
   &:hover {
     color: $blue;
+  }
+}
+
+.result__status {
+  margin: 2rem 0;
+  p {
+    font-weight: bold;
+    font-size: 1.8rem;
   }
 }

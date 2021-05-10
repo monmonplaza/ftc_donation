@@ -4496,17 +4496,6 @@ button:disabled:hover {
   background-color: #ccc;
 }
 
-.main__block__menu.justify-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.results__status {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
 .donor__search__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4595,6 +4584,15 @@ button:disabled:hover {
 
 .search__link:hover {
   color: #3f9cd1;
+}
+
+.result__status {
+  margin: 2rem 0;
+}
+
+.result__status p {
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .main__block.main__dashboard .main__block__grid {
