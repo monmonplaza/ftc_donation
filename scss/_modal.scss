@@ -685,3 +685,11 @@ $duration: 2s;
     max-width: 80rem;
   }
 }
+
+.modal__table__spinner {
+  margin: 2rem;
+  text-align: center;
+  svg {
+    margin-top: 5rem;
+  }
+}

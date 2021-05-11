@@ -2557,6 +2557,15 @@ button:disabled:hover {
   max-width: 80rem;
 }
 
+.modal__table__spinner {
+  margin: 2rem;
+  text-align: center;
+}
+
+.modal__table__spinner svg {
+  margin-top: 5rem;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 0.5rem;
