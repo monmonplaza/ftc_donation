@@ -514,7 +514,7 @@
       </div>
     </div>
     <!-- MODAL EDIT ADD-->
-    <div class="modal__box show">
+    <div class="modal__box">
       <div class="modal__box__main">
         <form action="">
           <div class="modal__box__head"><h3>Child Details</h3></div>
@@ -526,18 +526,23 @@
               <p class="error-msg">Required</p>
             </div> -->
 
-
-            <div class="form-group add__Photo ">
-     
+            <div class="form-group add__Photo">
               <!-- DITO SIR PAT -->
               <!-- <img src="../images/icon-addImg.svg"  class="uploadImg" alt="">  -->
-              <img src="https://static.wikia.nocookie.net/mobile-legends/images/6/66/Zilong.png" class="uploadImg" alt="">
-                <div class="uploadBtn">Add Photo
-                  <input type="file" class="hide_file">
-                </div>
-             <!-- <input type="file" id="myFile" name="filename" class="uploadBtn"> -->
-              <p class="error-msg">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
-            </div> 
+              <img
+                src="https://static.wikia.nocookie.net/mobile-legends/images/6/66/Zilong.png"
+                class="uploadImg"
+                alt=""
+              />
+              <div class="uploadBtn">
+                Add Photo
+                <input type="file" class="hide_file" />
+              </div>
+              <!-- <input type="file" id="myFile" name="filename" class="uploadBtn"> -->
+              <p class="error-msg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing
+              </p>
+            </div>
 
             <div class="form-group">
               <label for="modalBoxChildName">Name</label>
@@ -603,6 +608,77 @@
               <button class="btn btn--action btn--error">
                 Confirm <i class="fal fa-spinner fa-spin"></i>
               </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL View Donors CHILD -->
+    <div class="modal__box modal__table show">
+      <div class="modal__box__main">
+        <form action="">
+          <div class="modal__box__head"><h3>Donors</h3></div>
+          <div class="modal__box__body">
+            <table class="main__block__donor__table">
+              <thead class="table__header">
+                <tr>
+                  <th>Email</th>
+                  <th>Name</th>
+                  <th>Status</th>
+                  <th>Date Created</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="" class="search__link">ramon.plaza@gmail.com</a>
+                  </td>
+                  <td>Ramon Plaza</td>
+                  <td class="cell__status inactive"><span>Active</span></td>
+                  <td>June 23, 2021</td>
+                </tr>
+
+                <tr>
+                  <td>ramon.plaza@gmail.com</td>
+                  <td>Ramon Plaza</td>
+                  <td class="cell__status inactive"><span>Active</span></td>
+                  <td>June 23, 2021</td>
+                </tr>
+                <tr>
+                  <td>ramon.plaza@gmail.com</td>
+                  <td>Ramon Plaza</td>
+                  <td class="cell__status active"><span>Active</span></td>
+                  <td>June 23, 2021</td>
+                </tr>
+
+                <tr>
+                  <td>ramon.plaza@gmail.com</td>
+                  <td>Ramon Plaza</td>
+                  <td class="cell__status active"><span>Active</span></td>
+                  <td>June 23, 2021</td>
+                </tr>
+
+                <tr>
+                  <td>ramon.plaza@gmail.com</td>
+                  <td>Ramon Plaza</td>
+                  <td class="cell__status active"><span>Active</span></td>
+                  <td>June 23, 2021</td>
+                </tr>
+
+                <tr>
+                  <td>ramon.plaza@gmail.com</td>
+                  <td>Ramon Plaza</td>
+                  <td class="cell__status active"><span>Active</span></td>
+                  <td>June 23, 2021</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal__box__footer">
+            <div class="modal__box__btns">
+              <button class="btn btn--cancel">Close</button>
             </div>
           </div>
         </form>

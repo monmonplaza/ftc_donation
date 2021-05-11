@@ -22,7 +22,6 @@
     text-align: center;
     position: relative;
 
-
     h2 {
       margin-bottom: 1rem;
       padding: 0 0 1rem 0;
@@ -135,8 +134,7 @@
       }
     }
 
-  
-    img {  
+    img {
       margin-bottom: 2rem;
     }
 
@@ -164,8 +162,6 @@
     }
   }
 }
-
-
 
 .return__signin {
   display: block;
@@ -409,9 +405,7 @@ $duration: 2s;
 .modal__box.show {
   display: flex;
   z-index: 99999;
-
 }
-
 
 .modal__box.bg--lighter {
   background-color: rgba(0, 0, 0, 0.3);
@@ -475,8 +469,7 @@ $duration: 2s;
         height: 20rem;
         object-fit: cover;
         display: block;
-        margin: 0 auto ;
-        
+        margin: 0 auto;
       }
       .error-msg {
         top: 85%;
@@ -484,42 +477,35 @@ $duration: 2s;
         width: 70%;
         text-align: center;
         transform: translateX(50%);
-      
       }
     }
-   
 
-    .uploadBtn{
-      padding:5px 10px;
-      background:$blue;
-      border:1px solid $blue;
-      color:#fff;
-      border-radius:5px;
-      text-align:center;
+    .uploadBtn {
+      padding: 5px 10px;
+      background: $blue;
+      border: 1px solid $blue;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center;
       font-size: 1.5rem;
-      cursor:pointer;
+      cursor: pointer;
       position: absolute;
       bottom: 5rem;
       right: 50%;
       transform: translateX(50%);
-           
     }
-
 
     .hide_file {
-        position: absolute;
-        z-index: 1000;
-        opacity: 0; 
-        right: 0;
-        top: 0;
-        height: 100%;
-        font-size: 24px;
-        width: 100%;
-        cursor: pointer;
+      position: absolute;
+      z-index: 1000;
+      opacity: 0;
+      right: 0;
+      top: 0;
+      height: 100%;
+      font-size: 24px;
+      width: 100%;
+      cursor: pointer;
     }
-
-    
-
 
     .info__block {
       margin-bottom: 1rem;
@@ -679,7 +665,6 @@ $duration: 2s;
   }
 }
 
-
 .error__wrapper {
   display: flex;
   img {
@@ -693,4 +678,10 @@ $duration: 2s;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.modal__box.modal__table {
+  .modal__box__main {
+    max-width: 80rem;
+  }
 }

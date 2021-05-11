@@ -2553,6 +2553,10 @@ button:disabled:hover {
   height: 100%;
 }
 
+.modal__box.modal__table .modal__box__main {
+  max-width: 80rem;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 0.5rem;
@@ -4529,11 +4533,12 @@ button:disabled:hover {
   padding: 0.7rem 0.9rem;
   border-radius: 0.4rem;
   outline: none;
+  width: 36rem;
 }
 
 @media screen and (max-width: 420px) {
   .donor__search__block input {
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -4566,6 +4571,7 @@ button:disabled:hover {
   cursor: pointer;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  margin-left: 1rem;
 }
 
 .donor__search__block button:hover {
