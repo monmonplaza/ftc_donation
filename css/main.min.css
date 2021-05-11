@@ -2566,6 +2566,10 @@ button:disabled:hover {
   margin-top: 5rem;
 }
 
+.modal__box.modal__table tr:nth-child(even) {
+  background-color: transparent;
+}
+
 .header__log {
   background-color: #3f9cd1;
   padding: 0.5rem;
