@@ -699,3 +699,43 @@ $duration: 2s;
     background-color: transparent;
   }
 }
+
+.modal__box__tabs {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $gray;
+  li {
+    margin-right: 1rem;
+    padding: 1rem 0.8rem;
+    button {
+      border: none;
+      background-color: transparent;
+      font-weight: bold;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: "";
+        position: absolute;
+        left: -0.5rem;
+        bottom: -1.2rem;
+        width: 130%;
+        height: 3px;
+        background-color: $blue;
+        display: none;
+      }
+    }
+    button.active__tab {
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
+
+.modal__donor__table {
+  display: none;
+}
+
+.modal__donor__table.active__table {
+  display: table;
+}

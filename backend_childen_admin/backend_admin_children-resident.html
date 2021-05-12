@@ -620,7 +620,61 @@
         <form action="">
           <div class="modal__box__head"><h3>Donors</h3></div>
           <div class="modal__box__body">
-            <table class="main__block__donor__table">
+            <ul class="modal__box__tabs">
+              <li><button class="active__tab">Card</button></li>
+              <li><button>Manual</button></li>
+            </ul>
+            <table
+              class="
+                main__block__donor__table
+                modal__donor__table
+                active__table
+              "
+            >
+              <thead class="table__header">
+                <tr>
+                  <th>Email</th>
+                  <th>Name</th>
+                  <th>Status</th>
+                  <th>Date Created</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="" class="search__link">ramon.plaza@gmail.com</a>
+                  </td>
+                  <td>Ramon Plaza</td>
+                  <td class="cell__status inactive"><span>Active</span></td>
+                  <td>June 23, 2021</td>
+                </tr>
+
+                <tr>
+                  <td colspan="4" class="modal__table__spinner">
+                    <svg
+                      class="spinner"
+                      width="60px"
+                      height="60px"
+                      viewBox="0 0 66 66"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        class="path"
+                        fill="none"
+                        stroke-width="6"
+                        stroke-linecap="round"
+                        cx="33"
+                        cy="33"
+                        r="30"
+                      ></circle>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="main__block__donor__table modal__donor__table">
               <thead class="table__header">
                 <tr>
                   <th>Email</th>
