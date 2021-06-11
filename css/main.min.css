@@ -3751,7 +3751,7 @@ button:disabled:hover {
 
 @media screen and (max-width: 430px) {
   .registration .account__wrapper .account__step .step_two_grid .step_two_address .form-group:nth-child(2) {
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 }
 

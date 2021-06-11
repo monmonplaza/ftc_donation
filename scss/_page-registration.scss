@@ -79,7 +79,7 @@
         .form-group:nth-child(2) {
           margin-top: 2rem;
           @include media-query(430px) {
-            margin-top: 0rem;
+            margin-top: 2rem;
           }
         }
         .step_two_address_subgrid {
