@@ -3739,6 +3739,25 @@ button:disabled:hover {
   }
 }
 
+.registration .account__wrapper .account__step .step_two_grid .step_two_address {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 /4;
+}
+
+.registration .account__wrapper .account__step .step_two_grid .step_two_address .step_two_address_subgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.registration .account__wrapper .account__step .step_two_grid .step_two_address .form-group:nth-child(2) {
+  margin-top: 2rem;
+}
+
 .registration .account__wrapper .account__step .step_three_grid {
   display: -ms-grid;
   display: grid;
