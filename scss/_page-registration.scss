@@ -76,16 +76,22 @@
 
       .step_two_address {
         grid-column: 1 /4;
+        .form-group:nth-child(2) {
+          margin-top: 2rem;
+          @include media-query(430px) {
+            margin-top: 0rem;
+          }
+        }
         .step_two_address_subgrid {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 2rem;
           margin-top: 2rem;
-        }
-        .form-group:nth-child(2) {
-          margin-top: 2rem;
-          @include media-query(430px) {
-            margin-top: 0rem;
+          .form-group:nth-child(2) {
+            margin-top: 0;
+            @include media-query(430px) {
+              margin-top: 0rem;
+            }
           }
         }
       }
