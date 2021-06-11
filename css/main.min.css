@@ -3758,6 +3758,12 @@ button:disabled:hover {
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 430px) {
+  .registration .account__wrapper .account__step .step_two_grid .step_two_address .form-group:nth-child(2) {
+    margin-top: 0rem;
+  }
+}
+
 .registration .account__wrapper .account__step .step_three_grid {
   display: -ms-grid;
   display: grid;
