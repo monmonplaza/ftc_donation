@@ -3270,7 +3270,7 @@ button:disabled:hover {
 
 .banner-sm {
   width: 100%;
-  min-height: 30rem;
+  min-height: 19rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3290,7 +3290,7 @@ button:disabled:hover {
 
 @media screen and (max-width: 420px) {
   .banner-sm {
-    min-height: 23rem;
+    min-height: 17rem;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -3307,8 +3307,7 @@ button:disabled:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 15rem;
-  padding-bottom: 2rem;
+  padding-top: 10rem;
 }
 
 @media screen and (max-width: 420px) {
@@ -3322,8 +3321,7 @@ button:disabled:hover {
 }
 
 .banner-sm h2 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 
 @media screen and (max-width: 520px) {
@@ -3525,7 +3523,6 @@ button:disabled:hover {
 @media screen and (max-width: 420px) {
   .childlist__list__box {
     height: 430px;
-    margin: 0 5rem;
     overflow: hidden;
   }
 }

@@ -1,7 +1,7 @@
 
 .banner-sm {
   width: 100%;
-  min-height: 30rem;
+  min-height: 19rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -17,7 +17,7 @@
   }
 
   @include media-query(420px) {
-    min-height: 23rem;
+    min-height: 17rem;
     align-items: flex-end;
     background: {
       image: linear-gradient(rgba(22,53,70,.9), rgba(43,106,139,0.9)),
@@ -29,8 +29,8 @@
     &-wrapper {
       display: flex;
       align-items: flex-end;
-      padding-top: 15rem;
-      padding-bottom: 2rem;
+      padding-top: 10rem;
+      // padding-bottom: 2rem;
       
       @include media-query(420px) {
         justify-content: center;
@@ -41,8 +41,8 @@
   
 
   h2 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    
     @include media-query(520px) {
       font-size: 2.5rem;
     }
@@ -190,7 +190,7 @@
     position: relative;
     @include media-query(420px) {
       height: 430px;
-      margin: 0 5rem;
+      // margin: 0 5rem;
       overflow: hidden;  
     }
 
