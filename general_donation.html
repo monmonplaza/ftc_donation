@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__log">
-        <div class="container">
-          <ul>
-            <li><button >Login</button></li>
-            <li><a href="#">My Account</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__main">
-        <div class="container">
-          <div class="wrapper">
-            <div class="branding">
-              <a href="#">
-               
-                  <img src="./images/ftc_logo_colored.svg" alt="main logo" />
-               
-              </a>
-            </div>
-            <div class="menu-wrapper">
-              <div class="toggle-menu" id="toggleMenu">
-                <span class="bar bar-top"></span>
-                <span class="bar bar-mid"></span>
-                <span class="bar bar-bottom"></span>
-              </div>
 
-              <nav class="">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-                <a href="#" class="cta"> Donate</a>
-              </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__log">
+      <div class="container">
+        <ul>
+          <li><button>Login</button></li>
+          <li><a href="#">My Account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__main">
+      <div class="container">
+        <div class="wrapper">
+          <div class="branding">
+            <a href="#">
+
+              <img src="./images/ftc_logo_colored.svg" alt="main logo" />
+
+            </a>
+          </div>
+          <div class="menu-wrapper">
+            <div class="toggle-menu" id="toggleMenu">
+              <span class="bar bar-top"></span>
+              <span class="bar bar-mid"></span>
+              <span class="bar bar-bottom"></span>
             </div>
+
+            <nav class="">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <a href="#" class="cta"> Donate</a>
+            </nav>
           </div>
         </div>
       </div>
-    </header>
-    <section class="banner">
-      <h1>General Donation</h1>
-    </section>
+    </div>
+  </header>
+  <section class="banner">
+    <h1>General Donation</h1>
+  </section>
 
-    <section class="donation">
-      <div class="donation__wrapper">
-          <div class="main__list">
-           
-            <div class="main__wrapper">
-              <div class="general__donation">
-                <div class="general__donation__wrapper">
-                  <div class="general__donation__header">
-           
-                    <p>We Accept the following cards</p>
-                    <img src="../images/cards.png" alt="card accept" />
-                  </div> 
-      
-                  <form action="">
-                    <div class="form-group ">
-                      <label for="designation" class="error-label">Designation</label>
-                      <select name="designation" id="" class="error-input">
-                        <option value="general">General Giving</option>
-                        <option value="feeding">Feeding Program</option>
-                      </select>
-                      <p class="error-msg">Error Message here</p>
-                    </div>
-      
-                    <div class="form-group dollarOnlyInput">
-                      <label for="amount" class="error-label">Amount</label>
-                      <input type="number" name="amount" class="error-input" />
-                      <p class="error-msg">Error Message here</p>
-                    </div>
-      
-                    <!-- <div class="form-group error">
+  <section class="donation">
+    <div class="donation__wrapper">
+      <div class="main__list">
+
+        <div class="main__wrapper">
+          <div class="general__donation">
+            <div class="general__donation__wrapper">
+              <div class="general__donation__header">
+
+                <p>We Accept the following cards</p>
+                <img src="../images/cards.png" alt="card accept" />
+              </div>
+
+              <form action="">
+                <div class="form-group ">
+                  <label for="designation" class="error-label">Designation</label>
+                  <select name="designation" id="" class="error-input">
+                    <option value="general">General Giving</option>
+                    <option value="feeding">Feeding Program</option>
+                  </select>
+                  <p class="error-msg">Error Message here</p>
+                </div>
+
+                <div class="form-group dollarOnlyInput">
+                  <label for="amount" class="error-label">Amount</label>
+                  <input type="number" name="amount" class="error-input" />
+                  <p class="error-msg">Error Message here</p>
+                </div>
+
+                <!-- <div class="form-group error">
                       <label for="frequency" class="error-label"
                         >Payment Method</label
                       >
@@ -98,92 +100,94 @@
       
                       <p class="error-msg">Error Message here</p>
                     </div> -->
-                    <div class="form-group pd-top">
-                      <button class="btn" disabled="disabled">
-                        Donate <i class="fal fa-spinner fa-spin"></i>
-                      </button>
-                    </div>
-      
-                    <div class="error-box login-error">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Earum, facere.
-                      </p>
-                    </div>
-      
-              
-                  </form>
-      
-                  <div class="cheque__donation">
-                    <h3>Cheque Donation</h3>
-                    <p>
-                      Write Check to Philippine Frontline Ministries, Inc and send to:
-                    </p>
-                    <p>
-                      <strong> US donor </strong><br />
-                      <i class="fal fa-map-marker-alt"> </i> Philippine Frontline PO
-                      Box 208 Sanwich, Illinois 60548
-                    </p>
-                    <p>
-                      <strong> Canada donor </strong><br />
-                      <i class="fal fa-map-marker-alt"> </i> 1399 Buffalo Place
-                      Winnipeg, Manitoba Canada, R3T 1L6
-                    </p>
-                  </div>
-
-                  <a href="#" class="go_back"> Go back to homepage</a>
+                <div class="form-group pd-top">
+                  <button class="btn" disabled="disabled">
+                    Donate <i class="fal fa-spinner fa-spin"></i>
+                  </button>
                 </div>
+
+                <div class="error-box login-error">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum, facere.
+                  </p>
+                </div>
+
+
+              </form>
+
+              <div class="cheque__donation">
+                <h3>Cheque Donation</h3>
+                <p>
+                  Write Check to Philippine Frontline Ministries, Inc and send to:
+                </p>
+                <p>
+                  <strong> US donor </strong><br />
+                  <i class="fal fa-map-marker-alt"> </i> Philippine Frontline PO
+                  Box 208 Sanwich, Illinois 60548
+                </p>
+                <p>
+                  <strong> Canada donor </strong><br />
+                  <i class="fal fa-map-marker-alt"> </i> 1399 Buffalo Place
+                  Winnipeg, Manitoba Canada, R3T 1L6
+                </p>
               </div>
+
+              <a href="#" class="go_back"> Go back to homepage</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-
-    <section class="callToAction">
-      <div class="wrapper">
-        <h2>Need Assistance?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
-          maiores nostrum dolore alias aperiam ipsam vitae odio provident
-          placeat officia modi tempore, rerum dicta officiis nesciunt expedita
-          error amet possimus?
-        </p>
-        <a href="#" class="btn">Contact Us</a>
-      </div>
-    </section>
-
-
-
-    <footer class="footer">
-      <div class="container">
-             <div class="footer__wrapper">
-                <div class="footer__content">
-                  <img src="./images/ftc_logo_wht.svg" alt="">
-                  <p>FTC has been privileged to help hundreds of children, has established several child care facilities, and now provides regular full time care, education, and opportunity for dozens of former street children.</p>
-                </div>
-     
-      
-             <div class="footer__nav">
-              <h3>Quick Links</h3>
-                <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-             </div>
-             </div>
-    </footer>
-    <div class="copyright">
-      <p>&copy;2021 Face The Children</p>
-      <p><a href="https://www.thefrontline.asia/" target="_blank">Visit Philippine Frontline Ministries</a></p>
     </div>
+    </div>
+  </section>
 
 
-    
+  <section class="callToAction">
+    <div class="wrapper">
+      <h2>Need Assistance?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
+        maiores nostrum dolore alias aperiam ipsam vitae odio provident
+        placeat officia modi tempore, rerum dicta officiis nesciunt expedita
+        error amet possimus?
+      </p>
+      <a href="#" class="btn">Contact Us</a>
+    </div>
+  </section>
 
-  </body>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <img src="./images/ftc_logo_wht.svg" alt="">
+          <p>FTC has been privileged to help hundreds of children, has established several child care facilities, and
+            now provides regular full time care, education, and opportunity for dozens of former street children.</p>
+        </div>
+
+
+        <div class="footer__nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>&copy;2021 Face The Children</p>
+    <p><a href="https://www.thefrontline.asia/" target="_blank">Visit Philippine Frontline Ministries</a></p>
+  </div>
+
+
+
+
+</body>
+
 </html>
