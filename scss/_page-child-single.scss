@@ -33,6 +33,9 @@
       margin-bottom: 2rem;
       color: $orange;
     }
+    p {
+      margin-bottom: 1rem;
+    }
 
     ul {
       margin-bottom: 2rem;
@@ -58,7 +61,8 @@
         background-color: darken($orange, 20);
       }
       @include btn($orange, 150px);
-      margin: 2rem 0;
+      // margin: 2rem 0;
+      max-width: unset
     }
   }
 }

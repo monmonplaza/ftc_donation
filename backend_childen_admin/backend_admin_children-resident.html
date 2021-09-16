@@ -1,447 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__log">
-        <div class="header__donor__dashboard">
-          <img src="../images/logo_white_sm.png" alt="" />
-          <ul>
-            <li><button>Logout</button></li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/main.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__log">
+      <div class="header__donor__dashboard">
+        <img src="../images/logo_white_sm.png" alt="" />
+        <ul>
+          <li><button>Logout</button></li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <div class="main__grid">
-        <div class="sidebar">
-          <ul class="lg-only">
-            <li>
-              <a href="backend_admin_dashboard.html">
-                <i class="fal fa-home"></i>
-                <span class="menu__label">Overview</span></a
-              >
-            </li>
-            <li>
-              <a href="backend_admin_users.html">
-                <i class="fal fa-users"></i>
-                <span class="menu__label">Users</span></a
-              >
-            </li>
-            <li>
-              <a href="backend_admin_children.html"
-                ><i class="fal fa-child"></i>
-                <span class="menu__label">Children</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="../backend_donor_admin/backend_admin_donor_dashboard.html"
-              >
-                <i class="fal fa-donate"></i>
-                <span class="menu__label">Donors</span></a
-              >
-            </li>
+  <main>
+    <div class="main__grid">
+      <div class="sidebar">
+        <ul class="lg-only">
+          <li>
+            <a href="backend_admin_dashboard.html">
+              <i class="fal fa-home"></i>
+              <span class="menu__label">Overview</span></a>
+          </li>
+          <li>
+            <a href="backend_admin_users.html">
+              <i class="fal fa-users"></i>
+              <span class="menu__label">Users</span></a>
+          </li>
+          <li>
+            <a href="backend_admin_children.html"><i class="fal fa-child"></i>
+              <span class="menu__label">Children</span></a>
+          </li>
+          <li>
+            <a href="../backend_donor_admin/backend_admin_donor_dashboard.html">
+              <i class="fal fa-donate"></i>
+              <span class="menu__label">Donors</span></a>
+          </li>
+        </ul>
+
+        <ul class="mobile__wrapper sm-only">
+          <li>
+            <a href="backend_admin_dashboard.html">
+              <i class="fal fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="backend_admin_users.html">
+              <i class="fal fa-users"></i> Users</a>
+          </li>
+          <li>
+            <a href="backend_admin_children.html">
+              <i class="fal fa-child"></i>Children
+            </a>
+          </li>
+          <li>
+            <a href="../backend_donor_admin/backend_admin_donor_dashboard.html">
+              <i class="fal fa-donate"></i>Donor
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main__block">
+        <h2>Manage Children</h2>
+        <div class="main__block__menu">
+          <ul>
+            <li><button href="#" class="active">Resident</button></li>
+            <li><button href="#">Non-Resident</button></li>
+            <li><button href="#">Fully Sponsored</button></li>
+            <li><button href="#">All</button></li>
           </ul>
 
-          <ul class="mobile__wrapper sm-only">
-            <li>
-              <a href="backend_admin_dashboard.html">
-                <i class="fal fa-home"></i> Home</a
-              >
-            </li>
-            <li>
-              <a href="backend_admin_users.html">
-                <i class="fal fa-users"></i> Users</a
-              >
-            </li>
-            <li>
-              <a href="backend_admin_children.html">
-                <i class="fal fa-child"></i>Children
-              </a>
-            </li>
-            <li>
-              <a
-                href="../backend_donor_admin/backend_admin_donor_dashboard.html"
-              >
-                <i class="fal fa-donate"></i>Donor
-              </a>
-            </li>
-          </ul>
+          <button class="add_child">+Add New Child</button>
         </div>
 
-        <div class="main__block">
-          <h2>Manage Children</h2>
-          <div class="main__block__menu">
-            <ul>
-              <li><button href="#" class="active">Resident</button></li>
-              <li><button href="#">Non-Resident</button></li>
-              <li><button href="#">Fully Sponsored</button></li>
-              <li><button href="#">All</button></li>
-            </ul>
+        <div class="main__block__table resident show">
+          <div class="responsive__table__wrapper">
+            <table class="main__block__donor__table">
+              <thead class="table__header">
+                <tr>
+                  <th>Name</th>
 
-            <button class="add_child">+Add New Child</button>
-          </div>
+                  <th>Birthday</th>
+                  <th>Classification</th>
+                  <th>Created</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
 
-          <div class="main__block__table resident show">
-            <div class="responsive__table__wrapper">
-              <table class="main__block__donor__table">
-                <thead class="table__header">
-                  <tr>
-                    <th>Name</th>
+              <tbody>
+                <tr>
+                  <td>Ramon Plaza</td>
 
-                    <th>Birthday</th>
-                    <th>Classification</th>
-                    <th>Created</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
+                  <td>May 21 2006</td>
 
-                <tbody>
-                  <tr>
-                    <td>Ramon Plaza</td>
-
-                    <td>May 21 2006</td>
-
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                       </div>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
-
-                    <td>May 21 2006</td>
-
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
                       </div>
-                    </td>
-                  </tr>
+                    </div>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
+                <tr>
+                  <td>Ramon Plaza</td>
 
-                    <td>May 21 2006</td>
+                  <td>May 21 2006</td>
 
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                       </div>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
-
-                    <td>May 21 2006</td>
-
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
                       </div>
-                    </td>
-                  </tr>
+                    </div>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
+                <tr>
+                  <td>Ramon Plaza</td>
 
-                    <td>May 21 2006</td>
+                  <td>May 21 2006</td>
 
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                       </div>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
-
-                    <td>May 21 2006</td>
-
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
                       </div>
-                    </td>
-                  </tr>
+                    </div>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
+                <tr>
+                  <td>Ramon Plaza</td>
 
-                    <td>May 21 2006</td>
+                  <td>May 21 2006</td>
 
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                       </div>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
-
-                    <td>May 21 2006</td>
-
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Ramon Plaza</td>
+                    </div>
+                  </td>
+                </tr>
 
-                    <td>May 21 2006</td>
+                <tr>
+                  <td>Ramon Plaza</td>
 
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
+                  <td>May 21 2006</td>
 
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                       </div>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
-
-                    <td>May 21 2006</td>
-
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
                       </div>
-                    </td>
-                  </tr>
+                    </div>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
+                <tr>
+                  <td>Ramon Plaza</td>
 
-                    <td>May 21 2006</td>
+                  <td>May 21 2006</td>
 
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                       </div>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
-
-                    <td>May 21 2006</td>
-
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
                       </div>
-                    </td>
-                  </tr>
+                    </div>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <td>Ramon Plaza</td>
+                <tr>
+                  <td>Ramon Plaza</td>
 
-                    <td>May 21 2006</td>
+                  <td>May 21 2006</td>
 
-                    <td>Resident</td>
-                    <td>1-20-2021</td>
-                    <td class="cell__action">
-                      <div class="donor__option">
-                        <div class="donor__option__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-
-                        <div class="donor__option__menu show">
-                          <ul>
-                            <li><button>View</button></li>
-                            <li><button>Edit</button></li>
-                            <li><button>Delete</button></li>
-                          </ul>
-                        </div>
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-                <!-- <tr>
+
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Ramon Plaza</td>
+
+                  <td>May 21 2006</td>
+
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ramon Plaza</td>
+
+                  <td>May 21 2006</td>
+
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Ramon Plaza</td>
+
+                  <td>May 21 2006</td>
+
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Ramon Plaza</td>
+
+                  <td>May 21 2006</td>
+
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Ramon Plaza</td>
+
+                  <td>May 21 2006</td>
+
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Ramon Plaza</td>
+
+                  <td>May 21 2006</td>
+
+                  <td>Resident</td>
+                  <td>1-20-2021</td>
+                  <td class="cell__action">
+                    <div class="donor__option">
+                      <div class="donor__option__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="donor__option__menu show">
+                        <ul>
+                          <li><button>View</button></li>
+                          <li><button>Edit</button></li>
+                          <li><button>Delete</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- <tr>
                   <td class="table__no__data" colspan="5">
                     <div class="no__data">
                       <i class="fal fa-inbox"></i>
@@ -449,304 +440,270 @@
                     </div>
                   </td>
                 </tr> -->
-              </table>
-            </div>
+            </table>
           </div>
         </div>
       </div>
-    </main>
-
-    <!-- MODAL VIEW-->
-    <div class="modal__box">
-      <div class="modal__box__main">
-        <form action="">
-          <div class="modal__box__head"><h3>Child Details</h3></div>
-          <div class="modal__box__body">
-            <div class="info__block thumbnail__block">
-              <img src="./images/thumbnail.jpg" alt="" />
-            </div>
-
-            <div class="info__block">
-              <h4>Full Name:</h4>
-              <p>Ramon Plaza</p>
-            </div>
-
-            <div class="info__block">
-              <h4>Birthday:</h4>
-              <p>May 21, 1992</p>
-            </div>
-
-            <div class="info__block">
-              <h4>Age:</h4>
-              <p>32</p>
-            </div>
-
-            <div class="info__block">
-              <h4>Years at FTC:</h4>
-              <p>3 yrs</p>
-            </div>
-
-            <div class="info__block">
-              <h4>Classification:</h4>
-              <p>Resident</p>
-            </div>
-
-            <div class="info__block">
-              <h4>Created:</h4>
-              <p>3-2-2021</p>
-            </div>
-
-            <div class="info__block story">
-              <h4>Story:</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
-                quisquam adipisci quidem quod eveniet assumenda neque ea
-                necessitatibus modi similique!
-              </p>
-            </div>
-          </div>
-          <div class="modal__box__footer">
-            <div class="modal__box__btns">
-              <button class="btn btn--action">Close</button>
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
-    <!-- MODAL EDIT ADD-->
-    <div class="modal__box show">
-      <div class="modal__box__main">
-        <form action="">
-          <div class="modal__box__head"><h3>Child Details</h3></div>
-          <div class="modal__box__body">
-            <!-- <div class="form-group">
+  </main>
+
+  <!-- MODAL VIEW-->
+  <div class="modal__box ">
+    <div class="modal__box__main">
+      <form action="">
+        <div class="modal__box__head">
+          <h3>Child Details</h3>
+        </div>
+        <div class="modal__box__body">
+          <div class="info__block thumbnail__block">
+            <img src="./images/thumbnail.jpg" alt="" />
+          </div>
+
+          <div class="info__block">
+            <h4>Full Name:</h4>
+            <p>Ramon Plaza</p>
+          </div>
+
+          <div class="info__block">
+            <h4>Birthday:</h4>
+            <p>May 21, 1992</p>
+          </div>
+
+          <div class="info__block">
+            <h4>Age:</h4>
+            <p>32</p>
+          </div>
+
+          <div class="info__block">
+            <h4>Years at FTC:</h4>
+            <p>3 yrs</p>
+          </div>
+
+          <div class="info__block">
+            <h4>Classification:</h4>
+            <p>Resident</p>
+          </div>
+
+          <div class="info__block">
+            <h4>Created:</h4>
+            <p>3-2-2021</p>
+          </div>
+
+          <div class="info__block story">
+            <h4>Story:</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+              quisquam adipisci quidem quod eveniet assumenda neque ea
+              necessitatibus modi similique!
+            </p>
+          </div>
+        </div>
+        <div class="modal__box__footer">
+          <div class="modal__box__btns">
+            <button class="btn btn--action">Close</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- MODAL EDIT ADD-->
+  <div class="modal__box ">
+    <div class="modal__box__main">
+      <form action="">
+        <div class="modal__box__head">
+          <h3>Child Details</h3>
+        </div>
+        <div class="modal__box__body">
+          <!-- <div class="form-group">
               <label for="modalBoxChildName">Upload Photo</label>
               <input type="file" />
 
               <p class="error-msg">Required</p>
             </div> -->
 
-            <div class="form-group add__Photo">
-              <!-- DITO SIR PAT -->
-              <!-- <img src="../images/icon-addImg.svg"  class="uploadImg" alt="">  -->
-              <img
-                src="https://static.wikia.nocookie.net/mobile-legends/images/6/66/Zilong.png"
-                class="uploadImg"
-                alt=""
-              />
-              <div class="uploadBtn">
-                Add Photo
-                <input type="file" class="hide_file" />
-              </div>
-              <!-- <input type="file" id="myFile" name="filename" class="uploadBtn"> -->
-              <p class="error-msg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing
-              </p>
+          <div class="form-group add__Photo">
+            <!-- DITO SIR PAT -->
+            <!-- <img src="../images/icon-addImg.svg"  class="uploadImg" alt="">  -->
+            <img src="https://static.wikia.nocookie.net/mobile-legends/images/6/66/Zilong.png" class="uploadImg"
+              alt="" />
+            <div class="uploadBtn">
+              Add Photo
+              <input type="file" class="hide_file" />
             </div>
-
-            <div class="form-group">
-              <label for="modalBoxChildName">Name</label>
-              <input type="text" name="modalBoxChildName" />
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group">
-              <label for="modalBoxChildAge">Age</label>
-              <input type="text" name="modalBoxChildAge" />
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group">
-              <label for="modalBoxChildBday">Birthday</label>
-              <input type="text" name="modalBoxChildBday" />
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group">
-              <label for="modalBoxClassification">Classification</label>
-              <select name="modalBoxClassification">
-                <option value="resident">Resident</option>
-                <option value="nonresident">Non-Resident</option>
-                <option value="fullsponsored">Full Sponsored</option>
-              </select>
-              <p class="error-msg">Required</p>
-            </div>
-
-            <div class="form-group">
-              <label for="modalBoxStory">Story</label>
-              <textarea name="modalBoxStory" rows="25"></textarea>
-              <p class="error-msg">Required</p>
-            </div>
-          </div>
-          <div class="modal__box__footer">
-            <div class="modal__box__btns">
-              <button class="btn btn--cancel">Close</button>
-              <button class="btn btn--action">
-                Update <i class="fal fa-spinner fa-spin"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- MODAL DELETE CHILD -->
-    <div class="modal__box">
-      <div class="modal__box__main">
-        <form action="">
-          <div class="modal__box__head"><h3>Remove Child?</h3></div>
-          <div class="modal__box__body">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-              expedita voluptate libero velit officiis, error possimus quasi
-              commodi veritatis aliquid!
+            <!-- <input type="file" id="myFile" name="filename" class="uploadBtn"> -->
+            <p class="error-msg">
+              Lorem ipsum, dolor sit amet consectetur adipisicing
             </p>
           </div>
-          <div class="modal__box__footer">
-            <div class="modal__box__btns">
-              <button class="btn btn--cancel">Cancel</button>
-              <button class="btn btn--action btn--error">
-                Confirm <i class="fal fa-spinner fa-spin"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
 
-    <!-- MODAL View Donors CHILD -->
-    <div class="modal__box modal__table">
-      <div class="modal__box__main">
-        <form action="">
-          <div class="modal__box__head"><h3>Donors</h3></div>
-          <div class="modal__box__body">
-            <ul class="modal__box__tabs">
-              <li><button class="active__tab">Card</button></li>
-              <li><button>Manual</button></li>
-            </ul>
-            <table
-              class="
+          <div class="form-group">
+            <label for="modalBoxChildName">Name</label>
+            <input type="text" name="modalBoxChildName" />
+            <p class="error-msg">Required</p>
+          </div>
+
+          <div class="form-group">
+            <label for="modalBoxChildAge">Age</label>
+            <input type="text" name="modalBoxChildAge" />
+            <p class="error-msg">Required</p>
+          </div>
+
+          <div class="form-group">
+            <label for="modalBoxChildBday">Birthday</label>
+            <input type="text" name="modalBoxChildBday" />
+            <p class="error-msg">Required</p>
+          </div>
+
+          <div class="form-group">
+            <label for="modalBoxClassification">Classification</label>
+            <select name="modalBoxClassification">
+              <option value="resident">Resident</option>
+              <option value="nonresident">Non-Resident</option>
+              <option value="fullsponsored">Full Sponsored</option>
+            </select>
+            <p class="error-msg">Required</p>
+          </div>
+
+          <div class="form-group">
+            <label for="modalBoxStory">Story</label>
+            <textarea name="modalBoxStory" rows="25"></textarea>
+            <p class="error-msg">Required</p>
+          </div>
+        </div>
+        <div class="modal__box__footer">
+          <div class="modal__box__btns">
+            <button class="btn btn--cancel">Close</button>
+            <button class="btn btn--action">
+              Update <i class="fal fa-spinner fa-spin"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL DELETE CHILD -->
+  <div class="modal__box ">
+    <div class="modal__box__main">
+      <form action="">
+        <div class="modal__box__head">
+          <h3>Remove Child?</h3>
+        </div>
+        <div class="modal__box__body">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+            expedita voluptate libero velit officiis, error possimus quasi
+            commodi veritatis aliquid!
+          </p>
+        </div>
+        <div class="modal__box__footer">
+          <div class="modal__box__btns">
+            <button class="btn btn--cancel">Cancel</button>
+            <button class="btn btn--action btn--error">
+              Confirm <i class="fal fa-spinner fa-spin"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL View Donors CHILD -->
+  <div class="modal__box modal__table show">
+    <div class="modal__box__main">
+      <form action="">
+        <div class="modal__box__head">
+          <h3>Donors</h3>
+        </div>
+        <div class="modal__box__body">
+          <ul class="modal__box__tabs">
+            <li><button class="active__tab">Card</button></li>
+            <li><button>Manual</button></li>
+          </ul>
+          <table class="
                 main__block__donor__table
                 modal__donor__table
                 active__table
-              "
-            >
-              <thead class="table__header">
-                <tr>
-                  <th>Email</th>
-                  <th>Name</th>
-                  <th>Status</th>
-                  <th>Date Created</th>
-                </tr>
-              </thead>
+              ">
+            <thead class="table__header">
+              <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Date Created</th>
+              </tr>
+            </thead>
 
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="" class="search__link">ramon.plaza@gmail.com</a>
-                  </td>
-                  <td>Ramon Plaza</td>
-                  <td class="cell__status inactive"><span>Active</span></td>
-                  <td>June 23, 2021</td>
-                </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="" class="search__link">ramon.plaza@gmail.com</a>
+                </td>
+                <td>Ramon Plaza</td>
+                <td class="cell__status inactive"><span>Active</span></td>
+                <td>June 23, 2021</td>
+              </tr>
 
-                <tr>
-                  <td colspan="4" class="modal__table__spinner">
-                    <svg
-                      class="spinner"
-                      width="60px"
-                      height="60px"
-                      viewBox="0 0 66 66"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        class="path"
-                        fill="none"
-                        stroke-width="6"
-                        stroke-linecap="round"
-                        cx="33"
-                        cy="33"
-                        r="30"
-                      ></circle>
-                    </svg>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+              <tr>
+                <td colspan="4" class="modal__table__spinner">
+                  <svg class="spinner" width="60px" height="60px" viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+                    </circle>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-            <table class="main__block__donor__table modal__donor__table">
-              <thead class="table__header">
-                <tr>
-                  <th>Email</th>
-                  <th>Name</th>
-                  <th>Status</th>
-                  <th>Date Created</th>
-                </tr>
-              </thead>
+          <table class="main__block__donor__table modal__donor__table">
+            <thead class="table__header">
+              <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Date Created</th>
+              </tr>
+            </thead>
 
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="" class="search__link">ramon.plaza@gmail.com</a>
-                  </td>
-                  <td>Ramon Plaza</td>
-                  <td class="cell__status inactive"><span>Active</span></td>
-                  <td>June 23, 2021</td>
-                </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="" class="search__link">ramon.plaza@gmail.com</a>
+                </td>
+                <td>Ramon Plaza</td>
+                <td class="cell__status inactive"><span>Active</span></td>
+                <td>June 23, 2021</td>
+              </tr>
 
-                <tr>
-                  <td colspan="4" class="modal__table__spinner">
-                    <svg
-                      class="spinner"
-                      width="60px"
-                      height="60px"
-                      viewBox="0 0 66 66"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        class="path"
-                        fill="none"
-                        stroke-width="6"
-                        stroke-linecap="round"
-                        cx="33"
-                        cy="33"
-                        r="30"
-                      ></circle>
-                    </svg>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+              <tr>
+                <td colspan="4" class="modal__table__spinner">
+                  <svg class="spinner" width="60px" height="60px" viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+                    </circle>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal__box__footer">
+          <div class="modal__box__btns">
+            <button class="btn btn--cancel">Close</button>
           </div>
-          <div class="modal__box__footer">
-            <div class="modal__box__btns">
-              <button class="btn btn--cancel">Close</button>
-            </div>
-          </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <div class="modal loading">
-      <div class="modal__main spinner_modal">
-        <svg
-          class="spinner"
-          width="60px"
-          height="60px"
-          viewBox="0 0 66 66"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            class="path"
-            fill="none"
-            stroke-width="6"
-            stroke-linecap="round"
-            cx="33"
-            cy="33"
-            r="30"
-          ></circle>
-        </svg>
-      </div>
+  <div class="modal loading">
+    <div class="modal__main spinner_modal">
+      <svg class="spinner" width="60px" height="60px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+      </svg>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

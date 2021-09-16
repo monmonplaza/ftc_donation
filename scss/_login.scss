@@ -117,7 +117,7 @@
     }
     .welcome__note {
       text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       h3 {
         font-size: 2.5rem;
         color: $blue;
@@ -158,6 +158,23 @@
       border-top: 1px solid #e6e6e6;
     }
   }
+}
+
+.option__box {
+  padding: 1rem;
+  border: 1px solid #f2f2f2;
+  display: flex;
+  margin-bottom: 1rem; 
+  input {
+    align-self: flex-start;
+  }
+  p {
+    margin-left: 1rem;
+  }
+}
+
+.option__box:last-child {
+  margin-bottom: 2rem;
 }
 
 .sm-only {
