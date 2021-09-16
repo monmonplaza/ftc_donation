@@ -155,7 +155,10 @@
       transform: translateX(-50%);
       text-align: center;
       padding: 2rem 0 1rem 0;
-      border-top: 1px solid #e6e6e6;
+      border-top: 1px solid #e6e6e6; 
+      a {
+        color: $blue;
+      }
     }
   }
 }
