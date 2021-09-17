@@ -23,6 +23,13 @@
       display: block;
     }
 
+    img {
+      width: 30rem;
+      @include media-query(420px) {
+        width: 25rem;
+      }
+    }
+
     h2 {
       text-align: center;
       margin: 2rem 0;

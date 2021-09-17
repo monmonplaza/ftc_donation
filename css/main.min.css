@@ -5138,6 +5138,16 @@ button:disabled:hover {
   display: block;
 }
 
+.admin__login__wrapper img {
+  width: 30rem;
+}
+
+@media screen and (max-width: 420px) {
+  .admin__login__wrapper img {
+    width: 25rem;
+  }
+}
+
 .admin__login__wrapper h2 {
   text-align: center;
   margin: 2rem 0;
