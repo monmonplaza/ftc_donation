@@ -3206,7 +3206,7 @@ button:disabled:hover {
      object-fit: cover;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 620px) {
   .child__single img {
     width: 100%;
     height: 48rem;
@@ -3220,7 +3220,7 @@ button:disabled:hover {
       grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 620px) {
   .child__single__grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -3245,6 +3245,7 @@ button:disabled:hover {
 }
 
 .child__single__gridItem h2 {
+  margin-top: 4rem;
   padding: 1rem 0 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
@@ -3252,7 +3253,7 @@ button:disabled:hover {
 }
 
 .child__single__gridItem p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .child__single__gridItem ul {
@@ -3292,6 +3293,8 @@ button:disabled:hover {
   background-color: #fc9726;
   color: #fff;
   max-width: unset;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .child__single__gridItem button.btn:hover {
@@ -3315,7 +3318,7 @@ button:disabled:hover {
   background-position: right 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(45deg, rgba(22, 53, 70, 0.9) 30%, rgba(43, 106, 139, 0.6)), url("../images/banner-childrenList.jpg") !important;
+  background-image: linear-gradient(45deg, #163546 30%, rgba(43, 106, 139, 0.6)), url("../images/banner-childrenList.jpg") !important;
 }
 
 @media screen and (max-width: 420px) {
